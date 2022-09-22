@@ -41,4 +41,11 @@
     height: 150px;
     background-size: cover;
     background-repeat: no-repeat;
+    pointer-events: none;
+    opacity: 0.8;
+}
+
+.section-container--speakers .experts .experts__list .item .item__name {
+    pointer-events: none;
+    opacity: 0.8;
 }
