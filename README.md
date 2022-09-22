@@ -2,7 +2,7 @@
 
 Author: YourNameHere
 
-This Bolt extension can be used to add ContentTypes in the article editor
+This Bolt extension can be used to add ContentTypes entries in the article editor
 
 Installation:
 

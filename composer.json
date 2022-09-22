@@ -1,6 +1,6 @@
 {
     "name": "luxnewcms/boltcms-article-plugin",
-    "description": "📦 This Bolt extension can be used to add Leaders in the article editor.",
+    "description": "📦 This Bolt extension can be used to add ContentTypes entries in the article editor.",
     "type": "bolt-extension",
     "license": "MIT",
     "authors": [
