@@ -1,0 +1,29 @@
+{
+    "name": "luxnewcms/boltcms-article-plugin",
+    "description": "📦 This Bolt extension can be used to add Leaders in the article editor.",
+    "type": "bolt-extension",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Rosendo Rodriguez",
+            "email": "rosendo.rodriguez@dxc.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.2.9"
+    },
+    "require-dev": {
+        "bolt/core": "^5.0",
+        "symplify/easy-coding-standard": "^7.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "LuxNewCms\\ArticlePlugin\\": "src/"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "extra": {
+        "entrypoint": "LuxNewCms\\ArticlePlugin\\Extension"
+    }
+}
