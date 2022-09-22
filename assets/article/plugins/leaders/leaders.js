@@ -19,7 +19,7 @@ ArticleEditor.add('plugin', 'leaders', {
                 command: 'leaders.insert'
             }
             items[leader] = item
-            selectOptions[leader] = dataJson[leader].fieldValues.name
+            selectOptions[leader] = `${dataJson[leader].fieldValues.name} - ${dataJson[leader].fieldValues.description}`
         }
 
         this.app.toolbar.add('leaders', {
@@ -37,6 +37,7 @@ ArticleEditor.add('plugin', 'leaders', {
     },
     popup: function(params, button) {
         this.app.popup.create('leaders', {
+            width: '450px',
             footer: {
                 save: {
                     title: 'Insert',
