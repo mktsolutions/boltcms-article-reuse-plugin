@@ -7,5 +7,5 @@ This Bolt extension can be used to add ContentTypes entries in the article edito
 Installation:
 
 ```bash
-composer require luxnewcms/boltcms-article-plugin
+composer require luxnewcms/boltcms-article-plugin:dev-master
 ```
