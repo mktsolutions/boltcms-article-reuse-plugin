@@ -10,7 +10,6 @@ ArticleEditor.add('plugin', 'leaders', {
         const selectOptions = {}
         
         for (const leader in dataJson) {
-            console.log(dataJson[leader].fieldValues)
             const item = {
                 id: dataJson[leader].id,
                 title: dataJson[leader].fieldValues.name,

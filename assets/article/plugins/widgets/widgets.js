@@ -87,7 +87,7 @@ ArticleEditor.add('plugin', 'widgets', {
             $block.addClass('section-container section-container--speakers')
 
             var leadersHtml = `<section class="experts">
-                                    <div class="container">
+                                    <div class="section-container__wrapper">
                                         <div class="two-thirds-width text-centered animation fadeIn">
                                             <h2><span>Our</span> leaders</h2>
                                         </div>
@@ -101,7 +101,7 @@ ArticleEditor.add('plugin', 'widgets', {
             $block.addClass('section-container section-container--news-list')
             
             var insightsHtml = `<section class="tiles">
-                                    <div class="container">
+                                    <div class="section-container__wrapper">
                                         <div class="two-thirds-width text-centered animation fadeIn">
                                             <h2><span>News and</span> insights</h2>
                                         </div>
