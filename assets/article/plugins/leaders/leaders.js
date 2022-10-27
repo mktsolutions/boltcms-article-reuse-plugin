@@ -14,6 +14,7 @@ ArticleEditor.add('plugin', 'leaders', {
                 id: dataJson[leader].id,
                 title: dataJson[leader].fieldValues.name,
                 description: dataJson[leader].fieldValues.description,
+                link: dataJson[leader].fieldValues.contentlink,
                 photo: dataJson[leader].fieldValues.image.url,
                 command: 'leaders.insert'
             }
@@ -69,24 +70,24 @@ ArticleEditor.add('plugin', 'leaders', {
 
         this.app.editor.insertContent({
             html:  `
-            <div class="item">
-                <div class="item__image html-code" style="background-image: url('${params.params.leaders[ledaerPosition].photo}')">
-                    <div class="social"><i class="icomoon-linkedin-logo"></i></div>
-                </div>
-                <div class="item__name html-code">
-                    <h5>${params.params.leaders[ledaerPosition].title}</h5>
-                    <p>${params.params.leaders[ledaerPosition].description}</p>
+            <div class="col">
+                <div class="card h-100 html-code">
+                    <img src="${params.params.leaders[ledaerPosition].photo}" class="card-img-top" alt="leader image">
+                    <a class="linkedin" href="${params.params.leaders[ledaerPosition].link}"></a>
+                    <div class="card-body bd-gray-20">
+                        <h5 class="card-title text-16 bold mb-2">${params.params.leaders[ledaerPosition].title}</h5>
+                        <p class="card-text text-14 regular mb-2">${params.params.leaders[ledaerPosition].description}</p>
+                    </div>
                 </div>
                 <div class="twig-code">{% setcontent leader = 'person/${params.params.leaders[ledaerPosition].id}' %}</div>
-                <a href="{{ leader.contentlink }}" class="item__link twig-code">
-                    <div class="item__image" style="background-image: url('{{ leader.image }}')">
-                        <div class="social"><i class="icomoon-linkedin-logo"></i></div>
+                <div class="card h-100 twig-code">
+                    <img src="{{ leader.image }}" class="card-img-top" alt="leader image">
+                    <a class="linkedin" href="{{ leader.contentlink }}"></a>
+                    <div class="card-body bd-gray-20">
+                        <h5 class="card-title text-16 bold mb-2">{{ leader.name }}</h5>
+                        <p class="card-text text-14 regular mb-2">{{ leader.description }}</p>
                     </div>
-                    <div class="item__name">
-                        <h5>{{ leader.name }}</h5>
-                        <p>{{ leader.description }}</p>
-                    </div>
-                </a>
+                </div>
             </div>`
         })
     },
