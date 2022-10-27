@@ -41,6 +41,14 @@ ArticleEditor.add('plugin', 'style', {
                 'video-right': {
                     title: 'Insert classes for VIDEO ON THE RIGHT',
                     classname: 'container-video-right'
+                },
+                'partnership': {
+                    title: 'Insert classes for PARTNERSHIP section',
+                    classname: 'container-partnership'
+                },
+                'partnership-alt': {
+                    title: 'Insert classes for the ALT version of PARTNERSHIP',
+                    classname: 'container-partnership-alt'
                 }
             },
         },
