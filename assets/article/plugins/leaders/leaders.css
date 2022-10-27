@@ -1,51 +1,44 @@
-.section-container--speakers .experts h2 {
-    font-size: 24px;
+.team h2 {
+    font-size: 24px !important;
     font-weight: 500;
 }
 
-.section-container.section-container--speakers {
+.team {
     padding: 15px 10px 25px;
     border: 2px solid #afafaf;
 }
 
-.section-container--speakers .experts  {
-    text-align: center;
+.team .container {
+    padding: 20px;
 }
 
-.section-container--speakers .experts .experts__list {
-    padding: 10px;
-    margin: 10px;
-    border: 1px solid #cfcfcf;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+.team .container .col {
+    border: 2px solid #466f90;
+    margin: 15px;
 }
 
-.section-container--speakers .experts .experts__list .item .twig-code {
+.team .container .col .card {
+    border: none !important;
+    pointer-events: none;
+    opacity: 0.9;
+}
+
+.team .container .col .card.twig-code {
     display: none;
 }
 
-.section-container--speakers .experts .experts__list .item h5,
-.section-container--speakers .experts .experts__list .item p {
-    color: #454545;
+/*
+* Article editor resets
+*/
+
+p,
+a,
+span,
+ul li,
+button {
+    font-size: 14px !important;
 }
 
-.section-container--speakers .experts .experts__list .item {
-    border: 1px solid #0e3bc1;
-    padding: 10px;
-    margin: 10px;
-    width: 190px;
-}
-
-.section-container--speakers .experts .experts__list .item .item__image {
-    height: 150px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    pointer-events: none;
-    opacity: 0.8;
-}
-
-.section-container--speakers .experts .experts__list .item .item__name {
-    pointer-events: none;
-    opacity: 0.8;
+h1, h2, h3, h4, h5, h6 {
+    font-size: 16px !important;
 }
