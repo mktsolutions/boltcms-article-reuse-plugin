@@ -49,7 +49,19 @@ ArticleEditor.add('plugin', 'style', {
                 'partnership-alt': {
                     title: 'Insert classes for the ALT version of PARTNERSHIP',
                     classname: 'container-partnership-alt'
-                }
+                },
+                'container': {
+                    title: 'Insert the CONTAINER class',
+                    classname: 'container'
+                },
+                'container-fluid': {
+                    title: 'Insert the CONTAINER-FLUID class',
+                    classname: 'container-fluid'
+                },
+                'col': {
+                    title: 'Insert the COL class',
+                    classname: 'col'
+                },
             },
         },
         icon: '<svg height="16" viewBox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg"><path d="m15 1c-3.5955345 2.88454776-5.25146525 9.6241453-7.87485347 9.6241453h-2.6253419l-2.62495116 4.3758547h-.87485347c1.75009768-5.25102559 6.33028189-14 14-14z"/></svg>'
