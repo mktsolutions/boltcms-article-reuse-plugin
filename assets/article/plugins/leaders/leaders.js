@@ -74,7 +74,7 @@ ArticleEditor.add('plugin', 'leaders', {
                 <div class="card h-100 html-code">
                     <img src="${params.params.leaders[ledaerPosition].photo}" class="card-img-top" alt="leader image">
                     <a class="linkedin" href="${params.params.leaders[ledaerPosition].link}"></a>
-                    <div class="card-body bd-gray-20">
+                    <div class="card-body">
                         <h5 class="card-title text-16 bold mb-2">${params.params.leaders[ledaerPosition].title}</h5>
                         <p class="card-text text-14 regular mb-2">${params.params.leaders[ledaerPosition].description}</p>
                     </div>
@@ -83,7 +83,7 @@ ArticleEditor.add('plugin', 'leaders', {
                 <div class="card h-100 twig-code">
                     <img src="{{ leader.image }}" class="card-img-top" alt="leader image">
                     <a class="linkedin" href="{{ leader.contentlink }}"></a>
-                    <div class="card-body bd-gray-20">
+                    <div class="card-body">
                         <h5 class="card-title text-16 bold mb-2">{{ leader.name }}</h5>
                         <p class="card-text text-14 regular mb-2">{{ leader.description }}</p>
                     </div>
