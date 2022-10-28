@@ -27,7 +27,7 @@ ArticleEditor.add('plugin', 'leaders', {
             icon: '<i class="fa fa-users"></i>',
             command: 'leaders.popup',
             blocks: {
-                types: ['layer']
+                types: ['layer', 'column']
             },
             params: {
                 items: items,
