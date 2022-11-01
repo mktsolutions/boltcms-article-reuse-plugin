@@ -1,6 +1,6 @@
 # Acme ReferenceExtension
 
-Author: YourNameHere
+Author: Rosendo Rodriguez, rosendo.rosendo@dxc.com
 
 This Bolt extension can be used to add ContentTypes entries in the article editor
 
