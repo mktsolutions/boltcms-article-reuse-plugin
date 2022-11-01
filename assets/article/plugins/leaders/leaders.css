@@ -36,7 +36,9 @@ a,
 span,
 ul li,
 ol li,
-button {
+button,
+pre,
+address {
     font-size: 14px !important;
 }
 
