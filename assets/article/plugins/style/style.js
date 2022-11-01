@@ -62,6 +62,84 @@ ArticleEditor.add('plugin', 'style', {
                     title: 'Insert the COL class',
                     classname: 'col'
                 },
+                'row': {
+                    title: 'Insert the ROW class',
+                    classname: 'row'
+                },
+                'title': {
+                    title: 'Insert the TITLE class',
+                    classname: 'title'
+                },
+                'why-info': {
+                    title: 'Insert the WHY-INFO class',
+                    classname: 'why-info'
+                },
+            },
+            grid: {
+                'black-version': {
+                    title: 'Insert classes for the BLACK version of OUR TEAM',
+                    classname: 'bd-black'
+                },
+                'white-version': {
+                    title: 'Insert classes for the WHITE version of OUR TEAM',
+                    classname: 'bd-white'
+                },
+                'why-luxoft': {
+                    title: 'Insert classes for WHY LUXOFT section',
+                    classname: 'container-why-luxoft'
+                },
+                'how-we-can-help': {
+                    title: 'Insert classes for HOW WE CAN HELP section',
+                    classname: 'container-how-we-help'
+                },
+                'key-points': {
+                    title: 'Insert classes for KEY POINTS section',
+                    classname: 'container-key-points'
+                },
+                'section-icons-with': {
+                    title: 'Insert classes for SECTION WITH ICONS',
+                    classname: 'container-section-icons'
+                },
+                'video-left': {
+                    title: 'Insert classes for VIDEO ON THE LEFT',
+                    classname: 'container-video-left'
+                },
+                'video-right': {
+                    title: 'Insert classes for VIDEO ON THE RIGHT',
+                    classname: 'container-video-right'
+                },
+                'partnership': {
+                    title: 'Insert classes for PARTNERSHIP section',
+                    classname: 'container-partnership'
+                },
+                'partnership-alt': {
+                    title: 'Insert classes for the ALT version of PARTNERSHIP',
+                    classname: 'container-partnership-alt'
+                },
+                'container': {
+                    title: 'Insert the CONTAINER class',
+                    classname: 'container'
+                },
+                'container-fluid': {
+                    title: 'Insert the CONTAINER-FLUID class',
+                    classname: 'container-fluid'
+                },
+                'col': {
+                    title: 'Insert the COL class',
+                    classname: 'col'
+                },
+                'row': {
+                    title: 'Insert the ROW class',
+                    classname: 'row'
+                },
+                'title': {
+                    title: 'Insert the TITLE class',
+                    classname: 'title'
+                },
+                'why-info': {
+                    title: 'Insert the WHY-INFO class',
+                    classname: 'why-info'
+                },
             },
         },
         icon: '<svg height="16" viewBox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg"><path d="m15 1c-3.5955345 2.88454776-5.25146525 9.6241453-7.87485347 9.6241453h-2.6253419l-2.62495116 4.3758547h-.87485347c1.75009768-5.25102559 6.33028189-14 14-14z"/></svg>'
