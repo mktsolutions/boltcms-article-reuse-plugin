@@ -4,16 +4,31 @@
 
 p,
 a,
+i,
+del,
 span,
 ul li,
 ol li,
 button,
+address,
+input,
+label,
+textarea,
+pre,
+code,
 table,
+thead,
+time,
+strong,
 tbody,
 tr,
 td,
 th {
     font-size: 14px !important;
+}
+
+sup {
+    font-size: 11px !important;
 }
 
 h1 {
@@ -38,4 +53,12 @@ h5 {
 
 h6 {
     font-size: 14px !important;
+}
+
+table {
+    border: 1px solid #b7b7b7 !important;
+}
+
+table td {
+    border: 1px solid #72a0a5;
 }
