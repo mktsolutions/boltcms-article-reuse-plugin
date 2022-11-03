@@ -9,6 +9,12 @@ ArticleEditor.add('plugin', 'style', {
     },
     defaults: {
         styles: {
+            paragraph: {
+                'sub02': {
+                    title: 'Insert the SUB02 class',
+                    classname: 'sub02'
+                },
+            },
             layer: {
                 'black-version': {
                     title: 'Insert classes for the BLACK version of OUR TEAM',
@@ -73,6 +79,14 @@ ArticleEditor.add('plugin', 'style', {
                 'why-info': {
                     title: 'Insert the WHY-INFO class',
                     classname: 'why-info'
+                },
+                'content': {
+                    title: 'Insert the CONTENT class',
+                    classname: 'content'
+                },
+                'content-info': {
+                    title: 'Insert the CONTENT-INFO class',
+                    classname: 'content-info'
                 },
             },
             grid: {
@@ -139,6 +153,14 @@ ArticleEditor.add('plugin', 'style', {
                 'why-info': {
                     title: 'Insert the WHY-INFO class',
                     classname: 'why-info'
+                },
+                'content': {
+                    title: 'Insert the CONTENT class',
+                    classname: 'content'
+                },
+                'content-info': {
+                    title: 'Insert the CONTENT-INFO class',
+                    classname: 'content-info'
                 },
             },
         },
