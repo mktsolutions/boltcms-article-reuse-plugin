@@ -31,14 +31,6 @@ ArticleEditor.add('plugin', 'editables', {
              }
         }
     },
-    defaults: {
-        classname: ''
-    },
-    subscribe: {
-        'editor.change': function() {
-            console.log('Article editor changed...');
-        }
-    },
     start: function() {
         this.app.addbar.add('editables', {
             title: '## blocks.editables ##',
@@ -74,8 +66,8 @@ ArticleEditor.add('plugin', 'editables', {
 
         if (instance) {
             this.app.block.add({ instance: instance })
-            this.app.source.toggle();
-            this.app.source.toggle();
+            this.app.source.toggle()
+            this.app.source.toggle()
         }
     },
     _buildInstance: function(stack, instance) {

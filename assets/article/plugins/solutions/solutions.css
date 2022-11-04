@@ -1,0 +1,18 @@
+.solutions h2 {
+    text-align: center !important;
+}
+
+.solutions .carousel-item .carousel-caption h4 {
+    color: #fff;
+}
+
+.solutions  .carousel-indicators a[data-bs-slide="prev"],
+.solutions  .carousel-indicators a[data-bs-slide="next"] {
+    display: none !important;
+}
+
+.solutions .carousel-indicators {
+    background-color: #000;
+    position: relative;
+    display: block;
+}
