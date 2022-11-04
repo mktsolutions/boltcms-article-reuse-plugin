@@ -15,4 +15,14 @@
     background-color: #000;
     position: relative;
     display: block;
+    padding: 10px 0;
+}
+
+.solutions .carousel-indicators [data-bs-target] {
+    padding: 4px;
+    margin-right: 16px;
+    margin-left: initial;
+    width: auto;
+    height: auto;
+    border: none;
 }
