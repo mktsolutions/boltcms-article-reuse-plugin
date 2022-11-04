@@ -62,3 +62,24 @@ table {
 table td {
     border: 1px solid #72a0a5;
 }
+
+.container-how-we-help,
+.container-section-icons,
+.container-key-points {
+    border: 1px solid #adadad;
+    padding: 15px;
+}
+
+.container-key-points .row .col,
+.container-how-we-help .row .col,
+.container-section-icons .row .col {
+    border: 1px solid #adadad;
+    padding: 5px;
+    margin: 0 4px;
+}
+
+.container-key-points h2,
+.container-how-we-help h2,
+.container-section-icons h2 {
+    text-align: center !important;
+}

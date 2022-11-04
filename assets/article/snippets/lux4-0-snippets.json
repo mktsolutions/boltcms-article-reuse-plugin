@@ -1,0 +1,14 @@
+{
+    "how-we-help": {
+        "name": "How we help",
+        "html": "<div class=\"container-how-we-help container-xxl\"><h2>How we help our clients</h2><div class=\"row\"><div class=\"col\"><a href=\"#\"><div><picture><img src=\"https://dummyimage.com/1200x600/000/696969.png&amp;text=Example+of+image\"></picture><h4>new products and growth</h4><p>Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for visual mockups.</p></div></a></div></div></div>"
+    },
+    "key-points": {
+        "name": "Key points",
+        "html": "<section class=\"container-key-points container-xxl\"><h2>Key points</h2><div class=\"row\"><div class=\"col\"><h2>80%</h2><h5>new products and growth</h5><p>Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for visual mockups.</p></div></div></section>"
+    },
+    "section-with-icons": {
+        "name": "Section with icons",
+        "html": "<section class=\"container-section-icons container-xxl\"><h2>Section with icons</h2><div class=\"row\"><div class=\"col\"><figure><img src=\"https://dummyimage.com/1200x600/000/696969.png&amp;text=Example+of+image\" alt=\"vector\"></figure><h4>New products and growth</h4><p>Lorem ipsum is placeholder text commonly and publishing industries for visual mockups.</p></div><div class=\"col\"><figure><img src=\"https://dummyimage.com/1200x600/000/696969.png&amp;text=Example+of+image\" alt=\"vector\"></figure><h4>New products and growth</h4><p>Lorem ipsum is placeholder text commonly and publishing industries for visual mockups.</p></div></div></section>"
+    }
+}
