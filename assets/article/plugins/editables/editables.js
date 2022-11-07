@@ -66,6 +66,8 @@ ArticleEditor.add('plugin', 'editables', {
 
         if (instance) {
             this.app.block.add({ instance: instance })
+            this.app.source.toggle()
+            this.app.source.toggle()
         }
     },
     _buildInstance: function(stack, instance) {
