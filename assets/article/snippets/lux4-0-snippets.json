@@ -17,7 +17,7 @@
     },
     "partnership-alt": {
         "name": "Partnership ALT",
-        "html": "<section class=\"container-partnership-alt container-xxl\"><div class=\"title\"><h2>Partnership ecosystem</h2><div><p>Lorem ipsum is placeholder text commonly used in the graphic 1.</p><p>Lorem ipsum is placeholder text commonly used in the graphic 2.</p></div></div><div class=\"row\"><div class=\"col\"><a href=\"#\"><div ><h5>Alveo</h5><p>Premium partner</p></div></a></div><div class=\"col\"><a href=\"#\"><div><h5>Flowable</h5><p>Premium partner</p></div></a></div></div></section>"
+        "html": "<section class=\"container-partnership-alt container-xxl\"><div class=\"title\"><h2>Partnership<br> ecosystem</h2><div><p>Lorem ipsum is placeholder text commonly used in the graphic 1.</p><p>Lorem ipsum is placeholder text commonly used in the graphic 2.</p></div></div><div class=\"row\"><div class=\"col\"><a href=\"#\"><div ><h5>Alveo</h5><p>Premium partner</p></div></a></div><div class=\"col\"><a href=\"#\"><div><h5>Flowable</h5><p>Premium partner</p></div></a></div></div></section>"
     },
     "why-luxoft": {
         "name": "Why Luxoft",
