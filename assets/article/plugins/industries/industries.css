@@ -1,0 +1,13 @@
+.client-story .tabs {
+    display: flex;
+    flex-direction: row;
+    margin-top: 14px;
+}
+
+.client-story .tabs .tab {
+    margin: 0 2px;
+}
+
+.client-story .content-item {
+    margin: 3px 0;
+}

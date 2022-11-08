@@ -89,7 +89,8 @@ ArticleEditor.add('plugin', 'solutions', {
         $block.addClass('solutions')
         var id = Math.floor(Math.random() * 100)
 
-        var leadersHtml = `<div id="carouselExampleCaptions-${id}" class="carousel slide" data-bs-ride="carousel">
+        var leadersHtml = `<h2>Our solutions</h2>
+                            <div id="carouselExampleCaptions-${id}" class="carousel slide" data-bs-ride="carousel">
                                 <div class="carousel-inner">`
             for(var x = 1; x <= editableType; x++) {
                 var classname = (x === 1) ? 'active' : ''
@@ -119,8 +120,8 @@ ArticleEditor.add('plugin', 'solutions', {
                 slidePosition++
             }
 
-            leadersHtml += `<a data-bs-target="#carouselExampleCaptions-${id}" data-bs-slide="next">&rsaquo;</a>` // DIV of carousel-inner
-            leadersHtml += `</div>
+            leadersHtml += `<a data-bs-target="#carouselExampleCaptions-${id}" data-bs-slide="next">&rsaquo;</a>
+                            </div>
                             </div>` // Main DIV carouselExampleCaptions and DIV of carousel-indicators
         var $section = this.dom(leadersHtml)
 
