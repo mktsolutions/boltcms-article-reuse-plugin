@@ -10,5 +10,17 @@
     "section-with-icons": {
         "name": "Section with icons",
         "html": "<section class=\"container-section-icons container-xxl\"><h2>Section with icons</h2><div class=\"row\"><div class=\"col\"><figure><img src=\"https://dummyimage.com/1200x600/000/696969.png&amp;text=Example+of+image\" alt=\"vector\"></figure><h4>Item title</h4><p>Lorem ipsum is placeholder text commonly used in the graphic.</p></div></div></section>"
+    },
+    "partnership-": {
+        "name": "Partnership",
+        "html": "<section class=\"container-partnership container-xxl\"><div class=\"title\"><h2>Partnership ecosystem</h2><div><p>Lorem ipsum is placeholder text commonly used in the graphic 1.</p><p>Lorem ipsum is placeholder text commonly used in the graphic 2.</p></div></div><div class=\"row\"><div class=\"col\"><a href=\"#\"><div ><h5>Alveo</h5><p>Premium partner</p></div></a></div><div class=\"col\"><a href=\"#\"><div ><h5>Flowable</h5><p>Premium partner</p></div></a></div></div></section>"
+    },
+    "partnership-alt": {
+        "name": "Partnership ALT",
+        "html": "<section class=\"container-partnership-alt container-xxl\"><div class=\"title\"><h2>Partnership ecosystem</h2><div><p>Lorem ipsum is placeholder text commonly used in the graphic 1.</p><p>Lorem ipsum is placeholder text commonly used in the graphic 2.</p></div></div><div class=\"row\"><div class=\"col\"><a href=\"#\"><div ><h5>Alveo</h5><p>Premium partner</p></div></a></div><div class=\"col\"><a href=\"#\"><div><h5>Flowable</h5><p>Premium partner</p></div></a></div></div></section>"
+    },
+    "why-luxoft": {
+        "name": "Why Luxoft",
+        "html": "<section class=\"container-why-luxoft container-xxl\"><div class=\"title\"><h2>Why Luxoft</h2><p class=\"why-info\"></p></div><div class=\"row\"><div class=\"col\"><div><h5>BCM experience</h5><p>BCM experience While accelerating growth we solve your legacy-system issues</p></div></div><div class=\"col active\"><div><h5>Broader domain knowledge</h5><p>Broader domain knowledge While accelerating growth we solve your legacy-system issues</p></div></div><div class=\"col\"><div><h5>Technological</h5><p>Technological In-depth BCM experience While accelerating growth we solve your legacy-system issues</p></div></div></div></section>"
     }
 }
