@@ -22,5 +22,9 @@
     "why-luxoft": {
         "name": "Why Luxoft",
         "html": "<section class=\"container-why-luxoft container-xxl\"><div class=\"title\"><h2>Why Luxoft</h2><p class=\"why-info\"></p></div><div class=\"row\"><div class=\"col\"><div><h5>BCM experience</h5><p>BCM experience While accelerating growth we solve your legacy-system issues</p></div></div><div class=\"col active\"><div><h5>Broader domain knowledge</h5><p>Broader domain knowledge While accelerating growth we solve your legacy-system issues</p></div></div><div class=\"col\"><div><h5>Technological</h5><p>Technological In-depth BCM experience While accelerating growth we solve your legacy-system issues</p></div></div></div></section>"
+    },
+    "our-solutions-and-capabilities": {
+        "name": "Our solutions and capabilities",
+        "html": "<div class=\"solutions\"><h2>Our solutions and capabilities</h2><div class=\"s-list\"><div class=\"s-list-item-body\"><div class=\"s-list-item-header\"><figure><img src=\"https://dummyimage.com/350x200/ffffff/1722bf\"></figure><h3>Connencted</h3></div><p>Lorem ipsum is placeholder text commonly usedin the graphic, print.</p><a class=\"btn btn-text btn-icon\">read more</a></div><div class=\"s-list-item-body\"><div class=\"s-list-item-header\"><figure><img src=\"https://dummyimage.com/350x200/ffffff/1722bf\"></figure><h3>Automotive advisory</h3></div><p>Lorem ipsum is placeholder text commonly usedin the graphic, print, and publishing industries for visual mockups.</p><a class=\"btn btn-text btn-icon\">read more</a></div></div></div>"
     }
 }
