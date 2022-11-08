@@ -65,7 +65,10 @@ table td {
 
 .container-how-we-help,
 .container-section-icons,
-.container-key-points {
+.container-key-points,
+.container-partnership-alt,
+.container-partnership,
+.container-why-luxoft {
     border: 1px solid #adadad;
     padding: 15px;
 }
@@ -82,4 +85,26 @@ table td {
 .container-how-we-help h2,
 .container-section-icons h2 {
     text-align: center !important;
+}
+
+.default-ctr .col {
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    background-color: #5300961a;
+    border: 1px solid #d100fc66;
+}
+
+.default-ctr .row {
+    padding: 5px 3px;
+}
+
+.container-section-icons .row,
+.container-how-we-help .row,
+.container-key-points .row,
+.container-partnership .col,
+.container-partnership-alt .col,
+.container-why-luxoft .col {
+    background-color: #00729a1a;
+    border: 1px solid #009bfc66;
+    padding: 10px 3px;
 }
