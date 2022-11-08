@@ -26,3 +26,11 @@
     height: auto;
     border: none;
 }
+
+.solutions .s-list .s-list-item-body {
+    margin: 5px 0;
+}
+
+.solutions .s-list .s-list-item-body img {
+    width: 250px;
+}

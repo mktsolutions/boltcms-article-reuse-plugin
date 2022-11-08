@@ -69,7 +69,8 @@ table td {
 .container-partnership-alt,
 .container-partnership,
 .container-why-luxoft,
-.client-story {
+.client-story,
+.solutions {
     border: 1px solid #adadad;
     padding: 15px;
 }
@@ -105,7 +106,8 @@ table td {
 .container-partnership .col,
 .container-partnership-alt .col,
 .container-why-luxoft .col,
-.client-story .content-item {
+.client-story .content-item,
+.solutions .s-list .s-list-item-body {
     background-color: #00729a1a;
     border: 1px solid #009bfc66;
     padding: 10px 3px;
