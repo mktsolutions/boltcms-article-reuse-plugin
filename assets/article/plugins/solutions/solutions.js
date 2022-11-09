@@ -90,6 +90,9 @@ ArticleEditor.add('plugin', 'solutions', {
         var id = Math.floor(Math.random() * 100)
 
         var leadersHtml = `<h2>Our solutions</h2>
+                            <div class="container">
+                                <p class="align-center">Some description here</p>
+                            </div>
                             <div id="carouselExampleCaptions-${id}" class="carousel slide" data-bs-ride="carousel">
                                 <div class="carousel-inner">`
             for(var x = 1; x <= editableType; x++) {
