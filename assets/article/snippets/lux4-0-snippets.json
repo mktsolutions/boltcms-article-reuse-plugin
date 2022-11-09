@@ -1,15 +1,15 @@
 {
     "how-we-help": {
         "name": "How we help",
-        "html": "<div class=\"container-how-we-help container-xxl\"><h2>How we help our clients</h2><div class=\"row\"><div class=\"col\"><a href=\"#\"><div><picture><img src=\"https://dummyimage.com/1200x600/000/696969.png&amp;text=Example+of+image\"></picture><h4>Item title</h4><p>Lorem ipsum is placeholder text commonly used in the graphic.</p></div></a></div></div></div>"
+        "html": "<div class=\"container-how-we-help container-xxl\"><h2>How we help our clients</h2><p class=\"align-center\">Some description here</p><div class=\"row\"><div class=\"col\"><a href=\"#\"><div><picture><img src=\"https://dummyimage.com/1200x600/000/696969.png&amp;text=Example+of+image\"></picture><h4>Item title</h4><p>Lorem ipsum is placeholder text commonly used in the graphic.</p></div></a></div></div></div>"
     },
     "key-points": {
         "name": "Key points",
-        "html": "<section class=\"container-key-points container-xxl\"><h2>Key points</h2><div class=\"row\"><div class=\"col\"><h2>80%</h2><h5>Item title</h5><p>Lorem ipsum is placeholder text commonly used in the graphic.</p></div></div></section>"
+        "html": "<section class=\"container-key-points container-xxl\"><h2>Key points</h2><p class=\"align-center\">Some description here</p><div class=\"row\"><div class=\"col\"><h2>80%</h2><h5>Item title</h5><p>Lorem ipsum is placeholder text commonly used in the graphic.</p></div></div></section>"
     },
     "section-with-icons": {
         "name": "Section with icons",
-        "html": "<section class=\"container-section-icons container-xxl\"><h2>Section with icons</h2><div class=\"row\"><div class=\"col\"><figure><img src=\"https://dummyimage.com/1200x600/000/696969.png&amp;text=Example+of+image\" alt=\"vector\"></figure><h4>Item title</h4><p>Lorem ipsum is placeholder text commonly used in the graphic.</p></div></div></section>"
+        "html": "<section class=\"container-section-icons container-xxl\"><h2>Section with icons</h2><p class=\"align-center\">Some description here</p><div class=\"row\"><div class=\"col\"><figure><img src=\"https://dummyimage.com/1200x600/000/696969.png&amp;text=Example+of+image\" alt=\"vector\"></figure><h4>Item title</h4><p>Lorem ipsum is placeholder text commonly used in the graphic.</p></div></div></section>"
     },
     "partnership-": {
         "name": "Partnership",
@@ -25,6 +25,6 @@
     },
     "our-solutions-and-capabilities": {
         "name": "Our solutions and capabilities",
-        "html": "<div class=\"solutions\"><h2>Our solutions and capabilities</h2><div class=\"s-list\"><div class=\"s-list-item-body\"><div class=\"s-list-item-header\"><figure><img src=\"https://dummyimage.com/350x200/ffffff/1722bf\"></figure><h3>Connencted</h3></div><p>Lorem ipsum is placeholder text commonly usedin the graphic, print.</p><a class=\"btn btn-text btn-icon\" href=\"#\">read more</a></div><div class=\"s-list-item-body\"><div class=\"s-list-item-header\"><figure><img src=\"https://dummyimage.com/350x200/ffffff/1722bf\"></figure><h3>Automotive advisory</h3></div><p>Lorem ipsum is placeholder text commonly usedin the graphic, print, and publishing industries for visual mockups.</p><a class=\"btn btn-text btn-icon\" href=\"#\">read more</a></div></div></div>"
+        "html": "<div class=\"solutions\"><h2>Our solutions and capabilities</h2><div class=\"container\"><p class=\"align-center\">Some description here</p></div><div class=\"s-list\"><div class=\"s-list-item-body\"><div class=\"s-list-item-header\"><figure><img src=\"https://dummyimage.com/350x200/ffffff/1722bf\"></figure><h3>Connencted</h3></div><p>Lorem ipsum is placeholder text commonly usedin the graphic, print.</p><a class=\"btn btn-text btn-icon\" href=\"#\">read more</a></div><div class=\"s-list-item-body\"><div class=\"s-list-item-header\"><figure><img src=\"https://dummyimage.com/350x200/ffffff/1722bf\"></figure><h3>Automotive advisory</h3></div><p>Lorem ipsum is placeholder text commonly usedin the graphic, print, and publishing industries for visual mockups.</p><a class=\"btn btn-text btn-icon\" href=\"#\">read more</a></div></div></div>"
     }
 }
