@@ -26,5 +26,21 @@
     "our-solutions-and-capabilities": {
         "name": "Our solutions and capabilities",
         "html": "<div class=\"solutions\"><h2>Our solutions and capabilities</h2><div class=\"container\"><p class=\"align-center\">Some description here</p></div><div class=\"s-list\"><div class=\"s-list-item-body\"><div class=\"s-list-item-header\"><figure><img src=\"https://dummyimage.com/350x200/ffffff/1722bf\"></figure><h3>Connencted</h3></div><p>Lorem ipsum is placeholder text commonly usedin the graphic, print.</p><a class=\"btn btn-text btn-icon\" href=\"#\">read more</a></div><div class=\"s-list-item-body\"><div class=\"s-list-item-header\"><figure><img src=\"https://dummyimage.com/350x200/ffffff/1722bf\"></figure><h3>Automotive advisory</h3></div><p>Lorem ipsum is placeholder text commonly usedin the graphic, print, and publishing industries for visual mockups.</p><a class=\"btn btn-text btn-icon\" href=\"#\">read more</a></div></div></div>"
+    },
+    "file-video-left": {
+        "name": "File video on the left",
+        "html": "<div class=\"container container-video-left\"><div class=\"row\"><div><div class=\"video-content\"><figure><video class=\"video\" width=\"100%\" height=\"100%\" poster=\"/theme/luxoft/assets/images/poster.png\"><source src=\"https://www.luxoft.com/upload/video/introducing_our_refreshed_corporate_identity.mp4\" type=\"video/mp4\" /></video><div class=\"play\"></div></figure></div></div><div><div><h2>Lorem title</h2><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididun.</p><a class=\"btn btn-text btn-icon focus\" href=\"#\">Conect with us</a></div></div></div></div>"
+    },
+    "youtube-video-left": {
+        "name": "Youtube video on the left",
+        "html": "<div class=\"container container-video-left\"><div class=\"row\"><div><div class=\"video-content\"><iframe width=\"100%\" height=\"100%\" src=\"https://www.youtube.com/embed/fmQplSZV0v8\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe></div></div><div><div><h2>Lorem title</h2><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididun.</p><a class=\"btn btn-text btn-icon focus\" href=\"#\">Conect with us</a></div></div></div></div>"
+    },
+    "file-video-right": {
+        "name": "File video on the right",
+        "html": "<div class=\"container container-video-right\"><div class=\"row\"><div><div><h2>Lorem title</h2><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididun.</p><a class=\"btn btn-text btn-icon focus\" href=\"#\">Conect with us</a></div></div><div><div class=\"video-content\"><figure><video class=\"video\" width=\"100%\" height=\"100%\" poster=\"/theme/luxoft/assets/images/poster.png\"><source src=\"https://www.luxoft.com/upload/video/introducing_our_refreshed_corporate_identity.mp4\" type=\"video/mp4\" /></video><div class=\"play\"></div></figure></div></div></div></div>"
+    },
+    "youtube-video-right": {
+        "name": "Youtube video on the right",
+        "html": "<div class=\"container container-video-right\"><div class=\"row\"><div><div><h2>Lorem title</h2><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididun.</p><a class=\"btn btn-text btn-icon focus\" href=\"#\">Conect with us</a></div></div><div><div class=\"video-content\"><iframe width=\"100%\" height=\"100%\" src=\"https://www.youtube.com/embed/fmQplSZV0v8\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe></div></div></div></div>"
     }
 }
