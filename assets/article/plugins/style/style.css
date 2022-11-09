@@ -112,3 +112,8 @@ table td {
     border: 1px solid #009bfc66;
     padding: 10px 3px;
 }
+
+.video-content figure,
+.video-content video {
+    height: 350px;
+}

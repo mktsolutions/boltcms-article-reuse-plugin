@@ -33,7 +33,7 @@
     },
     "youtube-video-left": {
         "name": "Youtube video on the left",
-        "html": "<div class=\"container container-video-left\"><div class=\"row\"><div><div class=\"video-content\"><iframe width=\"100%\" height=\"100%\" src=\"https://www.youtube.com/embed/fmQplSZV0v8\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe></div></div><div><div><h2>Lorem title</h2><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididun.</p><a class=\"btn btn-text btn-icon focus\" href=\"#\">Conect with us</a></div></div></div></div>"
+        "html": "<div class=\"container container-video-left\"><div class=\"row\"><div><div class=\"video-content\"><figure><iframe width=\"100%\" height=\"100%\" src=\"https://www.youtube.com/embed/fmQplSZV0v8\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe></figure></div></div><div><div><h2>Lorem title</h2><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididun.</p><a class=\"btn btn-text btn-icon focus\" href=\"#\">Conect with us</a></div></div></div></div>"
     },
     "file-video-right": {
         "name": "File video on the right",
@@ -41,6 +41,6 @@
     },
     "youtube-video-right": {
         "name": "Youtube video on the right",
-        "html": "<div class=\"container container-video-right\"><div class=\"row\"><div><div><h2>Lorem title</h2><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididun.</p><a class=\"btn btn-text btn-icon focus\" href=\"#\">Conect with us</a></div></div><div><div class=\"video-content\"><iframe width=\"100%\" height=\"100%\" src=\"https://www.youtube.com/embed/fmQplSZV0v8\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe></div></div></div></div>"
+        "html": "<div class=\"container container-video-right\"><div class=\"row\"><div><div><h2>Lorem title</h2><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididun.</p><a class=\"btn btn-text btn-icon focus\" href=\"#\">Conect with us</a></div></div><div><div class=\"video-content\"><figure><iframe width=\"100%\" height=\"100%\" src=\"https://www.youtube.com/embed/fmQplSZV0v8\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe></figure></div></div></div></div>"
     }
 }
