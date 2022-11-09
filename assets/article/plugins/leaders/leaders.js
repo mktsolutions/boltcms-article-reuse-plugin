@@ -81,7 +81,9 @@ ArticleEditor.add('plugin', 'leaders', {
                         <div class="twig-code">{% setcontent leader = 'person/${params.params.leaders[ledaerPosition].id}' %}</div>
                         <div class="card twig-code">
                             <img src="{{ leader.image }}" alt="leader image">
-                            <a class="linkedin" href="{{ leader.linkedin_url }}"></a>
+                            <a class="linkedin" href="{{ leader.linkedin_url }}">
+                                <img src="/theme/luxoft/assets/images/icon/linkedin.svg">
+                            </a>
                             <div class="card-body">
                                 <h5 class="card-title">{{ leader.name }}</h5>
                                 <p class="card-text">{{ leader.description }}</p>
