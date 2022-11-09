@@ -82,7 +82,7 @@ ArticleEditor.add('plugin', 'leaders', {
                         <div class="card twig-code">
                             <img src="{{ leader.image }}" alt="leader image">
                             <a class="linkedin" href="{{ leader.linkedin_url }}">
-                                <img src="/theme/luxoft/assets/images/icon/linkedin.svg">
+                                <img src="/theme/luxoft/assets/images/icon/linkedin.svg" alt="linkedin icon">
                             </a>
                             <div class="card-body">
                                 <h5 class="card-title">{{ leader.name }}</h5>
