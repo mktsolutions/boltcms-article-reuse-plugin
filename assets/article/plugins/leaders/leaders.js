@@ -14,7 +14,7 @@ ArticleEditor.add('plugin', 'leaders', {
                 id: dataJson[leader].id,
                 title: dataJson[leader].fieldValues.name,
                 description: dataJson[leader].fieldValues.description,
-                link: dataJson[leader].fieldValues.contentlink,
+                link: dataJson[leader].fieldValues.linkedin_url,
                 photo: dataJson[leader].fieldValues.image.url,
                 command: 'leaders.insert'
             }
@@ -69,26 +69,25 @@ ArticleEditor.add('plugin', 'leaders', {
         var ledaerPosition = data.leadersList
 
         this.app.editor.insertContent({
-            html:  `
-            <div class="col">
-                <div class="card h-100 html-code">
-                    <img src="${params.params.leaders[ledaerPosition].photo}" class="card-img-top" alt="leader image">
-                    <a class="linkedin" href="${params.params.leaders[ledaerPosition].link}"></a>
-                    <div class="card-body">
-                        <h5 class="card-title text-16 bold mb-2">${params.params.leaders[ledaerPosition].title}</h5>
-                        <p class="card-text text-14 regular mb-2">${params.params.leaders[ledaerPosition].description}</p>
-                    </div>
-                </div>
-                <div class="twig-code">{% setcontent leader = 'person/${params.params.leaders[ledaerPosition].id}' %}</div>
-                <div class="card h-100 twig-code">
-                    <img src="{{ leader.image }}" class="card-img-top" alt="leader image">
-                    <a class="linkedin" href="{{ leader.contentlink }}"></a>
-                    <div class="card-body">
-                        <h5 class="card-title text-16 bold mb-2">{{ leader.name }}</h5>
-                        <p class="card-text text-14 regular mb-2">{{ leader.description }}</p>
-                    </div>
-                </div>
-            </div>`
+            html:  `<div class="col">
+                        <div class="card html-code">
+                            <img src="${params.params.leaders[ledaerPosition].photo}" alt="leader image">
+                            <a class="linkedin" href="${params.params.leaders[ledaerPosition].link}"></a>
+                            <div class="card-body">
+                                <h5 class="card-title">${params.params.leaders[ledaerPosition].title}</h5>
+                                <p class="card-text">${params.params.leaders[ledaerPosition].description}</p>
+                            </div>
+                        </div>
+                        <div class="twig-code">{% setcontent leader = 'person/${params.params.leaders[ledaerPosition].id}' %}</div>
+                        <div class="card twig-code">
+                            <img src="{{ leader.image }}" alt="leader image">
+                            <a class="linkedin" href="{{ leader.contentlink }}"></a>
+                            <div class="card-body">
+                                <h5 class="card-title">{{ leader.name }}</h5>
+                                <p class="card-text">{{ leader.description }}</p>
+                            </div>
+                        </div>
+                    </div>`
         })
     },
 })

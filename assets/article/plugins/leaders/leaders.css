@@ -1,28 +1,29 @@
-.team h2 {
+.container-team h2 {
     font-size: 24px !important;
     font-weight: 500;
+    text-align: center;
 }
 
-.team {
+.container-team {
     padding: 15px 10px 25px;
     border: 2px solid #afafaf;
 }
 
-.team .container {
+.container-team {
     padding: 20px;
 }
 
-.team .container .col {
+.container-team .col {
     border: 2px solid #466f90;
     margin: 15px;
 }
 
-.team .container .col .card {
+.container-team .col .card {
     border: none !important;
     pointer-events: none;
     opacity: 0.9;
 }
 
-.team .container .col .twig-code {
+.container-team .col .twig-code {
     display: none;
 }
