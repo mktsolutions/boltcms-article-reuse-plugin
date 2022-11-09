@@ -72,7 +72,7 @@ ArticleEditor.add('plugin', 'leaders', {
             html:  `<div class="col">
                         <div class="card html-code">
                             <img src="${params.params.leaders[ledaerPosition].photo}" alt="leader image">
-                            <a class="linkedin" href="${params.params.leaders[ledaerPosition].link}"></a>
+                            <a href="${params.params.leaders[ledaerPosition].link}"></a>
                             <div class="card-body">
                                 <h5 class="card-title">${params.params.leaders[ledaerPosition].title}</h5>
                                 <p class="card-text">${params.params.leaders[ledaerPosition].description}</p>
