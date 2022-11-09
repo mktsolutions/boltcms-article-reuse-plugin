@@ -8,9 +8,6 @@ ArticleEditor.add('plugin', 'leaders', {
         const dataJson = await response.json()
         const items = {}
         const selectOptions = {}
-        const photoSrc = (window.location.hostname === '127.0.0.1') 
-            ? 'https://www.luxoft.com/upload/resize_cache/iblock/303/400_0_1/RinoAriganello.jpg' 
-            : dataJson[leader].fieldValues.image.url
         
         for (const leader in dataJson) {
             const item = {
@@ -18,7 +15,7 @@ ArticleEditor.add('plugin', 'leaders', {
                 title: dataJson[leader].fieldValues.name,
                 description: dataJson[leader].fieldValues.description,
                 link: dataJson[leader].fieldValues.linkedin_url,
-                photo: photoSrc,
+                photo: (window.location.hostname === '127.0.0.1') ? 'https://www.luxoft.com/upload/resize_cache/iblock/303/400_0_1/RinoAriganello.jpg' : dataJson[leader].fieldValues.image.url,
                 command: 'leaders.insert'
             }
             items[leader] = item
