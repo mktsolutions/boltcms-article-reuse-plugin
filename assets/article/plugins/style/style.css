@@ -70,7 +70,9 @@ table td {
 .container-partnership,
 .container-why-luxoft,
 .client-story,
-.solutions {
+.solutions,
+.how-we-help,
+.container-hero-carousel {
     border: 1px solid #adadad;
     padding: 15px;
 }
@@ -107,10 +109,12 @@ table td {
 .container-partnership-alt .col,
 .container-why-luxoft .col,
 .client-story .content-item,
-.solutions .s-list .s-list-item-body {
+.solutions .s-list .s-list-item-body,
+.how-we-help .row__col {
     background-color: #00729a1a;
     border: 1px solid #009bfc66;
     padding: 10px 3px;
+    margin-bottom: 10px;
 }
 
 .video-content figure,

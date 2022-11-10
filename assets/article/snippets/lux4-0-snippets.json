@@ -3,6 +3,14 @@
         "name": "How we help",
         "html": "<div class=\"container-how-we-help container-xxl\"><h2>How we help our clients</h2><p class=\"align-center\">Some description here</p><div class=\"row\"><div class=\"col\"><a href=\"#\"><div><picture><img src=\"https://dummyimage.com/1200x600/000/696969.png&amp;text=Example+of+image\"></picture><h4>Item title</h4><p>Lorem ipsum is placeholder text commonly used in the graphic.</p></div></a></div></div></div>"
     },
+    "optional-how-we-help": {
+        "name": "Optional C - how we help",
+        "html": "<section class=\"how-we-help how-we-help--style-2\"><h2 class=\"how-we-help__title\">How we help our clients</h2><div class=\"how-we-help__row\"><div class=\"row__col\"><h4 class=\"col__title\">Lorem ipsum 1</h4><p class=\"col__desc\">Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries</p></div><div class=\"row__col\"><h4 class=\"col__title\">Lorem ipsum 2</h4><p class=\"col__desc\">Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries</p></div></div></section>"
+    },
+    "optional-how-we-help-animated": {
+        "name": "Optional C - how we help - animated",
+        "html": "<section class=\"how-we-help how-we-help--style-1\"><h2 class=\"how-we-help__title\">How we help our clients animated</h2><div class=\"how-we-help__row\"><div class=\"row__col\"><h4 class=\"col__title\">Lorem ipsum 1</h4><p class=\"col__desc\">Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries</p></div><div class=\"row__col\"><h4 class=\"col__title\">Lorem ipsum 2</h4><p class=\"col__desc\">Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries</p></div></div></section>"
+    },
     "key-points": {
         "name": "Key points",
         "html": "<section class=\"container-key-points container-xxl\"><h2>Key points</h2><p class=\"align-center\">Some description here</p><div class=\"row\"><div class=\"col\"><h2>80%</h2><h5>Item title</h5><p>Lorem ipsum is placeholder text commonly used in the graphic.</p></div></div></section>"
