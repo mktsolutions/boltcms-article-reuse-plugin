@@ -1,0 +1,32 @@
+.container-indicators {
+    position: relative;
+    display: block;
+    margin-top: 10px;
+}
+
+.container-indicators  .carousel-indicators {
+    background-color: #000;
+    position: relative;
+    display: block;
+    padding: 10px 0;
+}
+
+.container-hero-carousel h1 {
+    color: #fff !important;
+}
+
+.container-hero-carousel .down-arr {
+    display: none;
+}
+
+.container-hero-carousel .carousel-indicators a {
+    opacity: 1;
+    text-indent: initial !important;
+    display: inline-block;
+    width: auto;
+    background-color: #000;
+    padding: 0;
+    margin: 0 5px;
+    border-top: none;
+    color: #fff !important;
+}
