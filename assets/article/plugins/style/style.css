@@ -74,7 +74,10 @@ table td {
 .how-we-help,
 .container-hero-carousel,
 .container-hero-img,
-.container-hero-video {
+.container-hero-video,
+.container-benefits-main,
+.container-benefits-source,
+.container-benefits-source__alt {
     border: 1px solid #adadad;
     padding: 15px;
 }
@@ -112,7 +115,9 @@ table td {
 .container-why-luxoft .col,
 .client-story .content-item,
 .solutions .s-list .s-list-item-body,
-.how-we-help .row__col {
+.how-we-help .row__col,
+.container-benefits-main .content .row .col,
+.container-benefits-main__alt .content .row .col  {
     background-color: #00729a1a;
     border: 1px solid #009bfc66;
     padding: 10px 3px;
@@ -122,4 +127,8 @@ table td {
 .video-content figure,
 .video-content video {
     height: 350px;
+}
+
+.container-benefits-main .content .row .col {
+    margin: 0 5px;
 }
