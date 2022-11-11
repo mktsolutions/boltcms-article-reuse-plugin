@@ -50,5 +50,13 @@
     "youtube-video-right": {
         "name": "Youtube video on the right",
         "html": "<div class=\"container container-video-right\"><div class=\"row\"><div><div><h2>Lorem title</h2><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididun.</p><a class=\"btn btn-text btn-icon focus\" href=\"#\">Conect with us</a></div></div><div><div class=\"video-content\"><figure><iframe width=\"100%\" height=\"100%\" src=\"https://www.youtube.com/embed/fmQplSZV0v8\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe></figure></div></div></div></div>"
+    },
+    "hero-single-item": {
+        "name": "Hero - single banner",
+        "html": "<section class=\"container-hero-img\"><img src=\"https://dummyimage.com/1920x940/adadad/484c8a\" alt=\"Banner\"><div class=\"container\"><div class=\"content\"><h1>Accelerating the transformation to software-defined vehicles</h1><p class=\"text-28\">Your full-service technology partner that provides strategic</p><p>Your full-service technology partner that provides strategic advice as well as solution design and delivery excellence</p></div></div><div class=\"down-arr\"><a href=\"#banner-down\"><div class=\"text-20\"><p>Learn More</p><i></i></div></a></div></section>"
+    },
+    "hero-with-video": {
+        "name": "Hero with video",
+        "html": "<section class=\"container-hero-video\"><figure><video class=\"bgvideo\" class=\"bgvideo\" autoplay=\"\" loop=\"\" muted=\"\" class=\"bgvideo\" id=\"bgvideo\"><source src=\"https://www.luxoft.com/upload/video/introducing_our_refreshed_corporate_identity.mp4\" type=\"video/mp4\"></video></figure><div class=\"container\"><div class=\"content\"><h1>Videos</h1><p class=\"text-28\">Take a look at how Luxoft leverages its tech expertise to help businesses grow and innovate</p></div></div></section>"
     }
 }
