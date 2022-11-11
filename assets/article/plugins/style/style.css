@@ -72,7 +72,9 @@ table td {
 .client-story,
 .solutions,
 .how-we-help,
-.container-hero-carousel {
+.container-hero-carousel,
+.container-hero-img,
+.container-hero-video {
     border: 1px solid #adadad;
     padding: 15px;
 }
