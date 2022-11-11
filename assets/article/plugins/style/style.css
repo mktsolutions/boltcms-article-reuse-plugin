@@ -77,7 +77,8 @@ table td {
 .container-hero-video,
 .container-benefits-main,
 .container-benefits-source,
-.container-benefits-source__alt {
+.container-benefits-source__alt,
+.container-benefits-main__alt {
     border: 1px solid #adadad;
     padding: 15px;
 }
@@ -117,7 +118,8 @@ table td {
 .solutions .s-list .s-list-item-body,
 .how-we-help .row__col,
 .container-benefits-main .content .row .col,
-.container-benefits-main__alt .content .row .col  {
+.container-benefits-main__alt .content .row .col,
+.container-benefits-source__alt .content .row .col   {
     background-color: #00729a1a;
     border: 1px solid #009bfc66;
     padding: 10px 3px;
@@ -129,6 +131,16 @@ table td {
     height: 350px;
 }
 
-.container-benefits-main .content .row .col {
+.container-benefits-main .content .row .col,
+.container-benefits-main__alt .content .row .col,
+.container-benefits-source__alt .content .row .col  {
     margin: 0 5px;
+}
+
+.container-benefits-source__alt .tab-info,
+.container-benefits-source__alt .nav-mobile-tabs,
+.container-benefits-source__alt .content .row .col .content-info div,
+.container-benefits-source__alt button,
+.container-benefits-main__alt .content .content-img  {
+    display: none !important;
 }
