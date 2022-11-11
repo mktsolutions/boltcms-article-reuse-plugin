@@ -66,7 +66,7 @@ ArticleEditor.add('plugin', 'style', {
                 },
                 'col': {
                     title: 'Insert the COL class',
-                    classname: 'col'
+                    classname: 'col-12 col-lg-6'
                 },
                 'row': {
                     title: 'Insert the ROW class',
@@ -140,7 +140,7 @@ ArticleEditor.add('plugin', 'style', {
                 },
                 'col': {
                     title: 'Insert the COL class',
-                    classname: 'col'
+                    classname: 'col-12 col-lg-6'
                 },
                 'row': {
                     title: 'Insert the ROW class',
