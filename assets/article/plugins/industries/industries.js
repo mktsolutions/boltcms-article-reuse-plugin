@@ -1,5 +1,5 @@
 // Icon
-ArticleEditor.iconIndustries = '<i class="fa fa-columns"></i>'
+ArticleEditor.iconIndustries = '<i class="fa fa-th-list"></i>'
 
 // Block
 ArticleEditor.add('block', 'block.industries', {
