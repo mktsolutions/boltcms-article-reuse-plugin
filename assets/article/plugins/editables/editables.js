@@ -1,5 +1,5 @@
 // Icon
-ArticleEditor.iconEditables = '<i class="fa fa-magic"></i>'
+ArticleEditor.iconEditables = '<i class="fa fa-user"></i>'
 
 // Block
 ArticleEditor.add('block', 'block.editables', {
@@ -21,13 +21,13 @@ ArticleEditor.add('plugin', 'editables', {
     translations: {
         en: {
             "editables": {
-                "editables": "Editable blocks",
+                "editables": "Team section",
                 "add": "Insert",
                 "cancel": "Cancel",
-                "label": "Choose the editable block you want to insert"
+                "label": "Choose the version you want to insert"
             },
              "blocks": {
-                 "editables": "Editable blocks"
+                 "editables": "Team section"
              }
         }
     },
@@ -48,7 +48,7 @@ ArticleEditor.add('plugin', 'editables', {
                     label: '## editables.label ##',
                     type: 'select',
                     options: {
-                        teamSection: 'Team section - black version',
+                        leadersBlack: 'Team section - black version',
                         leadersWhite: 'Team section - white version'
                     }
                 }
@@ -78,7 +78,7 @@ ArticleEditor.add('plugin', 'editables', {
         var instance = instance || this.app.create('block.editables')
         var $block = instance.getBlock()
 
-        if (editableType === 'teamSection') {
+        if (editableType === 'leadersBlack') {
             $block.addClass('bd-black')
 
             var leadersHtml = ` <div class="container container-team">
