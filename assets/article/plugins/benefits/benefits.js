@@ -64,7 +64,7 @@ ArticleEditor.add('plugin', 'benefits', {
                     label: '## benefits.version ##',
                     type: 'select',
                     options: {
-                        'one-colum': 'Version with one columns',
+                        'one-colum': 'Version with one column',
                         'two-columns': 'Version with two columns'
                     }
                 }
