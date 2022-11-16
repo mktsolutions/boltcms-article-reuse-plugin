@@ -40,9 +40,14 @@ ArticleEditor.add('plugin', 'style', {
                     title: 'Insert the ROW class',
                     classname: 'row'
                 },
+
                 'default-ul': {
                     title: 'Insert the DEFAULT UNSORTED LIST class',
                     classname: 'default-ul'
+                },
+                'highlighted-paragraph': {
+                    title: 'Insert the HIGHLIGHTED PARAGRAPH (DIVIDER) class',
+                    classname: 'highlighted-paragraph'
                 }
             },
             grid: {
@@ -73,6 +78,11 @@ ArticleEditor.add('plugin', 'style', {
                 'default-ul': {
                     title: 'Insert the DEFAULT UNSORTED LIST class',
                     classname: 'default-ul'
+                },
+                'highlighted-paragraph': {
+                    title: 'Insert the HIGHLIGHTED PARAGRAPH (DIVIDER) class',
+                    classname: 'highlighted-paragraph'
+
                 }
             },
         },
