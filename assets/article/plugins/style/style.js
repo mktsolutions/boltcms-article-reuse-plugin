@@ -9,6 +9,12 @@ ArticleEditor.add('plugin', 'style', {
     },
     defaults: {
         styles: {
+            list: {
+                'default-ul': {
+                    title: 'Insert the DEFAULT UNSORTED LIST class',
+                    classname: 'default-ul'
+                },
+            },
             paragraph: {
                 'sub02': {
                     title: 'Insert the SUB02 class',
@@ -40,11 +46,6 @@ ArticleEditor.add('plugin', 'style', {
                     title: 'Insert the ROW class',
                     classname: 'row'
                 },
-
-                'default-ul': {
-                    title: 'Insert the DEFAULT UNSORTED LIST class',
-                    classname: 'default-ul'
-                },
                 'highlighted-paragraph': {
                     title: 'Insert the HIGHLIGHTED PARAGRAPH (DIVIDER) class',
                     classname: 'highlighted-paragraph'
@@ -74,10 +75,6 @@ ArticleEditor.add('plugin', 'style', {
                 'row': {
                     title: 'Insert the ROW class',
                     classname: 'row'
-                },
-                'default-ul': {
-                    title: 'Insert the DEFAULT UNSORTED LIST class',
-                    classname: 'default-ul'
                 },
                 'highlighted-paragraph': {
                     title: 'Insert the HIGHLIGHTED PARAGRAPH (DIVIDER) class',
