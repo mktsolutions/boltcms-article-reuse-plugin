@@ -78,7 +78,8 @@ table td {
 .container-benefits-main,
 .container-benefits-source,
 .container-benefits-source__alt,
-.container-benefits-main__alt {
+.container-benefits-main__alt,
+.default-ctr {
     border: 1px solid #adadad;
     padding: 15px;
 }
@@ -97,7 +98,9 @@ table td {
     text-align: center !important;
 }
 
-.default-ctr .col {
+.default-ctr .col,
+.default-ctr .col-12,
+.default-ctr .col-lg-6 {
     padding-top: 0.75rem;
     padding-bottom: 0.75rem;
     background-color: #5300961a;
