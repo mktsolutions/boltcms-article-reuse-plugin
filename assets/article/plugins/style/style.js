@@ -24,38 +24,6 @@ ArticleEditor.add('plugin', 'style', {
                     title: 'Insert classes for the WHITE version of OUR TEAM',
                     classname: 'bd-white'
                 },
-                'why-luxoft': {
-                    title: 'Insert classes for WHY LUXOFT section',
-                    classname: 'container-why-luxoft'
-                },
-                'how-we-can-help': {
-                    title: 'Insert classes for HOW WE CAN HELP section',
-                    classname: 'container-how-we-help'
-                },
-                'key-points': {
-                    title: 'Insert classes for KEY POINTS section',
-                    classname: 'container-key-points'
-                },
-                'section-icons-with': {
-                    title: 'Insert classes for SECTION WITH ICONS',
-                    classname: 'container-section-icons'
-                },
-                'video-left': {
-                    title: 'Insert classes for VIDEO ON THE LEFT',
-                    classname: 'container-video-left'
-                },
-                'video-right': {
-                    title: 'Insert classes for VIDEO ON THE RIGHT',
-                    classname: 'container-video-right'
-                },
-                'partnership': {
-                    title: 'Insert classes for PARTNERSHIP section',
-                    classname: 'container-partnership'
-                },
-                'partnership-alt': {
-                    title: 'Insert classes for the ALT version of PARTNERSHIP',
-                    classname: 'container-partnership-alt'
-                },
                 'container': {
                     title: 'Insert the CONTAINER class',
                     classname: 'container'
@@ -71,22 +39,6 @@ ArticleEditor.add('plugin', 'style', {
                 'row': {
                     title: 'Insert the ROW class',
                     classname: 'row'
-                },
-                'title': {
-                    title: 'Insert the TITLE class',
-                    classname: 'title'
-                },
-                'why-info': {
-                    title: 'Insert the WHY-INFO class',
-                    classname: 'why-info'
-                },
-                'content': {
-                    title: 'Insert the CONTENT class',
-                    classname: 'content'
-                },
-                'content-info': {
-                    title: 'Insert the CONTENT-INFO class',
-                    classname: 'content-info'
                 },
                 'highlighted-paragraph': {
                     title: 'Insert the HIGHLIGHTED PARAGRAPH (DIVIDER) class',
@@ -102,38 +54,6 @@ ArticleEditor.add('plugin', 'style', {
                     title: 'Insert classes for the WHITE version of OUR TEAM',
                     classname: 'bd-white'
                 },
-                'why-luxoft': {
-                    title: 'Insert classes for WHY LUXOFT section',
-                    classname: 'container-why-luxoft'
-                },
-                'how-we-can-help': {
-                    title: 'Insert classes for HOW WE CAN HELP section',
-                    classname: 'container-how-we-help'
-                },
-                'key-points': {
-                    title: 'Insert classes for KEY POINTS section',
-                    classname: 'container-key-points'
-                },
-                'section-icons-with': {
-                    title: 'Insert classes for SECTION WITH ICONS',
-                    classname: 'container-section-icons'
-                },
-                'video-left': {
-                    title: 'Insert classes for VIDEO ON THE LEFT',
-                    classname: 'container-video-left'
-                },
-                'video-right': {
-                    title: 'Insert classes for VIDEO ON THE RIGHT',
-                    classname: 'container-video-right'
-                },
-                'partnership': {
-                    title: 'Insert classes for PARTNERSHIP section',
-                    classname: 'container-partnership'
-                },
-                'partnership-alt': {
-                    title: 'Insert classes for the ALT version of PARTNERSHIP',
-                    classname: 'container-partnership-alt'
-                },
                 'container': {
                     title: 'Insert the CONTAINER class',
                     classname: 'container'
@@ -149,22 +69,6 @@ ArticleEditor.add('plugin', 'style', {
                 'row': {
                     title: 'Insert the ROW class',
                     classname: 'row'
-                },
-                'title': {
-                    title: 'Insert the TITLE class',
-                    classname: 'title'
-                },
-                'why-info': {
-                    title: 'Insert the WHY-INFO class',
-                    classname: 'why-info'
-                },
-                'content': {
-                    title: 'Insert the CONTENT class',
-                    classname: 'content'
-                },
-                'content-info': {
-                    title: 'Insert the CONTENT-INFO class',
-                    classname: 'content-info'
                 },
                 'highlighted-paragraph': {
                     title: 'Insert the HIGHLIGHTED PARAGRAPH (DIVIDER) class',
