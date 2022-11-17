@@ -49,6 +49,54 @@ ArticleEditor.add('plugin', 'style', {
                 'highlighted-paragraph': {
                     title: 'Insert the HIGHLIGHTED PARAGRAPH (DIVIDER) class',
                     classname: 'highlighted-paragraph'
+                },
+                'radius--base': {
+                    title: 'Insert the RADIUS--BASE class',
+                    classname: 'radius--base'
+                },
+                'radius--top': {
+                    title: 'Insert the RADIUS--TOP class',
+                    classname: 'radius--top'
+                },
+                'radius--top-left': {
+                    title: 'Insert the RADIUS--TOP-LEFT class',
+                    classname: 'radius--top-left'
+                },
+                'radius--top-right': {
+                    title: 'Insert the RADIUS--TOP-RIGHT class',
+                    classname: 'radius--top-left'
+                },
+                'radius--right': {
+                    title: 'Insert the RADIUS--RIGHT class',
+                    classname: 'radius--right'
+                },
+                'radius--bottom': {
+                    title: 'Insert the RADIUS--BOTTON class',
+                    classname: 'radius--bottom'
+                },
+                'radius--bottom-left': {
+                    title: 'Insert the RADIUS--BOTTON-LEFT class',
+                    classname: 'radius--bottom-left'
+                },
+                'radius--bottom-right': {
+                    title: 'Insert the RADIUS--BOTTON-RIGHT class',
+                    classname: 'radius--bottom-right'
+                },
+                'radius--separate': {
+                    title: 'Insert the RADIUS--SEPARATE class',
+                    classname: 'radius--separate'
+                },
+                'radius--separate-top': {
+                    title: 'Insert the RADIUS--SEPARATE-TOP class',
+                    classname: 'radius--separate-top'
+                },
+                'radius--separate-bottom': {
+                    title: 'Insert the RADIUS--SEPARATE-BOTTOM class',
+                    classname: 'radius--separate-bottom'
+                },
+                'radius--left': {
+                    title: 'Insert the RADIUS--LEFT class',
+                    classname: 'radius--left'
                 }
             },
             grid: {
@@ -79,7 +127,54 @@ ArticleEditor.add('plugin', 'style', {
                 'highlighted-paragraph': {
                     title: 'Insert the HIGHLIGHTED PARAGRAPH (DIVIDER) class',
                     classname: 'highlighted-paragraph'
-
+                },
+                'radius--base': {
+                    title: 'Insert the RADIUS--BASE class',
+                    classname: 'radius--base'
+                },
+                'radius--top': {
+                    title: 'Insert the RADIUS--TOP class',
+                    classname: 'radius--top'
+                },
+                'radius--top-left': {
+                    title: 'Insert the RADIUS--TOP-LEFT class',
+                    classname: 'radius--top-left'
+                },
+                'radius--top-right': {
+                    title: 'Insert the RADIUS--TOP-RIGHT class',
+                    classname: 'radius--top-left'
+                },
+                'radius--right': {
+                    title: 'Insert the RADIUS--RIGHT class',
+                    classname: 'radius--right'
+                },
+                'radius--bottom': {
+                    title: 'Insert the RADIUS--BOTTON class',
+                    classname: 'radius--bottom'
+                },
+                'radius--bottom-left': {
+                    title: 'Insert the RADIUS--BOTTON-LEFT class',
+                    classname: 'radius--bottom-left'
+                },
+                'radius--bottom-right': {
+                    title: 'Insert the RADIUS--BOTTON-RIGHT class',
+                    classname: 'radius--bottom-right'
+                },
+                'radius--separate': {
+                    title: 'Insert the RADIUS--SEPARATE class',
+                    classname: 'radius--separate'
+                },
+                'radius--separate-top': {
+                    title: 'Insert the RADIUS--SEPARATE-TOP class',
+                    classname: 'radius--separate-top'
+                },
+                'radius--separate-bottom': {
+                    title: 'Insert the RADIUS--SEPARATE-BOTTOM class',
+                    classname: 'radius--separate-bottom'
+                },
+                'radius--left': {
+                    title: 'Insert the RADIUS--LEFT class',
+                    classname: 'radius--left'
                 }
             },
         },
