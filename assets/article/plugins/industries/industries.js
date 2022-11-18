@@ -86,11 +86,11 @@ ArticleEditor.add('plugin', 'industries', {
         var $block = instance.getBlock()
         $block.addClass('client-story')
 
-        var leadersHtml = `<div class="content">
+        var industriesHtml = `<div class="content">
                             <h2>Client Stories</h2>`
 
             for(var x = 1; x <= editableType; x++) {
-                leadersHtml += `<div class="content-item">
+                industriesHtml += `<div class="content-item">
                                     <p class="content-item-header">Industry title</p>
                                     <p>
                                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et 
@@ -100,20 +100,20 @@ ArticleEditor.add('plugin', 'industries', {
                                 </div>`
             }               
 
-            leadersHtml += `</div>
+            industriesHtml += `</div>
                             <div class="tabs">`
             
             var slidePosition = 0
             for(var z = 1; z <= editableType; z++) {
                 var classname = (z === 1) ? 'active' : ''
-                leadersHtml += `<div class="tab ${classname}" data-content-item-to="${slidePosition}">
+                industriesHtml += `<div class="tab ${classname}" data-content-item-to="${slidePosition}">
                                     <figure><img src="https://dummyimage.com/800x600/ffffff/e3e3e3.png"></figure>
                                 </div>`
                 slidePosition++
             }
 
-            leadersHtml += `</div>` // 
-        var $section = this.dom(leadersHtml)
+            industriesHtml += `</div>` // 
+        var $section = this.dom(industriesHtml)
 
         $block.append($section)
 

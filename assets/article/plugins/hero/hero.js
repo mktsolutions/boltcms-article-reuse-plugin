@@ -88,12 +88,12 @@ ArticleEditor.add('plugin', 'hero', {
         console.log(editableType)
         $block.addClass('container-hero-carousel')
 
-        var leadersHtml = `<div id="carouselHero" class="carousel slide" data-bs-ride="carousel">
+        var heroHtml = `<div id="carouselHero" class="carousel slide" data-bs-ride="carousel">
                             <div class="carousel-inner">`
 
             for(var x = 1; x <= editableType; x++) {
                 var classname = (x === 1) ? 'active' : ''
-                leadersHtml += `<div class="carousel-item ${classname}">
+                heroHtml += `<div class="carousel-item ${classname}">
                                     <div class="fill">
                                         <img src="https://dummyimage.com/1920x940/adadad/484c8a" alt="Banner">
                                         <div class="container">
@@ -106,26 +106,26 @@ ArticleEditor.add('plugin', 'hero', {
                                 </div>`
             }               
 
-            leadersHtml += `</div>` // DIV carousel-inner
-            leadersHtml += `<div class="container container-indicators">
+            heroHtml += `</div>` // DIV carousel-inner
+            heroHtml += `<div class="container container-indicators">
                                 <div class="carousel-indicators">`
             
             var slidePosition = 0
             for(var z = 1; z <= editableType; z++) {
                 var classname = (z === 1) ? 'active' : ''
-                leadersHtml += `<a data-bs-target="#carouselHero" data-bs-slide-to="${slidePosition}" class="${classname}" aria-current="true"><p>Banner title</p></a>`
+                heroHtml += `<a data-bs-target="#carouselHero" data-bs-slide-to="${slidePosition}" class="${classname}" aria-current="true"><p>Banner title</p></a>`
                 slidePosition++
             }
 
-            leadersHtml += `</div></div>` // DIV container container-indicators and DIV carousel-indicators
+            heroHtml += `</div></div>` // DIV container container-indicators and DIV carousel-indicators
 
-            leadersHtml += `</div>
+            heroHtml += `</div>
                             <div class="down-arr carousel-v">
                                 <a href="#banner-down">
                                     <div class="text-20"><p>Learn more</p><i></i></div>
                                 </a>
                             </div>` // Arrow and Main DIV carousel slide
-        var $section = this.dom(leadersHtml)
+        var $section = this.dom(heroHtml)
         $block.append($section)
 
         return instance
