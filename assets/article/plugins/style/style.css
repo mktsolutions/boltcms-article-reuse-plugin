@@ -78,8 +78,8 @@ table td {
 .container-benefits-main,
 .container-benefits-source,
 .container-benefits-source__alt,
-.container-benefits-main__alt
-{
+.container-benefits-main__alt,
+.section-services {
     border: 1px solid #adadad;
     padding: 15px;
 }
