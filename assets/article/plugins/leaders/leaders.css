@@ -9,21 +9,24 @@
     border: 2px solid #afafaf;
 }
 
-.container-team {
-    padding: 20px;
+.team-slider {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
-.container-team .col {
+.container-team .tns-item {
     border: 2px solid #466f90;
     margin: 15px;
+    width: 190px;
 }
 
-.container-team .col .card {
+.container-team .card {
     border: none !important;
     pointer-events: none;
     opacity: 0.9;
 }
 
-.container-team .col .twig-code {
+.container-team .twig-code {
     display: none;
 }

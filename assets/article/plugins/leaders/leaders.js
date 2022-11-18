@@ -69,7 +69,7 @@ ArticleEditor.add('plugin', 'leaders', {
         var ledaerPosition = data.leadersList
 
         this.app.editor.insertContent({
-            html:  `<div class="col">
+            html:  `<div class="tns-item">
                         <div class="card html-code">
                             <img src="${params.params.leaders[ledaerPosition].photo}" alt="leader image">
                             <a href="${params.params.leaders[ledaerPosition].link}"></a>
@@ -81,9 +81,7 @@ ArticleEditor.add('plugin', 'leaders', {
                         <div class="twig-code">{% setcontent leader = 'person/${params.params.leaders[ledaerPosition].id}' %}</div>
                         <div class="card twig-code">
                             <img src="{{ leader.image }}" alt="leader image">
-                            <a class="linkedin" href="{{ leader.linkedin_url }}">
-                                <img src="/theme/luxoft/assets/images/icon/linkedin.svg" alt="linkedin icon">
-                            </a>
+                            <a class="linkedin" href="{{ leader.linkedin_url }}"></a>
                             <div class="card-body">
                                 <h5 class="card-title">{{ leader.name }}</h5>
                                 <p class="card-text">{{ leader.description }}</p>
