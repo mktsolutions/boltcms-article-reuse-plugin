@@ -96,7 +96,7 @@ ArticleEditor.add('plugin', 'benefits', {
         var $block = instance.getBlock()
         $block.addClass('container-benefits-source')
 
-        var leadersHtml = `<h2>Quantifiable benefits</h2>
+        var benefitsHtml = `<h2>Quantifiable benefits</h2>
                             <h6>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h6>
                             <nav>
                                 <div class="nav nav-tabs" id="nav-tab" role="tablist">`
@@ -104,17 +104,17 @@ ArticleEditor.add('plugin', 'benefits', {
             for(var x = 1; x <= benefitsAmount; x++) {
                 var classname = (x === 1) ? 'active' : ''
                 var tabStatus = (x === 1) ? 'true' : 'false'
-                leadersHtml += `<button class="nav-link ${classname}" data-bs-toggle="tab" type="button" role="tab" aria-selected="${tabStatus}">Cloud technologies</button>`
+                benefitsHtml += `<button class="nav-link ${classname}" data-bs-toggle="tab" type="button" role="tab" aria-selected="${tabStatus}">Cloud technologies</button>`
             }               
 
-            leadersHtml += `</div>
+            benefitsHtml += `</div>
                             </nav>
                             <div class="tab-content" id="nav-tabContent">`
             
             if (benefitsVersion === 'one-colum') {
                 for(var z = 1; z <= benefitsAmount; z++) {
                     var classname = (z === 1) ? 'show active' : ''
-                    leadersHtml += `<div class="tab-pane fade ${classname}" role="tabpanel" tabindex="0">
+                    benefitsHtml += `<div class="tab-pane fade ${classname}" role="tabpanel" tabindex="0">
                                         <ul>
                                             <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua 1.</li>
                                             <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua 2.</li>
@@ -125,7 +125,7 @@ ArticleEditor.add('plugin', 'benefits', {
             } else {
                 for(var z = 1; z <= benefitsAmount; z++) {
                     var classname = (z === 1) ? 'show active' : ''
-                    leadersHtml += `<div class="tab-pane fade ${classname}" role="tabpanel" tabindex="0">
+                    benefitsHtml += `<div class="tab-pane fade ${classname}" role="tabpanel" tabindex="0">
                                         <ul>
                                             <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
                                             <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
@@ -140,8 +140,8 @@ ArticleEditor.add('plugin', 'benefits', {
             }
             
 
-            leadersHtml += `</div>` // DIV nav-tabContent
-        var $section = this.dom(leadersHtml)
+            benefitsHtml += `</div>` // DIV nav-tabContent
+        var $section = this.dom(benefitsHtml)
         $block.append($section)
         return instance
     }

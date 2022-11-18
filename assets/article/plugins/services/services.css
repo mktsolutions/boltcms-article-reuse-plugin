@@ -1,0 +1,22 @@
+.section-services h2 {
+    text-align: center;
+}
+
+.section-services .container-services > .row > div:last-child {
+    flex: 0 0 auto;
+    width: 100%;
+}
+
+.section-services .container-services > .row .row .col {
+    margin-bottom: 1.5rem;
+}
+
+.section-services .container-services > .row .row > * {
+    flex: 0 0 auto;
+    width: 50%;
+}
+
+.section-services.services-col-3 .container-services > .row .row > * {
+    flex: 0 0 auto;
+    width: 33.3333333333%;
+}

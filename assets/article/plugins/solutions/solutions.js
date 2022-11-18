@@ -89,7 +89,7 @@ ArticleEditor.add('plugin', 'solutions', {
         $block.addClass('solutions')
         var id = Math.floor(Math.random() * 100)
 
-        var leadersHtml = `<h2>Our solutions</h2>
+        var solutionsHtml = `<h2>Our solutions</h2>
                             <div class="container">
                                 <p class="align-center">Some description here</p>
                             </div>
@@ -97,7 +97,7 @@ ArticleEditor.add('plugin', 'solutions', {
                                 <div class="carousel-inner">`
             for(var x = 1; x <= editableType; x++) {
                 var classname = (x === 1) ? 'active' : ''
-                leadersHtml += `<div class="carousel-item ${classname}">
+                solutionsHtml += `<div class="carousel-item ${classname}">
                                     <figure><img src="https://dummyimage.com/1200x600/000/696969.png&amp;text=Example+of+image"></figure>
 
                                     <div class="carousel-caption">
@@ -107,9 +107,9 @@ ArticleEditor.add('plugin', 'solutions', {
                                     </div>
                                 </div>`
             }               
-            leadersHtml += `</div>` // DIV of carousel-inner
+            solutionsHtml += `</div>` // DIV of carousel-inner
 
-            leadersHtml += `<div class="carousel-control">
+            solutionsHtml += `<div class="carousel-control">
                                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions-${id}" data-bs-slide="prev">&lsaquo;</button>
                                 <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions-${id}" data-bs-slide="next">&rsaquo;</button>
                             </div>
@@ -119,14 +119,14 @@ ArticleEditor.add('plugin', 'solutions', {
             var slidePosition = 0
             for(var z = 1; z <= editableType; z++) {
                 var classname = (z === 1) ? 'active' : ''
-                leadersHtml += `<a data-bs-target="#carouselExampleCaptions-${id}" data-bs-slide-to="${slidePosition}" class="${classname}" aria-current="true">Title of solution ${z}</a>`
+                solutionsHtml += `<a data-bs-target="#carouselExampleCaptions-${id}" data-bs-slide-to="${slidePosition}" class="${classname}" aria-current="true">Title of solution ${z}</a>`
                 slidePosition++
             }
 
-            leadersHtml += `<a data-bs-target="#carouselExampleCaptions-${id}" data-bs-slide="next">&rsaquo;</a>
+            solutionsHtml += `<a data-bs-target="#carouselExampleCaptions-${id}" data-bs-slide="next">&rsaquo;</a>
                             </div>
                             </div>` // Main DIV carouselExampleCaptions and DIV of carousel-indicators
-        var $section = this.dom(leadersHtml)
+        var $section = this.dom(solutionsHtml)
 
         $block.append($section)
 
