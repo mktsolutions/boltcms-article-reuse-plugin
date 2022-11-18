@@ -79,21 +79,21 @@ ArticleEditor.add('plugin', 'editables', {
         var $block = instance.getBlock()
 
         if (editableType === 'leadersBlack') {
-            $block.addClass('bd-black')
+            $block.addClass('section-team')
 
-            var leadersHtml = ` <div class="container container-team">
+            var leadersHtml = ` <div class="container-team">
                                     <h2>Our Team</h2>
-                                    <div class="row">
+                                    <div class="team-slider">
                                     </div>
                                 </div>`
             var $section = this.dom(leadersHtml)
 
         } else if(editableType === 'leadersWhite') {
-            $block.addClass('bd-white')
+            $block.addClass('section-team bd-white')
             
-            var insightsHtml = `<div class="container container-team">
+            var insightsHtml = `<div class="container-team">
                                     <h2>Our Team</h2>
-                                    <div class="row">
+                                    <div class="team-slider">
                                     </div>
                                 </div>`
             var $section = this.dom(insightsHtml)

@@ -78,8 +78,8 @@ table td {
 .container-benefits-main,
 .container-benefits-source,
 .container-benefits-source__alt,
-.container-benefits-main__alt,
-.default-ctr {
+.container-benefits-main__alt
+{
     border: 1px solid #adadad;
     padding: 15px;
 }
@@ -98,16 +98,16 @@ table td {
     text-align: center !important;
 }
 
-.default-ctr .col,
-.default-ctr .col-12,
-.default-ctr .col-lg-6 {
+.col,
+.col-12,
+.col-lg-6 {
     padding-top: 0.75rem;
     padding-bottom: 0.75rem;
     background-color: #5300961a;
     border: 1px solid #d100fc66;
 }
 
-.default-ctr .row {
+.row {
     padding: 5px 3px;
 }
 
@@ -146,4 +146,19 @@ table td {
 .container-benefits-source__alt button,
 .container-benefits-main__alt .content .content-img  {
     display: none !important;
+}
+
+.col-lg-6 {
+    flex: 0 0 auto;
+    width: 50% !important;
+}
+
+.col-lg-4 {
+    flex: 0 0 auto;
+    width: 33.33333333% !important;
+}
+
+.col-lg-3 {
+    flex: 0 0 auto;
+    width: 25% !important;
 }
