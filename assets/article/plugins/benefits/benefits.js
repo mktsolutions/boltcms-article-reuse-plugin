@@ -94,7 +94,7 @@ ArticleEditor.add('plugin', 'benefits', {
         var benefitsVersion = data.version
         var instance = instance || this.app.create('block.benefits')
         var $block = instance.getBlock()
-        $block.addClass('container-benefits-source container-fluid')
+        $block.addClass('container-benefits-source')
 
         var leadersHtml = `<h2>Quantifiable benefits</h2>
                             <h6>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h6>
