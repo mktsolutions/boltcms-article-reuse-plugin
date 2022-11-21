@@ -4,6 +4,9 @@ ArticleEditor.add('block', 'block.column', {
     type: 'column',
     control: {
         duplicate: { command: 'block.duplicate', title: '## buttons.duplicate ##' },
+    },
+    create: function() {
+        return this.dom('<section>')
     }
 })
 ArticleEditor.add('plugin', 'style', {
