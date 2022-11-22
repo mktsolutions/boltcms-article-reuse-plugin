@@ -24,7 +24,7 @@ ArticleEditor.add('plugin', 'whyluxoftoptional', {
                 "whyluxoftoptional": "Why Luxoft block",
                 "add": "Insert",
                 "cancel": "Cancel",
-                "label": "How many 'Why Luxoft' do you want to insert?",
+                "label": "How many items do you want to insert?",
             },
              "blocks": {
                  "whyluxoftoptional": "Why Luxoft block"
@@ -85,8 +85,8 @@ ArticleEditor.add('plugin', 'whyluxoftoptional', {
         console.log(data)
         var instance = instance || this.app.create('block.whyluxoftoptional')
         var $block = instance.getBlock()
-        
-        $block.addClass('whyluxoftoptional')
+
+        $block.addClass('container-why-luxoft-optional')
         var id = Math.floor(Math.random() * 100)
 
         var stringHtml = 
