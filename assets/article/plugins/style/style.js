@@ -1,14 +1,3 @@
-// Making columns duplicatable
-ArticleEditor.add('block', 'block.column', {
-    mixins: ['block'],
-    type: 'column',
-    control: {
-        duplicate: { command: 'block.duplicate', title: '## buttons.duplicate ##' },
-    },
-    create: function() {
-        return this.dom('<div>').append('<div>')
-    }
-})
 ArticleEditor.add('plugin', 'style', {
     translations: {
         en: {
