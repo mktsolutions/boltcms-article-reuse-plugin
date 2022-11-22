@@ -12,7 +12,7 @@ ArticleEditor.add('block', 'block.whyluxoftoptional', {
         trash: { command: 'block.remove', title: '## buttons.delete ##' },
     },
     create: function() {
-        return this.dom('<div>')
+        return this.dom('<section>')
     }
 })
 
@@ -90,8 +90,7 @@ ArticleEditor.add('plugin', 'whyluxoftoptional', {
         var id = Math.floor(Math.random() * 100)
 
         var stringHtml = 
-            `<section>
-                <h2>Why Luxoft</h2>
+                `<h2>Why Luxoft</h2>
                 <div id="wl1${id}" class="row g-0">`
         for(var x = 1; x <= editableType; x++) {
             stringHtml += 
@@ -112,7 +111,7 @@ ArticleEditor.add('plugin', 'whyluxoftoptional', {
                     </div>
                 </div>`
         }               
-        stringHtml += `</div></section>` //End of main section
+        stringHtml += `</div>` //End of main section
         var $section = this.dom(stringHtml)
         $block.append($section)
         return instance
