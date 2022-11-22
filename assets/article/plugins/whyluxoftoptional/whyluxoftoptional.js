@@ -89,33 +89,31 @@ ArticleEditor.add('plugin', 'whyluxoftoptional', {
         $block.addClass('whyluxoftoptional')
         var id = Math.floor(Math.random() * 100)
 
-        var leadersHtml = 
+        var stringHtml = 
             `<section>
                 <h2>Why Luxoft</h2>
                 <div id="wl1${id}" class="row g-0">`
         for(var x = 1; x <= editableType; x++) {
-            leadersHtml += 
+            stringHtml += 
                 `<div class="col">
                     <a href="#">
-                        <h5>Technological independence and strong partnerships</h5>
-                        <p>While accelerating growth we solve your legacy-system issues, protecting existing
-                        investments with technologically independent solutions and the support of our top-tier partner network.</p>
+                        <h5>Element ${x}</h5>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                     </a>
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="aih${x}">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#ai${x}" aria-expanded="false" aria-controls="ai${x}">
-                            Technological independence and strong partnerships
-                        </button>
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#ai${x}" aria-expanded="false" aria-controls="ai${x}">
+                                Text button here
+                            </button>
                         </h2>
-                        <div id="ai${x}" class="accordion-collapse collapse" aria-labelledby="aih1" data-bs-parent="#wl${x}">
-                        <p>While accelerating growth we solve your legacy-system issues, protecting existing
-                            investments with technologically independent solutions and the support of our top-tier partner network.</p>
+                        <div id="ai${x}" class="accordion-collapse collapse" aria-labelledby="aih${x}" data-bs-parent="#wl${x}">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                         </div>
                     </div>
                 </div>`
         }               
-        leadersHtml += `</div></section>` //End of main section
-        var $section = this.dom(leadersHtml)
+        stringHtml += `</div></section>` //End of main section
+        var $section = this.dom(stringHtml)
         $block.append($section)
         return instance
     }
