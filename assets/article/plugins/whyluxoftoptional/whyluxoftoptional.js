@@ -21,7 +21,7 @@ ArticleEditor.add('plugin', 'whyluxoftoptional', {
     translations: {
         en: {
             "whyluxoftoptional": {
-                "whyluxoftoptional": "Why Luxoft block",
+                "whyluxoftoptional": "Why Luxoft (optional) block",
                 "add": "Insert",
                 "cancel": "Cancel",
                 "label": "How many items do you want to insert?",
@@ -44,7 +44,7 @@ ArticleEditor.add('plugin', 'whyluxoftoptional', {
             width: '400px',
             command: 'addbar.popup',
             form: {
-                whyluxoftoptional: { 
+                whyluxoftoptional: {
                     label: '## whyluxoftoptional.label ##',
                     type: 'select',
                     options: {
@@ -89,28 +89,29 @@ ArticleEditor.add('plugin', 'whyluxoftoptional', {
         $block.addClass('container-why-luxoft-optional')
         var id = Math.floor(Math.random() * 100)
 
-        var stringHtml = 
+        var stringHtml =
                 `<h2>Why Luxoft</h2>
-                <div id="wl1${id}" class="row g-0">`
+                <div id="wl-${id}" class="row g-0">`
         for(var x = 1; x <= editableType; x++) {
-            stringHtml += 
+            var internalId = Math.floor(Math.random() * 100) + x;
+            stringHtml +=
                 `<div class="col">
                     <a href="#">
                         <h5>Element ${x}</h5>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                     </a>
                     <div class="accordion-item">
-                        <h2 class="accordion-header" id="aih${x}">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#ai${x}" aria-expanded="false" aria-controls="ai${x}">
+                        <h2 class="accordion-header" id="aih-${internalId}">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#ai-${internalId}" aria-expanded="false" aria-controls="ai-${internalId}">
                                 Text button here
                             </button>
                         </h2>
-                        <div id="ai${x}" class="accordion-collapse collapse" aria-labelledby="aih${x}" data-bs-parent="#wl${x}">
+                        <div id="ai-${internalId}" class="accordion-collapse collapse" aria-labelledby="aih-${internalId}" data-bs-parent="#wl-${id}">
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                         </div>
                     </div>
                 </div>`
-        }               
+        }
         stringHtml += `</div>` //End of main section
         var $section = this.dom(stringHtml)
         $block.append($section)
