@@ -92,14 +92,15 @@ ArticleEditor.add('plugin', 'accordion', {
         var stringHtml = 
                 `<div class="accordion" id="accordionExample${id}">`
         for(var x = 1; x <= editableType; x++) {
+            var itemId = Math.floor(Math.random() * 100)
             stringHtml += 
                 `<div class="accordion-item">
                     <h2 class="accordion-header">
-                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse${x}" aria-controls="collapse${x}">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse${itemId}" aria-controls="collapse${itemId}">
                         Accordion Item #${x}
                     </button>
                     </h2>
-                    <div id="collapse${x}" class="accordion-collapse collapse">
+                    <div id="collapse${itemId}" class="accordion-collapse collapse">
                     <div class="accordion-body">
                         <strong>This is the first item's accordion body.</strong>
                     </div>
