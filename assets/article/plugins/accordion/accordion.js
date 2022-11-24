@@ -92,7 +92,7 @@ ArticleEditor.add('plugin', 'accordion', {
         var stringHtml = 
                 `<div class="accordion" id="accordionExample${id}">`
         for(var x = 1; x <= editableType; x++) {
-            var itemId = Math.floor(Math.random() * 100)
+            var itemId = Math.floor(Math.random() * 1000)
             stringHtml += 
                 `<div class="accordion-item">
                     <h2 class="accordion-header">
