@@ -52,7 +52,7 @@ ArticleEditor.add('plugin', 'style', {
                 },
                 'gray-column': {
                     title: 'Insert the GRAY COLUMN class',
-                    classname: 'highlighted-paragraph'
+                    classname: 'gray-column'
                 },
                 'radius--base': {
                     title: 'Insert the RADIUS--BASE class',
@@ -134,7 +134,7 @@ ArticleEditor.add('plugin', 'style', {
                 },
                 'gray-column': {
                     title: 'Insert the GRAY COLUMN class',
-                    classname: 'highlighted-paragraph'
+                    classname: 'gray-column'
                 },
                 'radius--base': {
                     title: 'Insert the RADIUS--BASE class',
