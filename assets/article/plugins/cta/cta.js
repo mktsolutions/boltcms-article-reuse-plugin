@@ -11,11 +11,14 @@ ArticleEditor.add('plugin', 'cta', {
         })
     },
     popup: function(params, button) {
+        var instance = this.app.block.get();
+        var btnTitle = (instance.isEmpty()) ? 'Insert' : 'Update'
+
         this.app.popup.create('cta', {
             width: '350px',
             footer: {
                 save: {
-                    title: 'Insert',
+                    title: btnTitle,
                     command: 'cta.insert',
                     type: 'primary'
                 },
@@ -47,8 +50,14 @@ ArticleEditor.add('plugin', 'cta', {
 
         var ctaClass = (ledaerPosition === 0) ? 'btn' : (ledaerPosition === 1) ? 'btn btn-outline' : 'btn btn-text btn-icon'
 
-        this.app.editor.insertContent({
-            html:  `<p><a class="${ctaClass}" href="#">READ MORE</a></p>`
-        })
+        var instance = this.app.block.get();
+
+        if(instance.isEmpty()) {
+            this.app.editor.insertContent({
+                html: `<a class="${ctaClass}" href="#">READ MORE</a>`
+            })
+        } else {
+            instance.setHtml(`<a class="${ctaClass}" href="#">READ MORE</a>`);
+        }
     }
 })

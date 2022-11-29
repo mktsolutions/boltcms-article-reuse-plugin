@@ -1,7 +1,7 @@
 {
     "how-we-help": {
         "name": "How we help",
-        "html": "<section class=\"how-we-help how-we-help--v3\"> <h2>How we help our clients</h2> <div class=\"row\"> <div class=\"col\"> <a > <div> <h4>Technological and independence strong </h4> <p>While accelerating growth we solve your legacy-system issues, protecting existing investments with technologically solutions</p> </div> </a> </div> </div> </section>"
+        "html": "<section class=\"container-how-we-help\"> <h2>How we help our clients</h2> <div class=\"row\"> <div class=\"col\"><a href=\"#\"><div><figure><img src=\"{{ asset('theme/luxoft/assets/images/frame_vector.svg') }}\" alt=\"vector\"></figure><h4>new products and growth</h4><p>Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for visual mockups.</p></div></a></div> </div> </section>"
     },
     "solutions": {
         "name": "Solutions",
@@ -58,6 +58,10 @@
     "hero-single-item": {
         "name": "Hero - single banner",
         "html": "<section class=\"container-hero-img\"><img src=\"https://dummyimage.com/1920x940/adadad/484c8a\" alt=\"Banner\"><div class=\"container\"><div class=\"content\"><h1>Accelerating the transformation to software-defined vehicles</h1><p class=\"text-28\">Your full-service technology partner that provides strategic</p><p>Your full-service technology partner that provides strategic advice as well as solution design and delivery excellence</p></div></div><div class=\"down-arr\"><a href=\"#banner-down\"><div class=\"text-20\"><p>Learn More</p><i></i></div></a></div></section>"
+    },
+    "hero-single-item-short": {
+        "name": "Hero - single banner - short",
+        "html": "<section class=\"container-hero-img short\"><img src=\"https://dummyimage.com/1920x940/adadad/484c8a\" alt=\"Banner\"><div class=\"container\"><div class=\"content\"><h1>Accelerating the transformation to software-defined vehicles</h1><p class=\"text-28\">Your full-service technology partner that provides strategic</p><p>Your full-service technology partner that provides strategic advice as well as solution design and delivery excellence</p></div></div></section>"
     },
     "hero-with-video": {
         "name": "Hero with video",

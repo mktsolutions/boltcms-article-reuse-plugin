@@ -95,11 +95,12 @@ ArticleEditor.add('plugin', 'benefits', {
         var instance = instance || this.app.create('block.benefits')
         var $block = instance.getBlock()
         $block.addClass('container-benefits-source')
+        var navId = Math.floor(Math.random() * 100)
 
         var benefitsHtml = `<h2>Quantifiable benefits</h2>
                             <h6>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h6>
                             <nav>
-                                <div class="nav nav-tabs" id="nav-tab" role="tablist">`
+                                <div class="nav nav-tabs" id="nav-tab-${navId}" role="tablist">`
 
             for(var x = 1; x <= benefitsAmount; x++) {
                 var classname = (x === 1) ? 'active' : ''
@@ -109,7 +110,7 @@ ArticleEditor.add('plugin', 'benefits', {
 
             benefitsHtml += `</div>
                             </nav>
-                            <div class="tab-content" id="nav-tabContent">`
+                            <div class="tab-content" id="nav-tabContent-${navId}">`
             
             if (benefitsVersion === 'one-colum') {
                 for(var z = 1; z <= benefitsAmount; z++) {
