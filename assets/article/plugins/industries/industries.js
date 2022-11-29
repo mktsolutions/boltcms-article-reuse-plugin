@@ -96,7 +96,20 @@ ArticleEditor.add('plugin', 'industries', {
                                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et 
                                         dolore magna aliqua. Ut enim ad minim veniam.
                                     </p>
-                                    <a class="btn btn-text btn-icon" data-bs-slide="next">Next Story</a>
+                                    <div class="btn-container">
+                                        <a class="btn btn-text btn-icon" data-bs-slide="next">
+                                            <div class="text-container">
+                                                <div class="text">
+                                                    Next Story
+                                                </div>
+                                                <div class="arr-offering">
+                                                    <i class="arr-small one"></i>
+                                                    <i class="arr-small two"></i>
+                                                    <i class="arr-small three"></i>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
                                 </div>`
             }               
 

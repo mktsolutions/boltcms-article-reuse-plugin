@@ -46,18 +46,36 @@ ArticleEditor.add('plugin', 'cta', {
         this.app.popup.close()
 
         var data = params.getData()
-        var ledaerPosition = parseInt(data.ctaList)
+        var btnVersion = parseInt(data.ctaList)
 
-        var ctaClass = (ledaerPosition === 0) ? 'btn' : (ledaerPosition === 1) ? 'btn btn-outline' : 'btn btn-text btn-icon'
+        var ctaClass = (btnVersion === 0) ? 'btn' : (btnVersion === 1) ? 'btn btn-outline' : 'btn btn-text btn-icon focus'
 
         var instance = this.app.block.get();
+        var htmlButton = ``
+
+        if (ctaClass === 'btn' || ctaClass === 'btn btn-outline') {
+            htmlButton = `<div><a class="${ctaClass}" href="#">READ MORE</a></div>`
+        } else {
+            htmlButton = `<div>
+                            <a class="${ctaClass}" href="#">
+                                <div class="text-container">
+                                    <div class="text">read more</div>
+                                    <div class="arr-offering">
+                                        <i class="arr-small one"></i>
+                                        <i class="arr-small two"></i>
+                                        <i class="arr-small three"></i>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>`
+        }
 
         if(instance.isEmpty()) {
             this.app.editor.insertContent({
-                html: `<a class="${ctaClass}" href="#">READ MORE</a>`
+                html: htmlButton
             })
         } else {
-            instance.setHtml(`<a class="${ctaClass}" href="#">READ MORE</a>`);
+            instance.setHtml(htmlButton);
         }
     }
 })

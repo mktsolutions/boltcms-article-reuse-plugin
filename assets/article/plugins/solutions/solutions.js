@@ -103,7 +103,20 @@ ArticleEditor.add('plugin', 'solutions', {
                                     <div class="carousel-caption">
                                         <h4>Title of solution ${x}</h4>
                                         <p>Description of solution ${x}</p>
-                                        <a class="btn btn-text btn-icon" href="#">read more</a>
+                                        <div>
+                                            <a class="btn btn-text btn-icon" href="#">
+                                                <div class="text-container">
+                                                <div class="text">
+                                                    read more
+                                                </div>
+                                                <div class="arr-offering">
+                                                    <i class="arr-small one"></i>
+                                                    <i class="arr-small two"></i>
+                                                    <i class="arr-small three"></i>
+                                                </div>
+                                                </div>
+                                            </a>
+                                        </div>
                                     </div>
                                 </div>`
             }               
