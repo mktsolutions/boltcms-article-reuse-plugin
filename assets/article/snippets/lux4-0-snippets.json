@@ -78,5 +78,29 @@
     "benefits-source-alt": {
         "name": "Benefits source ALT",
         "html": "<section class=\"container-benefits-source__alt\"><h2>Quantifiable benefits source alt</h2><h6>Lorem ipsum dolor sit amet, consectetur adipiscing elitdolore magnaostrud exercitation.</h6><button></button><div class=\"content\"><div class=\"row\"><div class=\"col active\"><h3>Benenfit title 1</h3><div class=\"content-info\"><h6>Benenfit subtitle 1 lorem ipsum dolor sit amet, consectetur adipiscing enenfit subtitle 1 lorem ipsum dolor sit amet, consectetur adipiscing</h6><div></div><h2>45+</h2><p>Lorem ipsum: The Ultimate Placeholder Text for brief description Lorem ipsum: The Ultimate Placeholder Text for brief description</p></div></div><div class=\"col\"><h3>Benenfit title 2</h3><div class=\"content-info\"><h6>Benenfit subtitle 2 lorem ipsum dolor sit amet, consectetur adipiscing</h6><div></div><h2>45+</h2><p>Lorem ipsum: The Ultimate Placeholder Text for brief description </p></div></div><div class=\"col\"><h3>Benenfit title 3</h3><div class=\"content-info\"><h6>Benenfit subtitle 3 lorem ipsum dolor sit amet, consectetur adipiscing</h6><div></div><h2>45+</h2><p>Lorem ipsum: The Ultimate Placeholder Text for brief description</p></div></div></div><div class=\"tab-info\"></div><div class=\"nav-mobile-tabs\"></div></div></section>"
+    },
+    "banner-cta": {
+        "name": "CTA - Banner",
+        "html": "<section class=\"cta-section cta-section--image-btn container radius--base\"><figure><img src=\"https://dummyimage.com/1920x600/d6cfd6/d6cfd6\" alt=\"background image\"></figure><div class=\"cta-section--image-btn__wrapper\"><div class=\"cta-section--image-btn__content\"><div class=\"text-center\"><h2>Consult one of our global strategists today</h2><div><a class=\"btn btn-text btn-icon btn-white\" href=\"#\">        <div class=\"text-container\"><div class=\"text\">Read more</div><div class=\"arr-offering\"><i class=\"arr-small one\"></i><i class=\"arr-small two\"></i><i class=\"arr-small three\"></i></div></div></a></div></div></div></div></section>"
+    },
+    "banner-form-cta": {
+        "name": "CTA - Banner and form",
+        "html": "<section class=\"cta-section cta-section--form cta-section--form--v1 container\"><div class=\"row\"><div class=\"col-12 col-lg-6 col-xl-7 image-col\"><div><figure><img src=\"https://dummyimage.com/900x620/d6cfd6/d6cfd6\" alt=\"background image\"></figure></div></div><div class=\"col-12 col-lg-6 col-xl-5 form-col\"><div class=\"form-col__content\"><h2>Ready to talk</h2><p>I want to talk yo your experts in:</p>{{ boltform('test_form') }}</div></div></div></section>"
+    },
+    "gradient-person-form-cta": {
+        "name": "CTA - Gradient, leader and form",
+        "html": "<section class=\"cta-section cta-section--form cta-section--form--v2 container\"><div class=\"row\"><div class=\"col-12 col-lg-6 col-xl-5 gradiente-col\"><div class=\"gradiente-col__content\"><h3>Let's meet in person in Stuttgart or set up a call</h3><div class=\"person\"><figure><img src=\"{{ asset('theme/luxoft/assets/images/team/member09.jpg') }}\" alt=\"lead image\"></figure><div class=\"person--text\"><h5>Tobias Blahak</h5><p>Account manager OEM</p></div></div></div></div><div class=\"col-12 col-lg-6 col-xl-7 form-col\"><div class=\"form-col__content\">    {{ boltform('test_form') }}</div></div></div></section>"
+    },
+    "banner-left-cta": {
+        "name": "CTA - Banner on the left",
+        "html": "<section class=\"cta-section\"><div class=\"container-video-left container\"><div class=\"row\"><div><div class=\"video-content\"><figure><img src=\"https://dummyimage.com/900x620/d6cfd6/d6cfd6\" class=\"background-image\" alt=\"background image\"></figure>    </div></div><div><div><h2>Transform your business now</h2><p>Innovative products, technology and talent for the complex and competitive world of finance.</p><div><a class=\"btn btn-text btn-icon btn-white\" href=\"#\"><div class=\"text-container\"><div class=\"text\">Connect with us</div><div class=\"arr-offering\"><i class=\"arr-small one\"></i><i class=\"arr-small two\"></i><i class=\"arr-small three\"></i></div></div></a></div></div></div></div></div></section>"
+    },
+    "banner-right-cta": {
+        "name": "CTA - Banner on the right",
+        "html": "<section class=\"cta-section\"><div class=\"container-video-right container\"><div class=\"row\"><div><div><h2>Transform your business now</h2><p>Innovative products, technology and talent for the complex and competitive world of finance.</p><div><a class=\"btn btn-text btn-icon btn-white\" href=\"#\"><div class=\"text-container\"><div class=\"text\">Connect with us</div><div class=\"arr-offering\"><i class=\"arr-small one\"></i><i class=\"arr-small two\"></i><i class=\"arr-small three\"></i></div></div></a></div></div></div><div><div class=\"video-content\"><figure><img src=\"https://dummyimage.com/900x620/d6cfd6/d6cfd6\" class=\"background-image\" alt=\"background image\"></figure></div></div></div></div></section>"
+    },
+    "gradient-with-form": {
+        "name": "CTA - Gradient and form",
+        "html": "<section class=\"cta-section cta-section--form cta-section--form--v3 container\"> <div class=\"row\">    <div class=\"col-12 col-lg-6 col-xl-5 text-col\"><div class=\"text-col__content\"><h3>Ready to talk?</h3><h5>I want to talk yo your experts in:</h5></div></div><div class=\"col-12 col-lg-6 col-xl-7 form-col\"><div class=\"form-col__content\">{{ boltform('test_form') }}</div></div></div></section>"
     }
 }
