@@ -50,6 +50,10 @@ ArticleEditor.add('plugin', 'style', {
                     title: 'Insert the HIGHLIGHTED PARAGRAPH (DIVIDER) class',
                     classname: 'highlighted-paragraph'
                 },
+                'gray-column': {
+                    title: 'Insert the GRAY COLUMN class',
+                    classname: 'gray-column'
+                },
                 'radius--base': {
                     title: 'Insert the RADIUS--BASE class',
                     classname: 'radius--base'
@@ -127,6 +131,10 @@ ArticleEditor.add('plugin', 'style', {
                 'highlighted-paragraph': {
                     title: 'Insert the HIGHLIGHTED PARAGRAPH (DIVIDER) class',
                     classname: 'highlighted-paragraph'
+                },
+                'gray-column': {
+                    title: 'Insert the GRAY COLUMN class',
+                    classname: 'gray-column'
                 },
                 'radius--base': {
                     title: 'Insert the RADIUS--BASE class',
