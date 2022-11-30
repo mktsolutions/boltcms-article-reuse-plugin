@@ -13,13 +13,13 @@ ArticleEditor.add('plugin', 'leaders', {
             const item = {
                 id: dataJson[leader].id,
                 title: dataJson[leader].fieldValues.name,
-                description: dataJson[leader].fieldValues.description,
+                title: dataJson[leader].fieldValues.title,
                 link: dataJson[leader].fieldValues.linkedin_url,
                 photo: (window.location.hostname === '127.0.0.1') ? 'https://www.luxoft.com/upload/resize_cache/iblock/303/400_0_1/RinoAriganello.jpg' : dataJson[leader].fieldValues.image.url,
                 command: 'leaders.insert'
             }
             items[leader] = item
-            selectOptions[leader] = `${dataJson[leader].fieldValues.name} - ${dataJson[leader].fieldValues.description}`
+            selectOptions[leader] = `${dataJson[leader].fieldValues.name} - ${dataJson[leader].fieldValues.title}`
         }
 
         this.app.toolbar.add('leaders', {
@@ -75,7 +75,7 @@ ArticleEditor.add('plugin', 'leaders', {
                             <a href="${params.params.leaders[ledaerPosition].link}"></a>
                             <div class="card-body">
                                 <h5 class="card-title">${params.params.leaders[ledaerPosition].title}</h5>
-                                <p class="card-text">${params.params.leaders[ledaerPosition].description}</p>
+                                <p class="card-text">${params.params.leaders[ledaerPosition].title}</p>
                             </div>
                         </div>
                         <div class="twig-code">{% setcontent leader = 'person/${params.params.leaders[ledaerPosition].id}' %}</div>
@@ -84,7 +84,7 @@ ArticleEditor.add('plugin', 'leaders', {
                             <a class="linkedin" href="{{ leader.linkedin_url }}"></a>
                             <div class="card-body">
                                 <h5 class="card-title">{{ leader.name }}</h5>
-                                <p class="card-text">{{ leader.description }}</p>
+                                <p class="card-text">{{ leader.title }}</p>
                             </div>
                         </div>
                     </div>`
