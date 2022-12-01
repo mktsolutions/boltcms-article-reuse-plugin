@@ -143,7 +143,18 @@ ArticleEditor.add('plugin', 'services', {
                                 <div id="flush-collapse${elementId}" class="accordion-collapse collapse" aria-labelledby="flush-heading${elementId}" data-bs-parent="#accordionFlush${id}">
                                     <div class="accordion-body">
                                         <p>Description of service ${z} mobile</p>
-                                        <a href="#" class="btn btn-text btn-icon focus">read more</a>
+                                        <div>
+                                            <a class="btn btn-text btn-icon focus" href="#">
+                                                <div class="text-container">
+                                                    <div class="text">read more</div>
+                                                    <div class="arr-offering">
+                                                        <i class="arr-small one"></i>
+                                                        <i class="arr-small two"></i>
+                                                        <i class="arr-small three"></i>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>`
