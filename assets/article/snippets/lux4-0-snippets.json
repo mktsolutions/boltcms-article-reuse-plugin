@@ -69,7 +69,7 @@
     },
     "hero-short-purple": {
         "name": "Hero short purple",
-        "html": "<section class=\"container-hero-short-purple\"><div class=\"col gradient06\"><div class=\"content\"><p class=\"text-20 text-uppercase font-weight-bold\">client success stories</p><h1>Philips Sonicare for Kids Case Study</h1><p class=\"text-20\">Establishing a lifetime of healthy oral healthcare habits</p><p class=\"text-16\">3 min read</p></div></div><div class=\"col\"><figure><img src=\"{{ asset('assets/images/hero-bg-02.png') }}\" alt=\"\"></figure></div><div class=\"down-arr\"><a href=\"#banner-down\"></a></div></section>"
+        "html": "<section class=\"container-hero-short-purple\"><div class=\"col gradient06\"><div class=\"content\"><p class=\"text-20 text-uppercase font-weight-bold\">client success stories</p><h1>Philips Sonicare for Kids Case Study</h1><p class=\"text-20\">Establishing a lifetime of healthy oral healthcare habits</p><p class=\"text-16\">3 min read</p></div></div><div class=\"col\"><figure><img src=\"{{ asset('/theme/luxoft/images/hero-bg-02.png') }}\" alt=\"\"></figure></div><div class=\"down-arr\"><a href=\"#banner-down\"></a></div></section>"
     },
     "benefits-main": {
         "name": "Benefits main",
