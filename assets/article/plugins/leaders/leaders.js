@@ -50,7 +50,7 @@ ArticleEditor.add('plugin', 'leaders', {
         for (const leader in dataJson) {
             const item = {
                 id: dataJson[leader].id,
-                title: dataJson[leader].fieldValues.name,
+                name: dataJson[leader].fieldValues.name,
                 title: dataJson[leader].fieldValues.title,
                 link: dataJson[leader].fieldValues.linkedin_url,
                 photo: (window.location.hostname === '127.0.0.1') ? 'https://www.luxoft.com/upload/resize_cache/iblock/303/400_0_1/RinoAriganello.jpg' : dataJson[leader].fieldValues.image.url,
@@ -102,7 +102,7 @@ ArticleEditor.add('plugin', 'leaders', {
                             <img src="${params.params.leaders[ledaerPosition].photo}" alt="leader image">
                             <a href="${params.params.leaders[ledaerPosition].link}"></a>
                             <div class="card-body">
-                                <h5 class="card-title">${params.params.leaders[ledaerPosition].title}</h5>
+                                <h5 class="card-title">${params.params.leaders[ledaerPosition].name}</h5>
                                 <p class="card-text">${params.params.leaders[ledaerPosition].title}</p>
                             </div>
                         </div>
