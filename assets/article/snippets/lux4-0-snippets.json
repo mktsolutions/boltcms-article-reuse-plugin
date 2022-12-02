@@ -13,7 +13,7 @@
     },
     "bradcrumbs": {
         "name": "Breadcrumbs",
-        "html": "<section class=\"container-breadcrumbs container-xxl\"> <ol class=\"breadcrumb\"> <li class=\"breadcrumb-item\"> <a href=\"/\"> Breadcrumbs 01 </a> </li> <li class=\"breadcrumb-item active\"> Breadcrumbs 01 </li> </ol></section>"
+        "html": "<section class=\"container-fluid breadcrumb-section\"> <ol class=\"breadcrumb\"> <li class=\"breadcrumb-item\"> <a href=\"/\"> Breadcrumbs 00 </a> </li> <li class=\"breadcrumb-item active\"> Breadcrumbs 01 </li> </ol></section>"
     },
     "optional-how-we-help": {
         "name": "Optional C - how we help",
