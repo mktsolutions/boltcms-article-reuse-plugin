@@ -11,6 +11,10 @@
         "name": "Solutions - horizontal",
         "html": "<div class=\"solutions\"> <h2> Our solutions </h2> <div class=\"s-list\"> <div> <div class=\"s-list-item-body\"> <div class=\"s-list-item-header\"> <figure> <img src=\"https://dummyimage.com/340x122/000/fff\"> </figure> <h3> Digital Cockpit </h3> </div> <p> Lorem ipsum is placeholder </p> <div class=\"btn-container\"> <a class=\"btn btn-text btn-icon\" href=\"#\"> <div class=\"text-container\"> <div class=\"text-container\"> <div class=\"text\"> read more </div> <div class=\"arr-offering\"> <i class=\"arr-small one\"></i> <i class=\"arr-small two\"></i> <i class=\"arr-small three\"></i> </div> </div> </div> </a> </div> </div> </div> </div></div>"
     },
+    "bradcrumbs": {
+        "name": "Breadcrumbs",
+        "html": "<section class=\"container-breadcrumbs container-xxl\"> <ol class=\"breadcrumb\"> <li class=\"breadcrumb-item\"> <a href=\"/\"> Breadcrumbs 01 </a> </li> <li class=\"breadcrumb-item active\"> Breadcrumbs 01 </li> </ol></section>"
+    },
     "optional-how-we-help": {
         "name": "Optional C - how we help",
         "html": "<section class=\"how-we-help how-we-help--v2\"> <h2>How we help our clients</h2> <div class=\"row\"> <div class=\"col\"> <a > <div> <h4>Technological and independence strong </h4> <p>While accelerating growth we solve your legacy-system issues, protecting existing investments with technologically solutions</p> </div> </a> </div> </div> </section>"
