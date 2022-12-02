@@ -4,22 +4,30 @@ ArticleEditor.add('plugin', 'leaders', {
         contentType: 'people'
     },
     start: async function() {
-        const response = await fetch(`${this.opts.leaders.url}/api/contents?page=1&contentType=${this.opts.leaders.contentType}&status=published`)
-        const dataJson = await response.json()
-        const items = {}
-        const selectOptions = {}
-        
-        for (const leader in dataJson) {
-            const item = {
-                id: dataJson[leader].id,
-                title: dataJson[leader].fieldValues.name,
-                title: dataJson[leader].fieldValues.title,
-                link: dataJson[leader].fieldValues.linkedin_url,
-                photo: (window.location.hostname === '127.0.0.1') ? 'https://www.luxoft.com/upload/resize_cache/iblock/303/400_0_1/RinoAriganello.jpg' : dataJson[leader].fieldValues.image.url,
-                command: 'leaders.insert'
-            }
-            items[leader] = item
-            selectOptions[leader] = `${dataJson[leader].fieldValues.name} - ${dataJson[leader].fieldValues.title}`
+        const pages = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+        var items = {}
+        var selectOptions = {}
+        var leaderPosion = 0
+
+        for await (const page of pages.map(page => fetch(`${this.opts.leaders.url}/api/contents?page=${page}&contentType=${this.opts.leaders.contentType}&status=published`))) {
+            const dataJson = await page.json()
+
+            if (Object.keys(dataJson).length > 0) {
+                const result = await this.getLeadersData(dataJson, leaderPosion)
+                items = {
+                    ...items,
+                    ...result[0]
+                }
+                selectOptions = {
+                    ...selectOptions,
+                    ...result[1]
+                }
+                leaderPosion = result[2]
+
+                continue
+            } 
+            
+            break
         }
 
         this.app.toolbar.add('leaders', {
@@ -34,6 +42,26 @@ ArticleEditor.add('plugin', 'leaders', {
                 selectOptions: selectOptions
             }
         })
+    },
+    getLeadersData: async function(dataJson, leaderPosion) {
+        const newItems = {}
+        const newSelectOptions = {}
+
+        for (const leader in dataJson) {
+            const item = {
+                id: dataJson[leader].id,
+                name: dataJson[leader].fieldValues.name,
+                title: dataJson[leader].fieldValues.title,
+                link: dataJson[leader].fieldValues.linkedin_url,
+                photo: (window.location.hostname === '127.0.0.1') ? 'https://www.luxoft.com/upload/resize_cache/iblock/303/400_0_1/RinoAriganello.jpg' : dataJson[leader].fieldValues.image.url,
+                command: 'leaders.insert'
+            }
+            newItems[leaderPosion] = item
+            newSelectOptions[leaderPosion] = `${dataJson[leader].fieldValues.name} - ${dataJson[leader].fieldValues.title}`
+            leaderPosion++
+        }
+
+        return [newItems, newSelectOptions, leaderPosion]
     },
     popup: function(params, button) {
         this.app.popup.create('leaders', {
@@ -74,7 +102,7 @@ ArticleEditor.add('plugin', 'leaders', {
                             <img src="${params.params.leaders[ledaerPosition].photo}" alt="leader image">
                             <a href="${params.params.leaders[ledaerPosition].link}"></a>
                             <div class="card-body">
-                                <h5 class="card-title">${params.params.leaders[ledaerPosition].title}</h5>
+                                <h5 class="card-title">${params.params.leaders[ledaerPosition].name}</h5>
                                 <p class="card-text">${params.params.leaders[ledaerPosition].title}</p>
                             </div>
                         </div>
