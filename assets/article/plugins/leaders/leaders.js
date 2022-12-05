@@ -107,14 +107,9 @@ ArticleEditor.add('plugin', 'leaders', {
                             </div>
                         </div>
                         <div class="twig-code">{% setcontent leader = 'person/${params.params.leaders[ledaerPosition].id}' %}</div>
-                        <div class="card twig-code">
-                            <img src="{{ leader.image }}" alt="leader image">
-                            <a class="linkedin" href="{{ leader.linkedin_url }}"></a>
-                            <div class="card-body">
-                                <h5 class="card-title">{{ leader.name }}</h5>
-                                <p class="card-text">{{ leader.title }}</p>
-                            </div>
-                        </div>
+                        {% if leader is not empty %}
+                            {{ include('partials/_leader_card.twig', leader) }}
+                        {% endif %}
                     </div>`
         })
     },
