@@ -81,7 +81,8 @@ table td {
 .container-benefits-main__alt,
 .section-services,
 .container-our-solutions,
-.cta-section {
+.cta-section,
+.container-awards {
     border: 1px solid #adadad;
     padding: 15px;
 }
@@ -129,7 +130,8 @@ table td {
 .how-we-help .row__col,
 .container-benefits-main .content .row .col,
 .container-benefits-main__alt .content .row .col,
-.container-benefits-source__alt .content .row .col {
+.container-benefits-source__alt .content .row .col,
+.container-awards .swiper-slide {
     background-color: #00729a1a;
     border: 1px solid #009bfc66;
     padding: 10px 3px;
@@ -151,7 +153,8 @@ table td {
 .container-benefits-source__alt .nav-mobile-tabs,
 .container-benefits-source__alt .content .row .col .content-info div,
 .container-benefits-source__alt button,
-.container-benefits-main__alt .content .content-img {
+.container-benefits-main__alt .content .content-img,
+.container-awards__v1 .swiper-pagination--v1 {
     display: none !important;
 }
 
