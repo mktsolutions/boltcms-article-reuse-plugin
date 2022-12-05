@@ -114,5 +114,9 @@
     "gradient-with-form": {
         "name": "CTA - Gradient and form",
         "html": "<section class=\"cta-section cta-section--form cta-section--form--v3 container\"> <div class=\"row\">    <div class=\"col-12 col-lg-6 col-xl-5 text-col\"><div class=\"text-col__content\"><h3>Ready to talk?</h3><h5>I want to talk yo your experts in:</h5></div></div><div class=\"col-12 col-lg-6 col-xl-7 form-col\"><div class=\"form-col__content\">{{ boltform('test_form') }}</div></div></div></section>"
+    },
+    "awards-v1": {
+        "name": "Awards - circles",
+        "html": "<section class=\"container-awards container-awards__v1 container-xxl\"><h2>Awards - circles</h2><div class=\"swiper swiper--v1\"><div class=\"swiper-wrapper\"><div class=\"swiper-slide\"><h2>Award 1</h2><p class=\"swiper-slide__text\">Lorem ipsum dolor sit amet</p><p class=\"marketing\">Lorem ipsum dolor sit amet</p><span class=\"swiper-slide__year\">2014</span></div><div class=\"swiper-slide\"><h2>Award 2</h2><p class=\"swiper-slide__text\">Lorem ipsum dolor sit amet</p><p class=\"marketing\">Lorem ipsum dolor sit amet</p><span class=\"swiper-slide__year\">2014</span></div><div class=\"swiper-slide\"><h2>Award 3</h2><p class=\"swiper-slide__text\">Lorem ipsum dolor sit amet</p><p class=\"marketing\">Lorem ipsum dolor sit amet</p><span class=\"swiper-slide__year\">2014</span></div></div><div class=\"swiper-pagination swiper-pagination--v1\"></div></div></section>"
     }
 }
