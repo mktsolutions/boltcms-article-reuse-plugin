@@ -108,7 +108,7 @@ ArticleEditor.add('plugin', 'leaders', {
                         </div>
                         <div class="twig-code">{% setcontent leader = 'person/${params.params.leaders[ledaerPosition].id}' %}</div>
                         {% if leader is not empty %}
-                            {{ include('/theme/luxoft/partials/_leader_card.twig') }}
+                            {{ include('partials/_leader_card.twig') }}
                         {% endif %}
                     </div>`
         })
