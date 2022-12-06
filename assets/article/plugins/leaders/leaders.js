@@ -57,7 +57,7 @@ ArticleEditor.add('plugin', 'leaders', {
                 command: 'leaders.insert'
             }
             newItems[leaderPosion] = item
-            newSelectOptions[leaderPosion] = `${dataJson[leader].fieldValues.name} - ${dataJson[leader].fieldValues.title}`
+            newSelectOptions[leaderPosion] = `${dataJson[leader].fieldValues.name} - ${dataJson[leader].fieldValues.title.en}`
             leaderPosion++
         }
 
