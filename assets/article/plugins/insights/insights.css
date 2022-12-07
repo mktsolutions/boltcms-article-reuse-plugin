@@ -1,0 +1,22 @@
+.container-featured,
+.featured,
+.container-insights {
+    border: 1px solid #adadad;
+    padding: 15px;
+}
+
+
+.container-featured .row .col,
+.featured .col,
+.container-insights .row .col {
+    background-color: #00729a1a;
+    border: 1px solid #009bfc66;
+    padding: 10px 3px;
+    margin-bottom: 10px;
+}
+
+.container-featured .twig-code,
+.featured .twig-code,
+.container-insights .twig-code  {
+    display: none;
+}
