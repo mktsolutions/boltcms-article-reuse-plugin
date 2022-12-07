@@ -15,13 +15,21 @@
         "name": "Breadcrumbs",
         "html": "{{breadcrumbs(record)}}"
     },
-    "test_form": {
-        "name": "Test form",
-        "html": "{{ boltform('test_form') }}"
-    },
-    "contact_form": {
-        "name": "Conctact form",
+    "contact-form": {
+        "name": "Contact Form",
         "html": "{{ boltform('contact_form') }}"
+    },
+    "contact-form-cta": {
+        "name": "Contact Form CTA",
+        "html": "{{ boltform('contact_form_cta') }}"
+    },
+    "contact-form-email-category": {
+        "name": "Contact Form Email Category",
+        "html": "{{ boltform('contact_form_email_category') }}"
+    },
+    "contact-form-single-email": {
+        "name": "Contact Form Single Email",
+        "html": "{{ boltform('contact_form_single_email') }}"
     },
     "optional-how-we-help": {
         "name": "Optional C - how we help",
