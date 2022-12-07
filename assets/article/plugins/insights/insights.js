@@ -259,6 +259,7 @@ ArticleEditor.add("plugin", "insights", {
 						0,
 						this.elements.items[item].contentType.length - 1
 					);
+					console.log(singleName);
 					htmlItems += `<div class="col html-code">
                           <img src="${this.elements.items[item].photo}" alt="" />
                           <p class="body-text-bold">${singleName}</p>
@@ -282,7 +283,18 @@ ArticleEditor.add("plugin", "insights", {
                         {% if item is not empty %}
                           <div class="col twig-code">
                             <img src="{{ item.photo }}" alt="" />
-                            <p class="body-text-bold">{{ item.title }}</p>
+                            {% if item.contentType is same as 'pr' %}
+                              <p class="body-text-bold">Press Release</p>
+                            {% endif %}
+                            {% if item.contentType is same as 'videos' %}
+                              <p class="body-text-bold">Video</p>
+                            {% endif %}
+                            {% if item.contentType is same as 'blogs' %}
+                              <p class="body-text-bold">Blog</p>
+                            {% endif %}
+                            {% if item.contentType is same as 'case-studies' %}
+                              <p class="body-text-bold">Case studies</p>
+                            {% endif %}
                             <h5>{{ item.title }}</h5>
                             <div class="btn-container">
                               <a class="btn btn-text btn-icon focus" href="/${this.elements.items[item].contentType}/{{ item.slug }}">
