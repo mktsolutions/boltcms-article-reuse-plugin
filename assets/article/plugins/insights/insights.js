@@ -47,7 +47,8 @@ ArticleEditor.add("plugin", "insights", {
         contentType: dataJson[single].contentType
       }
       items[single] = item
-      selectOptions[single] = `${dataJson[single].fieldValues.name} - ${dataJson[single].fieldValues.preview_description_text}`;
+      var singleName = dataJson[single].contentType.substring(0, dataJson[single].contentType.length - 1);
+      selectOptions[single] = `${dataJson[single].fieldValues.name} - ${singleName}`;
     }
 
     this.elements = {
