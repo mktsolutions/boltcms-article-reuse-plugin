@@ -95,6 +95,10 @@
         "name": "CTA - Banner",
         "html": "<section class=\"cta-section cta-section--image-btn container radius--base\"><figure><img src=\"https://dummyimage.com/1920x600/d6cfd6/d6cfd6\" alt=\"background image\"></figure><div class=\"cta-section--image-btn__wrapper\"><div class=\"cta-section--image-btn__content\"><div class=\"text-center\"><h2>Consult one of our global strategists today</h2><div><a class=\"btn btn-text btn-icon btn-white\" href=\"#\">        <div class=\"text-container\"><div class=\"text\">Read more</div><div class=\"arr-offering\"><i class=\"arr-small one\"></i><i class=\"arr-small two\"></i><i class=\"arr-small three\"></i></div></div></a></div></div></div></div></section>"
     },
+    "gradient-cta": {
+        "name": "CTA - Gradient",
+        "html": "<section class=\"cta-section cta-section--form cta-section--form--v3 container\"><div class=\"row\"><div class=\"col-lg-2\"></div><div class=\"col\"><h4 class=\"text-white mt-6\">Heading 4</h4><div><a class=\"btn btn-text btn-icon focus mt-4 mb-5\" href=\"#\"><div class=\"text-container\"><div class=\"text\">read more</div><div class=\"arr-offering\"><i class=\"arr-small one\"></i><i class=\"arr-small two\"></i><i class=\"arr-small three\"></i></div></div></a></div></div><div class=\"col-lg-2\"></div></div></section>"
+    },
     "banner-form-cta": {
         "name": "CTA - Banner and form",
         "html": "<section class=\"cta-section cta-section--form cta-section--form--v1 container\"><div class=\"row\"><div class=\"col-12 col-lg-6 col-xl-7 image-col\"><div><figure><img src=\"https://dummyimage.com/900x620/d6cfd6/d6cfd6\" alt=\"background image\"></figure></div></div><div class=\"col-12 col-lg-6 col-xl-5 form-col\"><div class=\"form-col__content\"><h2>Ready to talk</h2><p>I want to talk yo your experts in:</p>{{ boltform('test_form') }}</div></div></div></section>"
