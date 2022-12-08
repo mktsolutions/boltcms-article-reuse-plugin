@@ -7,7 +7,7 @@ ArticleEditor.add("plugin", "insights", {
 		url: window.location.origin,
 		contentTypes: {
 			videos: "videos",
-			blogs: "blogs",
+			blogs: "blog",
 			caseStudies: "case-studies",
 			pressReleases: "pr",
 		},
@@ -90,6 +90,8 @@ ArticleEditor.add("plugin", "insights", {
 			newItems[itemPosion] = item;
 			var singleName = (dataJson[single].contentType === 'case-studies') 
                         ? 'case study'
+                        : (dataJson[single].contentType === 'blog') 
+                        ? dataJson[single].contentType
                         : dataJson[single].contentType.substring(0,dataJson[single].contentType.length - 1)
       newSelectOptions[itemPosion] = `${dataJson[single].fieldValues.name} - ${singleName}`;
       itemPosion++
@@ -271,6 +273,8 @@ ArticleEditor.add("plugin", "insights", {
 				if (item !== "none") {
           var singleName = (this.elements.items[item].contentType === 'case-studies') 
                         ? 'case study'
+                        : (this.elements.items[item].contentType === 'blog') 
+                        ? this.elements.items[item].contentType
                         : this.elements.items[item].contentType.substring(0,this.elements.items[item].contentType.length - 1)
 
 					htmlItems += `<div class="col html-code">
