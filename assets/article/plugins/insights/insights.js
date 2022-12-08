@@ -18,7 +18,7 @@ ArticleEditor.add("plugin", "insights", {
 				insights: "Insights",
 				add: "Insert",
 				cancel: "Cancel",
-				label: "Choose the design you want to insert",
+				label: "Choose the design you want to use",
 			},
 			blocks: {
 				insights: "Insights",
@@ -29,16 +29,48 @@ ArticleEditor.add("plugin", "insights", {
 		this.elements = {};
 	},
 	start: async function () {
-		const response = await fetch(
-			`${this.opts.insights.url}/api/contents?page=1&contentType%5B%5D=${this.opts.insights.contentTypes.videos}&contentType%5B%5D=${this.opts.insights.contentTypes.pressReleases}&contentType%5B%5D=${this.opts.insights.contentTypes.blogs}&contentType%5B%5D=${this.opts.insights.contentTypes.caseStudies}&status=published`
-		);
-		const dataJson = await response.json();
-		console.log(dataJson);
-		const items = {};
-		const selectOptions = { none: "-- NONE --" };
+    const pages = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]
+    var items = {};
+		var selectOptions = { none: "-- NONE --" };
+    var itemPosion = 0
 
-		for (const single in dataJson) {
-			console.log(dataJson[single].contentType);
+    for await (const page of pages.map(page => fetch(`${this.opts.insights.url}/api/contents?page=${page}&contentType%5B%5D=${this.opts.insights.contentTypes.videos}&contentType%5B%5D=${this.opts.insights.contentTypes.pressReleases}&contentType%5B%5D=${this.opts.insights.contentTypes.blogs}&contentType%5B%5D=${this.opts.insights.contentTypes.caseStudies}&status=published`))) {
+      const dataJson = await page.json()
+
+      if (Object.keys(dataJson).length > 0) {
+        const result = await this.getItemsData(dataJson, itemPosion)
+        items = {
+            ...items,
+            ...result[0]
+        }
+        selectOptions = {
+            ...selectOptions,
+            ...result[1]
+        }
+        itemPosion = result[2]
+
+        continue
+      } 
+    
+      break
+    }
+
+		this.elements = {
+			items,
+			selectOptions,
+		};
+
+		this.app.addbar.add("insights", {
+			title: "## blocks.insights ##",
+			icon: ArticleEditor.iconInsights,
+			command: "insights.popup",
+		});
+	},
+  getItemsData: async function(dataJson, itemPosion) {
+    const newItems = {}
+    const newSelectOptions = {}
+
+    for (const single in dataJson) {
 			const item = {
 				id: dataJson[single].id,
 				title: dataJson[single].fieldValues.title,
@@ -55,27 +87,16 @@ ArticleEditor.add("plugin", "insights", {
 					  ]
 					: "",
 			};
-			items[single] = item;
-			var singleName = dataJson[single].contentType.substring(
-				0,
-				dataJson[single].contentType.length - 1
-			);
-			selectOptions[
-				single
-			] = `${dataJson[single].fieldValues.name} - ${singleName}`;
-		}
+			newItems[itemPosion] = item;
+			var singleName = (dataJson[single].contentType === 'case-studies') 
+                        ? 'case study'
+                        : dataJson[single].contentType.substring(0,dataJson[single].contentType.length - 1)
+      newSelectOptions[itemPosion] = `${dataJson[single].fieldValues.name} - ${singleName}`;
+      itemPosion++
+    }
 
-		this.elements = {
-			items,
-			selectOptions,
-		};
-
-		this.app.addbar.add("insights", {
-			title: "## blocks.insights ##",
-			icon: ArticleEditor.iconInsights,
-			command: "insights.popup",
-		});
-	},
+    return [newItems, newSelectOptions, itemPosion]
+  },
 	popup: function () {
 		var stack = this.app.popup.create("insights", {
 			title: "## insights.insights ##",
@@ -120,19 +141,12 @@ ArticleEditor.add("plugin", "insights", {
 		stack.open({ focus: "insights" });
 	},
 	insert: function (stack) {
-		var instance = this._buildInstance(stack);
-
-		if (instance) {
-			this.app.block.add({ instance: instance });
-			this.app.source.toggle();
-			this.app.source.toggle();
-		}
+		this._buildInstance(stack);
 	},
-	_buildInstance: function (stack, instance) {
+	_buildInstance: function (stack) {
 		this.app.popup.close();
 
 		var data = stack.getData();
-
 		var insightsVersion = data.version;
 		var item1 = data.item1;
 		var item2 = data.item2;
@@ -255,11 +269,10 @@ ArticleEditor.add("plugin", "insights", {
 		} else if (insightsVersion === "mixed") {
 			for (var item of items) {
 				if (item !== "none") {
-					var singleName = this.elements.items[item].contentType.substring(
-						0,
-						this.elements.items[item].contentType.length - 1
-					);
-					console.log(singleName);
+          var singleName = (this.elements.items[item].contentType === 'case-studies') 
+                        ? 'case study'
+                        : this.elements.items[item].contentType.substring(0,this.elements.items[item].contentType.length - 1)
+
 					htmlItems += `<div class="col html-code">
                           <img src="${this.elements.items[item].photo}" alt="" />
                           <p class="body-text-bold">${singleName}</p>
