@@ -26,14 +26,49 @@ ArticleEditor.add("plugin", "casestudies", {
 		this.elements = {};
 	},
 	start: async function () {
-		const response = await fetch(
-			`${this.opts.casestudies.url}/api/contents?page=1&contentType=${this.opts.insights.contentTypes.caseStudies}&status=published`
-		);
-		const dataJson = await response.json();
-		const items = {};
-		const selectOptions = { none: "-- NONE --" };
+		const pages = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]
+		var items = {};
+		var selectOptions = { none: "-- NONE --" };
+		var itemPosion = 0
 
-		for (const single in dataJson) {
+		for await (const page of pages.map(page => fetch(`${this.opts.casestudies.url}/api/contents?page=${page}&contentType=${this.opts.insights.contentTypes.caseStudies}&status=published`))) {
+            const dataJson = await page.json()
+
+            if (Object.keys(dataJson).length > 0) {
+                const result = await this.getItemsData(dataJson, itemPosion)
+                items = {
+                    ...items,
+                    ...result[0]
+                }
+                selectOptions = {
+                    ...selectOptions,
+                    ...result[1]
+                }
+                itemPosion = result[2]
+
+                continue
+            } 
+            
+            break
+        }
+	
+
+		this.elements = {
+			items,
+			selectOptions,
+		};
+
+		this.app.addbar.add("casestudies", {
+			title: "## blocks.casestudies ##",
+			icon: ArticleEditor.iconCaseStudies,
+			command: "casestudies.popup",
+		});
+	},
+	getItemsData: async function(dataJson, itemPosion) {
+        const newItems = {}
+        const newSelectOptions = {}
+
+        for (const single in dataJson) {
 			const item = {
 				id: dataJson[single].id,
 				title: dataJson[single].fieldValues.title,
@@ -50,27 +85,13 @@ ArticleEditor.add("plugin", "casestudies", {
 					  ]
 					: "",
 			};
-			items[single] = item;
-			var singleName = dataJson[single].contentType.substring(
-				0,
-				dataJson[single].contentType.length - 1
-			);
-			selectOptions[
-				single
-			] = `${dataJson[single].fieldValues.name} - ${singleName}`;
+			newItems[itemPosion] = item;
+			newSelectOptions[itemPosion] = `${dataJson[single].fieldValues.name}`;
+			itemPosion++
 		}
 
-		this.elements = {
-			items,
-			selectOptions,
-		};
-
-		this.app.addbar.add("casestudies", {
-			title: "## blocks.casestudies ##",
-			icon: ArticleEditor.iconCaseStudies,
-			command: "casestudies.popup",
-		});
-	},
+        return [newItems, newSelectOptions, itemPosion]
+    },
 	popup: function () {
 		var stack = this.app.popup.create("casestudies", {
 			title: "## casestudies.casestudies ##",
@@ -106,15 +127,9 @@ ArticleEditor.add("plugin", "casestudies", {
 		stack.open({ focus: "casestudies" });
 	},
 	insert: function (stack) {
-		var instance = this._buildInstance(stack);
-
-		if (instance) {
-			this.app.block.add({ instance: instance });
-			this.app.source.toggle();
-			this.app.source.toggle();
-		}
+		this._buildInstance(stack);
 	},
-	_buildInstance: function (stack, instance) {
+	_buildInstance: function (stack) {
 		this.app.popup.close();
 
 		var data = stack.getData();
@@ -125,10 +140,10 @@ ArticleEditor.add("plugin", "casestudies", {
 		var items = [item1, item2, item3];
 		var htmlStructure = ``;
 		var htmlItems = ``;
-		var number = 1;
 
 		for (var item of items) {
 			if (item !== "none") {
+				var id = Math.floor(Math.random() * 9999);
 				htmlItems += `<div class="col html-code">
                           <img src="${this.elements.items[item].photo}" alt="">
                           <h4>${this.elements.items[item].title.en}</h4>
@@ -175,13 +190,13 @@ ArticleEditor.add("plugin", "casestudies", {
                             </a>
                             <div class="accordion-item">
                               <img src="{{ item.photo.url }}" alt="vector">
-                              <h2 class="accordion-header" id="csh${number}">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#cs${number}"
-                                        aria-expanded="false" aria-controls="cs${number}">
+                              <h2 class="accordion-header" id="csh${id}">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#cs${id}"
+                                        aria-expanded="false" aria-controls="cs${id}">
                                   Technological independence and strong partnerships
                                 </button>
                               </h2>
-                              <div id="cs${number}" class="accordion-collapse collapse" aria-labelledby="csh${number}" data-bs-parent="#csr${number}">
+                              <div id="cs${id}" class="accordion-collapse collapse" aria-labelledby="csh${id}" data-bs-parent="#csr${id}">
                                 {% if item|taxonomies['industries'] is defined %}
                                   <p class="body-text-bold">
                                   {% for industry in item|taxonomies['industries'] %}
@@ -206,7 +221,6 @@ ArticleEditor.add("plugin", "casestudies", {
                           </div>
                         {% endif %}`;
 			}
-			number++;
 		}
 
 		htmlStructure = `<section class="container-case-studies container-xxl">
