@@ -15,6 +15,22 @@
         "name": "Breadcrumbs",
         "html": "{{breadcrumbs(record)}}"
     },
+    "contact-form": {
+        "name": "Contact Form",
+        "html": "{{ boltform('contact_form') }}"
+    },
+    "contact-form-cta": {
+        "name": "Contact Form CTA",
+        "html": "{{ boltform('contact_form_cta') }}"
+    },
+    "contact-form-email-category": {
+        "name": "Contact Form Email Category",
+        "html": "{{ boltform('contact_form_email_category') }}"
+    },
+    "contact-form-single-email": {
+        "name": "Contact Form Single Email",
+        "html": "{{ boltform('contact_form_single_email') }}"
+    },
     "optional-how-we-help": {
         "name": "Optional C - how we help",
         "html": "<section class=\"how-we-help how-we-help--v2\"> <h2>How we help our clients</h2> <div class=\"row\"> <div class=\"col\"> <a > <div> <h4>Technological and independence strong </h4> <p>While accelerating growth we solve your legacy-system issues, protecting existing investments with technologically solutions</p> </div> </a> </div> </div> </section>"
@@ -94,6 +110,10 @@
     "banner-cta": {
         "name": "CTA - Banner",
         "html": "<section class=\"cta-section cta-section--image-btn container radius--base\"><figure><img src=\"https://dummyimage.com/1920x600/d6cfd6/d6cfd6\" alt=\"background image\"></figure><div class=\"cta-section--image-btn__wrapper\"><div class=\"cta-section--image-btn__content\"><div class=\"text-center\"><h2>Consult one of our global strategists today</h2><div><a class=\"btn btn-text btn-icon btn-white\" href=\"#\">        <div class=\"text-container\"><div class=\"text\">Read more</div><div class=\"arr-offering\"><i class=\"arr-small one\"></i><i class=\"arr-small two\"></i><i class=\"arr-small three\"></i></div></div></a></div></div></div></div></section>"
+    },
+    "gradient-cta": {
+        "name": "CTA - Gradient",
+        "html": "<section class=\"cta-section cta-section--form cta-section--form--v3 container\"><div class=\"row\"><div class=\"col-lg-2\"></div><div class=\"col\"><h4 class=\"text-white mt-6\">Heading 4</h4><div><a class=\"btn btn-text btn-icon focus mt-4 mb-5\" href=\"#\"><div class=\"text-container\"><div class=\"text\">read more</div><div class=\"arr-offering\"><i class=\"arr-small one\"></i><i class=\"arr-small two\"></i><i class=\"arr-small three\"></i></div></div></a></div></div><div class=\"col-lg-2\"></div></div></section>"
     },
     "banner-form-cta": {
         "name": "CTA - Banner and form",
