@@ -29,31 +29,35 @@ ArticleEditor.add("plugin", "insights", {
 		this.elements = {};
 	},
 	start: async function () {
-    const pages = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]
-    var items = {};
+		const pages = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13];
+		var items = {};
 		var selectOptions = { none: "-- NONE --" };
-    var itemPosion = 0
+		var itemPosion = 0;
 
-    for await (const page of pages.map(page => fetch(`${this.opts.insights.url}/api/contents?page=${page}&contentType%5B%5D=${this.opts.insights.contentTypes.videos}&contentType%5B%5D=${this.opts.insights.contentTypes.pressReleases}&contentType%5B%5D=${this.opts.insights.contentTypes.blogs}&contentType%5B%5D=${this.opts.insights.contentTypes.caseStudies}&status=published`))) {
-      const dataJson = await page.json()
+		for await (const page of pages.map((page) =>
+			fetch(
+				`${this.opts.insights.url}/api/contents?page=${page}&contentType%5B%5D=${this.opts.insights.contentTypes.videos}&contentType%5B%5D=${this.opts.insights.contentTypes.pressReleases}&contentType%5B%5D=${this.opts.insights.contentTypes.blogs}&contentType%5B%5D=${this.opts.insights.contentTypes.caseStudies}&status=published`
+			)
+		)) {
+			const dataJson = await page.json();
 
-      if (Object.keys(dataJson).length > 0) {
-        const result = await this.getItemsData(dataJson, itemPosion)
-        items = {
-            ...items,
-            ...result[0]
-        }
-        selectOptions = {
-            ...selectOptions,
-            ...result[1]
-        }
-        itemPosion = result[2]
+			if (Object.keys(dataJson).length > 0) {
+				const result = await this.getItemsData(dataJson, itemPosion);
+				items = {
+					...items,
+					...result[0],
+				};
+				selectOptions = {
+					...selectOptions,
+					...result[1],
+				};
+				itemPosion = result[2];
 
-        continue
-      } 
-    
-      break
-    }
+				continue;
+			}
+
+			break;
+		}
 
 		this.elements = {
 			items,
@@ -66,11 +70,11 @@ ArticleEditor.add("plugin", "insights", {
 			command: "insights.popup",
 		});
 	},
-  getItemsData: async function(dataJson, itemPosion) {
-    const newItems = {}
-    const newSelectOptions = {}
+	getItemsData: async function (dataJson, itemPosion) {
+		const newItems = {};
+		const newSelectOptions = {};
 
-    for (const single in dataJson) {
+		for (const single in dataJson) {
 			const item = {
 				id: dataJson[single].id,
 				title: dataJson[single].fieldValues.title,
@@ -88,17 +92,23 @@ ArticleEditor.add("plugin", "insights", {
 					: "",
 			};
 			newItems[itemPosion] = item;
-			var singleName = (dataJson[single].contentType === 'case-studies') 
-                        ? 'case study'
-                        : (dataJson[single].contentType === 'blog') 
-                        ? dataJson[single].contentType
-                        : dataJson[single].contentType.substring(0,dataJson[single].contentType.length - 1)
-      newSelectOptions[itemPosion] = `${dataJson[single].fieldValues.name} - ${singleName}`;
-      itemPosion++
-    }
+			var singleName =
+				dataJson[single].contentType === "case-studies"
+					? "case study"
+					: dataJson[single].contentType === "blog"
+					? dataJson[single].contentType
+					: dataJson[single].contentType.substring(
+							0,
+							dataJson[single].contentType.length - 1
+					  );
+			newSelectOptions[
+				itemPosion
+			] = `${dataJson[single].fieldValues.name} - ${singleName}`;
+			itemPosion++;
+		}
 
-    return [newItems, newSelectOptions, itemPosion]
-  },
+		return [newItems, newSelectOptions, itemPosion];
+	},
 	popup: function () {
 		var stack = this.app.popup.create("insights", {
 			title: "## insights.insights ##",
@@ -179,23 +189,7 @@ ArticleEditor.add("plugin", "insights", {
                         </div>
                         <div class="twig-code">{% setcontent item = '${this.elements.items[item].contentType}/${this.elements.items[item].id}' %}</div>
                         {% if item is not empty %}
-                          <div class="col twig-code">
-                            <img src="{{ item.photo.url }}" alt="" />
-                            <h4>{{ item.title }}</h4>
-                            <p class="gray">{{ item.preview_description_text }}</p>
-                            <div class="btn-container">
-                              <a class="btn btn-text btn-icon focus" href="/${this.elements.items[item].contentType}/{{ item.slug }}">
-                                <div class="text-container">
-                                    <div class="text">read more</div>
-                                    <div class="arr-offering">
-                                        <i class="arr-small one"></i>
-                                        <i class="arr-small two"></i>
-                                        <i class="arr-small three"></i>
-                                    </div>
-                                </div>
-                              </a>
-                            </div>
-                          </div>
+                          {{ include('@theme/partials/_featured_insights_simple.twig') }}
                         {% endif %}`;
 				}
 			}
@@ -232,30 +226,7 @@ ArticleEditor.add("plugin", "insights", {
                         </div>
                         <div class="twig-code">{% setcontent item = '${this.elements.items[item].contentType}/${this.elements.items[item].id}' %}</div>
                         {% if item is not empty %}
-                          <div class="col js-stack-cards__item twig-code">
-                            <img src="{{ item.photo }}" alt="">
-                            {% if item|taxonomies['industries'] is defined %}
-                              <h4>
-                              {% for industry in item|taxonomies['industries'] %}
-                                {{ industry.name }}{% if not loop.last %}, {% endif %}
-                              {% endfor %}
-                              </h4>
-                            {% endif %}
-                            <h2>{{ item.title }}</h2>
-                            <p class="gray">{{ item.preview_description_text }}</p>
-                            <div class="btn-container">
-                              <a class="btn btn-text btn-icon focus" href="/${this.elements.items[item].contentType}/{{ item.slug }}">
-                                <div class="text-container">
-                                    <div class="text">Next Story</div>
-                                    <div class="arr-offering">
-                                        <i class="arr-small one"></i>
-                                        <i class="arr-small two"></i>
-                                        <i class="arr-small three"></i>
-                                    </div>
-                                </div>
-                              </a>
-                            </div>
-                          </div>
+                          {{ include('@theme/partials/_featured_insights_fancy.twig') }}
                         {% endif %}`;
 				}
 			}
@@ -271,11 +242,15 @@ ArticleEditor.add("plugin", "insights", {
 		} else if (insightsVersion === "mixed") {
 			for (var item of items) {
 				if (item !== "none") {
-          var singleName = (this.elements.items[item].contentType === 'case-studies') 
-                        ? 'case study'
-                        : (this.elements.items[item].contentType === 'blog') 
-                        ? this.elements.items[item].contentType
-                        : this.elements.items[item].contentType.substring(0,this.elements.items[item].contentType.length - 1)
+					var singleName =
+						this.elements.items[item].contentType === "case-studies"
+							? "case study"
+							: this.elements.items[item].contentType === "blog"
+							? this.elements.items[item].contentType
+							: this.elements.items[item].contentType.substring(
+									0,
+									this.elements.items[item].contentType.length - 1
+							  );
 
 					htmlItems += `<div class="col html-code">
                           <img src="${this.elements.items[item].photo}" alt="" />
@@ -298,36 +273,7 @@ ArticleEditor.add("plugin", "insights", {
                         </div>
                         <div class="twig-code">{% setcontent item = '${this.elements.items[item].contentType}/${this.elements.items[item].id}' %}</div>
                         {% if item is not empty %}
-                          <div class="col twig-code">
-                            <img src="{{ item.photo }}" alt="" />
-                            {% if item.contentType is same as 'pr' %}
-                              <p class="body-text-bold">Press Release</p>
-                            {% endif %}
-                            {% if item.contentType is same as 'videos' %}
-                              <p class="body-text-bold">Video</p>
-                            {% endif %}
-                            {% if item.contentType is same as 'blogs' %}
-                              <p class="body-text-bold">Blog</p>
-                            {% endif %}
-                            {% if item.contentType is same as 'case-studies' %}
-                              <p class="body-text-bold">Case studies</p>
-                            {% endif %}
-                            <h5>{{ item.title }}</h5>
-                            <div class="btn-container">
-                              <a class="btn btn-text btn-icon focus" href="/${this.elements.items[item].contentType}/{{ item.slug }}">
-                                <div class="text-container">
-                                  <div class="text">
-                                    read more
-                                  </div>
-                                  <div class="arr-offering">
-                                    <i class="arr-small one"></i>
-                                    <i class="arr-small two"></i>
-                                    <i class="arr-small three"></i>
-                                  </div>
-                                </div>
-                              </a>
-                            </div>
-                          </div>
+                          {{ include('@theme/partials/_featured_insights_mixed.twig') }}
                         {% endif %}`;
 				}
 			}

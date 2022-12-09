@@ -26,32 +26,35 @@ ArticleEditor.add("plugin", "casestudies", {
 		this.elements = {};
 	},
 	start: async function () {
-		const pages = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]
+		const pages = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13];
 		var items = {};
 		var selectOptions = { none: "-- NONE --" };
-		var itemPosion = 0
+		var itemPosion = 0;
 
-		for await (const page of pages.map(page => fetch(`${this.opts.casestudies.url}/api/contents?page=${page}&contentType=${this.opts.insights.contentTypes.caseStudies}&status=published`))) {
-            const dataJson = await page.json()
+		for await (const page of pages.map((page) =>
+			fetch(
+				`${this.opts.casestudies.url}/api/contents?page=${page}&contentType=${this.opts.insights.contentTypes.caseStudies}&status=published`
+			)
+		)) {
+			const dataJson = await page.json();
 
-            if (Object.keys(dataJson).length > 0) {
-                const result = await this.getItemsData(dataJson, itemPosion)
-                items = {
-                    ...items,
-                    ...result[0]
-                }
-                selectOptions = {
-                    ...selectOptions,
-                    ...result[1]
-                }
-                itemPosion = result[2]
+			if (Object.keys(dataJson).length > 0) {
+				const result = await this.getItemsData(dataJson, itemPosion);
+				items = {
+					...items,
+					...result[0],
+				};
+				selectOptions = {
+					...selectOptions,
+					...result[1],
+				};
+				itemPosion = result[2];
 
-                continue
-            } 
-            
-            break
-        }
-	
+				continue;
+			}
+
+			break;
+		}
 
 		this.elements = {
 			items,
@@ -64,11 +67,11 @@ ArticleEditor.add("plugin", "casestudies", {
 			command: "casestudies.popup",
 		});
 	},
-	getItemsData: async function(dataJson, itemPosion) {
-        const newItems = {}
-        const newSelectOptions = {}
+	getItemsData: async function (dataJson, itemPosion) {
+		const newItems = {};
+		const newSelectOptions = {};
 
-        for (const single in dataJson) {
+		for (const single in dataJson) {
 			const item = {
 				id: dataJson[single].id,
 				title: dataJson[single].fieldValues.title,
@@ -87,11 +90,11 @@ ArticleEditor.add("plugin", "casestudies", {
 			};
 			newItems[itemPosion] = item;
 			newSelectOptions[itemPosion] = `${dataJson[single].fieldValues.name}`;
-			itemPosion++
+			itemPosion++;
 		}
 
-        return [newItems, newSelectOptions, itemPosion]
-    },
+		return [newItems, newSelectOptions, itemPosion];
+	},
 	popup: function () {
 		var stack = this.app.popup.create("casestudies", {
 			title: "## casestudies.casestudies ##",
@@ -163,62 +166,7 @@ ArticleEditor.add("plugin", "casestudies", {
                         </div>
                         <div class="twig-code">{% setcontent item = '${this.elements.items[item].contentType}/${this.elements.items[item].id}' %}</div>
                         {% if item is not empty %}
-                          <div class="col twig-code">
-                            <a href="/${this.elements.items[item].contentType}/{{ item.slug }}">
-                              <div class="d-flex flex-sm-column">
-                                <img src="{{ item.photo.url }}" alt="vector">
-                                {% if item|taxonomies['industries'] is defined %}
-                                  <p class="body-text-bold">
-                                  {% for industry in item|taxonomies['industries'] %}
-                                    {{ industry.name }}{% if not loop.last %}, {% endif %}
-                                  {% endfor %}
-                                  </p>
-                                {% endif %}
-                                <h4>{{ item.title }}</h4>
-                                <p class="gray">{{ item.preview_description_text }}</p>
-                                <button class="btn btn-text btn-icon focus" type="button">
-                                      <div class="text-container">
-                                          <div class="text">Next Story</div>
-                                          <div class="arr-offering">
-                                              <i class="arr-small one"></i>
-                                              <i class="arr-small two"></i>
-                                              <i class="arr-small three"></i>
-                                          </div>
-                                      </div>
-                                </button>
-                              </div>
-                            </a>
-                            <div class="accordion-item">
-                              <img src="{{ item.photo.url }}" alt="vector">
-                              <h2 class="accordion-header" id="csh${id}">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#cs${id}"
-                                        aria-expanded="false" aria-controls="cs${id}">
-                                  Technological independence and strong partnerships
-                                </button>
-                              </h2>
-                              <div id="cs${id}" class="accordion-collapse collapse" aria-labelledby="csh${id}" data-bs-parent="#csr${id}">
-                                {% if item|taxonomies['industries'] is defined %}
-                                  <p class="body-text-bold">
-                                  {% for industry in item|taxonomies['industries'] %}
-                                    {{ industry.name }}{% if not loop.last %}, {% endif %}
-                                  {% endfor %}
-                                  </p>
-                                {% endif %}
-                                <h4>{{ item.title }}</h4>
-                                <p class="gray">{{ item.preview_description_text }}</p>
-                                <button class="btn btn-text btn-icon focus" type="button">
-                                      <div class="text-container">
-                                          <div class="text">Next Story</div>
-                                          <div class="arr-offering">
-                                              <i class="arr-small one"></i>
-                                              <i class="arr-small two"></i>
-                                              <i class="arr-small three"></i>
-                                          </div>
-                                      </div>
-                                </button>
-                              </div>
-                            </div>
-                          </div>
+                          {{ include('@theme/partials/_case_studies.twig') }}
                         {% endif %}`;
 			}
 		}
