@@ -10,6 +10,7 @@ ArticleEditor.add("plugin", "insights", {
 			blogs: "blog",
 			caseStudies: "case-studies",
 			pressReleases: "pr",
+			whitepapers: "whitepapers",
 		},
 	},
 	translations: {
@@ -36,10 +37,12 @@ ArticleEditor.add("plugin", "insights", {
 
 		for await (const page of pages.map((page) =>
 			fetch(
-				`${this.opts.insights.url}/api/contents?page=${page}&contentType%5B%5D=${this.opts.insights.contentTypes.videos}&contentType%5B%5D=${this.opts.insights.contentTypes.pressReleases}&contentType%5B%5D=${this.opts.insights.contentTypes.blogs}&contentType%5B%5D=${this.opts.insights.contentTypes.caseStudies}&status=published`
+				`${this.opts.insights.url}/api/contents?page=${page}&contentType%5B%5D=${this.opts.insights.contentTypes.videos}&contentType%5B%5D=${this.opts.insights.contentTypes.pressReleases}&contentType%5B%5D=${this.opts.insights.contentTypes.whitepapers}&contentType%5B%5D=${this.opts.insights.contentTypes.blogs}&contentType%5B%5D=${this.opts.insights.contentTypes.caseStudies}&status=published`
 			)
 		)) {
 			const dataJson = await page.json();
+
+			console.log(dataJson);
 
 			if (Object.keys(dataJson).length > 0) {
 				const result = await this.getItemsData(dataJson, itemPosion);
