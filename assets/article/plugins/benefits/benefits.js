@@ -1,21 +1,6 @@
 // Icon
 ArticleEditor.iconBenefits = '<i class="fa fa-gift"></i>'
 
-// Block
-ArticleEditor.add('block', 'block.benefits', {
-    mixins: ['block'],
-    type: 'benefits',
-    toolbar: {
-        add: { command: 'addbar.popup', title: '## buttons.add ##' },
-    },
-    control: {
-        trash: { command: 'block.remove', title: '## buttons.delete ##' },
-    },
-    create: function() {
-        return this.dom('<section>')
-    }
-})
-
 // Plugin
 ArticleEditor.add('plugin', 'benefits', {
     translations: {
@@ -79,25 +64,17 @@ ArticleEditor.add('plugin', 'benefits', {
     },
     insert: function(stack) {
         var instance = this._buildInstance(stack)
-
-        if (instance) {
-            this.app.block.add({ instance: instance })
-            this.app.source.toggle()
-            this.app.source.toggle()
-        }
     },
-    _buildInstance: function(stack, instance) {
+    _buildInstance: function(stack) {
         this.app.popup.close()
 
         var data = stack.getData()
         var benefitsAmount = data.benefits
         var benefitsVersion = data.version
-        var instance = instance || this.app.create('block.benefits')
-        var $block = instance.getBlock()
-        $block.addClass('container-benefits-source')
         var navId = Math.floor(Math.random() * 100)
 
-        var benefitsHtml = `<h2>Quantifiable benefits</h2>
+        var benefitsHtml = `<section class="container-benefits-source">
+                            <h2>Quantifiable benefits</h2>
                             <h6>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h6>
                             <nav>
                                 <div class="nav nav-tabs" id="nav-tab-${navId}" role="tablist">`
@@ -140,10 +117,9 @@ ArticleEditor.add('plugin', 'benefits', {
                 }
             }
             
-
-            benefitsHtml += `</div>` // DIV nav-tabContent
-        var $section = this.dom(benefitsHtml)
-        $block.append($section)
-        return instance
+        benefitsHtml += `</div></section>` // DIV nav-tabContent
+        this.app.editor.insertContent({
+			html: benefitsHtml,
+		})
     }
 })
