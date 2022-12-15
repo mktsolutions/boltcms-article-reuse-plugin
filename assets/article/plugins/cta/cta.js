@@ -51,7 +51,7 @@ ArticleEditor.add('plugin', 'cta', {
         var data = params.getData()
         var btnVersion = parseInt(data.ctaList)
 
-        var ctaClass = (btnVersion === 0 && btnVersion === 3) ? 'btn' : (btnVersion === 1 && btnVersion === 4) ? 'btn btn-outline' : 'btn btn-text btn-icon focus'
+        var ctaClass = (btnVersion === 0 || btnVersion === 3) ? 'btn' : (btnVersion === 1 || btnVersion === 4) ? 'btn btn-outline' : 'btn btn-text btn-icon focus'
 
         var instance = this.app.block.get();
         var htmlButton = ``
