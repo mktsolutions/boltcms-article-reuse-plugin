@@ -34,7 +34,10 @@ ArticleEditor.add('plugin', 'cta', {
                     options: {
                         0: 'Filled button',
                         1: 'Outlined button',
-                        2: 'Text+icon button'
+                        2: 'Text+icon button',
+                        3: 'Filled button Centered',
+                        4: 'Outlined button Centered',
+                        5: 'Text+icon button Centered',
                     }
                 }
             }
@@ -48,15 +51,30 @@ ArticleEditor.add('plugin', 'cta', {
         var data = params.getData()
         var btnVersion = parseInt(data.ctaList)
 
-        var ctaClass = (btnVersion === 0) ? 'btn' : (btnVersion === 1) ? 'btn btn-outline' : 'btn btn-text btn-icon focus'
+        var ctaClass = (btnVersion === 0 || btnVersion === 3) ? 'btn' : (btnVersion === 1 || btnVersion === 4) ? 'btn btn-outline' : 'btn btn-text btn-icon focus'
 
         var instance = this.app.block.get();
         var htmlButton = ``
 
-        if (ctaClass === 'btn' || ctaClass === 'btn btn-outline') {
+        if (btnVersion === 0 || btnVersion === 1) {
             htmlButton = `<div><a class="${ctaClass}" href="#">READ MORE</a></div>`
-        } else {
+        } else if (btnVersion === 3 || btnVersion === 4) {
+            htmlButton = `<div class="align-center"><a class="${ctaClass}" href="#">READ MORE</a></div>`
+        } else if (btnVersion === 2) {
             htmlButton = `<div>
+                            <a class="${ctaClass}" href="#">
+                                <div class="text-container">
+                                    <div class="text">read more</div>
+                                    <div class="arr-offering">
+                                        <i class="arr-small one"></i>
+                                        <i class="arr-small two"></i>
+                                        <i class="arr-small three"></i>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>`
+        } else {
+            htmlButton = `<div class="d-flex justify-content-center">
                             <a class="${ctaClass}" href="#">
                                 <div class="text-container">
                                     <div class="text">read more</div>
