@@ -74,7 +74,7 @@ ArticleEditor.add('plugin', 'cta', {
                             </a>
                         </div>`
         } else {
-            htmlButton = `<div class="align-center">
+            htmlButton = `<div class="d-flex justify-content-center">
                             <a class="${ctaClass}" href="#">
                                 <div class="text-container">
                                     <div class="text">read more</div>
