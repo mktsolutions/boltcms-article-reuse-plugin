@@ -1,21 +1,6 @@
 // Icon
 ArticleEditor.iconIndustries = '<i class="fa fa-th-list"></i>'
 
-// Block
-ArticleEditor.add('block', 'block.industries', {
-    mixins: ['block'],
-    type: 'industries',
-    toolbar: {
-        add: { command: 'addbar.popup', title: '## buttons.add ##' },
-    },
-    control: {
-        trash: { command: 'block.remove', title: '## buttons.delete ##' },
-    },
-    create: function() {
-        return this.dom('<div>')
-    }
-})
-
 // Plugin
 ArticleEditor.add('plugin', 'industries', {
     translations: {
@@ -70,24 +55,16 @@ ArticleEditor.add('plugin', 'industries', {
     },
     insert: function(stack) {
         var instance = this._buildInstance(stack)
-
-        if (instance) {
-            this.app.block.add({ instance: instance })
-            this.app.source.toggle()
-            this.app.source.toggle()
-        }
     },
-    _buildInstance: function(stack, instance) {
+    _buildInstance: function(stack) {
         this.app.popup.close()
 
         var data = stack.getData()
         var editableType = data.industries
-        var instance = instance || this.app.create('block.industries')
-        var $block = instance.getBlock()
-        $block.addClass('client-story')
 
-        var industriesHtml = `<div class="content">
-                            <h2>Client Stories</h2>`
+        var industriesHtml = `<div class="client-story">
+                                <div class="content">
+                                    <h2>Client Stories</h2>`
 
             for(var x = 1; x <= editableType; x++) {
                 industriesHtml += `<div class="content-item">
@@ -125,11 +102,10 @@ ArticleEditor.add('plugin', 'industries', {
                 slidePosition++
             }
 
-            industriesHtml += `</div>` // 
-        var $section = this.dom(industriesHtml)
-
-        $block.append($section)
-
-        return instance
+            industriesHtml += `</div></div>` // 
+        
+            this.app.editor.insertContent({
+                html: industriesHtml,
+            })
     }
 })

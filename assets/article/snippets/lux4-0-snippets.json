@@ -138,5 +138,13 @@
     "awards-v1": {
         "name": "Awards - circles",
         "html": "<section class=\"container-awards container-awards__v1 container-xxl\"><h2>Awards - circles</h2><div class=\"swiper swiper--v1\"><div class=\"swiper-wrapper\"><div class=\"swiper-slide\"><h2>Award 1</h2><p class=\"swiper-slide__text\">Lorem ipsum dolor sit amet</p><p class=\"marketing\">Lorem ipsum dolor sit amet</p><span class=\"swiper-slide__year\">2014</span></div><div class=\"swiper-slide\"><h2>Award 2</h2><p class=\"swiper-slide__text\">Lorem ipsum dolor sit amet</p><p class=\"marketing\">Lorem ipsum dolor sit amet</p><span class=\"swiper-slide__year\">2014</span></div><div class=\"swiper-slide\"><h2>Award 3</h2><p class=\"swiper-slide__text\">Lorem ipsum dolor sit amet</p><p class=\"marketing\">Lorem ipsum dolor sit amet</p><span class=\"swiper-slide__year\">2014</span></div></div><div class=\"swiper-pagination swiper-pagination--v1\"></div></div></section>"
+    },
+    "social-buttons-small": {
+        "name": "Socia buttons - small",
+        "html": "<ul class=\"social-buttons\"><li><a href=\"#\" class=\"social-share\" data-network=\"fb\"><img src=\"{​{ asset('theme/luxoft/assets/images/icons/fb-grey.svg') }​}\" alt=\"facebook icon\"></a></li><li><a href=\"#\" class=\"social-share\" data-network=\"twitter\"><img src=\"{​{ asset('theme/luxoft/assets/images/icons/twitter-grey.svg') }​}\" alt=\"twitter icon\"></a></li><li><a href=\"#\" class=\"social-share\" data-network=\"linkedin\"><img src=\"{​{ asset('theme/luxoft/assets/images/icons/linkedin-grey.svg') }​}\" alt=\"linkedin icon\"></a></li></ul>"
+    },
+    "social-buttons-big": {
+        "name": "Socia buttons - big",
+        "html": "<ul class=\"social-buttons bigger\"><li><a href=\"#\" class=\"social-share\" data-network=\"fb\"><img src=\"{​{ asset('theme/luxoft/assets/images/icons/fb-grey.svg') }​}\" alt=\"facebook icon\"></a></li><li><a href=\"#\" class=\"social-share\" data-network=\"twitter\"><img src=\"{​{ asset('theme/luxoft/assets/images/icons/twitter-grey.svg') }​}\" alt=\"twitter icon\"></a></li><li><a href=\"#\" class=\"social-share\" data-network=\"linkedin\"><img src=\"{​{ asset('theme/luxoft/assets/images/icons/linkedin-grey.svg') }​}\" alt=\"linkedin icon\"></a></li></ul>"
     }
 }

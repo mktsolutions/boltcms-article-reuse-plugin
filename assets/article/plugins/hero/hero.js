@@ -1,21 +1,6 @@
 // Icon
 ArticleEditor.iconHero = '<i class="fa fa-camera-retro"></i>'
 
-// Block
-ArticleEditor.add('block', 'block.hero', {
-    mixins: ['block'],
-    type: 'hero',
-    toolbar: {
-        add: { command: 'addbar.popup', title: '## buttons.add ##' },
-    },
-    control: {
-        trash: { command: 'block.remove', title: '## buttons.delete ##' },
-    },
-    create: function() {
-        return this.dom('<section>')
-    }
-})
-
 // Plugin
 ArticleEditor.add('plugin', 'hero', {
     translations: {
@@ -70,25 +55,15 @@ ArticleEditor.add('plugin', 'hero', {
     },
     insert: function(stack) {
         var instance = this._buildInstance(stack)
-
-        if (instance) {
-            this.app.block.add({ instance: instance })
-            this.app.source.toggle()
-            this.app.source.toggle()
-        }
     },
-    _buildInstance: function(stack, instance) {
+    _buildInstance: function(stack) {
         this.app.popup.close()
 
         var data = stack.getData()
         var editableType = data.hero
-        var instance = instance || this.app.create('block.hero')
-        var $block = instance.getBlock()
 
-        console.log(editableType)
-        $block.addClass('container-hero-carousel')
-
-        var heroHtml = `<div id="carouselHero" class="carousel slide" data-bs-ride="carousel">
+        var heroHtml = `<section class="container-hero-carousel">
+                        <div id="carouselHero" class="carousel slide" data-bs-ride="carousel">
                             <div class="carousel-inner">`
 
             for(var x = 1; x <= editableType; x++) {
@@ -124,10 +99,10 @@ ArticleEditor.add('plugin', 'hero', {
                                 <a href="#banner-down">
                                     <div class="text-20"><p>Learn more</p><i></i></div>
                                 </a>
-                            </div>` // Arrow and Main DIV carousel slide
-        var $section = this.dom(heroHtml)
-        $block.append($section)
-
-        return instance
+                            </div></section>` // Arrow and Main DIV carousel slide
+            
+            this.app.editor.insertContent({
+                html: heroHtml,
+            })
     }
 })

@@ -1,21 +1,6 @@
 // Icon
 ArticleEditor.iconAccordion = '<i class="fas fa-stream"></i>'
 
-// Block
-ArticleEditor.add('block', 'block.accordion', {
-    mixins: ['block'],
-    type: 'accordion',
-    toolbar: {
-        add: { command: 'addbar.popup', tBlockitle: '## buttons.add ##' },
-    },
-    control: {
-        trash: { command: 'block.remove', title: '## buttons.delete ##' },
-    },
-    create: function() {
-        return this.dom('<section>')
-    }
-})
-
 // Plugin
 ArticleEditor.add('plugin', 'accordion', {
     translations: {
@@ -70,33 +55,23 @@ ArticleEditor.add('plugin', 'accordion', {
     },
     insert: function(stack) {
         var instance = this._buildInstance(stack)
-
-        if (instance) {
-            this.app.block.add({ instance: instance })
-            this.app.source.toggle()
-            this.app.source.toggle()
-        }
     },
-    _buildInstance: function(stack, instance) {
+    _buildInstance: function(stack) {
         this.app.popup.close()
 
         var data = stack.getData()
         var editableType = data.accordion
-        console.log(data)
-        var instance = instance || this.app.create('block.accordion')
-        var $block = instance.getBlock()
 
-        $block.addClass('accordion-section')
         var id = Math.floor(Math.random() * 100)
 
         var stringHtml = 
-                `<div class="accordion" id="accordionExample${id}">`
+                `<section class="accordion-section"><div class="accordion" id="accordionExample${id}">`
         for(var x = 1; x <= editableType; x++) {
             var itemId = Math.floor(Math.random() * 1000)
             stringHtml += 
                 `<div class="accordion-item">
                     <h2 class="accordion-header">
-                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse${itemId}" aria-controls="collapse${itemId}">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse${itemId}" aria-controls="collapse${itemId}">
                         Accordion Item #${x}
                     </button>
                     </h2>
@@ -107,9 +82,9 @@ ArticleEditor.add('plugin', 'accordion', {
                     </div>
                 </div>`
         }               
-        stringHtml += `</div>` //End of main section
-        var $section = this.dom(stringHtml)
-        $block.append($section)
-        return instance
+        stringHtml += `</div></section>` //End of main section
+        this.app.editor.insertContent({
+			html: stringHtml,
+		})
     }
 })
