@@ -146,5 +146,9 @@
     "social-buttons-big": {
         "name": "Socia buttons - big",
         "html": "<ul class=\"social-buttons bigger\"><li><a href=\"#\" class=\"social-share\" data-network=\"fb\"><img src=\"{​{ asset('theme/luxoft/assets/images/icons/fb-grey.svg') }​}\" alt=\"facebook icon\"></a></li><li><a href=\"#\" class=\"social-share\" data-network=\"twitter\"><img src=\"{​{ asset('theme/luxoft/assets/images/icons/twitter-grey.svg') }​}\" alt=\"twitter icon\"></a></li><li><a href=\"#\" class=\"social-share\" data-network=\"linkedin\"><img src=\"{​{ asset('theme/luxoft/assets/images/icons/linkedin-grey.svg') }​}\" alt=\"linkedin icon\"></a></li></ul>"
+    },
+    "light-style-breadcrumb": {
+        "name": "Light style Breadcrumb",
+        "html": "<div class=\"light-breadcrumbs\"><a class=\"breadcrumb\" href=\"#\">Go back</a></div>"
     }
 }
