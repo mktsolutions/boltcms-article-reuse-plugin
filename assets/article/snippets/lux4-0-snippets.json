@@ -1,7 +1,7 @@
 {
     "how-we-help": {
         "name": "How we help",
-        "html": "<section class=\"container-how-we-help\"> <h2>How we help our clients</h2> <div class=\"row\"> <div class=\"col\"><a href=\"#\"><div><figure><img src=\"{{ asset('theme/luxoft/assets/images/frame_vector.svg') }}\" alt=\"vector\"></figure><h4>new products and growth</h4><p>Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for visual mockups.</p></div></a></div> </div> </section>"
+        "html": "<section class=\"container-how-we-help\"> <h2>How we help our clients</h2> <div class=\"row\"> <div class=\"col\"><div><figure><img src=\"{{ asset('theme/luxoft/assets/images/frame_vector.svg') }}\" alt=\"vector\"></figure><h4>new products and growth</h4><p>Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for visual mockups.</p></div></div> </div> </section>"
     },
     "solutions": {
         "name": "Solutions",
