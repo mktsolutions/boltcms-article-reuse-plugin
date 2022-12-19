@@ -147,7 +147,7 @@ ArticleEditor.add("plugin", "casestudies", {
 		for (var item of items) {
 			if (item !== "none") {
 				var id = Math.floor(Math.random() * 9999);
-				htmlItems += `<div class="col html-code">
+				htmlItems += `<div class="html-code">
                           <img src="${this.elements.items[item].photo}" alt="">
                           <h4>${this.elements.items[item].title.en}</h4>
                           <p class="gray">${this.elements.items[item].description}</p>
@@ -164,7 +164,7 @@ ArticleEditor.add("plugin", "casestudies", {
                             </a>
                           </div>
                         </div>
-                        <div class="twig-code">{% setcontent item = '${this.elements.items[item].contentType}/${this.elements.items[item].id}' %}</div>
+                        {% setcontent item = '${this.elements.items[item].contentType}/${this.elements.items[item].id}' %}
                         {% if item is not empty %}
                           {{ include('@theme/partials/_case_studies.twig') }}
                         {% endif %}`;
@@ -173,7 +173,7 @@ ArticleEditor.add("plugin", "casestudies", {
 
 		htmlStructure = `<section class="container-case-studies container-xxl">
                         <h2>Case Studies</h2>
-                        <div class="row">
+                        <div class="row" id="csr1">
                           ${htmlItems}
                         </div>
                       </section>`;
