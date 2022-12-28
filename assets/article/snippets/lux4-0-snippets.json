@@ -15,10 +15,6 @@
         "name": "Breadcrumbs",
         "html": "{{breadcrumbs(record)}}"
     },
-    "contact-form": {
-        "name": "Contact Form",
-        "html": "{{ boltform('contact_form') }}"
-    },
     "contact-form-cta": {
         "name": "Meet Us Contact Form",
         "html": "{{ boltform('meet_us_form') }}"
@@ -117,7 +113,7 @@
     },
     "gradient-person-form-cta": {
         "name": "CTA - Gradient, leader and form",
-        "html": "<section class=\"cta-section cta-section--form cta-section--form--v2\"><div class=\"row\"><div class=\"col-12 col-lg-6 col-xl-5 gradiente-col\"><div class=\"gradiente-col__content\"><h3>Let's meet in person in Stuttgart or set up a call</h3><div class=\"person\"><figure><img src=\"{{ asset('theme/luxoft/assets/images/team/member09.jpg') }}\" alt=\"lead image\"></figure><div class=\"person--text\"><h5>Tobias Blahak</h5><p>Account manager OEM</p></div></div></div></div><div class=\"col-12 col-lg-6 col-xl-7 form-col\"><div class=\"form-col__content\">    {{ boltform('meet_us_form') }}</div></div></div></section>"
+        "html": "<section class=\"cta-section cta-section--form cta-section--form--v2\"><div class=\"row\"><div class=\"col-12 col-lg-6 col-xl-5 gradiente-col\"><div class=\"gradiente-col__content\"><h3>Let's meet in person in Stuttgart or set up a call</h3><div class=\"person\"><figure><img src=\"{{ asset('theme/luxoft/assets/images/team/member09.jpg') }}\" alt=\"lead image\"></figure><p><a class=\"linkedin\" target=\"_blank\" href=\"#\"></a></p><div class=\"person--text\"><h5>Tobias Blahak</h5><p>Account manager OEM</p></div></div></div></div><div class=\"col-12 col-lg-6 col-xl-7 form-col\"><div class=\"form-col__content\">    {{ boltform('meet_us_form') }}</div></div></div></section>"
     },
     "banner-left-cta": {
         "name": "CTA - Banner on the left",
