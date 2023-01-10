@@ -105,7 +105,7 @@
     },
     "cta-video": {
         "name": "CTA - Video",
-        "html": "<section class=\"cta-section cta-section--video-btn radius--base\"><figure><video class=\"cta-video\" autoplay=\"\" loop=\"\" muted=\"\" id=\"bgvideo\"><source src=\"{{ asset('theme/luxoft/assets/video/Hero_screen_Luxoft_1920x1080_v6_1.mp4') }}\" type=\"video/mp4\"></video></figure><div class=\"cta-section--video-btn__wrapper\"><div class=\"cta-section--video-btn__content\"><div class=\"text-center\"><h2>Consult one of our global strategists today</h2><div><a class=\"btn btn-text btn-icon btn-white\" href=\"#\"><div class=\"text-container\"><div class=\"text\">Read more</div><div class=\"arr-offering\"><i class=\"arr-small one\"></i><i class=\"arr-small two\"></i><i class=\"arr-small three\"></i></div></div></a></div></div></div></div></section>"
+        "html": "<section class=\"cta-section cta-section--video-btn radius--base\"><figure><video class=\"cta-video\" autoplay=\"\" loop=\"\" muted=\"\"><source src=\"{{ asset('theme/luxoft/assets/video/Hero_screen_Luxoft_1920x1080_v6_1.mp4') }}\" type=\"video/mp4\"></video></figure><div class=\"cta-section--video-btn__wrapper\"><div class=\"cta-section--video-btn__content\"><div class=\"text-center\"><h2>Consult one of our global strategists today</h2><div><a class=\"btn btn-text btn-icon btn-white\" href=\"#\"><div class=\"text-container\"><div class=\"text\">Read more</div><div class=\"arr-offering\"><i class=\"arr-small one\"></i><i class=\"arr-small two\"></i><i class=\"arr-small three\"></i></div></div></a></div></div></div></div></section>"
     },
     "gradient-cta": {
         "name": "CTA - Gradient",
