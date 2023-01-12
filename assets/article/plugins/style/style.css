@@ -201,3 +201,8 @@ table td {
 .social-buttons li {
     display: inline-block;
 }
+
+.collapsible-read-more .collapse .card-body,
+.collapsible-read-more .collapsing .card-body {
+    font-size: 14px !important;
+}
