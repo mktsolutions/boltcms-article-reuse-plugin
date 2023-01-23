@@ -128,6 +128,26 @@ ArticleEditor.add("plugin", "style", {
 					title: "Insert the RADIUS--LEFT class",
 					classname: "radius--left",
 				},
+				"pt-1": {
+					title: "Insert the Spacer-1 class",
+					classname: "pt-1",
+				},
+				"pt-2": {
+					title: "Insert the Spacer-2 class",
+					classname: "pt-2",
+				},
+				"pt-3": {
+					title: "Insert the Spacer-3 class",
+					classname: "pt-3",
+				},
+				"pt-4": {
+					title: "Insert the Spacer-4 class",
+					classname: "pt-4",
+				},
+				"pt-5": {
+					title: "Insert the Spacer-5 class",
+					classname: "pt-5",
+				},
 			},
 			grid: {
 				"black-version": {
