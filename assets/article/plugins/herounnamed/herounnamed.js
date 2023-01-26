@@ -1,5 +1,5 @@
 // Icon
-ArticleEditor.iconHero = '<i class="fa fa-camera-retro"></i>';
+ArticleEditor.iconHerounnamed = '<i class="fa fa-camera-retro"></i>';
 
 // Plugin
 ArticleEditor.add("plugin", "herounnamed", {
@@ -19,7 +19,7 @@ ArticleEditor.add("plugin", "herounnamed", {
 	start: function () {
 		this.app.addbar.add("herounnamed", {
 			title: "## blocks.herounnamed ##",
-			icon: ArticleEditor.iconHero,
+			icon: ArticleEditor.iconHerounnamed,
 			command: "herounnamed.popup",
 		});
 	},
@@ -67,7 +67,7 @@ ArticleEditor.add("plugin", "herounnamed", {
 		var editableType = data.herounnamed;
 
 		var herounnamedHtml = `<section class="container-hero-carousel">
-                        <div id="carouselHerounnamed" class="carousel slide" data-bs-ride="carousel">
+                        <div id="carouselHerounnamed" class="carousel slide" data-bs-ride="carousel" data-bs-interval="30000">
                             <div class="carousel-inner">`;
 
 		for (var x = 1; x <= editableType; x++) {
@@ -87,7 +87,7 @@ ArticleEditor.add("plugin", "herounnamed", {
 
 		herounnamedHtml += `</div>`; // DIV carousel-inner
 		herounnamedHtml += `<div class="container container-indicators">
-                                <div class="carousel-unnamed-indicators">`;
+                                <div class="carousel-indicators bullets">`;
 
 		var slidePosition = 0;
 		for (var z = 1; z <= editableType; z++) {
