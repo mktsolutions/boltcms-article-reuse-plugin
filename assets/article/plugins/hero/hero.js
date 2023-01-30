@@ -97,7 +97,7 @@ ArticleEditor.add("plugin", "hero", {
 		for (var z = 1; z <= editableType; z++) {
 			var classname = z === 1 ? "active" : "";
 			heroHtml += ` <div class="tab">
-                      <a data-bs-target="#carouselHero" data-bs-slide-to="${slidePosition}" class="${classname}" aria-current="true"></a>
+                      <a data-bs-target="#carouselHero" data-bs-slide-to="${slidePosition}" class="${classname} stretched-link" aria-current="true"></a>
                       <p>Banner Title</p>
                     </div>`;
 			slidePosition++;
