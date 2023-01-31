@@ -86,18 +86,33 @@ ArticleEditor.add("plugin", "hero", {
 		}
 
 		heroHtml += `</div>`; // DIV carousel-inner
-		heroHtml += `<div class="container container-indicators">
+
+		heroHtml += `<div class="container container-indicators  basic-carousel">
+                  <div class="carousel-indicators">`;
+
+		var slidePosition = 0;
+		for (var z = 1; z <= editableType; z++) {
+			var classname = z === 1 ? "active" : "";
+			heroHtml += `<a data-bs-target="#carouselHero" data-bs-slide-to="${slidePosition}" class="${classname}" aria-current="true"><p>Banner title</p></a>`;
+			slidePosition++;
+		}
+
+		heroHtml += `</div></div>`; // DIV container container-indicators and DIV carousel-indicators
+
+		heroHtml += `<div class="container container-indicators enhanced-carousel">
                     <div class="carousel-indicators">
                       <button class="carousel-control-prev" type="button" data-bs-target="#carouselHero" data-bs-slide="prev">
-                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                      <span class="visually-hidden">Previous</span>
-                    </button>`;
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                      </button>`;
 
 		var slidePosition = 0;
 		for (var z = 1; z <= editableType; z++) {
 			var classname = z === 1 ? "active" : "";
 			heroHtml += ` <div class="tab">
-                      <a data-bs-target="#carouselHero" data-bs-slide-to="${slidePosition}" class="${classname}" aria-current="true"></a>
+                      <a id="enhanced-${
+												z - 1
+											}" data-bs-target="#carouselHero" data-bs-slide-to="${slidePosition}" class="${classname}" aria-current="true"></a>
                       <p>Banner Title</p>
                     </div>`;
 			slidePosition++;
