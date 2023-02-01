@@ -113,7 +113,7 @@ ArticleEditor.add("plugin", "hero", {
                       <a id="enhanced-${
 												z - 1
 											}" data-bs-target="#carouselHero" data-bs-slide-to="${slidePosition}" class="${classname}" aria-current="true"></a>
-                      <p>Banner Title</p>
+                      <p>Banner title for mobile</p>
                     </div>`;
 			slidePosition++;
 		}
