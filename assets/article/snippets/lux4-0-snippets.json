@@ -146,5 +146,9 @@
     "light-style-breadcrumb": {
         "name": "Light style Breadcrumb",
         "html": "<div class=\"light-breadcrumbs\"><a class=\"breadcrumb\" href=\"#\">Go back</a></div>"
+    },
+    "container-hero-purple-any-height": {
+        "name": "Hero purple any-height",
+        "html": "<section class=\"container-hero-purple-any-height gradient06\"><div class=\"container\"><div class=\"hero-title\"><h1>Luxoft and Amazon Web Services (AWS) leadership series: Luxoft Beyond | Business benefits of as-a-Service models for financial services</h1><p>{{ record.authors.content.publishedAt | date(\"F j, Y\") }}<strong> by {{ record.authors.content.author.displayName }}</strong></p></div><div class=\"hero-image\"><figure><img src=\"{{ asset('assets/images/hero-bg-02.png') }}\" alt=\"Hero purple any-height image\"></figure></div></div></section>"
     }
 }
