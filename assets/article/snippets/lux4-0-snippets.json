@@ -1,154 +1,158 @@
 {
-    "how-we-help": {
-        "name": "How we help",
-        "html": "<section class=\"container-how-we-help\"> <h2>How we help our clients</h2> <div class=\"row\"> <div class=\"col\"><div><figure><img src=\"{{ asset('theme/luxoft/assets/images/frame_vector.svg') }}\" alt=\"vector\"></figure><h4>new products and growth</h4><p>Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for visual mockups.</p></div></div> </div> </section>"
-    },
-    "solutions": {
-        "name": "Solutions",
-        "html": "<section class=\"container-our-solutions\"> <div class=\"title\"> <h2>Our solutions</h2> </div> <div class=\"row\"> <div class=\"col\"> <figure> <img src=\"https://dummyimage.com/600x400/000/fff\" class=\"\" alt=\"\"> </figure> <h5 class=\"\">Unleash technology and the marketplace</h5> <p class=\"\">Continental, a global leader in the future of mobility, selected DXC Technology and Luxoft as key partners for Continental Automotive Edge</p> <div class=\"btn-container\"><a class=\"btn btn-text btn-icon focus\" href=\"#\"><div class=\"text-container\"><div class=\"text\">read more</div><div class=\"arr-offering\"><i class=\"arr-small one\"></i><i class=\"arr-small two\"></i><i class=\"arr-small three\"></i></div></div></a></div> </div> <div class=\" col\"> <figure> <img src=\"https://dummyimage.com/600x400/000/fff\" class=\"\" alt=\"\"> </figure> <h5 class=\"\">Unleash technology and the marketplace</h5> <p class=\"\">Continental, a global leader in the future of mobility, selected DXC Technology and Luxoft as key partners for Continental Automotive Edge</p> <div class=\"btn-container\"><a class=\"btn btn-text btn-icon focus\" href=\"#\"><div class=\"text-container\"><div class=\"text\">read more</div><div class=\"arr-offering\"><i class=\"arr-small one\"></i><i class=\"arr-small two\"></i><i class=\"arr-small three\"></i></div></div></a></div> </div> <div class=\" col\"> <figure> <img src=\"https://dummyimage.com/600x400/000/fff\" class=\"\" alt=\"\"> </figure> <h5 class=\"\">Unleash technology and the marketplace</h5> <p class=\"\">Continental, a global leader in the future of mobility, selected DXC Technology and Luxoft as key partners for Continental Automotive Edge</p> <div class=\"btn-container\"><a class=\"btn btn-text btn-icon focus\" href=\"#\"><div class=\"text-container\"><div class=\"text\">read more</div><div class=\"arr-offering\"><i class=\"arr-small one\"></i><i class=\"arr-small two\"></i><i class=\"arr-small three\"></i></div></div></a></div> </div> </div></section>"
-    },
-    "solutions-horizontal": {
-        "name": "Solutions - horizontal",
-        "html": "<div class=\"solutions\"> <h2> Our solutions </h2> <div class=\"s-list\"> <div> <div class=\"s-list-item-body\"> <div class=\"s-list-item-header\"> <figure> <img src=\"https://dummyimage.com/340x122/000/fff\"> </figure> <h3> Digital Cockpit </h3> </div> <p> Lorem ipsum is placeholder </p> <div class=\"btn-container\"> <a class=\"btn btn-text btn-icon\" href=\"#\"> <div class=\"text-container\"> <div class=\"text-container\"> <div class=\"text\"> read more </div> <div class=\"arr-offering\"> <i class=\"arr-small one\"></i> <i class=\"arr-small two\"></i> <i class=\"arr-small three\"></i> </div> </div> </div> </a> </div> </div> </div> </div></div>"
-    },
-    "bradcrumbs": {
-        "name": "Breadcrumbs",
-        "html": "{{breadcrumbs(record)}}"
-    },
-    "contact-form-cta": {
-        "name": "Meet Us Contact Form",
-        "html": "{{ boltform('meet_us_form') }}"
-    },
-    "mkt_id_paragraph": {
-        "name": "Marketo ID for Meet Us Form",
-        "html": "<p id=\"mkt_campaign_id\">_MKT_ID_</p>"
-    },
-    "optional-how-we-help": {
-        "name": "Optional C - how we help",
-        "html": "<section class=\"how-we-help how-we-help--v2\"> <h2>How we help our clients</h2> <div class=\"row\"> <div class=\"col\"> <a > <div> <h4>Technological and independence strong </h4> <p>While accelerating growth we solve your legacy-system issues, protecting existing investments with technologically solutions</p> </div> </a> </div> </div> </section>"
-    },
-    "optional-how-we-help-animated": {
-        "name": "Optional C - how we help - animated",
-        "html": "<section class=\"how-we-help how-we-help--hover\"> <h2>How we help our clients</h2> <div class=\"row\"> <div class=\"col\"> <a > <div> <h4>New products and growth</h4> <p>Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for visual mockups.</p> </div> </a> </div> <div class=\"col\"> <a > <div> <h4>Cost Reduction</h4> <p>Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for visual mockups.</p> </div> </a> </div> </div> </section>"
-    },
-    "key-points": {
-        "name": "Key points",
-        "html": "<section class=\"container-key-points\"><h2>Key points</h2><p class=\"align-center\">Some description here</p><div class=\"row\"><div class=\"col\"><h2>80%</h2><h5>Item title</h5><p>Lorem ipsum is placeholder text commonly used in the graphic.</p></div></div></section>"
-    },
-    "key-highlights": {
-        "name": "Key highlights",
-        "html": "<section class=\"container-key-highlights\"><div class=\"row\"><div class=\"col\"><h3>88%</h3><p>Reduction in Time Spent</p></div><div class=\"col\"><h3>4 hours</h3><p>Change in time spent per day in manual data entry</p></div><div class=\"col\"><h3>36,000</h3><p>Number of invoices processed yearly</p></div></div></section>"
-    },
-    "section-with-icons": {
-        "name": "Section with icons",
-        "html": "<section class=\"container-section-icons\"><h2>Section with icons</h2><p class=\"align-center\">Some description here</p><div class=\"row\"><div class=\"col\"><figure><img src=\"https://dummyimage.com/1200x600/000/696969.png&amp;text=Example+of+image\" alt=\"vector\"></figure><h4>Item title</h4><p>Lorem ipsum is placeholder text commonly used in the graphic.</p></div></div></section>"
-    },
-    "partnership-": {
-        "name": "Partnership",
-        "html": "<section class=\"container-partnership\"><div class=\"title\"><h2>Partnership ecosystem</h2><div><p>Lorem ipsum is placeholder text commonly used in the graphic 1.</p><p>Lorem ipsum is placeholder text commonly used in the graphic 2.</p></div></div><div class=\"row\"><div class=\"col\"><a href=\"#\"><div ><h5>Alveo</h5><p>Premium partner</p></div></a></div><div class=\"col\"><a href=\"#\"><div ><h5>Flowable</h5><p>Premium partner</p></div></a></div></div></section>"
-    },
-    "partnership-alt": {
-        "name": "Partnership ALT",
-        "html": "<section class=\"container-partnership-alt\"><div class=\"title\"><h2>Partnership<br> ecosystem</h2><div><p>Lorem ipsum is placeholder text commonly used in the graphic 1.</p><p>Lorem ipsum is placeholder text commonly used in the graphic 2.</p></div></div><div class=\"row\"><div class=\"col\"><a href=\"#\"><div ><h5>Alveo</h5><p>Premium partner</p></div></a></div><div class=\"col\"><a href=\"#\"><div><h5>Flowable</h5><p>Premium partner</p></div></a></div></div></section>"
-    },
-    "why-luxoft": {
-        "name": "Why Luxoft",
-        "html": "<section class=\"container-why-luxoft\"><div class=\"title\"><h2>Why Luxoft</h2><p class=\"why-info\"></p></div><div class=\"row\"><div class=\"col\"><div><h5>BCM experience</h5><p>BCM experience While accelerating growth we solve your legacy-system issues</p></div></div><div class=\"col active\"><div><h5>Broader domain knowledge</h5><p>Broader domain knowledge While accelerating growth we solve your legacy-system issues</p></div></div><div class=\"col\"><div><h5>Technological</h5><p>Technological In-depth BCM experience While accelerating growth we solve your legacy-system issues</p></div></div></div></section>"
-    },
-    "file-video-left": {
-        "name": "File video on the left",
-        "html": "<div class=\"container-video-left\"><div class=\"row\"><div><div class=\"video-content\"><figure><video class=\"video\" width=\"100%\" height=\"100%\" poster=\"/theme/luxoft/assets/images/poster.png\"><source src=\"https://www.luxoft.com/upload/video/introducing_our_refreshed_corporate_identity.mp4\" type=\"video/mp4\" /></video><div class=\"play\"></div></figure></div></div><div><div><h2>Lorem title</h2><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididun.</p><div><a class=\"btn btn-text btn-icon focus\" href=\"#\"><div class=\"text-container\"><div class=\"text\">Conect with us</div><div class=\"arr-offering\"><i class=\"arr-small one\"></i><i class=\"arr-small two\"></i><i class=\"arr-small three\"></i></div></div></a></div></div></div></div></div>"
-    },
-    "youtube-video-left": {
-        "name": "Youtube video on the left",
-        "html": "<div class=\"container-video-left\"><div class=\"row\"><div><div class=\"video-content\"><figure><iframe width=\"100%\" height=\"100%\" src=\"https://www.youtube.com/embed/fmQplSZV0v8\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe></figure></div></div><div><div><h2>Lorem title</h2><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididun.</p><div><a class=\"btn btn-text btn-icon focus\" href=\"#\"><div class=\"text-container\"><div class=\"text\">Conect with us</div><div class=\"arr-offering\"><i class=\"arr-small one\"></i><i class=\"arr-small two\"></i><i class=\"arr-small three\"></i></div></div></a></div></div></div></div></div>"
-    },
-    "file-video-right": {
-        "name": "File video on the right",
-        "html": "<div class=\"container-video-right\"><div class=\"row\"><div><div><h2>Lorem title</h2><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididun.</p><div><a class=\"btn btn-text btn-icon focus\" href=\"#\"><div class=\"text-container\"><div class=\"text\">Conect with us</div><div class=\"arr-offering\"><i class=\"arr-small one\"></i><i class=\"arr-small two\"></i><i class=\"arr-small three\"></i></div></div></a></div></div></div><div><div class=\"video-content\"><figure><video class=\"video\" width=\"100%\" height=\"100%\" poster=\"/theme/luxoft/assets/images/poster.png\"><source src=\"https://www.luxoft.com/upload/video/introducing_our_refreshed_corporate_identity.mp4\" type=\"video/mp4\" /></video><div class=\"play\"></div></figure></div></div></div></div>"
-    },
-    "youtube-video-right": {
-        "name": "Youtube video on the right",
-        "html": "<div class=\"container-video-right\"><div class=\"row\"><div><div><h2>Lorem title</h2><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididun.</p><div><a class=\"btn btn-text btn-icon focus\" href=\"#\"><div class=\"text-container\"><div class=\"text\">Conect with us</div><div class=\"arr-offering\"><i class=\"arr-small one\"></i><i class=\"arr-small two\"></i><i class=\"arr-small three\"></i></div></div></a></div></div></div><div><div class=\"video-content\"><figure><iframe width=\"100%\" height=\"100%\" src=\"https://www.youtube.com/embed/fmQplSZV0v8\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe></figure></div></div></div></div>"
-    },
-    "hero-single-item": {
-        "name": "Hero - single banner",
-        "html": "<section class=\"container-hero-img\"><img src=\"https://dummyimage.com/1920x940/adadad/484c8a\" alt=\"Banner\"><div class=\"container\"><div class=\"content\"><h1>Accelerating the transformation to software-defined vehicles</h1><p class=\"text-28\">Your full-service technology partner that provides strategic</p><p>Your full-service technology partner that provides strategic advice as well as solution design and delivery excellence</p></div></div><div class=\"down-arr\"><a href=\"#banner-down\"><div class=\"text-20\"><p>Learn More</p></div></a></div></section>"
-    },
-    "hero-single-item-short": {
-        "name": "Hero - single banner - short",
-        "html": "<section class=\"container-hero-img short\"><img src=\"https://dummyimage.com/1920x940/adadad/484c8a\" alt=\"Banner\"><div class=\"container\"><div class=\"content\"><h1>Accelerating the transformation to software-defined vehicles</h1><p class=\"text-28\">Your full-service technology partner that provides strategic</p><p>Your full-service technology partner that provides strategic advice as well as solution design and delivery excellence</p></div></div></section>"
-    },
-    "hero-with-video": {
-        "name": "Hero with video",
-        "html": "<section class=\"container-hero-video\"><figure><video class=\"bgvideo\" class=\"bgvideo\" autoplay=\"\" loop=\"\" muted=\"\" class=\"bgvideo\" id=\"bgvideo\"><source src=\"https://www.luxoft.com/upload/video/introducing_our_refreshed_corporate_identity.mp4\" type=\"video/mp4\"></video></figure><div class=\"container\"><div class=\"content\"><h1>Videos</h1><p class=\"text-28\">Take a look at how Luxoft leverages its tech expertise to help businesses grow and innovate</p></div></div></section>"
-    },
-    "hero-short-purple": {
-        "name": "Hero short purple",
-        "html": "<section class=\"container-hero-short-purple\"><div class=\"col gradient06\"><div class=\"content\"><p class=\"text-20 text-uppercase font-weight-bold\">client success stories</p><h1>Philips Sonicare for Kids Case Study</h1><p class=\"text-20\">Establishing a lifetime of healthy oral healthcare habits</p><p class=\"text-16\">3 min read</p></div></div><div class=\"col\"><figure><img src=\"{{ asset('/theme/luxoft/assets/images/hero-bg-02.png') }}\" alt=\"\"></figure></div><div class=\"down-arr\"><a href=\"#banner-down\"></a></div></section>"
-    },
-    "benefits-main": {
-        "name": "Benefits main",
-        "html": "<section class=\"container-benefits-main\"><h2>Quantifiable benefits main</h2><div class=\"content\"><div class=\"row\"><div class=\"col active\"><h5>Benefit title</h5><figure><img src=\"/theme/luxoft/assets/images/gradient02.png\" alt=\"benefits\"></figure><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore</p></div><div class=\"col\"><h5>Benefit title</h5><figure><img src=\"/theme/luxoft/assets/images/benefits_title_img.jpg\" alt=\"benefits\"></figure><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore</p></div><div class=\"col\"><h5>Benefit title</h5><figure><img src=\"/theme/luxoft/assets/images/gradient02.png\" alt=\"benefits\"></figure><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore</p></div></div><figure><img class=\"content-img\" src=\"\" alt=\"benefits\" hidden></figure></div></section>"
-    },
-    "benefits-main-alt": {
-        "name": "Benefits main ALT",
-        "html": "<section class=\"container-benefits-main__alt\"><h2>Quantifiable benefits alt</h2><h6>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</h6><div class=\"content\"><div class=\"row\"><div class=\"col active\"><h5>Benefit title</h5><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore</p><img src=\"/theme/luxoft/assets/images/benefits_title_img.jpg\" alt=\"benefits\"></div><div class=\"col\"><h5>Unique plays a big part in our engineers</h5><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore</p><img src=\"/theme/luxoft/assets/images/benefits_title_img_alt.jpg\" alt=\"benefits\"></div><div class=\"col\"><h5>Benefit title</h5><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore</p><img src=\"/theme/luxoft/assets/images/gradient02.png\" alt=\"benefits\"></div></div><figure><img class=\"content-img\" src=\"\" alt=\"benefits\"></figure></div></section>"
-    },
-    "benefits-source-alt": {
-        "name": "Benefits source ALT",
-        "html": "<section class=\"container-benefits-source__alt\"><h2>Quantifiable benefits source alt</h2><h6>Lorem ipsum dolor sit amet, consectetur adipiscing elitdolore magnaostrud exercitation.</h6><button></button><div class=\"content\"><div class=\"row\"><div class=\"col active\"><h3>Benenfit title 1</h3><div class=\"content-info\"><h6>Benenfit subtitle 1 lorem ipsum dolor sit amet, consectetur adipiscing enenfit subtitle 1 lorem ipsum dolor sit amet, consectetur adipiscing</h6><div></div><h2>45+</h2><p>Lorem ipsum: The Ultimate Placeholder Text for brief description Lorem ipsum: The Ultimate Placeholder Text for brief description</p></div></div><div class=\"col\"><h3>Benenfit title 2</h3><div class=\"content-info\"><h6>Benenfit subtitle 2 lorem ipsum dolor sit amet, consectetur adipiscing</h6><div></div><h2>45+</h2><p>Lorem ipsum: The Ultimate Placeholder Text for brief description </p></div></div><div class=\"col\"><h3>Benenfit title 3</h3><div class=\"content-info\"><h6>Benenfit subtitle 3 lorem ipsum dolor sit amet, consectetur adipiscing</h6><div></div><h2>45+</h2><p>Lorem ipsum: The Ultimate Placeholder Text for brief description</p></div></div></div><div class=\"tab-info\"></div><div class=\"nav-mobile-tabs\"></div></div></section>"
-    },
-    "banner-cta": {
-        "name": "CTA - Banner",
-        "html": "<section class=\"cta-section cta-section--image-btn radius--base\"><figure><img src=\"https://dummyimage.com/1920x600/d6cfd6/d6cfd6\" alt=\"background image\"></figure><div class=\"cta-section--image-btn__wrapper\"><div class=\"cta-section--image-btn__content\"><div class=\"text-center\"><h2>Consult one of our global strategists today</h2><div><a class=\"btn btn-text btn-icon btn-white\" href=\"#\">        <div class=\"text-container\"><div class=\"text\">Read more</div><div class=\"arr-offering\"><i class=\"arr-small one\"></i><i class=\"arr-small two\"></i><i class=\"arr-small three\"></i></div></div></a></div></div></div></div></section>"
-    },
-    "cta-video": {
-        "name": "CTA - Video",
-        "html": "<section class=\"cta-section cta-section--video-btn radius--base\"><figure><video class=\"cta-video\" autoplay=\"\" loop=\"\" muted=\"\"><source src=\"{{ asset('theme/luxoft/assets/video/Hero_screen_Luxoft_1920x1080_v6_1.mp4') }}\" type=\"video/mp4\"></video></figure><div class=\"cta-section--video-btn__wrapper\"><div class=\"cta-section--video-btn__content\"><div class=\"text-center\"><h2>Consult one of our global strategists today</h2><div><a class=\"btn btn-text btn-icon btn-white\" href=\"#\"><div class=\"text-container\"><div class=\"text\">Read more</div><div class=\"arr-offering\"><i class=\"arr-small one\"></i><i class=\"arr-small two\"></i><i class=\"arr-small three\"></i></div></div></a></div></div></div></div></section>"
-    },
-    "gradient-cta": {
-        "name": "CTA - Gradient",
-        "html": "<section class=\"cta-section cta-section--form cta-section--form--v3\"><div class=\"row\"><div class=\"col-lg-2\"></div><div class=\"col\"><h4 class=\"text-white mt-6\">Heading 4</h4><div><a class=\"btn btn-text btn-icon focus mt-4 mb-5\" href=\"#\"><div class=\"text-container\"><div class=\"text\">read more</div><div class=\"arr-offering\"><i class=\"arr-small one\"></i><i class=\"arr-small two\"></i><i class=\"arr-small three\"></i></div></div></a></div></div><div class=\"col-lg-2\"></div></div></section>"
-    },
-    "banner-form-cta": {
-        "name": "CTA - Banner and form",
-        "html": "<section class=\"cta-section cta-section--form cta-section--form--v1\"><div class=\"row\"><div class=\"col-12 col-lg-6 col-xl-7 image-col\"><div><figure><img src=\"https://dummyimage.com/900x620/d6cfd6/d6cfd6\" alt=\"background image\"></figure></div></div><div class=\"col-12 col-lg-6 col-xl-5 form-col\"><div class=\"form-col__content\"><h2>Ready to talk</h2><p>I want to talk yo your experts in:</p>{{ boltform('meet_us_form') }}</div></div></div></section>"
-    },
-    "gradient-person-form-cta": {
-        "name": "CTA - Gradient, leader and form",
-        "html": "<section class=\"cta-section cta-section--form cta-section--form--v2\"><div class=\"row\"><div class=\"col-12 col-lg-6 col-xl-5 gradiente-col\"><div class=\"gradiente-col__content\"><h3>Let's meet in person in Stuttgart or set up a call</h3><div class=\"person\"><figure><img src=\"{{ asset('theme/luxoft/assets/images/team/member09.jpg') }}\" alt=\"lead image\"></figure><p><a class=\"linkedin\" target=\"_blank\" href=\"#\"></a></p><div class=\"person--text\"><h5>Tobias Blahak</h5><p>Account manager OEM</p></div></div></div></div><div class=\"col-12 col-lg-6 col-xl-7 form-col\"><div class=\"form-col__content\">    {{ boltform('meet_us_form') }}</div></div></div></section>"
-    },
-    "banner-left-cta": {
-        "name": "CTA - Banner on the left",
-        "html": "<section class=\"cta-section\"><div class=\"container-video-left\"><div class=\"row\"><div><div class=\"video-content\"><figure><img src=\"https://dummyimage.com/900x620/d6cfd6/d6cfd6\" class=\"background-image\" alt=\"background image\"></figure>    </div></div><div><div><h2>Transform your business now</h2><p>Innovative products, technology and talent for the complex and competitive world of finance.</p><div><a class=\"btn btn-text btn-icon btn-white\" href=\"#\"><div class=\"text-container\"><div class=\"text\">Connect with us</div><div class=\"arr-offering\"><i class=\"arr-small one\"></i><i class=\"arr-small two\"></i><i class=\"arr-small three\"></i></div></div></a></div></div></div></div></div></section>"
-    },
-    "banner-right-cta": {
-        "name": "CTA - Banner on the right",
-        "html": "<section class=\"cta-section\"><div class=\"container-video-right\"><div class=\"row\"><div><div><h2>Transform your business now</h2><p>Innovative products, technology and talent for the complex and competitive world of finance.</p><div><a class=\"btn btn-text btn-icon btn-white\" href=\"#\"><div class=\"text-container\"><div class=\"text\">Connect with us</div><div class=\"arr-offering\"><i class=\"arr-small one\"></i><i class=\"arr-small two\"></i><i class=\"arr-small three\"></i></div></div></a></div></div></div><div><div class=\"video-content\"><figure><img src=\"https://dummyimage.com/900x620/d6cfd6/d6cfd6\" class=\"background-image\" alt=\"background image\"></figure></div></div></div></div></section>"
-    },
-    "gradient-with-form": {
-        "name": "CTA - Gradient and form",
-        "html": "<section class=\"cta-section cta-section--form cta-section--form--v3\"> <div class=\"row\">    <div class=\"col-12 col-lg-6 col-xl-5 text-col\"><div class=\"text-col__content\"><h3>Ready to talk?</h3><h5>I want to talk yo your experts in:</h5></div></div><div class=\"col-12 col-lg-6 col-xl-7 form-col\"><div class=\"form-col__content\">{{ boltform('meet_us_form') }}</div></div></div></section>"
-    },
-    "awards-v1": {
-        "name": "Awards - circles",
-        "html": "<section class=\"container-awards container-awards__v1\"><h2>Awards - circles</h2><div class=\"swiper swiper--v1\"><div class=\"swiper-wrapper\"><div class=\"swiper-slide\"><h2>Award 1</h2><p class=\"swiper-slide__text\">Lorem ipsum dolor sit amet</p><p class=\"marketing\">Lorem ipsum dolor sit amet</p><span class=\"swiper-slide__year\">2014</span></div><div class=\"swiper-slide\"><h2>Award 2</h2><p class=\"swiper-slide__text\">Lorem ipsum dolor sit amet</p><p class=\"marketing\">Lorem ipsum dolor sit amet</p><span class=\"swiper-slide__year\">2014</span></div><div class=\"swiper-slide\"><h2>Award 3</h2><p class=\"swiper-slide__text\">Lorem ipsum dolor sit amet</p><p class=\"marketing\">Lorem ipsum dolor sit amet</p><span class=\"swiper-slide__year\">2014</span></div></div><div class=\"swiper-pagination swiper-pagination--v1\"></div></div></section>"
-    },
-    "social-buttons-small": {
-        "name": "Socia buttons - small",
-        "html": "<ul class=\"social-buttons\"><li><a href=\"#\" class=\"social-share\" data-network=\"fb\"><img src=\"{​{ asset('theme/luxoft/assets/images/icons/fb-grey.svg') }​}\" alt=\"facebook icon\"></a></li><li><a href=\"#\" class=\"social-share\" data-network=\"twitter\"><img src=\"{​{ asset('theme/luxoft/assets/images/icons/twitter-grey.svg') }​}\" alt=\"twitter icon\"></a></li><li><a href=\"#\" class=\"social-share\" data-network=\"linkedin\"><img src=\"{​{ asset('theme/luxoft/assets/images/icons/linkedin-grey.svg') }​}\" alt=\"linkedin icon\"></a></li></ul>"
-    },
-    "social-buttons-big": {
-        "name": "Socia buttons - big",
-        "html": "<ul class=\"social-buttons bigger\"><li><a href=\"#\" class=\"social-share\" data-network=\"fb\"><img src=\"{​{ asset('theme/luxoft/assets/images/icons/fb-grey.svg') }​}\" alt=\"facebook icon\"></a></li><li><a href=\"#\" class=\"social-share\" data-network=\"twitter\"><img src=\"{​{ asset('theme/luxoft/assets/images/icons/twitter-grey.svg') }​}\" alt=\"twitter icon\"></a></li><li><a href=\"#\" class=\"social-share\" data-network=\"linkedin\"><img src=\"{​{ asset('theme/luxoft/assets/images/icons/linkedin-grey.svg') }​}\" alt=\"linkedin icon\"></a></li></ul>"
-    },
-    "light-style-breadcrumb": {
-        "name": "Light style Breadcrumb",
-        "html": "<div class=\"light-breadcrumbs\"><a class=\"breadcrumb\" href=\"#\">Go back</a></div>"
-    },
-    "container-hero-purple-any-height": {
-        "name": "Hero purple any-height",
-        "html": "<section class=\"container-hero-purple-any-height gradient06\"><div class=\"container\"><div class=\"hero-title\"><h1>Luxoft and Amazon Web Services (AWS) leadership series: Luxoft Beyond | Business benefits of as-a-Service models for financial services</h1><p>{{ record.authors.content.publishedAt | date(\"F j, Y\") }}<strong> by {{ record.authors.content.author.displayName }}</strong></p></div><div class=\"hero-image\"><figure><img src=\"{{ asset('assets/images/hero-bg-02.png') }}\" alt=\"Hero purple any-height image\"></figure></div></div></section>"
-    }
+	"how-we-help": {
+		"name": "How we help",
+		"html": "<section class=\"container-how-we-help\"> <h2>How we help our clients</h2> <div class=\"row\"> <div class=\"col\"><div><figure><img src=\"{{ asset('theme/luxoft/assets/images/frame_vector.svg') }}\" alt=\"vector\"></figure><h4>new products and growth</h4><p>Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for visual mockups.</p></div></div> </div> </section>"
+	},
+	"solutions": {
+		"name": "Solutions",
+		"html": "<section class=\"container-our-solutions\"> <div class=\"title\"> <h2>Our solutions</h2> </div> <div class=\"row\"> <div class=\"col\"> <figure> <img src=\"https://dummyimage.com/600x400/000/fff\" class=\"\" alt=\"\"> </figure> <h5 class=\"\">Unleash technology and the marketplace</h5> <p class=\"\">Continental, a global leader in the future of mobility, selected DXC Technology and Luxoft as key partners for Continental Automotive Edge</p> <div class=\"btn-container\"><a class=\"btn btn-text btn-icon focus\" href=\"#\"><div class=\"text-container\"><div class=\"text\">read more</div><div class=\"arr-offering\"><i class=\"arr-small one\"></i><i class=\"arr-small two\"></i><i class=\"arr-small three\"></i></div></div></a></div> </div> <div class=\" col\"> <figure> <img src=\"https://dummyimage.com/600x400/000/fff\" class=\"\" alt=\"\"> </figure> <h5 class=\"\">Unleash technology and the marketplace</h5> <p class=\"\">Continental, a global leader in the future of mobility, selected DXC Technology and Luxoft as key partners for Continental Automotive Edge</p> <div class=\"btn-container\"><a class=\"btn btn-text btn-icon focus\" href=\"#\"><div class=\"text-container\"><div class=\"text\">read more</div><div class=\"arr-offering\"><i class=\"arr-small one\"></i><i class=\"arr-small two\"></i><i class=\"arr-small three\"></i></div></div></a></div> </div> <div class=\" col\"> <figure> <img src=\"https://dummyimage.com/600x400/000/fff\" class=\"\" alt=\"\"> </figure> <h5 class=\"\">Unleash technology and the marketplace</h5> <p class=\"\">Continental, a global leader in the future of mobility, selected DXC Technology and Luxoft as key partners for Continental Automotive Edge</p> <div class=\"btn-container\"><a class=\"btn btn-text btn-icon focus\" href=\"#\"><div class=\"text-container\"><div class=\"text\">read more</div><div class=\"arr-offering\"><i class=\"arr-small one\"></i><i class=\"arr-small two\"></i><i class=\"arr-small three\"></i></div></div></a></div> </div> </div></section>"
+	},
+	"solutions-horizontal": {
+		"name": "Solutions - horizontal",
+		"html": "<div class=\"solutions\"> <h2> Our solutions </h2> <div class=\"s-list\"> <div> <div class=\"s-list-item-body\"> <div class=\"s-list-item-header\"> <figure> <img src=\"https://dummyimage.com/340x122/000/fff\"> </figure> <h3> Digital Cockpit </h3> </div> <p> Lorem ipsum is placeholder </p> <div class=\"btn-container\"> <a class=\"btn btn-text btn-icon\" href=\"#\"> <div class=\"text-container\"> <div class=\"text-container\"> <div class=\"text\"> read more </div> <div class=\"arr-offering\"> <i class=\"arr-small one\"></i> <i class=\"arr-small two\"></i> <i class=\"arr-small three\"></i> </div> </div> </div> </a> </div> </div> </div> </div></div>"
+	},
+	"bradcrumbs": {
+		"name": "Breadcrumbs",
+		"html": "{{breadcrumbs(record)}}"
+	},
+	"contact-form-cta": {
+		"name": "Meet Us Contact Form",
+		"html": "{{ boltform('meet_us_form') }}"
+	},
+	"mkt_id_paragraph": {
+		"name": "Marketo ID for Meet Us Form",
+		"html": "<p id=\"mkt_campaign_id\">_MKT_ID_</p>"
+	},
+	"optional-how-we-help": {
+		"name": "Optional C - how we help",
+		"html": "<section class=\"how-we-help how-we-help--v2\"> <h2>How we help our clients</h2> <div class=\"row\"> <div class=\"col\"> <a > <div> <h4>Technological and independence strong </h4> <p>While accelerating growth we solve your legacy-system issues, protecting existing investments with technologically solutions</p> </div> </a> </div> </div> </section>"
+	},
+	"optional-how-we-help-animated": {
+		"name": "Optional C - how we help - animated",
+		"html": "<section class=\"how-we-help how-we-help--hover\"> <h2>How we help our clients</h2> <div class=\"row\"> <div class=\"col\"> <a > <div> <h4>New products and growth</h4> <p>Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for visual mockups.</p> </div> </a> </div> <div class=\"col\"> <a > <div> <h4>Cost Reduction</h4> <p>Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for visual mockups.</p> </div> </a> </div> </div> </section>"
+	},
+	"key-points": {
+		"name": "Key points",
+		"html": "<section class=\"container-key-points\"><h2>Key points</h2><p class=\"align-center\">Some description here</p><div class=\"row\"><div class=\"col\"><h2>80%</h2><h5>Item title</h5><p>Lorem ipsum is placeholder text commonly used in the graphic.</p></div></div></section>"
+	},
+	"key-highlights": {
+		"name": "Key highlights",
+		"html": "<section class=\"container-key-highlights\"><div class=\"row\"><div class=\"col\"><h3>88%</h3><p>Reduction in Time Spent</p></div><div class=\"col\"><h3>4 hours</h3><p>Change in time spent per day in manual data entry</p></div><div class=\"col\"><h3>36,000</h3><p>Number of invoices processed yearly</p></div></div></section>"
+	},
+	"section-with-icons": {
+		"name": "Section with icons",
+		"html": "<section class=\"container-section-icons\"><h2>Section with icons</h2><p class=\"align-center\">Some description here</p><div class=\"row\"><div class=\"col\"><figure><img src=\"https://dummyimage.com/1200x600/000/696969.png&amp;text=Example+of+image\" alt=\"vector\"></figure><h4>Item title</h4><p>Lorem ipsum is placeholder text commonly used in the graphic.</p></div></div></section>"
+	},
+	"partnership-": {
+		"name": "Partnership",
+		"html": "<section class=\"container-partnership\"><div class=\"title\"><h2>Partnership ecosystem</h2><div><p>Lorem ipsum is placeholder text commonly used in the graphic 1.</p><p>Lorem ipsum is placeholder text commonly used in the graphic 2.</p></div></div><div class=\"row\"><div class=\"col\"><a href=\"#\"><div ><h5>Alveo</h5><p>Premium partner</p></div></a></div><div class=\"col\"><a href=\"#\"><div ><h5>Flowable</h5><p>Premium partner</p></div></a></div></div></section>"
+	},
+	"partnership-alt": {
+		"name": "Partnership ALT",
+		"html": "<section class=\"container-partnership-alt\"><div class=\"title\"><h2>Partnership<br> ecosystem</h2><div><p>Lorem ipsum is placeholder text commonly used in the graphic 1.</p><p>Lorem ipsum is placeholder text commonly used in the graphic 2.</p></div></div><div class=\"row\"><div class=\"col\"><a href=\"#\"><div ><h5>Alveo</h5><p>Premium partner</p></div></a></div><div class=\"col\"><a href=\"#\"><div><h5>Flowable</h5><p>Premium partner</p></div></a></div></div></section>"
+	},
+	"why-luxoft": {
+		"name": "Why Luxoft",
+		"html": "<section class=\"container-why-luxoft\"><div class=\"title\"><h2>Why Luxoft</h2><p class=\"why-info\"></p></div><div class=\"row\"><div class=\"col\"><div><h5>BCM experience</h5><p>BCM experience While accelerating growth we solve your legacy-system issues</p></div></div><div class=\"col active\"><div><h5>Broader domain knowledge</h5><p>Broader domain knowledge While accelerating growth we solve your legacy-system issues</p></div></div><div class=\"col\"><div><h5>Technological</h5><p>Technological In-depth BCM experience While accelerating growth we solve your legacy-system issues</p></div></div></div></section>"
+	},
+	"file-video-left": {
+		"name": "File video on the left",
+		"html": "<div class=\"container-video-left\"><div class=\"row\"><div><div class=\"video-content\"><figure><video class=\"video\" width=\"100%\" height=\"100%\" poster=\"/theme/luxoft/assets/images/poster.png\"><source src=\"https://www.luxoft.com/upload/video/introducing_our_refreshed_corporate_identity.mp4\" type=\"video/mp4\" /></video><div class=\"play\"></div></figure></div></div><div><div><h2>Lorem title</h2><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididun.</p><div><a class=\"btn btn-text btn-icon focus\" href=\"#\"><div class=\"text-container\"><div class=\"text\">Conect with us</div><div class=\"arr-offering\"><i class=\"arr-small one\"></i><i class=\"arr-small two\"></i><i class=\"arr-small three\"></i></div></div></a></div></div></div></div></div>"
+	},
+	"youtube-video-left": {
+		"name": "Youtube video on the left",
+		"html": "<div class=\"container-video-left\"><div class=\"row\"><div><div class=\"video-content\"><figure><iframe width=\"100%\" height=\"100%\" src=\"https://www.youtube.com/embed/fmQplSZV0v8\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe></figure></div></div><div><div><h2>Lorem title</h2><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididun.</p><div><a class=\"btn btn-text btn-icon focus\" href=\"#\"><div class=\"text-container\"><div class=\"text\">Conect with us</div><div class=\"arr-offering\"><i class=\"arr-small one\"></i><i class=\"arr-small two\"></i><i class=\"arr-small three\"></i></div></div></a></div></div></div></div></div>"
+	},
+	"file-video-right": {
+		"name": "File video on the right",
+		"html": "<div class=\"container-video-right\"><div class=\"row\"><div><div><h2>Lorem title</h2><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididun.</p><div><a class=\"btn btn-text btn-icon focus\" href=\"#\"><div class=\"text-container\"><div class=\"text\">Conect with us</div><div class=\"arr-offering\"><i class=\"arr-small one\"></i><i class=\"arr-small two\"></i><i class=\"arr-small three\"></i></div></div></a></div></div></div><div><div class=\"video-content\"><figure><video class=\"video\" width=\"100%\" height=\"100%\" poster=\"/theme/luxoft/assets/images/poster.png\"><source src=\"https://www.luxoft.com/upload/video/introducing_our_refreshed_corporate_identity.mp4\" type=\"video/mp4\" /></video><div class=\"play\"></div></figure></div></div></div></div>"
+	},
+	"youtube-video-right": {
+		"name": "Youtube video on the right",
+		"html": "<div class=\"container-video-right\"><div class=\"row\"><div><div><h2>Lorem title</h2><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididun.</p><div><a class=\"btn btn-text btn-icon focus\" href=\"#\"><div class=\"text-container\"><div class=\"text\">Conect with us</div><div class=\"arr-offering\"><i class=\"arr-small one\"></i><i class=\"arr-small two\"></i><i class=\"arr-small three\"></i></div></div></a></div></div></div><div><div class=\"video-content\"><figure><iframe width=\"100%\" height=\"100%\" src=\"https://www.youtube.com/embed/fmQplSZV0v8\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe></figure></div></div></div></div>"
+	},
+	"text-image-left": {
+		"name": "Text and image on left",
+		"html": "<section><div class=\"container container-image-left\"><div class=\"row\"><div><div class=\"video-content\"><img src=\"{{ asset('assets/images/solutions-slide-default.jpg') }}\"/></div></div><div><div><h3>Our banking software services overview</h3><p>Luxoft has a remarkable track record for software development in banking, wealth management, lending, payments and core banking modernization. We've been providing banking software services to the industry for more than 40 years and are leading experts in core banking software solutions.</p><p>Reducing costs while increasing speed, agility and time-to-market is a finely judged balancing act for digital banking services decision-makers.</p><button class=\"btn btn-text btn-icon focus\" type=\"button\"><div class=\"text-container\"><div class=\"text\">Read more</div><div class=\"arr-offering\"><i class=\"arr-small one\"/><i class=\"arr-small two\"/><i class=\"arr-small three\"/></div></div></button></div></div></div></div></section>"
+	},
+	"text-image-right": {
+		"name": "Text and image on right",
+		"html": "<section><div class=\"container container-image-right\"><div class=\"row\"><div><div><h3>Our banking software services overview</h3><p>Luxoft has a remarkable track record for software development in banking, wealth management, lending, payments and core banking modernization. We've been providing banking software services to the industry for more than 40 years and are leading experts in core banking software solutions.</p><p>Reducing costs while increasing speed, agility and time-to-market is a finely judged balancing act for digital banking services decision-makers.</p><button class=\"btn btn-text btn-icon focus\" type=\"button\"><div class=\"text-container\"><div class=\"text\">Read more</div><div class=\"arr-offering\"><i class=\"arr-small one\"/><i class=\"arr-small two\"/><i class=\"arr-small three\"/></div></div></button></div></div><div><div class=\"video-content\"><img src=\"{{ asset('assets/images/solutions-slide-default.jpg') }}\"/></div></div></div></div></section>"
+	},
+	"hero-single-item": {
+		"name": "Hero - single banner",
+		"html": "<section class=\"container-hero-img\"><img src=\"https://dummyimage.com/1920x940/adadad/484c8a\" alt=\"Banner\"><div class=\"container\"><div class=\"content\"><h1>Accelerating the transformation to software-defined vehicles</h1><p class=\"text-28\">Your full-service technology partner that provides strategic</p><p>Your full-service technology partner that provides strategic advice as well as solution design and delivery excellence</p></div></div><div class=\"down-arr\"><a href=\"#banner-down\"><div class=\"text-20\"><p>Learn More</p></div></a></div></section>"
+	},
+	"hero-single-item-short": {
+		"name": "Hero - single banner - short",
+		"html": "<section class=\"container-hero-img short\"><img src=\"https://dummyimage.com/1920x940/adadad/484c8a\" alt=\"Banner\"><div class=\"container\"><div class=\"content\"><h1>Accelerating the transformation to software-defined vehicles</h1><p class=\"text-28\">Your full-service technology partner that provides strategic</p><p>Your full-service technology partner that provides strategic advice as well as solution design and delivery excellence</p></div></div></section>"
+	},
+	"hero-with-video": {
+		"name": "Hero with video",
+		"html": "<section class=\"container-hero-video\"><figure><video class=\"bgvideo\" class=\"bgvideo\" autoplay=\"\" loop=\"\" muted=\"\" class=\"bgvideo\" id=\"bgvideo\"><source src=\"https://www.luxoft.com/upload/video/introducing_our_refreshed_corporate_identity.mp4\" type=\"video/mp4\"></video></figure><div class=\"container\"><div class=\"content\"><h1>Videos</h1><p class=\"text-28\">Take a look at how Luxoft leverages its tech expertise to help businesses grow and innovate</p></div></div></section>"
+	},
+	"hero-short-purple": {
+		"name": "Hero short purple",
+		"html": "<section class=\"container-hero-short-purple\"><div class=\"col gradient06\"><div class=\"content\"><p class=\"text-20 text-uppercase font-weight-bold\">client success stories</p><h1>Philips Sonicare for Kids Case Study</h1><p class=\"text-20\">Establishing a lifetime of healthy oral healthcare habits</p><p class=\"text-16\">3 min read</p></div></div><div class=\"col\"><figure><img src=\"{{ asset('/theme/luxoft/assets/images/hero-bg-02.png') }}\" alt=\"\"></figure></div><div class=\"down-arr\"><a href=\"#banner-down\"></a></div></section>"
+	},
+	"benefits-main": {
+		"name": "Benefits main",
+		"html": "<section class=\"container-benefits-main\"><h2>Quantifiable benefits main</h2><div class=\"content\"><div class=\"row\"><div class=\"col active\"><h5>Benefit title</h5><figure><img src=\"/theme/luxoft/assets/images/gradient02.png\" alt=\"benefits\"></figure><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore</p></div><div class=\"col\"><h5>Benefit title</h5><figure><img src=\"/theme/luxoft/assets/images/benefits_title_img.jpg\" alt=\"benefits\"></figure><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore</p></div><div class=\"col\"><h5>Benefit title</h5><figure><img src=\"/theme/luxoft/assets/images/gradient02.png\" alt=\"benefits\"></figure><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore</p></div></div><figure><img class=\"content-img\" src=\"\" alt=\"benefits\" hidden></figure></div></section>"
+	},
+	"benefits-main-alt": {
+		"name": "Benefits main ALT",
+		"html": "<section class=\"container-benefits-main__alt\"><h2>Quantifiable benefits alt</h2><h6>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</h6><div class=\"content\"><div class=\"row\"><div class=\"col active\"><h5>Benefit title</h5><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore</p><img src=\"/theme/luxoft/assets/images/benefits_title_img.jpg\" alt=\"benefits\"></div><div class=\"col\"><h5>Unique plays a big part in our engineers</h5><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore</p><img src=\"/theme/luxoft/assets/images/benefits_title_img_alt.jpg\" alt=\"benefits\"></div><div class=\"col\"><h5>Benefit title</h5><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore</p><img src=\"/theme/luxoft/assets/images/gradient02.png\" alt=\"benefits\"></div></div><figure><img class=\"content-img\" src=\"\" alt=\"benefits\"></figure></div></section>"
+	},
+	"benefits-source-alt": {
+		"name": "Benefits source ALT",
+		"html": "<section class=\"container-benefits-source__alt\"><h2>Quantifiable benefits source alt</h2><h6>Lorem ipsum dolor sit amet, consectetur adipiscing elitdolore magnaostrud exercitation.</h6><button></button><div class=\"content\"><div class=\"row\"><div class=\"col active\"><h3>Benenfit title 1</h3><div class=\"content-info\"><h6>Benenfit subtitle 1 lorem ipsum dolor sit amet, consectetur adipiscing enenfit subtitle 1 lorem ipsum dolor sit amet, consectetur adipiscing</h6><div></div><h2>45+</h2><p>Lorem ipsum: The Ultimate Placeholder Text for brief description Lorem ipsum: The Ultimate Placeholder Text for brief description</p></div></div><div class=\"col\"><h3>Benenfit title 2</h3><div class=\"content-info\"><h6>Benenfit subtitle 2 lorem ipsum dolor sit amet, consectetur adipiscing</h6><div></div><h2>45+</h2><p>Lorem ipsum: The Ultimate Placeholder Text for brief description </p></div></div><div class=\"col\"><h3>Benenfit title 3</h3><div class=\"content-info\"><h6>Benenfit subtitle 3 lorem ipsum dolor sit amet, consectetur adipiscing</h6><div></div><h2>45+</h2><p>Lorem ipsum: The Ultimate Placeholder Text for brief description</p></div></div></div><div class=\"tab-info\"></div><div class=\"nav-mobile-tabs\"></div></div></section>"
+	},
+	"banner-cta": {
+		"name": "CTA - Banner",
+		"html": "<section class=\"cta-section cta-section--image-btn radius--base\"><figure><img src=\"https://dummyimage.com/1920x600/d6cfd6/d6cfd6\" alt=\"background image\"></figure><div class=\"cta-section--image-btn__wrapper\"><div class=\"cta-section--image-btn__content\"><div class=\"text-center\"><h2>Consult one of our global strategists today</h2><div><a class=\"btn btn-text btn-icon btn-white\" href=\"#\">        <div class=\"text-container\"><div class=\"text\">Read more</div><div class=\"arr-offering\"><i class=\"arr-small one\"></i><i class=\"arr-small two\"></i><i class=\"arr-small three\"></i></div></div></a></div></div></div></div></section>"
+	},
+	"cta-video": {
+		"name": "CTA - Video",
+		"html": "<section class=\"cta-section cta-section--video-btn radius--base\"><figure><video class=\"cta-video\" autoplay=\"\" loop=\"\" muted=\"\"><source src=\"{{ asset('theme/luxoft/assets/video/Hero_screen_Luxoft_1920x1080_v6_1.mp4') }}\" type=\"video/mp4\"></video></figure><div class=\"cta-section--video-btn__wrapper\"><div class=\"cta-section--video-btn__content\"><div class=\"text-center\"><h2>Consult one of our global strategists today</h2><div><a class=\"btn btn-text btn-icon btn-white\" href=\"#\"><div class=\"text-container\"><div class=\"text\">Read more</div><div class=\"arr-offering\"><i class=\"arr-small one\"></i><i class=\"arr-small two\"></i><i class=\"arr-small three\"></i></div></div></a></div></div></div></div></section>"
+	},
+	"gradient-cta": {
+		"name": "CTA - Gradient",
+		"html": "<section class=\"cta-section cta-section--form cta-section--form--v3\"><div class=\"row\"><div class=\"col-lg-2\"></div><div class=\"col\"><h4 class=\"text-white mt-6\">Heading 4</h4><div><a class=\"btn btn-text btn-icon focus mt-4 mb-5\" href=\"#\"><div class=\"text-container\"><div class=\"text\">read more</div><div class=\"arr-offering\"><i class=\"arr-small one\"></i><i class=\"arr-small two\"></i><i class=\"arr-small three\"></i></div></div></a></div></div><div class=\"col-lg-2\"></div></div></section>"
+	},
+	"banner-form-cta": {
+		"name": "CTA - Banner and form",
+		"html": "<section class=\"cta-section cta-section--form cta-section--form--v1\"><div class=\"row\"><div class=\"col-12 col-lg-6 col-xl-7 image-col\"><div><figure><img src=\"https://dummyimage.com/900x620/d6cfd6/d6cfd6\" alt=\"background image\"></figure></div></div><div class=\"col-12 col-lg-6 col-xl-5 form-col\"><div class=\"form-col__content\"><h2>Ready to talk</h2><p>I want to talk yo your experts in:</p>{{ boltform('meet_us_form') }}</div></div></div></section>"
+	},
+	"gradient-person-form-cta": {
+		"name": "CTA - Gradient, leader and form",
+		"html": "<section class=\"cta-section cta-section--form cta-section--form--v2\"><div class=\"row\"><div class=\"col-12 col-lg-6 col-xl-5 gradiente-col\"><div class=\"gradiente-col__content\"><h3>Let's meet in person in Stuttgart or set up a call</h3><div class=\"person\"><figure><img src=\"{{ asset('theme/luxoft/assets/images/team/member09.jpg') }}\" alt=\"lead image\"></figure><p><a class=\"linkedin\" target=\"_blank\" href=\"#\"></a></p><div class=\"person--text\"><h5>Tobias Blahak</h5><p>Account manager OEM</p></div></div></div></div><div class=\"col-12 col-lg-6 col-xl-7 form-col\"><div class=\"form-col__content\">    {{ boltform('meet_us_form') }}</div></div></div></section>"
+	},
+	"banner-left-cta": {
+		"name": "CTA - Banner on the left",
+		"html": "<section class=\"cta-section\"><div class=\"container-video-left\"><div class=\"row\"><div><div class=\"video-content\"><figure><img src=\"https://dummyimage.com/900x620/d6cfd6/d6cfd6\" class=\"background-image\" alt=\"background image\"></figure>    </div></div><div><div><h2>Transform your business now</h2><p>Innovative products, technology and talent for the complex and competitive world of finance.</p><div><a class=\"btn btn-text btn-icon btn-white\" href=\"#\"><div class=\"text-container\"><div class=\"text\">Connect with us</div><div class=\"arr-offering\"><i class=\"arr-small one\"></i><i class=\"arr-small two\"></i><i class=\"arr-small three\"></i></div></div></a></div></div></div></div></div></section>"
+	},
+	"banner-right-cta": {
+		"name": "CTA - Banner on the right",
+		"html": "<section class=\"cta-section\"><div class=\"container-video-right\"><div class=\"row\"><div><div><h2>Transform your business now</h2><p>Innovative products, technology and talent for the complex and competitive world of finance.</p><div><a class=\"btn btn-text btn-icon btn-white\" href=\"#\"><div class=\"text-container\"><div class=\"text\">Connect with us</div><div class=\"arr-offering\"><i class=\"arr-small one\"></i><i class=\"arr-small two\"></i><i class=\"arr-small three\"></i></div></div></a></div></div></div><div><div class=\"video-content\"><figure><img src=\"https://dummyimage.com/900x620/d6cfd6/d6cfd6\" class=\"background-image\" alt=\"background image\"></figure></div></div></div></div></section>"
+	},
+	"gradient-with-form": {
+		"name": "CTA - Gradient and form",
+		"html": "<section class=\"cta-section cta-section--form cta-section--form--v3\"> <div class=\"row\">    <div class=\"col-12 col-lg-6 col-xl-5 text-col\"><div class=\"text-col__content\"><h3>Ready to talk?</h3><h5>I want to talk yo your experts in:</h5></div></div><div class=\"col-12 col-lg-6 col-xl-7 form-col\"><div class=\"form-col__content\">{{ boltform('meet_us_form') }}</div></div></div></section>"
+	},
+	"awards-v1": {
+		"name": "Awards - circles",
+		"html": "<section class=\"container-awards container-awards__v1\"><h2>Awards - circles</h2><div class=\"swiper swiper--v1\"><div class=\"swiper-wrapper\"><div class=\"swiper-slide\"><h2>Award 1</h2><p class=\"swiper-slide__text\">Lorem ipsum dolor sit amet</p><p class=\"marketing\">Lorem ipsum dolor sit amet</p><span class=\"swiper-slide__year\">2014</span></div><div class=\"swiper-slide\"><h2>Award 2</h2><p class=\"swiper-slide__text\">Lorem ipsum dolor sit amet</p><p class=\"marketing\">Lorem ipsum dolor sit amet</p><span class=\"swiper-slide__year\">2014</span></div><div class=\"swiper-slide\"><h2>Award 3</h2><p class=\"swiper-slide__text\">Lorem ipsum dolor sit amet</p><p class=\"marketing\">Lorem ipsum dolor sit amet</p><span class=\"swiper-slide__year\">2014</span></div></div><div class=\"swiper-pagination swiper-pagination--v1\"></div></div></section>"
+	},
+	"social-buttons-small": {
+		"name": "Socia buttons - small",
+		"html": "<ul class=\"social-buttons\"><li><a href=\"#\" class=\"social-share\" data-network=\"fb\"><img src=\"{​{ asset('theme/luxoft/assets/images/icons/fb-grey.svg') }​}\" alt=\"facebook icon\"></a></li><li><a href=\"#\" class=\"social-share\" data-network=\"twitter\"><img src=\"{​{ asset('theme/luxoft/assets/images/icons/twitter-grey.svg') }​}\" alt=\"twitter icon\"></a></li><li><a href=\"#\" class=\"social-share\" data-network=\"linkedin\"><img src=\"{​{ asset('theme/luxoft/assets/images/icons/linkedin-grey.svg') }​}\" alt=\"linkedin icon\"></a></li></ul>"
+	},
+	"social-buttons-big": {
+		"name": "Socia buttons - big",
+		"html": "<ul class=\"social-buttons bigger\"><li><a href=\"#\" class=\"social-share\" data-network=\"fb\"><img src=\"{​{ asset('theme/luxoft/assets/images/icons/fb-grey.svg') }​}\" alt=\"facebook icon\"></a></li><li><a href=\"#\" class=\"social-share\" data-network=\"twitter\"><img src=\"{​{ asset('theme/luxoft/assets/images/icons/twitter-grey.svg') }​}\" alt=\"twitter icon\"></a></li><li><a href=\"#\" class=\"social-share\" data-network=\"linkedin\"><img src=\"{​{ asset('theme/luxoft/assets/images/icons/linkedin-grey.svg') }​}\" alt=\"linkedin icon\"></a></li></ul>"
+	},
+	"light-style-breadcrumb": {
+		"name": "Light style Breadcrumb",
+		"html": "<div class=\"light-breadcrumbs\"><a class=\"breadcrumb\" href=\"#\">Go back</a></div>"
+	}
 }
