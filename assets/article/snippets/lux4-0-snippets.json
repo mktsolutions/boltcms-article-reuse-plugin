@@ -149,6 +149,6 @@
     },
     "container-hero-purple-any-height": {
         "name": "Hero purple any-height",
-        "html": "<section class=\"container-hero-purple-any-height gradient06\"><div class=\"container\"><div class=\"hero-title\"><h1>Luxoft and Amazon Web Services (AWS) leadership series: Luxoft Beyond | Business benefits of as-a-Service models for financial services</h1><p>Dec 14, 2022 by <b>Martin Wackenhut</b></p></div><div class=\"hero-image\"><figure><img src=\"{{ asset('assets/images/hero-bg-02.png') }}\" alt=\"Hero purple any-height image\"></figure></div></div></section>"
+        "html": "<section class=\"container-hero-purple-any-height gradient06\"><div class=\"container\"><div class=\"hero-title\"><h1>Luxoft and Amazon Web Services (AWS) leadership series: Luxoft Beyond | Business benefits of as-a-Service models for financial services</h1><p>Dec 14, 2022 by <b>Martin Wackenhut</b></p></div><div class=\"hero-image\"><figure><img src=\"https://www.luxoft.com/theme/luxoft/assets/images/hero-bg-02.png\" alt=\"Hero purple any-height image\"></figure></div></div></section>"
     }
 }
