@@ -83,7 +83,8 @@ table td {
 .container-our-solutions,
 .cta-section,
 .container-awards,
-.social-buttons {
+.social-buttons,
+.why-luxoft-two-columns {
     border: 1px solid #adadad;
     padding: 15px;
 }
@@ -132,7 +133,8 @@ table td {
 .container-benefits-main .content .row .col,
 .container-benefits-main__alt .content .row .col,
 .container-benefits-source__alt .content .row .col,
-.container-awards .swiper-slide {
+.container-awards .swiper-slide,
+.why-luxoft-two-columns .column .item {
     background-color: #00729a1a;
     border: 1px solid #009bfc66;
     padding: 10px 3px;
@@ -155,7 +157,9 @@ table td {
 .container-benefits-source__alt .content .row .col .content-info div,
 .container-benefits-source__alt button,
 .container-benefits-main__alt .content .content-img,
-.container-awards__v1 .swiper-pagination--v1 {
+.container-awards__v1 .swiper-pagination--v1,
+.why-luxoft-two-columns .column .item .item__border-top,
+.why-luxoft-two-columns .column .item .item__title img {
     display: none !important;
 }
 
@@ -205,4 +209,8 @@ table td {
 .collapsible-read-more .collapse .card-body,
 .collapsible-read-more .collapsing .card-body {
     font-size: 14px !important;
+}
+
+.why-luxoft-two-columns .column .item {
+    margin: 8px;
 }

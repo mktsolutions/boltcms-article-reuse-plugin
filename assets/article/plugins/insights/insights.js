@@ -42,8 +42,6 @@ ArticleEditor.add("plugin", "insights", {
 		)) {
 			const dataJson = await page.json();
 
-			console.log(dataJson);
-
 			if (Object.keys(dataJson).length > 0) {
 				const result = await this.getItemsData(dataJson, itemPosion);
 				items = {
@@ -208,7 +206,6 @@ ArticleEditor.add("plugin", "insights", {
 		} else if (insightsVersion === "fancy") {
 			for (var item of items) {
 				if (item !== "none") {
-					console.log(this.elements.items[item]);
 					htmlItems += `<div class="col html-code">
                           <img src="${this.elements.items[item].photo}" alt="">
                           <h4>${this.elements.items[item].industry}</h4>
