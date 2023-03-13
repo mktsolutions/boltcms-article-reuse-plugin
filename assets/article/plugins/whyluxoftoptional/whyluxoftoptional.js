@@ -82,7 +82,6 @@ ArticleEditor.add('plugin', 'whyluxoftoptional', {
 
         var data = stack.getData()
         var editableType = data.whyluxoftoptional
-        console.log(data)
         var instance = instance || this.app.create('block.whyluxoftoptional')
         var $block = instance.getBlock()
 

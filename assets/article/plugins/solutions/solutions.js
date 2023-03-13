@@ -85,7 +85,6 @@ ArticleEditor.add('plugin', 'solutions', {
         var instance = instance || this.app.create('block.solutions')
         var $block = instance.getBlock()
 
-        console.log(editableType)
         $block.addClass('solutions')
         var id = Math.floor(Math.random() * 100)
 
