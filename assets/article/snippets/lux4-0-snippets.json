@@ -77,7 +77,7 @@
     },
     "hero-single-item": {
         "name": "Hero - single banner",
-        "html": "<section class=\"container-hero-img\"><img src=\"https://dummyimage.com/1920x940/adadad/484c8a\" alt=\"Banner\"><div class=\"container\"><div class=\"content\"><h1>Accelerating the transformation to software-defined vehicles</h1><p class=\"text-28\">Your full-service technology partner that provides strategic</p><p>Your full-service technology partner that provides strategic advice as well as solution design and delivery excellence</p></div></div><div class=\"down-arr\"><a href=\"#banner-down\"><div class=\"text-20\"><p>Learn More</p></div></a></div></section>"
+        "html": "<section class=\"container-hero-img\"><img src=\"https://dummyimage.com/1920x940/adadad/484c8a\" alt=\"Banner\"><div class=\"container\"><div class=\"content\"><h1>Accelerating the transformation to software-defined vehicles</h1><p class=\"text-28\">Your full-service technology partner that provides strategic</p><p class=\"text-20\">Your full-service technology partner that provides strategic advice as well as solution design and delivery excellence</p></div></div><div class=\"down-arr\"><a href=\"#banner-down\"><div class=\"text-20\"><p>LEARN MORE</p></div></a></div></section>"
     },
     "hero-single-item-short": {
         "name": "Hero - single banner - short",
@@ -161,6 +161,10 @@
     },
     "hero-homepage-banner": {
         "name": "Homepage banner",
-        "html": "<section class=\"container-hero-homepage-banner\"><img src=\"https://dummyimage.com/1920x940/adadad/484c8a\" alt=\"Banner\"><div class=\"container\"><div class=\"content\"><h1>Luxoft — for a software-defined world</h1><p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum</p></div></div><div class=\"down-arr\"><a href=\"#banner-down\"><div class=\"text-20\"><p>Learn More</p></div></a></div></section>"
+        "html": "<section class=\"container-hero-homepage-banner\"><img src=\"https://dummyimage.com/1920x940/adadad/484c8a\" alt=\"Banner\"><div class=\"container\"><div class=\"content\"><h1>Luxoft — for a software-defined world</h1><p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum</p></div></div><div class=\"down-arr\"><a href=\"#banner-down\"><div class=\"text-20\"><p>LEARN MORE</p></div></a></div></section>"
+    },
+    "solutions-tiles": {
+        "name": "Solutions tiles",
+        "html": "<section class=\"solutions-tiles\"><div class=\"row\"><div class=\"col-12 col-lg-6\"><div class=\"solutions-tiles solutions-tiles__single\"><figure><img src=\"https://www.luxoft.com/files/services/intelligent-automation/Intelligent-automation-image-1.jpg\" alt=\"solutions tile image\"></figure><div class=\"solutions-tiles solutions-tiles__single--content\"><h4 class=\"title\">Digital Cockpit</h4><p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum</p><div class=\"btn-container\"><a href=\"#\" class=\"btn btn-text btn-icon focus\"><div class=\"text-container\"><div class=\"text\">Read more</div><div class=\"arr-offering\"><i class=\"arr-small one\"></i><i class=\"arr-small two\"></i><i class=\"arr-small three\"></i></div></div></a></div></div></div></div><div class=\"col-12 col-lg-6\"><div class=\"solutions-tiles solutions-tiles__single\"><figure><img src=\"https://www.luxoft.com/files/services/intelligent-automation/Intelligent-automation-image-1.jpg\" alt=\"solutions tile image\"></figure><div class=\"solutions-tiles solutions-tiles__single--content\"><h4 class=\"title\">Digital Cockpit</h4><div class=\"btn-container\"><a href=\"#\" class=\"btn btn-text btn-icon focus\"><div class=\"text-container\"><div class=\"text\">Read more</div><div  class=\"arr-offering\"><i class=\"arr-small one\"></i><i class=\"arr-small two\"></i><i class=\"arr-small three\"></i></div></div></a></div></div></div></div></div></section>"
     }
 }
