@@ -197,7 +197,7 @@ ArticleEditor.add("plugin", "insights", {
 
 			htmlStructure = `<section class="container-featured">
                         <div class="title">
-                          <h2>Featured insights - simple</h2>
+                          <h4 class="fs-2">Featured insights - simple</h4>
                         </div>
                         <div class="row">
                           ${htmlItems}
@@ -233,7 +233,7 @@ ArticleEditor.add("plugin", "insights", {
 
 			htmlStructure = `<section class="featured container-xxl"><div class="container">
                             <div class="row">
-                              <h2 class="featured__title">Featured insights - fancy</h2>
+                              <h4 class="featured__title fs-2">Featured insights - fancy</h4>
                             </div>
                             <div class="container-xxl js-stack-cards">
                               ${htmlItems}
@@ -280,9 +280,9 @@ ArticleEditor.add("plugin", "insights", {
 
 			htmlStructure = `<section class="container-insights">
                         <div class="title">
-                            <h2>
+                            <h4 class="fs-2">
                               Key insights and featured news - mixed
-                            </h2>
+                            </h4>
                         </div>
                           <div class="row">
                             ${htmlItems}
