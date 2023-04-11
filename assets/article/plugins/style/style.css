@@ -86,7 +86,8 @@ table td {
 .social-buttons,
 .why-luxoft-two-columns,
 .solutions-tiles,
-.cta-banner-section {
+.cta-banner-section,
+.related-content-snippet {
     border: 1px solid #adadad;
     padding: 15px;
 }
@@ -137,7 +138,8 @@ table td {
 .container-benefits-source__alt .content .row .col,
 .container-awards .swiper-slide,
 .why-luxoft-two-columns .column .item,
-.solutions-tiles__single {
+.solutions-tiles__single,
+.related-content-snippet .col {
     background-color: #00729a1a;
     border: 1px solid #009bfc66;
     padding: 10px 3px;
@@ -214,6 +216,11 @@ table td {
     font-size: 14px !important;
 }
 
-.why-luxoft-two-columns .column .item {
+.why-luxoft-two-columns .column .item,
+.related-content-snippet .col {
     margin: 8px;
+}
+
+.stretched-link::after {
+    position: initial !important;
 }
