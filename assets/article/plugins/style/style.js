@@ -14,6 +14,10 @@ ArticleEditor.add("plugin", "style", {
 					title: "Insert the DEFAULT UNSORTED LIST class",
 					classname: "default-ul",
 				},
+				"unscaled": {
+					title: "Unscaled list",
+					classname: "unscaled",
+				},
 			},
 			heading: {
 				h1: {
@@ -40,11 +44,19 @@ ArticleEditor.add("plugin", "style", {
 					title: "Font Size 6",
 					classname: "fs-6",
 				},
+				unscaled: {
+					title: "Unscaled heading",
+					classname: "unscaled",
+				},
 			},
 			paragraph: {
 				sub02: {
 					title: "Insert the SUB02 class",
 					classname: "sub02",
+				},
+				unscaled: {
+					title: "Unscaled",
+					classname: "unscaled",
 				},
 			},
 			layer: {
