@@ -85,7 +85,8 @@ table td {
 .container-awards,
 .social-buttons,
 .why-luxoft-two-columns,
-.solutions-tiles {
+.solutions-tiles,
+.cta-banner-section {
     border: 1px solid #adadad;
     padding: 15px;
 }
