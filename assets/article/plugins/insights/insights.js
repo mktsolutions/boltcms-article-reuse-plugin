@@ -1,5 +1,5 @@
 // Icon
-ArticleEditor.iconInsights = '<i class="fa fa-user"></i>';
+ArticleEditor.iconInsights = '<i class="fa fa-clipboard"></i>';
 
 // Plugin
 ArticleEditor.add("plugin", "insights", {
@@ -123,6 +123,7 @@ ArticleEditor.add("plugin", "insights", {
 						simple: "Simple",
 						fancy: "Fancy",
 						mixed: "Mixed",
+						vertical: "Vertical",
 					},
 				},
 				item1: {
@@ -161,10 +162,7 @@ ArticleEditor.add("plugin", "insights", {
 
 		var data = stack.getData();
 		var insightsVersion = data.version;
-		var item1 = data.item1;
-		var item2 = data.item2;
-		var item3 = data.item3;
-		var items = [item1, item2, item3];
+		var items = [data.item1, data.item2, data.item3];
 		var htmlStructure = ``;
 		var htmlItems = ``;
 
@@ -288,6 +286,37 @@ ArticleEditor.add("plugin", "insights", {
                             ${htmlItems}
                           </div>
                       </section>`;
+		} else if (insightsVersion === "vertical") {
+			for (var item of items) {
+				if (item !== "none") {
+					htmlItems += `
+					<div class="item html-code">
+						<div class="item--image">
+							<figure>
+								<img src="${this.elements.items[item].photo}" alt="">
+							</figure>
+						</div>
+						<div class="item--title">
+							<a href="/${this.elements.items[item].contentType}/${this.elements.items[item].slug}">
+							<h5>${this.elements.items[item].title.en}</h5>
+							</a>
+						</div>
+					</div>
+					<div class="twig-code">{% setcontent item = '${this.elements.items[item].contentType}/${this.elements.items[item].id}' %}</div>
+					{% if item is not empty %}
+						{{ include('@theme/partials/_blog-right-column-author.twig') }}
+					{% endif %}`;
+				}
+			}
+
+			htmlStructure = `<div class="related-content">
+								<div class="related-content__title">
+									<h4 class="text-20 unscaled">Related content</h4>
+								</div>
+								<div class="related-content__items">
+								${htmlItems}
+								</div>
+							</div>`;
 		}
 
 		this.app.editor.insertContent({
