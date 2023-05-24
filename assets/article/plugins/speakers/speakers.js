@@ -55,7 +55,7 @@ ArticleEditor.add("plugin", "speakers", {
 			const item = {
 				id: dataJson[speaker].id,
 				name: dataJson[speaker].fieldValues.name,
-				title: dataJson[speaker].fieldValues.title,
+				title: dataJson[speaker].fieldValues.title.en,
 				photo:
 					window.location.hostname === "127.0.0.1"
 						? "https://www.luxoft.com/files/people/2022/12/Rino-Ariganello.jpg"
