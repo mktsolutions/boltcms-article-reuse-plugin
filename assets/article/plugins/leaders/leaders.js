@@ -55,7 +55,7 @@ ArticleEditor.add("plugin", "leaders", {
 			const item = {
 				id: dataJson[leader].id,
 				name: dataJson[leader].fieldValues.name,
-				title: dataJson[leader].fieldValues.title,
+				title: dataJson[leader].fieldValues.title.en,
 				link: dataJson[leader].fieldValues.linkedin_url,
 				photo:
 					window.location.hostname === "127.0.0.1"

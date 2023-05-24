@@ -1,0 +1,32 @@
+.our-speakers {
+    padding: 15px 10px 25px;
+    border: 2px solid #afafaf;
+}
+
+.our-speakers h3 {
+    font-size: 24px !important;
+    font-weight: 500;
+    text-align: center;
+}
+
+.our-speakers .our-speakers__items {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.our-speakers .col-12 {
+    border: 2px solid #466f90;
+    margin: 15px;
+    width: 190px;
+}
+
+.our-speakers .our-speakers--item {
+    border: none !important;
+    pointer-events: none;
+    opacity: 0.9;
+}
+
+.our-speakers .twig-code {
+    display: none;
+}
