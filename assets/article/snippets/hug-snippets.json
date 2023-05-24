@@ -15,8 +15,12 @@
         "name": "Access services",
         "html": "<section class=\"container-access-services container\"><div><h2>Access services</h2><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p></div><div class=\"row items\"><div class=\"col-12 col-lg-4\"><div class=\"content\"><h3>Access service</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p></div></div><div class=\"col-12 col-lg-4\"><div class=\"content\"><h3>Access service</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p></div></div><div class=\"col-12 col-lg-4\"><div class=\"content\"><h3>Access service</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p></div></div></div></section>"
     },
-    "solutions-tiles": {
-        "name": "Solution tile",
+    "cta-image": {
+        "name": "CTA - Image",
         "html": "<section class=\"solutions-tiles container\"><div class=\"row\"><div class=\"col\"><div class=\"solutions-tiles solutions-tiles__single\"><figure><img src=\"https://www.luxoft.com/files/services/design/Design-solution-image-2.jpg\" alt=\"solutions tile image\"></figure><div class=\"solutions-tiles solutions-tiles__single--content\"><p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p><div class=\"btn-container\"><a href=\"#\" class=\"btn btn-text btn-icon focus\"><div class=\"text-container\"><div class=\"text\">Learn more</div><div class=\"arr-offering\"><i class=\"arr-small one\"></i><i class=\"arr-small two\"></i><i class=\"arr-small three\"></i></div></div></a></div></div></div></div></div></section>"
+    },
+    "cta-gradient": {
+        "name": "CTA - Gradient",
+        "html": "<section class=\"cta-section cta-section--gradient-btn\"><div class=\"cta-section--gradient-btn__wrapper\"><div class=\"cta-section--gradient-btn__content\"><div class=\"text-center\"><h2>Sign up for Hogan User Group</h2><div><a class=\"btn btn-text btn-icon btn-white\" href=\"/login\"><div class=\"text-container\"><div class=\"text\">Create an account</div><div class=\"arr-offering\"><i class=\"arr-small one\"></i><i class=\"arr-small two\"></i><i class=\"arr-small three\"></i></div></div></a></div></div></div></div></section>"
     }
 }
