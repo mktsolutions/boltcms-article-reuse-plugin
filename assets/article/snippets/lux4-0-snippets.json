@@ -15,6 +15,10 @@
         "name": "Breadcrumbs",
         "html": "{{breadcrumbs(record)}}"
     },
+    "light_breadcrumbs": {
+        "name": "Light Breadcrumbs",
+        "html": "{{light_breadcrumbs(record)}}"
+    },
     "contact-form-cta": {
         "name": "Meet Us Contact Form",
         "html": "{{ boltform('meet_us_form') }}"
