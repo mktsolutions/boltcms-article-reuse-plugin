@@ -1,7 +1,7 @@
 {
     "how-we-help": {
         "name": "How we help",
-        "html": "<section class=\"container-how-we-help\"> <h2>How we help our clients</h2> <div class=\"row\"> <div class=\"col\"><div><figure><img src=\"{{ asset('theme/luxoft/assets/images/frame_vector.svg') }}\" alt=\"vector\"></figure><h4>new products and growth</h4><p>Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for visual mockups.</p></div></div> </div> </section>"
+        "html": "<section class=\"container-how-we-help\"><h2>How we help our clients</h2><div class=\"row\"><div class=\"col\"><div><figure><img src=\"{{ asset('theme/luxoft/assets/images/frame_vector.svg') }}\" alt=\"vector\"></figure><h3>new products and growth</h3><p>Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for visual mockups.</p></div></div></div></section>"
     },
     "solutions": {
         "name": "Solutions",
@@ -41,7 +41,7 @@
     },
     "key-points": {
         "name": "Key points",
-        "html": "<section class=\"container-key-points\"><h2>Key points</h2><p class=\"align-center\">Some description here</p><div class=\"row\"><div class=\"col\"><h2>80%</h2><h5>Item title</h5><p>Lorem ipsum is placeholder text commonly used in the graphic.</p></div></div></section>"
+        "html": "<section class=\"container-key-points\"><h2>Key points</h2><p class=\"align-center\">Some description here</p><div class=\"row\"><div class=\"col\"><h2>80%</h2><h3>Item title</h3><p>Lorem ipsum is placeholder text commonly used in the graphic.</p></div></div></section>"
     },
     "key-highlights": {
         "name": "Key highlights",
@@ -53,11 +53,11 @@
     },
     "partnership-": {
         "name": "Partnership",
-        "html": "<section class=\"container-partnership\"><div class=\"title\"><h2>Partnership ecosystem</h2><div><p>Lorem ipsum is placeholder text commonly used in the graphic 1.</p><p>Lorem ipsum is placeholder text commonly used in the graphic 2.</p></div></div><div class=\"row\"><div class=\"col\"><a href=\"#\"><div ><h5>Alveo</h5><p>Premium partner</p></div></a></div><div class=\"col\"><a href=\"#\"><div ><h5>Flowable</h5><p>Premium partner</p></div></a></div></div></section>"
+        "html": "<section class=\"container-partnership\"><div class=\"title\"><h2>Partnership ecosystem</h2><div><p>Lorem ipsum is placeholder text commonly used in the graphic 1.</p><p>Lorem ipsum is placeholder text commonly used in the graphic 2.</p></div></div><div class=\"row\"><div class=\"col\"><a href=\"#\"><div><h3 class=\"fs-6\">Alveo</h3><p>Premium partner</p></div></a></div><div class=\"col\"><a href=\"#\"><div><h3 class=\"fs-6\">Flowable</h3><p>Premium partner</p></div></a></div></div></section>"
     },
     "partnership-alt": {
         "name": "Partnership ALT",
-        "html": "<section class=\"container-partnership-alt\"><div class=\"title\"><h2>Partnership<br> ecosystem</h2><div><p>Lorem ipsum is placeholder text commonly used in the graphic 1.</p><p>Lorem ipsum is placeholder text commonly used in the graphic 2.</p></div></div><div class=\"row\"><div class=\"col\"><a href=\"#\"><div ><h5>Alveo</h5><p>Premium partner</p></div></a></div><div class=\"col\"><a href=\"#\"><div><h5>Flowable</h5><p>Premium partner</p></div></a></div></div></section>"
+        "html": "<section class=\"container-partnership-alt\"><div class=\"title\"><h2>Partnership<br> ecosystem</h2><div><p>Lorem ipsum is placeholder text commonly used in the graphic 1.</p><p>Lorem ipsum is placeholder text commonly used in the graphic 2.</p></div></div><div class=\"row\"><div class=\"col\"><a href=\"#\"><div><h3 class=\"fs-6\">Alveo</h3><p>Premium partner</p></div></a></div><div class=\"col\"><a href=\"#\"><div><h3 class=\"fs-6\">Flowable</h3><p>Premium partner</p></div></a></div></div></section>"
     },
     "why-luxoft": {
         "name": "Why Luxoft",
@@ -133,11 +133,11 @@
     },
     "banner-left-cta": {
         "name": "CTA - Banner on the left",
-        "html": "<section class=\"cta-section\"><div class=\"container-video-left\"><div class=\"row\"><div><div class=\"video-content\"><figure><img src=\"https://dummyimage.com/900x620/d6cfd6/d6cfd6\" class=\"background-image\" alt=\"background image\"></figure>    </div></div><div><div><h2>Transform your business now</h2><p>Innovative products, technology and talent for the complex and competitive world of finance.</p><div><a class=\"btn btn-text btn-icon btn-white\" href=\"#\"><div class=\"text-container\"><div class=\"text\">Connect with us</div><div class=\"arr-offering\"><i class=\"arr-small one\"></i><i class=\"arr-small two\"></i><i class=\"arr-small three\"></i></div></div></a></div></div></div></div></div></section>"
+        "html": "<section class=\"cta-section\"><div class=\"container-video-left\"><div class=\"row\"><div><div class=\"video-content\"><figure><img src=\"https://dummyimage.com/900x620/d6cfd6/d6cfd6\" class=\"background-image\" alt=\"background image\"></figure></div></div><div><div><h2>Transform your business now</h2><p class=\"text-20\">Innovative products, technology and talent for the complex and competitive world of finance.</p><div><a class=\"btn btn-text btn-icon btn-white\" href=\"#\"><div class=\"text-container\"><div class=\"text\">Connect with us</div><div class=\"arr-offering\"><i class=\"arr-small one\"></i><i class=\"arr-small two\"></i><i class=\"arr-small three\"></i></div></div></a></div></div></div></div></div></section>"
     },
     "banner-right-cta": {
         "name": "CTA - Banner on the right",
-        "html": "<section class=\"cta-section\"><div class=\"container-video-right\"><div class=\"row\"><div><div><h2>Transform your business now</h2><p>Innovative products, technology and talent for the complex and competitive world of finance.</p><div><a class=\"btn btn-text btn-icon btn-white\" href=\"#\"><div class=\"text-container\"><div class=\"text\">Connect with us</div><div class=\"arr-offering\"><i class=\"arr-small one\"></i><i class=\"arr-small two\"></i><i class=\"arr-small three\"></i></div></div></a></div></div></div><div><div class=\"video-content\"><figure><img src=\"https://dummyimage.com/900x620/d6cfd6/d6cfd6\" class=\"background-image\" alt=\"background image\"></figure></div></div></div></div></section>"
+        "html": "<section class=\"cta-section\"><div class=\"container-video-right\"><div class=\"row\"><div><div><h2>Transform your business now</h2><p class=\"text-20\">Innovative products, technology and talent for the complex and competitive world of finance.</p><div><a class=\"btn btn-text btn-icon btn-white\" href=\"#\"><div class=\"text-container\"><div class=\"text\">Connect with us</div><div class=\"arr-offering\"><i class=\"arr-small one\"></i><i class=\"arr-small two\"></i><i class=\"arr-small three\"></i></div></div></a></div></div></div><div><div class=\"video-content\"><figure><img src=\"https://dummyimage.com/900x620/d6cfd6/d6cfd6\" class=\"background-image\" alt=\"background image\"></figure></div></div></div></div></section>"
     },
     "gradient-with-form": {
         "name": "CTA - Gradient and form",
@@ -169,7 +169,7 @@
     },
     "solutions-tiles": {
         "name": "Solutions tiles",
-        "html": "<section class=\"solutions-tiles\"><div class=\"row\"><div class=\"col-12 text-center\"><h2>Solutions section new</h2></div></div><div class=\"row\"><div class=\"col-12 col-lg-6\"><div class=\"solutions-tiles solutions-tiles__single\"><figure><img src=\"https://www.luxoft.com/files/services/intelligent-automation/Intelligent-automation-image-1.jpg\" alt=\"solutions tile image\"></figure><div class=\"solutions-tiles solutions-tiles__single--content\"><h4 class=\"title\">Digital Cockpit</h4><p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum</p><div class=\"btn-container\"><a href=\"#\" class=\"btn btn-text btn-icon focus\"><div class=\"text-container\"><div class=\"text\">Read more</div><div class=\"arr-offering\"><i class=\"arr-small one\"></i><i class=\"arr-small two\"></i><i class=\"arr-small three\"></i></div></div></a></div></div></div></div><div class=\"col-12 col-lg-6\"><div class=\"solutions-tiles solutions-tiles__single\"><figure><img src=\"https://www.luxoft.com/files/services/intelligent-automation/Intelligent-automation-image-1.jpg\" alt=\"solutions tile image\"></figure><div class=\"solutions-tiles solutions-tiles__single--content\"><h4 class=\"title\">Digital Cockpit</h4><p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum</p><div class=\"btn-container\"><a href=\"#\" class=\"btn btn-text btn-icon focus\"><div class=\"text-container\"><div class=\"text\">Read more</div><div  class=\"arr-offering\"><i class=\"arr-small one\"></i><i class=\"arr-small two\"></i><i class=\"arr-small three\"></i></div></div></a></div></div></div></div></div></section>"
+        "html": "<section class=\"solutions-tiles\"><div class=\"row\"><div class=\"col-12 text-center\"><h2>Solutions section new</h2></div></div><div class=\"row\"><div class=\"col-12 col-lg-6\"><div class=\"solutions-tiles solutions-tiles__single\"><figure><img src=\"https://www.luxoft.com/files/services/intelligent-automation/Intelligent-automation-image-1.jpg\" alt=\"solutions tile image\"></figure><div class=\"solutions-tiles solutions-tiles__single--content\"><h3 class=\"title\">Digital Cockpit</h3><p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum</p><div class=\"btn-container\"><a href=\"#\" class=\"btn btn-text btn-icon focus\"><div class=\"text-container\"><div class=\"text\">Read more</div><div class=\"arr-offering\"><i class=\"arr-small one\"></i><i class=\"arr-small two\"></i><i class=\"arr-small three\"></i></div></div></a></div></div></div></div><div class=\"col-12 col-lg-6\"><div class=\"solutions-tiles solutions-tiles__single\"><figure><img src=\"https://www.luxoft.com/files/services/intelligent-automation/Intelligent-automation-image-1.jpg\" alt=\"solutions tile image\"></figure><div class=\"solutions-tiles solutions-tiles__single--content\"><h3 class=\"title\">Digital Cockpit</h3><p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum</p><div class=\"btn-container\"><a href=\"#\" class=\"btn btn-text btn-icon focus\"><div class=\"text-container\"><div class=\"text\">Read more</div><div  class=\"arr-offering\"><i class=\"arr-small one\"></i><i class=\"arr-small two\"></i><i class=\"arr-small three\"></i></div></div></a></div></div></div></div></div></section>"
     },
     "blog-in-brief": {
         "name": "Blog - in brief",

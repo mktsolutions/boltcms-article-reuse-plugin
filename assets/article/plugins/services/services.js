@@ -115,7 +115,7 @@ ArticleEditor.add('plugin', 'services', {
             servicesHtml += `<div class="col">
                                 <div class="content">
                                     <a href="#">
-                                        <div class="sub02"><p>Service ${x}</p></div>
+                                        <div class="sub02"><h3>Service ${x}</h3></div>
                                         <p>Description of service ${x}</p>
                                     </a>
                                 </div>
