@@ -298,7 +298,7 @@ ArticleEditor.add("plugin", "insights", {
 						</div>
 						<div class="item--title">
 							<a href="/${this.elements.items[item].contentType}/${this.elements.items[item].slug}">
-							<h5>${this.elements.items[item].title.en}</h5>
+							<p>${this.elements.items[item].title.en}</p>
 							</a>
 						</div>
 					</div>
