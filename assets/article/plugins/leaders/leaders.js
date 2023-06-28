@@ -5,47 +5,36 @@ ArticleEditor.add("plugin", "leaders", {
 	},
 	start: async function () {
 
-		const testPages = 5;
+		const testPages = 10;
 		const pageSize = 200;
+		let leaderPosition = 0;
+		let items = {};
+		let selectOptions = {};
+
 		for (let i = 1; i <= testPages; i++) {
 			let apiResponse = await fetch(
 				`${this.opts.leaders.url}/api/contents?page=${i}&contentType=${this.opts.leaders.contentType}&status=published&pageSize=${pageSize}`
 			);
 			let json = await apiResponse.json();
-			console.log('leaders');
-			console.log(json);
-		}
 
-
-
-		const pages = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
-		var items = {};
-		var selectOptions = {};
-		var leaderPosion = 0;
-
-		for await (const page of pages.map((page) =>
-			fetch(
-				`${this.opts.leaders.url}/api/contents?page=${page}&contentType=${this.opts.leaders.contentType}&status=published`
-			)
-		)) {
-			const dataJson = await page.json();
-
-			if (Object.keys(dataJson).length > 0) {
-				const result = await this.getLeadersData(dataJson, leaderPosion);
-				items = {
-					...items,
-					...result[0],
-				};
-				selectOptions = {
-					...selectOptions,
-					...result[1],
-				};
-				leaderPosion = result[2];
-
-				continue;
+			if (!json.length) {
+				// if no data - no need to send more requests
+				break;
 			}
 
-			break;
+			const result = await this.getLeadersData(json, leaderPosition);
+			items = {
+				...items,
+				...result[0],
+			};
+			selectOptions = {
+				...selectOptions,
+				...result[1],
+			};
+			leaderPosition = result[2];
+
+			console.log('leaders page ' + i);
+			console.log(json);
 		}
 
 		this.app.toolbar.add("leaders", {
@@ -61,9 +50,10 @@ ArticleEditor.add("plugin", "leaders", {
 			},
 		});
 	},
-	getLeadersData: async function (dataJson, leaderPosion) {
+	getLeadersData: async function (dataJson, leaderPosition) {
 		const newItems = {};
 		const newSelectOptions = {};
+		const isLocal = window.location.hostname === "127.0.0.1";
 
 		for (const leader in dataJson) {
 			const item = {
@@ -72,19 +62,19 @@ ArticleEditor.add("plugin", "leaders", {
 				title: dataJson[leader].fieldValues.title.en,
 				link: dataJson[leader].fieldValues.linkedin_url,
 				photo:
-					window.location.hostname === "127.0.0.1"
+					isLocal
 						? "https://www.luxoft.com/upload/resize_cache/iblock/303/400_0_1/RinoAriganello.jpg"
 						: dataJson[leader].fieldValues.image.url,
 				command: "leaders.insert",
 			};
-			newItems[leaderPosion] = item;
+			newItems[leaderPosition] = item;
 			newSelectOptions[
-				leaderPosion
+				leaderPosition
 			] = `${dataJson[leader].fieldValues.name} - ${dataJson[leader].fieldValues.title.en}`;
-			leaderPosion++;
+			leaderPosition++;
 		}
 
-		return [newItems, newSelectOptions, leaderPosion];
+		return [newItems, newSelectOptions, leaderPosition];
 	},
 	popup: function (params, button) {
 		this.app.popup.create("leaders", {
