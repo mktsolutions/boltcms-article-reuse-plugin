@@ -30,13 +30,13 @@ ArticleEditor.add("plugin", "insights", {
 		this.elements = {};
 	},
 	start: async function () {
-		const testPages = 5;
+		const pagesAmount = 5;
 		const pageSize = 200;
 		let items = {};
 		let selectOptions = { none: "-- NONE --" };
 		let insightPosition = 0;
 
-		for (let i = 1; i <= testPages; i++) {
+		for (let i = 1; i <= pagesAmount; i++) {
 			let apiResponse = await fetch(
 				`${this.opts.insights.url}/api/contents?page=${i}&contentType%5B%5D=${this.opts.insights.contentTypes.videos}&contentType%5B%5D=${this.opts.insights.contentTypes.pressReleases}&contentType%5B%5D=${this.opts.insights.contentTypes.whitepapers}&contentType%5B%5D=${this.opts.insights.contentTypes.blogs}&contentType%5B%5D=${this.opts.insights.contentTypes.caseStudies}&status=published&pageSize=${pageSize}`
 			);
@@ -59,8 +59,10 @@ ArticleEditor.add("plugin", "insights", {
 			};
 			insightPosition = result[2];
 
-			console.log('speakers...');
-			console.log(json);
+			if (json.length < pageSize) {
+				// if no data - no need to send more requests
+				break;
+			}
 		}
 
 		this.elements = {
