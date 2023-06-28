@@ -26,6 +26,19 @@ ArticleEditor.add("plugin", "casestudies", {
 		this.elements = {};
 	},
 	start: async function () {
+
+		const testPages = 5;
+		const pageSize = 200;
+		for (let i = 1; i <= testPages; i++) {
+			let apiResponse = await fetch(
+				`${this.opts.casestudies.url}/api/contents?page=${i}&contentType=${this.opts.insights.contentTypes.caseStudies}&status=published&pageSize=${pageSize}`
+			);
+			let json = await apiResponse.json();
+			console.log('casestudies...');
+			console.log(json);
+		}
+
+
 		const pages = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13];
 		var items = {};
 		var selectOptions = { none: "-- NONE --" };
