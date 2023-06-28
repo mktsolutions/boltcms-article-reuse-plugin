@@ -5,20 +5,19 @@ ArticleEditor.add("plugin", "leaders", {
 	},
 	start: async function () {
 
-		const testPages = 10;
+		const pagesAmount = 10;
 		const pageSize = 200;
 		let leaderPosition = 0;
 		let items = {};
 		let selectOptions = {};
 
-		for (let i = 1; i <= testPages; i++) {
+		for (let i = 1; i <= pagesAmount; i++) {
 			let apiResponse = await fetch(
 				`${this.opts.leaders.url}/api/contents?page=${i}&contentType=${this.opts.leaders.contentType}&status=published&pageSize=${pageSize}`
 			);
 			let json = await apiResponse.json();
 
 			if (!json.length) {
-				// if no data - no need to send more requests
 				break;
 			}
 
@@ -33,8 +32,10 @@ ArticleEditor.add("plugin", "leaders", {
 			};
 			leaderPosition = result[2];
 
-			console.log('leaders page ' + i);
-			console.log(json);
+			if (json.length < pageSize) {
+				// if no data - no need to send more requests
+				break;
+			}
 		}
 
 		this.app.toolbar.add("leaders", {

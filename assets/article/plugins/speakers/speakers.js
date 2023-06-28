@@ -4,13 +4,13 @@ ArticleEditor.add("plugin", "speakers", {
 		contentType: "people",
 	},
 	start: async function () {
-		const testPages = 5;
+		const pagesAmount = 5;
 		const pageSize = 200;
 		let items = {};
 		let selectOptions = {};
 		let speakerPosition = 0;
 
-		for (let i = 1; i <= testPages; i++) {
+		for (let i = 1; i <= pagesAmount; i++) {
 			let apiResponse = await fetch(
 				`${this.opts.speakers.url}/api/contents?page=${i}&contentType=${this.opts.speakers.contentType}&status=published&pageSize=${pageSize}`
 			);
@@ -33,8 +33,10 @@ ArticleEditor.add("plugin", "speakers", {
 			};
 			speakerPosition = result[2];
 
-			console.log('speakers...');
-			console.log(json);
+			if (json.length < pageSize) {
+				// if no data - no need to send more requests
+				break;
+			}
 		}
 
 		this.app.toolbar.add("speakers", {
