@@ -30,34 +30,37 @@ ArticleEditor.add("plugin", "insights", {
 		this.elements = {};
 	},
 	start: async function () {
-		const pages = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13];
-		var items = {};
-		var selectOptions = { none: "-- NONE --" };
-		var itemPosion = 0;
+		const testPages = 5;
+		const pageSize = 200;
+		let items = {};
+		let selectOptions = { none: "-- NONE --" };
+		let insightPosition = 0;
 
-		for await (const page of pages.map((page) =>
-			fetch(
-				`${this.opts.insights.url}/api/contents?page=${page}&contentType%5B%5D=${this.opts.insights.contentTypes.videos}&contentType%5B%5D=${this.opts.insights.contentTypes.pressReleases}&contentType%5B%5D=${this.opts.insights.contentTypes.whitepapers}&contentType%5B%5D=${this.opts.insights.contentTypes.blogs}&contentType%5B%5D=${this.opts.insights.contentTypes.caseStudies}&status=published`
-			)
-		)) {
-			const dataJson = await page.json();
+		for (let i = 1; i <= testPages; i++) {
+			let apiResponse = await fetch(
+				`${this.opts.insights.url}/api/contents?page=${i}&contentType%5B%5D=${this.opts.insights.contentTypes.videos}&contentType%5B%5D=${this.opts.insights.contentTypes.pressReleases}&contentType%5B%5D=${this.opts.insights.contentTypes.whitepapers}&contentType%5B%5D=${this.opts.insights.contentTypes.blogs}&contentType%5B%5D=${this.opts.insights.contentTypes.caseStudies}&status=published&pageSize=${pageSize}`
+			);
+			let json = await apiResponse.json();
 
-			if (Object.keys(dataJson).length > 0) {
-				const result = await this.getItemsData(dataJson, itemPosion);
-				items = {
-					...items,
-					...result[0],
-				};
-				selectOptions = {
-					...selectOptions,
-					...result[1],
-				};
-				itemPosion = result[2];
-
-				continue;
+			if (!json.length) {
+				// if no data - no need to send more requests
+				break;
 			}
 
-			break;
+			const result = await this.getItemsData(json, insightPosition);
+
+			items = {
+				...items,
+				...result[0],
+			};
+			selectOptions = {
+				...selectOptions,
+				...result[1],
+			};
+			insightPosition = result[2];
+
+			console.log('speakers...');
+			console.log(json);
 		}
 
 		this.elements = {
@@ -71,9 +74,10 @@ ArticleEditor.add("plugin", "insights", {
 			command: "insights.popup",
 		});
 	},
-	getItemsData: async function (dataJson, itemPosion) {
+	getItemsData: async function (dataJson, itemPosition) {
 		const newItems = {};
 		const newSelectOptions = {};
+		const isLocal = window.location.hostname === "127.0.0.1";
 
 		for (const single in dataJson) {
 			const item = {
@@ -82,7 +86,7 @@ ArticleEditor.add("plugin", "insights", {
 				description: dataJson[single].fieldValues.preview_description_text,
 				slug: dataJson[single].fieldValues.slug,
 				photo:
-					window.location.hostname === "127.0.0.1"
+					isLocal
 						? "https://www.luxoft.com/upload/medialibrary/563/behavioral_archetypes.png"
 						: dataJson[single].fieldValues.photo.url,
 				contentType: dataJson[single].contentType,
@@ -92,8 +96,8 @@ ArticleEditor.add("plugin", "insights", {
 					  ]
 					: "",
 			};
-			newItems[itemPosion] = item;
-			var singleName =
+			newItems[itemPosition] = item;
+			let singleName =
 				dataJson[single].contentType === "case-studies"
 					? "case study"
 					: dataJson[single].contentType === "blog"
@@ -103,12 +107,12 @@ ArticleEditor.add("plugin", "insights", {
 							dataJson[single].contentType.length - 1
 					  );
 			newSelectOptions[
-				itemPosion
+				itemPosition
 			] = `${dataJson[single].fieldValues.name} - ${singleName}`;
-			itemPosion++;
+			itemPosition++;
 		}
 
-		return [newItems, newSelectOptions, itemPosion];
+		return [newItems, newSelectOptions, itemPosition];
 	},
 	popup: function () {
 		var stack = this.app.popup.create("insights", {
