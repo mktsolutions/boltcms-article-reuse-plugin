@@ -177,7 +177,7 @@ ArticleEditor.add("plugin", "insights", {
 				if (item !== "none") {
 					htmlItems += `<div class="col html-code">
                           <img src="${this.elements.items[item].photo}" alt="">
-                          <p>${this.elements.items[item].title.en}</p>
+                          <h3>${this.elements.items[item].title.en}</h3>
                           <p class="gray">${this.elements.items[item].description}</p>
                           <div class="btn-container">
                             <a class="btn btn-text btn-icon focus" href="/${this.elements.items[item].contentType}/${this.elements.items[item].slug}">
