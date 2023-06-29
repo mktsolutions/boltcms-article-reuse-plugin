@@ -171,7 +171,7 @@ ArticleEditor.add("plugin", "insights", {
 				if (item !== "none") {
 					htmlItems += `<div class="col html-code">
                           <img src="${this.elements.items[item].photo}" alt="">
-                          <h4>${this.elements.items[item].title.en}</h4>
+                          <p>${this.elements.items[item].title.en}</p>
                           <p class="gray">${this.elements.items[item].description}</p>
                           <div class="btn-container">
                             <a class="btn btn-text btn-icon focus" href="/${this.elements.items[item].contentType}/${this.elements.items[item].slug}">
@@ -206,7 +206,7 @@ ArticleEditor.add("plugin", "insights", {
 				if (item !== "none") {
 					htmlItems += `<div class="col html-code">
                           <img src="${this.elements.items[item].photo}" alt="">
-                          <h4>${this.elements.items[item].industry}</h4>
+                          <p>${this.elements.items[item].industry}</p>
                           <h2>${this.elements.items[item].title.en}</h2>
                           <p class="gray">${this.elements.items[item].description}</p>
                           <div class="btn-container">
