@@ -4,34 +4,39 @@ ArticleEditor.add("plugin", "speakers", {
 		contentType: "people",
 	},
 	start: async function () {
-		const pages = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
-		var items = {};
-		var selectOptions = {};
-		var speakerPosition = 0;
+		const pagesAmount = 5;
+		const pageSize = 200;
+		let items = {};
+		let selectOptions = {};
+		let speakerPosition = 0;
 
-		for await (const page of pages.map((page) =>
-			fetch(
-				`${this.opts.speakers.url}/api/contents?page=${page}&contentType=${this.opts.speakers.contentType}&status=published`
-			)
-		)) {
-			const dataJson = await page.json();
+		for (let i = 1; i <= pagesAmount; i++) {
+			let apiResponse = await fetch(
+				`${this.opts.speakers.url}/api/contents?page=${i}&contentType=${this.opts.speakers.contentType}&status=published&pageSize=${pageSize}`
+			);
+			let json = await apiResponse.json();
 
-			if (Object.keys(dataJson).length > 0) {
-				const result = await this.getSpeakersData(dataJson, speakerPosition)
-				items = {
-					...items,
-					...result[0],
-				};
-				selectOptions = {
-					...selectOptions,
-					...result[1],
-				};
-				speakerPosition = result[2]
-
-				continue;
+			if (!json.length) {
+				// if no data - no need to send more requests
+				break;
 			}
 
-			break;
+			const result = await this.getSpeakersData(json, speakerPosition);
+
+			items = {
+				...items,
+				...result[0],
+			};
+			selectOptions = {
+				...selectOptions,
+				...result[1],
+			};
+			speakerPosition = result[2];
+
+			if (json.length < pageSize) {
+				// if no data - no need to send more requests
+				break;
+			}
 		}
 
 		this.app.toolbar.add("speakers", {
@@ -50,6 +55,7 @@ ArticleEditor.add("plugin", "speakers", {
 	getSpeakersData: async function (dataJson, speakerPosition) {
 		const newItems = {};
 		const newSelectOptions = {};
+		const isLocal = window.location.hostname === "127.0.0.1";
 
 		for (const speaker in dataJson) {
 			const item = {
@@ -57,7 +63,7 @@ ArticleEditor.add("plugin", "speakers", {
 				name: dataJson[speaker].fieldValues.name,
 				title: dataJson[speaker].fieldValues.title.en,
 				photo:
-					window.location.hostname === "127.0.0.1"
+					isLocal
 						? "https://www.luxoft.com/files/people/2022/12/Rino-Ariganello.jpg"
 						: dataJson[speaker].fieldValues.image.url,
 				command: "speakers.insert",

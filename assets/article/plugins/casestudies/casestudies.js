@@ -26,34 +26,39 @@ ArticleEditor.add("plugin", "casestudies", {
 		this.elements = {};
 	},
 	start: async function () {
-		const pages = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13];
-		var items = {};
-		var selectOptions = { none: "-- NONE --" };
-		var itemPosion = 0;
 
-		for await (const page of pages.map((page) =>
-			fetch(
-				`${this.opts.casestudies.url}/api/contents?page=${page}&contentType=${this.opts.insights.contentTypes.caseStudies}&status=published`
-			)
-		)) {
-			const dataJson = await page.json();
+		const pagesAmount = 5;
+		const pageSize = 200;
+		let items = {};
+		let selectOptions = { none: "-- NONE --" };
+		let itemPosition = 0;
 
-			if (Object.keys(dataJson).length > 0) {
-				const result = await this.getItemsData(dataJson, itemPosion);
-				items = {
-					...items,
-					...result[0],
-				};
-				selectOptions = {
-					...selectOptions,
-					...result[1],
-				};
-				itemPosion = result[2];
+		for (let i = 1; i <= pagesAmount; i++) {
+			let apiResponse = await fetch(
+				`${this.opts.casestudies.url}/api/contents?page=${i}&contentType=${this.opts.insights.contentTypes.caseStudies}&status=published&pageSize=${pageSize}`
+			);
+			let json = await apiResponse.json();
 
-				continue;
+			if (!json.length) {
+				break;
 			}
 
-			break;
+			const result = await this.getItemsData(json, itemPosition);
+
+			items = {
+				...items,
+				...result[0],
+			};
+			selectOptions = {
+				...selectOptions,
+				...result[1],
+			};
+			itemPosition = result[2];
+
+			if (json.length < pageSize) {
+				// if no data - no need to send more requests
+				break;
+			}
 		}
 
 		this.elements = {
@@ -67,9 +72,10 @@ ArticleEditor.add("plugin", "casestudies", {
 			command: "casestudies.popup",
 		});
 	},
-	getItemsData: async function (dataJson, itemPosion) {
+	getItemsData: async function (dataJson, itemPosition) {
 		const newItems = {};
 		const newSelectOptions = {};
+		const isLocal = window.location.hostname === "127.0.0.1";
 
 		for (const single in dataJson) {
 			const item = {
@@ -78,7 +84,7 @@ ArticleEditor.add("plugin", "casestudies", {
 				description: dataJson[single].fieldValues.preview_description_text,
 				slug: dataJson[single].fieldValues.slug,
 				photo:
-					window.location.hostname === "127.0.0.1"
+					isLocal
 						? "https://www.luxoft.com/upload/medialibrary/563/behavioral_archetypes.png"
 						: dataJson[single].fieldValues.photo.url,
 				contentType: dataJson[single].contentType,
@@ -88,9 +94,10 @@ ArticleEditor.add("plugin", "casestudies", {
 					  ]
 					: "",
 			};
-			newItems[itemPosion] = item;
-			newSelectOptions[itemPosion] = `${dataJson[single].fieldValues.name}`;
-			itemPosion++;
+
+			newItems[itemPosition] = item;
+			newSelectOptions[itemPosition] = `${dataJson[single].fieldValues.name}`;
+			itemPosition++;
 		}
 
 		return [newItems, newSelectOptions, itemPosion];
@@ -149,7 +156,7 @@ ArticleEditor.add("plugin", "casestudies", {
 			if (item !== "none") {
 				htmlItems += `<div class="html-code">
                           <img src="${this.elements.items[item].photo}" alt="">
-                          <h4>${this.elements.items[item].title.en}</h4>
+                          <p>${this.elements.items[item].title.en}</p>
                           <p class="gray">${this.elements.items[item].description}</p>
                           <div class="btn-container">
                             <a class="btn btn-text btn-icon focus" href="/${this.elements.items[item].contentType}/${this.elements.items[item].slug}">
