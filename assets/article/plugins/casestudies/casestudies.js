@@ -100,7 +100,7 @@ ArticleEditor.add("plugin", "casestudies", {
 			itemPosition++;
 		}
 
-		return [newItems, newSelectOptions, itemPosion];
+		return [newItems, newSelectOptions, itemPosition];
 	},
 	popup: function () {
 		var stack = this.app.popup.create("casestudies", {
