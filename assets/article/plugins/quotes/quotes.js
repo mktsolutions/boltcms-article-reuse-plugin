@@ -26,9 +26,9 @@ ArticleEditor.add('plugin', 'quotes', {
                 "cancel": "Cancel",
                 "label": "How many items do you want to insert?"
             },
-             "blocks": {
-                 "quotes": "Quotes block"
-             }
+            "blocks": {
+                "quotes": "Quotes block"
+            }
         }
     },
     start: function() {
@@ -44,7 +44,7 @@ ArticleEditor.add('plugin', 'quotes', {
             width: '500px',
             command: 'addbar.popup',
             form: {
-                'amount': { 
+                'amount': {
                     label: '## quotes.label ##',
                     type: 'select',
                     options: {
@@ -75,6 +75,10 @@ ArticleEditor.add('plugin', 'quotes', {
                 'version4': {
                     type: 'checkbox',
                     text: '<img src="/assets/article/plugins/quotes/version-5.png">'
+                },
+                'version5': {
+                    type: 'checkbox',
+                    text: '<img src="/assets/article/plugins/quotes/version-6.png">'
                 }
             },
             footer: {
@@ -103,12 +107,13 @@ ArticleEditor.add('plugin', 'quotes', {
         var version2 = data.version2
         var version3 = data.version3
         var version4 = data.version4
+        var version5 = data.version5
         var instance = instance || this.app.create('block.quotes')
         var $block = instance.getBlock()
 
         var htmlContent = ``
         var quotesId = Math.floor(Math.random() * 1000)
-        
+
 
         /**
          * Items from version1, version2 and version3 have almost the same structure, the only differences are if they
@@ -125,26 +130,26 @@ ArticleEditor.add('plugin', 'quotes', {
                 $block.addClass('quotes-section quotes-section--v1')
             }
 
-            var clientImg = (version4) 
-                            ? `<figure><img src="{{ asset('theme/luxoft/assets/images/quotes/client.png') }}" class="client" alt="client image"></figure>` 
-                            : ``
+            var clientImg = (version4)
+                ? `<figure><img src="{{ asset('theme/luxoft/assets/images/quotes/client.png') }}" class="client" alt="client image"></figure>`
+                : ``
 
             if(quotesAmount > 1) {
-                
+
                 htmlContent += `<img class="background" src="{{ asset('theme/luxoft/assets/images/quotes/bg.png') }}" alt="quotes background">
                                 <div id="carouselExampleIndicators-${quotesId}" class="carousel slide">
                                 <div class="carousel-inner">`
 
-                                for(var z = 1; z <= quotesAmount; z++) {
-                                    var classname = (z === 1) ? 'active' : ''
-                                    htmlContent += `<div class="carousel-item ${classname}">
+                for(var z = 1; z <= quotesAmount; z++) {
+                    var classname = (z === 1) ? 'active' : ''
+                    htmlContent += `<div class="carousel-item ${classname}">
                                                         <div class="carousel-item__content">
                                                         ${clientImg}
                                                         <div>
                                                             <img class="picture" src="{{ asset('theme/luxoft/assets/images/quotes/purple-quotes.svg') }}" alt="quotes icon">
                                                             <p>
-                                                                ${z} - At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti 
-                                                                atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique 
+                                                                ${z} - At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti
+                                                                atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique
                                                                 sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.
                                                             </p>
                                                             <h5>Name ${z}</h5>
@@ -152,7 +157,7 @@ ArticleEditor.add('plugin', 'quotes', {
                                                         </div>
                                                         </div>
                                                     </div>`
-                                }
+                }
 
                 htmlContent += `</div>
                                 <div class="button-group">
@@ -165,18 +170,18 @@ ArticleEditor.add('plugin', 'quotes', {
                                         <span class="visually-hidden">Next</span>
                                     </button>
                                     <div class="carousel-indicators">`
-                                    
-                                    for(var z = 1; z <= quotesAmount; z++) {
-                                        var classname = (z === 1) ? 'active' : ''
-                                        htmlContent += `<button type="button" data-bs-target="#carouselExampleIndicators-${quotesId}" data-bs-slide-to="${z - 1}" class="${classname}"></button>`
-                                    }
-                                    
+
+                for(var z = 1; z <= quotesAmount; z++) {
+                    var classname = (z === 1) ? 'active' : ''
+                    htmlContent += `<button type="button" data-bs-target="#carouselExampleIndicators-${quotesId}" data-bs-slide-to="${z - 1}" class="${classname}"></button>`
+                }
+
                 htmlContent += `    </div>
                                 </div>
                                 </div>` //main carousel slide, button-group and carousel-indicators
 
             } else {
-                
+
                 htmlContent = `<img class="background" src="{{ asset('theme/luxoft/assets/images/quotes/bg.png') }}" alt="quotes background">
                                 <div class="carousel slide">
                                     <div class="carousel-inner">
@@ -186,8 +191,8 @@ ArticleEditor.add('plugin', 'quotes', {
                                                 <div>
                                                     <img class="picture" src="{{ asset('theme/luxoft/assets/images/quotes/purple-quotes.svg') }}" alt="quotes icon">
                                                     <p>
-                                                        At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti 
-                                                        atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique 
+                                                        At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti
+                                                        atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique
                                                         sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.
                                                     </p>
                                                     <h5>Name</h5>
@@ -207,21 +212,102 @@ ArticleEditor.add('plugin', 'quotes', {
             htmlContent += `<div id="carouselExampleIndicators-${quotesId}" class="carousel slide">
                             <div class="carousel-inner">`
 
-                            for(var z = 1; z <= quotesAmount; z++) {
-                                var classname = (z === 1) ? 'active' : ''
-                                htmlContent += `<div class="carousel-item ${classname}">
+            for(var z = 1; z <= quotesAmount; z++) {
+                var classname = (z === 1) ? 'active' : ''
+                htmlContent += `<div class="carousel-item ${classname}">
                                                     <div class="carousel-item-default">
                                                         <img class="picture" src="{{ asset('theme/luxoft/assets/images/quotes/purple-quotes.svg') }}" alt="quotes icon">
                                                         <p>
-                                                            ${z} - At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti 
-                                                            atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique 
+                                                            ${z} - At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti
+                                                            atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique
                                                             sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.
                                                         </p>
                                                         <h5>Name ${z}</h5>
                                                         <h6>Job title ${z}</h6>
                                                     </div>
                                                 </div>`
-                            }
+            }
+
+            htmlContent += `</div>
+                                <div class="button-group">
+                                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators-${quotesId}" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators-${quotesId}"data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
+                                    <div class="carousel-indicators">`
+
+            for(var z = 1; z <= quotesAmount; z++) {
+                var classname = (z === 1) ? 'active' : ''
+                htmlContent += `<button type="button" data-bs-target="#carouselExampleIndicators-${quotesId}" data-bs-slide-to="${z - 1}" class="${classname}"></button>`
+            }
+
+            htmlContent += `    </div>
+                                </div>
+                                </div>` //main carousel slide, button-group and carousel-indicators
+
+            if(quotesAmount > 1) {
+
+            } else {
+                htmlContent += `<div class="carousel slide">
+                                    <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <div class="carousel-item-default">
+                                        <img class="picture" src="{{ asset('theme/luxoft/assets/images/quotes/purple-quotes.svg') }}" alt="quotes icon">
+                                        <p>
+                                            At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti
+                                            atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique
+                                            sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.
+                                        </p>
+                                        <h5>Name</h5>
+                                        <h6>Job title</h6>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>`
+            }
+        }
+
+        if (version5) {
+            $block.addClass('quotes-section quotes-section--v3')
+
+            if(quotesAmount > 1) {
+
+                htmlContent += `<div id="carouselExampleIndicators-${quotesId}" class="carousel slide">
+                                <div class="carousel-inner">`
+
+                for(var z = 1; z <= quotesAmount; z++) {
+                    var classname = (z === 1) ? 'active' : ''
+                    htmlContent += `<div class="carousel-item ${classname}">
+                                                        <div class="carousel-item__content">
+                                                        <figure>
+                                                            <img class="quote-picture" src="{{ asset('theme/luxoft/assets/images/quotes/purple-light-quotes.svg') }}" alt="quotes icon">
+                                                        </figure>
+                                                        <div class="quote-content">
+                                                            <p class="text-28">
+                                                                ${z} - It was a device that accomplished the inconceivable: It made oral hygiene so fun that kids want to stay on top of it.
+                                                            </p>
+                                                            <div class="quote-author">
+                                                                <div class="author-image">
+                                                                    <img src="{{ asset('theme/luxoft/assets/images/team/member01.png') }}" class="quote-author-image" alt="">
+                                                                </div>
+                                                                <div class="author-info">
+                                                                    <h5>
+                                                                        Martin Wackenhut
+                                                                    </h5>
+                                                                    <h6>
+                                                                        Director, Technology and Strategy Advisory, Luxoft
+                                                                    </h6>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        </div>
+                                                        </div>
+                                                    </div>`
+                }
 
                 htmlContent += `</div>
                                 <div class="button-group">
@@ -234,35 +320,47 @@ ArticleEditor.add('plugin', 'quotes', {
                                         <span class="visually-hidden">Next</span>
                                     </button>
                                     <div class="carousel-indicators">`
-                                    
-                                    for(var z = 1; z <= quotesAmount; z++) {
-                                        var classname = (z === 1) ? 'active' : ''
-                                        htmlContent += `<button type="button" data-bs-target="#carouselExampleIndicators-${quotesId}" data-bs-slide-to="${z - 1}" class="${classname}"></button>`
-                                    }
-                                    
+
+                for(var z = 1; z <= quotesAmount; z++) {
+                    var classname = (z === 1) ? 'active' : ''
+                    htmlContent += `<button type="button" data-bs-target="#carouselExampleIndicators-${quotesId}" data-bs-slide-to="${z - 1}" class="${classname}"></button>`
+                }
+
                 htmlContent += `    </div>
                                 </div>
                                 </div>` //main carousel slide, button-group and carousel-indicators
 
-            if(quotesAmount > 1) {
-                
             } else {
-                htmlContent += `<div class="carousel slide">
-                                    <div class="carousel-inner">
-                                    <div class="carousel-item active">
-                                        <div class="carousel-item-default">
-                                        <img class="picture" src="{{ asset('theme/luxoft/assets/images/quotes/purple-quotes.svg') }}" alt="quotes icon">
-                                        <p>
-                                            At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti 
-                                            atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique 
-                                            sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.
-                                        </p>
-                                        <h5>Name</h5>
-                                        <h6>Job title</h6>
+
+                htmlContent = `<div class="carousel slide">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <div class="carousel-item__content">
+                                        <figure>
+                                            <img class="quote-picture" src="{{ asset('theme/luxoft/assets/images/quotes/purple-light-quotes.svg') }}" alt="quotes icon">
+                                        </figure>
+                                        <div class="quote-content">
+                                            <p class="text-28">
+                                                It was a device that accomplished the inconceivable: It made oral hygiene so fun that kids want to stay on top of it.
+                                            </p>
+                                            <div class="quote-author">
+                                                <div class="author-image">
+                                                    <img src="{{ asset('theme/luxoft/assets/images/team/member01.png') }}" class="quote-author-image" alt="">
+                                                </div>
+                                                <div class="author-info">
+                                                    <h5>
+                                                        Martin Wackenhut
+                                                    </h5>
+                                                    <h6>
+                                                        Director, Technology and Strategy Advisory, Luxoft
+                                                    </h6>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
-                                    </div>
-                                </div>`
+                                </div>
+                            </div>
+                        </div>`
             }
         }
 
