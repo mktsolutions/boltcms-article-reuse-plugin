@@ -1,81 +1,32 @@
 ArticleEditor.add("plugin", "leaders", {
-	defaults: {
-		url: window.location.origin,
-		contentType: "people",
-	},
 	start: async function () {
+		const $this = this
+		const storageInterval = setInterval(checkStorage, 5000)
 
-		const pagesAmount = 10;
-		const pageSize = 200;
-		let leaderPosition = 0;
-		let items = {};
-		let selectOptions = {};
-
-		for (let i = 1; i <= pagesAmount; i++) {
-			let apiResponse = await fetch(
-				`${this.opts.leaders.url}/api/contents?page=${i}&contentType=${this.opts.leaders.contentType}&status=published&pageSize=${pageSize}`
-			);
-			let json = await apiResponse.json();
-
-			if (!json.length) {
-				break;
-			}
-
-			const result = await this.getLeadersData(json, leaderPosition);
-			items = {
-				...items,
-				...result[0],
-			};
-			selectOptions = {
-				...selectOptions,
-				...result[1],
-			};
-			leaderPosition = result[2];
-
-			if (json.length < pageSize) {
-				// if no data - no need to send more requests
-				break;
+		function checkStorage() {
+			if (localStorage.getItem('contentTypePeopleData') !== null) {
+				getPeopleData()
 			}
 		}
 
-		this.app.toolbar.add("leaders", {
-			title: "Leaders",
-			icon: '<i class="fa fa-users"></i>',
-			command: "leaders.popup",
-			blocks: {
-				types: ["layer", "column"],
-			},
-			params: {
-				items: items,
-				selectOptions: selectOptions,
-			},
-		});
-	},
-	getLeadersData: async function (dataJson, leaderPosition) {
-		const newItems = {};
-		const newSelectOptions = {};
-		const isLocal = window.location.hostname === "127.0.0.1";
+		function getPeopleData() {
+			const storageData = JSON.parse(localStorage.getItem('contentTypePeopleData'))
 
-		for (const leader in dataJson) {
-			const item = {
-				id: dataJson[leader].id,
-				name: dataJson[leader].fieldValues.name,
-				title: dataJson[leader].fieldValues.title.en,
-				link: dataJson[leader].fieldValues.linkedin_url,
-				photo:
-					isLocal
-						? "https://www.luxoft.com/upload/resize_cache/iblock/303/400_0_1/RinoAriganello.jpg"
-						: dataJson[leader].fieldValues.image.url,
-				command: "leaders.insert",
-			};
-			newItems[leaderPosition] = item;
-			newSelectOptions[
-				leaderPosition
-			] = `${dataJson[leader].fieldValues.name} - ${dataJson[leader].fieldValues.title.en}`;
-			leaderPosition++;
+			$this.app.toolbar.add("leaders", {
+				title: "Leaders",
+				icon: '<i class="fa fa-users"></i>',
+				command: "leaders.popup",
+				blocks: {
+					types: ["layer", "column"],
+				},
+				params: {
+					items: storageData.items,
+					selectOptions: storageData.selectOptions
+				},
+			})
+
+			clearInterval(storageInterval)
 		}
-
-		return [newItems, newSelectOptions, leaderPosition];
 	},
 	popup: function (params, button) {
 		this.app.popup.create("leaders", {
