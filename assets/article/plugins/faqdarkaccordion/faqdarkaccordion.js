@@ -70,11 +70,11 @@ ArticleEditor.add('plugin', 'faqdarkaccordion', {
             var itemId = Math.floor(Math.random() * 1000)
             stringHtml += 
                 `<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="accordion-item">
-                    <h2 itemprop="name" class="accordion-header">
+                    <h3 itemprop="name" class="accordion-header">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-faq-dark${itemId}" aria-controls="collapse-faq-dark${itemId}">
                         Accordion Item #${x}
                     </button>
-                    </h2>
+                    </h3>
                     <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse-faq-dark${itemId}" class="accordion-collapse collapse">
                     <div itemprop="text" class="accordion-body">
                         <strong>This is the first item's accordion body.</strong>
