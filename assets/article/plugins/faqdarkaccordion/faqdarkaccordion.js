@@ -1,36 +1,36 @@
 // Icon
-ArticleEditor.iconAccordion = '<i class="fas fa-stream"></i>'
+ArticleEditor.iconFaqDarkAccordion = '<i class="fas fa-info"></i>'
 
 // Plugin
-ArticleEditor.add('plugin', 'accordion', {
+ArticleEditor.add('plugin', 'faqdarkaccordion', {
     translations: {
         en: {
-            "accordion": {
-                "accordion": "Accordion dark",
+            "faqdarkaccordion": {
+                "faqdarkaccordion": "FAQ dark",
                 "add": "Insert",
                 "cancel": "Cancel",
                 "label": "How many items do you want to insert?",
             },
              "blocks": {
-                 "accordion": "Accordion dark"
+                 "faqdarkaccordion": "FAQ dark"
              }
         }
     },
     start: function() {
-        this.app.addbar.add('accordion', {
-            title: '## blocks.accordion ##',
-            icon: ArticleEditor.iconAccordion,
-            command: 'accordion.popup'
+        this.app.addbar.add('faqdarkaccordion', {
+            title: '## blocks.faqdarkaccordion ##',
+            icon: ArticleEditor.iconFaqDarkAccordion,
+            command: 'faqdarkaccordion.popup'
         })
     },
     popup: function() {
-        var stack = this.app.popup.add('accordion', {
-            title: '## accordion.accordion ##',
+        var stack = this.app.popup.add('faqdarkaccordion', {
+            title: '## faqdarkaccordion.faqdarkaccordion ##',
             width: '400px',
             command: 'addbar.popup',
             form: {
-                accordion: { 
-                    label: '## accordion.label ##',
+                faqdarkaccordion: { 
+                    label: '## faqdarkaccordion.label ##',
                     type: 'select',
                     options: {
                         2: '2',
@@ -46,12 +46,12 @@ ArticleEditor.add('plugin', 'accordion', {
                 }
             },
             footer: {
-                insert: { title: '## accordion.add ##', command: 'accordion.insert', type: 'primary' },
-                cancel: { title: '## accordion.cancel ##', command: 'popup.close' }
+                insert: { title: '## faqdarkaccordion.add ##', command: 'faqdarkaccordion.insert', type: 'primary' },
+                cancel: { title: '## faqdarkaccordion.cancel ##', command: 'popup.close' }
             }
         })
 
-        stack.open({ focus: 'accordion' })
+        stack.open({ focus: 'faqdarkaccordion' })
     },
     insert: function(stack) {
         var instance = this._buildInstance(stack)
@@ -60,23 +60,23 @@ ArticleEditor.add('plugin', 'accordion', {
         this.app.popup.close()
 
         var data = stack.getData()
-        var editableType = data.accordion
+        var editableType = data.faqdarkaccordion
 
         var id = Math.floor(Math.random() * 100)
 
         var stringHtml = 
-                `<section class="accordion-section"><div class="accordion" id="accordionExample${id}">`
+                `<section class="accordion-section"><div class="accordion" id="accordionFaqDark${id}">`
         for(var x = 1; x <= editableType; x++) {
             var itemId = Math.floor(Math.random() * 1000)
             stringHtml += 
-                `<div class="accordion-item">
-                    <h2 class="accordion-header">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse${itemId}" aria-controls="collapse${itemId}">
+                `<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="accordion-item">
+                    <h2 itemprop="name" class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-faq-dark${itemId}" aria-controls="collapse-faq-dark${itemId}">
                         Accordion Item #${x}
                     </button>
                     </h2>
-                    <div id="collapse${itemId}" class="accordion-collapse collapse">
-                    <div class="accordion-body">
+                    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse-faq-dark${itemId}" class="accordion-collapse collapse">
+                    <div itemprop="text" class="accordion-body">
                         <strong>This is the first item's accordion body.</strong>
                     </div>
                     </div>
