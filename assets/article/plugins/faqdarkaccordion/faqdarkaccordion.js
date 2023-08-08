@@ -65,7 +65,7 @@ ArticleEditor.add('plugin', 'faqdarkaccordion', {
         var id = Math.floor(Math.random() * 100)
 
         var stringHtml = 
-                `<section class="accordion-section"><div class="accordion" id="accordionFaqDark${id}">`
+                `<section class="accordion-section faq-dark"><div class="accordion" id="accordionFaqDark${id}">`
         for(var x = 1; x <= editableType; x++) {
             var itemId = Math.floor(Math.random() * 1000)
             stringHtml += 

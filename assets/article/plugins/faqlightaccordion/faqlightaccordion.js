@@ -65,20 +65,20 @@ ArticleEditor.add('plugin', 'faqlightaccordion', {
         var id = Math.floor(Math.random() * 100)
 
         var stringHtml = 
-                `<section class="accordion-section--light"><div class="accordion" id="accordionFaqLight${id}">`
+                `<section class="accordion-section faq-light"><div class="accordion" id="accordionFaqLight${id}">`
         for(var x = 1; x <= editableType; x++) {
             var itemId = Math.floor(Math.random() * 1000)
             stringHtml += 
                 `<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="accordion-item">
                     <h3 itemprop="name" class="accordion-header">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-faq-light${itemId}" aria-controls="collapse-faq-light${itemId}">
-                        Accordion Item #${x}
-                    </button>
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-faq-light${itemId}" aria-controls="collapse-faq-light${itemId}">
+                            Accordion Item #${x}
+                        </button>
                     </h3>
                     <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse-faq-light${itemId}" class="accordion-collapse collapse">
-                    <div itemprop="text" class="accordion-body">
-                        <strong>This is the first item's accordion body.</strong>
-                    </div>
+                        <div itemprop="text" class="accordion-body">
+                            <strong>This is the first item's accordion body.</strong>
+                        </div>
                     </div>
                 </div>`
         }               
