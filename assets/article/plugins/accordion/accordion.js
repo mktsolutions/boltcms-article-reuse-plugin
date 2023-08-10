@@ -6,13 +6,13 @@ ArticleEditor.add('plugin', 'accordion', {
     translations: {
         en: {
             "accordion": {
-                "accordion": "Accordion",
+                "accordion": "Accordion dark",
                 "add": "Insert",
                 "cancel": "Cancel",
                 "label": "How many items do you want to insert?",
             },
              "blocks": {
-                 "accordion": "Accordion"
+                 "accordion": "Accordion dark"
              }
         }
     },
