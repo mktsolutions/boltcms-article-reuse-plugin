@@ -88,7 +88,8 @@ table td {
 .solutions-tiles,
 .cta-banner-section,
 .related-content-snippet,
-.solutions-tiles__v2 {
+.solutions-tiles__v2,
+.our-locations {
     border: 1px solid #adadad;
     padding: 15px;
 }
