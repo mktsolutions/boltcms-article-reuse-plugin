@@ -284,9 +284,9 @@ ArticleEditor.add("plugin", "insights", {
 
 			htmlStructure = `<section class="container-insights">
                         <div class="title">
-                            <h4 class="fs-2">
+                            <p class="fs-2">
                               Key insights and featured news - mixed
-                            </h4>
+                            </p>
                         </div>
                           <div class="row">
                             ${htmlItems}
