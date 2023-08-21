@@ -50,12 +50,12 @@ ArticleEditor.add("plugin", "heroWithControls", {
 		var editableType = data.elements;
 
 		var heroHtml = `<section class="container-hero-carousel">
-                            <div id="carouselHeroWithControls" class="carousel with-controls slide" data-bs-ride="true">
+                            <div id="carouselHeroWithControls" class="carousel with-controls slide" data-bs-ride="carousel">
                                 <div class="carousel-inner">`;
 
 		for (var x = 1; x <= editableType; x++) {
 			var classname = x === 1 ? "active" : "";
-                   heroHtml += `<div class="carousel-item ${classname}">
+                   heroHtml += `<div class="carousel-item ${classname}" data-bs-interval="4000">
                                     <div class="fill">
                                         <img src="https://dummyimage.com/1920x940/adadad/484c8a" alt="Banner">
                                         <div class="container">
