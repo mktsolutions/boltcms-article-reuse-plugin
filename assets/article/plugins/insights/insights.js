@@ -3,16 +3,6 @@ ArticleEditor.iconInsights = '<i class="fa fa-clipboard"></i>';
 
 // Plugin
 ArticleEditor.add("plugin", "insights", {
-	defaults: {
-		url: window.location.origin,
-		contentTypes: {
-			videos: "videos",
-			blogs: "blog",
-			caseStudies: "case-studies",
-			pressReleases: "pr",
-			whitepapers: "whitepapers",
-		},
-	},
 	translations: {
 		en: {
 			insights: {
@@ -30,91 +20,31 @@ ArticleEditor.add("plugin", "insights", {
 		this.elements = {};
 	},
 	start: async function () {
-		const pagesAmount = 5;
-		const pageSize = 200;
-		let items = {};
-		let selectOptions = { none: "-- NONE --" };
-		let insightPosition = 0;
+		const $this = this
+		const storageInterval = setInterval(checkStorage, 5000)
 
-		for (let i = 1; i <= pagesAmount; i++) {
-			let apiResponse = await fetch(
-				`${this.opts.insights.url}/api/contents?page=${i}&contentType%5B%5D=${this.opts.insights.contentTypes.videos}&contentType%5B%5D=${this.opts.insights.contentTypes.pressReleases}&contentType%5B%5D=${this.opts.insights.contentTypes.whitepapers}&contentType%5B%5D=${this.opts.insights.contentTypes.blogs}&contentType%5B%5D=${this.opts.insights.contentTypes.caseStudies}&status=published&pageSize=${pageSize}`
-			);
-			let json = await apiResponse.json();
-
-			if (!json.length) {
-				// if no data - no need to send more requests
-				break;
-			}
-
-			const result = await this.getItemsData(json, insightPosition);
-
-			items = {
-				...items,
-				...result[0],
-			};
-			selectOptions = {
-				...selectOptions,
-				...result[1],
-			};
-			insightPosition = result[2];
-
-			if (json.length < pageSize) {
-				// if no data - no need to send more requests
-				break;
+		function checkStorage() {
+			if (localStorage.getItem('contentTypeInsightsData') !== null) {
+				getinsightsData()
 			}
 		}
 
-		this.elements = {
-			items,
-			selectOptions,
-		};
+		function getinsightsData() {
+			const storageData = JSON.parse(localStorage.getItem('contentTypeInsightsData'))
 
-		this.app.addbar.add("insights", {
-			title: "## blocks.insights ##",
-			icon: ArticleEditor.iconInsights,
-			command: "insights.popup",
-		});
-	},
-	getItemsData: async function (dataJson, itemPosition) {
-		const newItems = {};
-		const newSelectOptions = {};
-		const isLocal = window.location.hostname === "127.0.0.1";
-
-		for (const single in dataJson) {
-			const item = {
-				id: dataJson[single].id,
-				title: dataJson[single].fieldValues.title,
-				description: dataJson[single].fieldValues.preview_description_text,
-				slug: dataJson[single].fieldValues.slug,
-				photo:
-					isLocal
-						? "https://www.luxoft.com/upload/medialibrary/563/behavioral_archetypes.png"
-						: dataJson[single].fieldValues.photo.url,
-				contentType: dataJson[single].contentType,
-				industry: dataJson[single].taxonomyValues.industries
-					? dataJson[single].taxonomyValues.industries[
-							Object.keys(dataJson[single].taxonomyValues.industries)[0]
-					  ]
-					: "",
-			};
-			newItems[itemPosition] = item;
-			let singleName =
-				dataJson[single].contentType === "case-studies"
-					? "case study"
-					: dataJson[single].contentType === "blog"
-					? dataJson[single].contentType
-					: dataJson[single].contentType.substring(
-							0,
-							dataJson[single].contentType.length - 1
-					  );
-			newSelectOptions[
-				itemPosition
-			] = `${dataJson[single].fieldValues.name} - ${singleName}`;
-			itemPosition++;
+			$this.elements = {
+				items: storageData.items,
+				selectOptions: storageData.selectOptions,
+			}
+	
+			$this.app.addbar.add("insights", {
+				title: "## blocks.insights ##",
+				icon: ArticleEditor.iconInsights,
+				command: "insights.popup",
+			});
+		
+			clearInterval(storageInterval)
 		}
-
-		return [newItems, newSelectOptions, itemPosition];
 	},
 	popup: function () {
 		var stack = this.app.popup.create("insights", {
