@@ -45,7 +45,7 @@
     },
     "key-points": {
         "name": "Key points",
-        "html": "<section class=\"container-key-points\"><h2>Key points</h2><p class=\"align-center\">Some description here</p><div class=\"row\"><div class=\"col\"><h2>80%</h2><h3>Item title</h3><p>Lorem ipsum is placeholder text commonly used in the graphic.</p></div></div></section>"
+        "html": "<section class=\"container-key-points\"><h2>Key points</h2><p class=\"align-center\">Some description here</p><div class=\"row\"><div class=\"col\"><p class=\"item-numbers\">80%</p><p class=\"item-title\">Item title</p><p>Lorem ipsum is placeholder text commonly used in the graphic.</p></div></div></section>"
     },
     "key-highlights": {
         "name": "Key highlights",
@@ -189,7 +189,7 @@
     },
     "cta-banner": {
         "name": "CTA banner",
-        "html": "<section class=\"cta-banner-section\"><div class=\"row\"><div class=\"col-12 col-md-6\"><div class=\"cta-banner-section__content\"><div class=\"tag\"><p class=\"text-14 unscaled\">User Experience</p></div><a href=\"#\" class=\"stretched-link\"><h5 class=\"text-22 unscaled\">Create the advanced user experience of software-defined vehicles</h5></a><div class=\"btn btn-text btn-icon focus\"><div class=\"text-container\"><div class=\"text\">Learn more</div><div class=\"arr-offering\"><i class=\"arr-small one\"></i><i class=\"arr-small two\"></i><i class=\"arr-small three\"></i></div></div></div></div></div><div class=\"col-12 col-md-6 d-none d-md-block\"><div class=\"cta-banner-section__image\"><figure><img src=\"/theme/luxoft/assets/images/custom-pages/contact-us/career-banner.jpg\" alt=\"cta banner\"></figure></div></div></div></section>"
+        "html": "<section class=\"cta-banner-section\"><div class=\"row\"><div class=\"col-12 col-md-6\"><div class=\"cta-banner-section__content\"><div class=\"tag\"><p class=\"text-14 unscaled\">User Experience</p></div><a href=\"#\" class=\"stretched-link\"><p class=\"cta-banner-text text-22 unscaled\">Create the advanced user experience of software-defined vehicles</p></a><div class=\"btn btn-text btn-icon focus\"><div class=\"text-container\"><div class=\"text\">Learn more</div><div class=\"arr-offering\"><i class=\"arr-small one\"></i><i class=\"arr-small two\"></i><i class=\"arr-small three\"></i></div></div></div></div></div><div class=\"col-12 col-md-6 d-none d-md-block\"><div class=\"cta-banner-section__image\"><figure><img src=\"/theme/luxoft/assets/images/custom-pages/contact-us/career-banner.jpg\" alt=\"cta banner\"></figure></div></div></div></section>"
     },
     "related-content": {
         "name": "Related content",
