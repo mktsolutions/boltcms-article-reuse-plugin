@@ -45,7 +45,7 @@
     },
     "key-points": {
         "name": "Key points",
-        "html": "<section class=\"container-key-points\"><h2>Key points</h2><p class=\"align-center\">Some description here</p><div class=\"row\"><div class=\"col\"><p class=\"item-numbers\">80%</p><p class=\"item-title\">Item title</p><p>Lorem ipsum is placeholder text commonly used in the graphic.</p></div></div></section>"
+        "html": "<section class=\"container-key-points\"><h2>Key points</h2><p class=\"text-center\">Some description here</p><div class=\"row\"><div class=\"col\"><p class=\"item-numbers\">80%</p><p class=\"item-title\">Item title</p><p>Lorem ipsum is placeholder text commonly used in the graphic.</p></div></div></section>"
     },
     "key-highlights": {
         "name": "Key highlights",
@@ -53,7 +53,7 @@
     },
     "section-with-icons": {
         "name": "Section with icons",
-        "html": "<section class=\"container-section-icons\"><h2>Section with icons</h2><p class=\"align-center\">Some description here</p><div class=\"row\"><div class=\"col\"><figure><img src=\"https://dummyimage.com/1200x600/000/696969.png&amp;text=Example+of+image\" alt=\"vector\"></figure><h4>Item title</h4><p>Lorem ipsum is placeholder text commonly used in the graphic.</p></div></div></section>"
+        "html": "<section class=\"container-section-icons\"><h2>Section with icons</h2><p class=\"text-center\">Some description here</p><div class=\"row\"><div class=\"col\"><figure><img src=\"https://dummyimage.com/1200x600/000/696969.png&amp;text=Example+of+image\" alt=\"vector\"></figure><h4>Item title</h4><p>Lorem ipsum is placeholder text commonly used in the graphic.</p></div></div></section>"
     },
     "partnership-": {
         "name": "Partnership",

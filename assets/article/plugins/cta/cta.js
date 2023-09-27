@@ -59,7 +59,7 @@ ArticleEditor.add('plugin', 'cta', {
         if (btnVersion === 0 || btnVersion === 1) {
             htmlButton = `<div><a class="${ctaClass}" href="#">READ MORE</a></div>`
         } else if (btnVersion === 3 || btnVersion === 4) {
-            htmlButton = `<div class="align-center"><a class="${ctaClass}" href="#">READ MORE</a></div>`
+            htmlButton = `<div class="text-center"><a class="${ctaClass}" href="#">READ MORE</a></div>`
         } else if (btnVersion === 2) {
             htmlButton = `<div>
                             <a class="${ctaClass}" href="#">
