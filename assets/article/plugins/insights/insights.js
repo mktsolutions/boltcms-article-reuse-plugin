@@ -247,7 +247,7 @@ ArticleEditor.add("plugin", "insights", {
 
 			htmlStructure = `<div class="related-content">
 								<div class="related-content__title">
-									<p class="text-20 unscaled bold">Related content</p>
+									<p class="text-20 unscaled fw-bold">Related content</p>
 								</div>
 								<div class="related-content__items">
 								${htmlItems}

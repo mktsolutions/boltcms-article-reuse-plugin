@@ -90,7 +90,7 @@ ArticleEditor.add('plugin', 'solutions', {
 
         var solutionsHtml = `<h2>Our solutions</h2>
                             <div class="container">
-                                <p class="align-center">Some description here</p>
+                                <p class="text-center">Some description here</p>
                             </div>
                             <div id="carouselExampleCaptions-${id}" class="carousel slide" data-bs-ride="carousel">
                                 <div class="carousel-inner">`
