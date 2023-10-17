@@ -37,7 +37,7 @@
     },
     "optional-how-we-help": {
         "name": "Optional C - how we help",
-        "html": "<section class=\"how-we-help how-we-help--v2\"> <h2>How we help our clients</h2> <div class=\"row\"> <div class=\"col\"> <a > <div> <h3 class=\"fs-5\">Technological and independence strong </h3> <p>While accelerating growth we solve your legacy-system issues, protecting existing investments with technologically solutions</p> </div> </a> </div> </div> </section>"
+        "html": "<section class=\"how-we-help how-we-help--v2\"> <h2>How we help our clients</h2> <div class=\"row\"> <div class=\"col\"> <a > <div> <h3>Technological and independence strong </h3> <p>While accelerating growth we solve your legacy-system issues, protecting existing investments with technologically solutions</p> </div> </a> </div> </div> </section>"
     },
     "optional-how-we-help-animated": {
         "name": "Optional C - how we help - animated",
@@ -65,7 +65,7 @@
     },
     "why-luxoft": {
         "name": "Why Luxoft",
-        "html": "<section class=\"container-why-luxoft\"><div class=\"title\"><h2>Why Luxoft</h2><p class=\"why-info\"></p></div><div class=\"row\"><div class=\"col\"><div><h5>BCM experience</h5><p>BCM experience While accelerating growth we solve your legacy-system issues</p></div></div><div class=\"col active\"><div><h5>Broader domain knowledge</h5><p>Broader domain knowledge While accelerating growth we solve your legacy-system issues</p></div></div><div class=\"col\"><div><h5>Technological</h5><p>Technological In-depth BCM experience While accelerating growth we solve your legacy-system issues</p></div></div></div></section>"
+        "html": "<section class=\"container-why-luxoft\"><div class=\"title\"><h2>Why Luxoft</h2><p class=\"why-info\"></p></div><div class=\"row\"><div class=\"col\"><div><h3>BCM experience</h3><p>BCM experience While accelerating growth we solve your legacy-system issues</p></div></div><div class=\"col active\"><div><h3>Broader domain knowledge</h3><p>Broader domain knowledge While accelerating growth we solve your legacy-system issues</p></div></div><div class=\"col\"><div><h3>Technological</h3><p>Technological In-depth BCM experience While accelerating growth we solve your legacy-system issues</p></div></div></div></section>"
     },
     "file-video-left": {
         "name": "File video on the left",
