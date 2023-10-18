@@ -244,3 +244,11 @@ table td {
     object-fit: cover;
     border-radius: 14px;
 }
+
+.arx-popup.arx-popup-0.arx-popup-addbar.has-items.open {
+    width: 600px !important;    
+}
+
+.arx-popup-item-container {
+    width: 115px;
+}
