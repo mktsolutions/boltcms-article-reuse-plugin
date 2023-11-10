@@ -134,7 +134,7 @@ ArticleEditor.add('plugin', 'sectorsweserve', {
                 htmlContent += `<div class="col">
                                     <div class="content">
                                         <div class="icon">
-                                            <img src="{{ asset('theme/luxoft/assets/images/icons/house.png') }}" alt="sector icon">
+                                            <img src="{{ asset('dist/images/icons/house.png') }}" alt="sector icon">
                                         </div>
                                         <div class="text-20">
                                             <b>Sector ${z}</b>
@@ -164,7 +164,7 @@ ArticleEditor.add('plugin', 'sectorsweserve', {
                 htmlContent += `<div class="col">
                                     <div class="content">
                                         <div class="icon">
-                                            <img src="{{ asset('theme/luxoft/assets/images/icons/house.png') }}" alt="sector icon">
+                                            <img src="{{ asset('dist/images/icons/house.png') }}" alt="sector icon">
                                         </div>
                                         <div class="text-20">
                                             <b>Sector ${z}</b>
@@ -193,7 +193,7 @@ ArticleEditor.add('plugin', 'sectorsweserve', {
                 htmlContent += `<div class="col">
                                     <div class="content">
                                         <div class="icon">
-                                            <img src="{{ asset('theme/luxoft/assets/images/icons/house.png') }}" alt="sector icon">
+                                            <img src="{{ asset('dist/images/icons/house.png') }}" alt="sector icon">
                                         </div>
                                         <div class="text-20">
                                             <b>Sector ${z}</b>

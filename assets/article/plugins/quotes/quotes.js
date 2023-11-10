@@ -131,12 +131,12 @@ ArticleEditor.add('plugin', 'quotes', {
             }
 
             var clientImg = (version4)
-                ? `<figure><img src="{{ asset('theme/luxoft/assets/images/quotes/client.png') }}" class="client" alt="client image"></figure>`
+                ? `<figure><img src="{{ asset('dist/images/quotes/client.png') }}" class="client" alt="client image"></figure>`
                 : ``
 
             if(quotesAmount > 1) {
 
-                htmlContent += `<img class="background" src="{{ asset('theme/luxoft/assets/images/quotes/bg.png') }}" alt="quotes background">
+                htmlContent += `<img class="background" src="{{ asset('dist/images/quotes/bg.png') }}" alt="quotes background">
                                 <div id="carouselExampleIndicators-${quotesId}" class="carousel slide">
                                 <div class="carousel-inner">`
 
@@ -146,7 +146,7 @@ ArticleEditor.add('plugin', 'quotes', {
                                                         <div class="carousel-item__content">
                                                         ${clientImg}
                                                         <div>
-                                                            <img class="picture" src="{{ asset('theme/luxoft/assets/images/quotes/purple-quotes.svg') }}" alt="quotes icon">
+                                                            <img class="picture" src="{{ asset('dist/images/quotes/purple-quotes.svg') }}" alt="quotes icon">
                                                             <p>
                                                                 ${z} - At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti
                                                                 atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique
@@ -182,14 +182,14 @@ ArticleEditor.add('plugin', 'quotes', {
 
             } else {
 
-                htmlContent = `<img class="background" src="{{ asset('theme/luxoft/assets/images/quotes/bg.png') }}" alt="quotes background">
+                htmlContent = `<img class="background" src="{{ asset('dist/images/quotes/bg.png') }}" alt="quotes background">
                                 <div class="carousel slide">
                                     <div class="carousel-inner">
                                         <div class="carousel-item active">
                                             <div class="carousel-item__content">
                                                 ${clientImg}
                                                 <div>
-                                                    <img class="picture" src="{{ asset('theme/luxoft/assets/images/quotes/purple-quotes.svg') }}" alt="quotes icon">
+                                                    <img class="picture" src="{{ asset('dist/images/quotes/purple-quotes.svg') }}" alt="quotes icon">
                                                     <p>
                                                         At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti
                                                         atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique
@@ -216,7 +216,7 @@ ArticleEditor.add('plugin', 'quotes', {
                 var classname = (z === 1) ? 'active' : ''
                 htmlContent += `<div class="carousel-item ${classname}">
                                                     <div class="carousel-item-default">
-                                                        <img class="picture" src="{{ asset('theme/luxoft/assets/images/quotes/purple-quotes.svg') }}" alt="quotes icon">
+                                                        <img class="picture" src="{{ asset('dist/images/quotes/purple-quotes.svg') }}" alt="quotes icon">
                                                         <p>
                                                             ${z} - At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti
                                                             atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique
@@ -256,7 +256,7 @@ ArticleEditor.add('plugin', 'quotes', {
                                     <div class="carousel-inner">
                                     <div class="carousel-item active">
                                         <div class="carousel-item-default">
-                                        <img class="picture" src="{{ asset('theme/luxoft/assets/images/quotes/purple-quotes.svg') }}" alt="quotes icon">
+                                        <img class="picture" src="{{ asset('dist/images/quotes/purple-quotes.svg') }}" alt="quotes icon">
                                         <p>
                                             At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti
                                             atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique
@@ -284,7 +284,7 @@ ArticleEditor.add('plugin', 'quotes', {
                     htmlContent += `<div class="carousel-item ${classname}">
                                                         <div class="carousel-item__content">
                                                         <figure>
-                                                            <img class="quote-picture" src="{{ asset('theme/luxoft/assets/images/quotes/purple-light-quotes.svg') }}" alt="quotes icon">
+                                                            <img class="quote-picture" src="{{ asset('dist/images/quotes/purple-light-quotes.svg') }}" alt="quotes icon">
                                                         </figure>
                                                         <div class="quote-content">
                                                             <p class="text-28">
@@ -292,7 +292,7 @@ ArticleEditor.add('plugin', 'quotes', {
                                                             </p>
                                                             <div class="quote-author">
                                                                 <div class="author-image">
-                                                                    <img src="{{ asset('theme/luxoft/assets/images/team/member01.png') }}" class="quote-author-image" alt="">
+                                                                    <img src="{{ asset('dist/images/team/member01.png') }}" class="quote-author-image" alt="">
                                                                 </div>
                                                                 <div class="author-info">
                                                                     <h5>
@@ -337,7 +337,7 @@ ArticleEditor.add('plugin', 'quotes', {
                                 <div class="carousel-item active">
                                     <div class="carousel-item__content">
                                         <figure>
-                                            <img class="quote-picture" src="{{ asset('theme/luxoft/assets/images/quotes/purple-light-quotes.svg') }}" alt="quotes icon">
+                                            <img class="quote-picture" src="{{ asset('dist/images/quotes/purple-light-quotes.svg') }}" alt="quotes icon">
                                         </figure>
                                         <div class="quote-content">
                                             <p class="text-28">
@@ -345,7 +345,7 @@ ArticleEditor.add('plugin', 'quotes', {
                                             </p>
                                             <div class="quote-author">
                                                 <div class="author-image">
-                                                    <img src="{{ asset('theme/luxoft/assets/images/team/member01.png') }}" class="quote-author-image" alt="">
+                                                    <img src="{{ asset('dist/images/team/member01.png') }}" class="quote-author-image" alt="">
                                                 </div>
                                                 <div class="author-info">
                                                     <h5>
