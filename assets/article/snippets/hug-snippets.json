@@ -5,7 +5,7 @@
     },
     "hero-banner-short": {
         "name": "Hero - banner short",
-        "html": "<section class=\"container-hero-img short\"><img src=\"{{ asset('dist/images/before-login-hero.jpg') }}\" alt=\"banner image blogs\"><div class=\"container\"><div class=\"content\"><h1>Welcome to the <br>Hogan User Group</h1></div></div><div class=\"down-arr\"><a href=\"#banner-down\"><div class=\"text-20\"><p>Learn More</p><span></span></div></a></div></section>"
+        "html": "<section class=\"container-hero-img short\"><img src=\"{{ asset('theme/luxoft/assets/images/before-login-hero.jpg') }}\" alt=\"banner image blogs\"><div class=\"container\"><div class=\"content\"><h1>Welcome to the <br>Hogan User Group</h1></div></div><div class=\"down-arr\"><a href=\"#banner-down\"><div class=\"text-20\"><p>Learn More</p><span></span></div></a></div></section>"
     },
     "text-image-on-the-right": {
         "name": "Text on the left, image on the right",
@@ -33,11 +33,11 @@
     },
     "file-video-left": {
         "name": "File video on the left",
-        "html": "<div class=\"container-video-left\"><div class=\"row\"><div><div class=\"video-content\"><figure><video class=\"video\" width=\"100%\" height=\"100%\" poster=\"https://www.luxoft.com/dist/images/poster.png\"><source src=\"https://www.luxoft.com/upload/video/introducing_our_refreshed_corporate_identity.mp4\" type=\"video/mp4\" /></video><div class=\"play\"></div></figure></div></div><div><div><h2>Lorem title</h2><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididun.</p><div><a class=\"btn btn-text btn-icon focus\" href=\"#\"><div class=\"text-container\"><div class=\"text\">Conect with us</div><div class=\"arr-offering\"><i class=\"arr-small one\"></i><i class=\"arr-small two\"></i><i class=\"arr-small three\"></i></div></div></a></div></div></div></div></div>"
+        "html": "<div class=\"container-video-left\"><div class=\"row\"><div><div class=\"video-content\"><figure><video class=\"video\" width=\"100%\" height=\"100%\" poster=\"https://www.luxoft.com/theme/luxoft/assets/images/poster.png\"><source src=\"https://www.luxoft.com/upload/video/introducing_our_refreshed_corporate_identity.mp4\" type=\"video/mp4\" /></video><div class=\"play\"></div></figure></div></div><div><div><h2>Lorem title</h2><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididun.</p><div><a class=\"btn btn-text btn-icon focus\" href=\"#\"><div class=\"text-container\"><div class=\"text\">Conect with us</div><div class=\"arr-offering\"><i class=\"arr-small one\"></i><i class=\"arr-small two\"></i><i class=\"arr-small three\"></i></div></div></a></div></div></div></div></div>"
     },
     "file-video-right": {
         "name": "File video on the right",
-        "html": "<div class=\"container-video-right\"><div class=\"row\"><div><div><h2>Lorem title</h2><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididun.</p><div><a class=\"btn btn-text btn-icon focus\" href=\"#\"><div class=\"text-container\"><div class=\"text\">Conect with us</div><div class=\"arr-offering\"><i class=\"arr-small one\"></i><i class=\"arr-small two\"></i><i class=\"arr-small three\"></i></div></div></a></div></div></div><div><div class=\"video-content\"><figure><video class=\"video\" width=\"100%\" height=\"100%\" poster=\"https://www.luxoft.com/dist/images/poster.png\"><source src=\"https://www.luxoft.com/upload/video/introducing_our_refreshed_corporate_identity.mp4\" type=\"video/mp4\" /></video><div class=\"play\"></div></figure></div></div></div></div>"
+        "html": "<div class=\"container-video-right\"><div class=\"row\"><div><div><h2>Lorem title</h2><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididun.</p><div><a class=\"btn btn-text btn-icon focus\" href=\"#\"><div class=\"text-container\"><div class=\"text\">Conect with us</div><div class=\"arr-offering\"><i class=\"arr-small one\"></i><i class=\"arr-small two\"></i><i class=\"arr-small three\"></i></div></div></a></div></div></div><div><div class=\"video-content\"><figure><video class=\"video\" width=\"100%\" height=\"100%\" poster=\"https://www.luxoft.com/theme/luxoft/assets/images/poster.png\"><source src=\"https://www.luxoft.com/upload/video/introducing_our_refreshed_corporate_identity.mp4\" type=\"video/mp4\" /></video><div class=\"play\"></div></figure></div></div></div></div>"
     },
     "youtube-video-left": {
         "name": "Youtube video on the left",
