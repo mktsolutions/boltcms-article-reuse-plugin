@@ -109,12 +109,12 @@ ArticleEditor.add('plugin', 'partners-section', {
                                                 Our Capital Markets partners
                                             </h4>
                                         </div>
-                                        <div class="col-12">
+                                        <div>
+                                            <div class="col-12">
                                                     <p class="text-20">
                                                         Luxoft provides a comprehensive range of platform integration services from advisory and platform selection, through implementation and upgrade projects, to end-to-end service management
                                                     </p>
-                                        </div>
-                                        <div>
+                                            </div>
                                             <div class="row">`
 
         for(var z = 1; z <= partnersAmount; z++) {
