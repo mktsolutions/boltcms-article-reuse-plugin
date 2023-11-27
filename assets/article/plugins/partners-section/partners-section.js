@@ -120,7 +120,7 @@ ArticleEditor.add('plugin', 'partners-section', {
         for(var z = 1; z <= partnersAmount; z++) {
             htmlContent += `<div class="col items">
                                     <div class="partners-section--item">
-                                        <div class="content border-0">
+                                        <div class="content">
                                             <div class="btn-container">
                                                 <a class="btn btn-text btn-icon" href="#">
                                                     <div class="text-container">
