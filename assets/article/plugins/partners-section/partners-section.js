@@ -137,24 +137,6 @@ ArticleEditor.add('plugin', 'partners-section', {
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="partners-section--item">
-                                        <div class="content border-0">
-                                            <div class="btn-container">
-                                                <a class="btn btn-text btn-icon" href="#">
-                                                    <div class="text-container">
-                                                        <div class="text stretched-link">
-                                                            Murex
-                                                        </div>
-                                                        <div class="arr-offering">
-                                                            <i class="arr-small one"></i>
-                                                            <i class="arr-small two"></i>
-                                                            <i class="arr-small three"></i>
-                                                        </div>
-                                                    </div>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
                                 </div>`
         }
 
