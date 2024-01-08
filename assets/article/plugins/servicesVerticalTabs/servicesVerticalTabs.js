@@ -62,7 +62,7 @@ ArticleEditor.add("plugin", "servicesVerticalTabs", {
 		for (var z = 1; z <= editableType; z++) {
 			var buttonClass = z === 1 ? "active" : ""
 			var buttonSelected = z === 1 ? true : false
-			servicesHtml += `<button class="${buttonClass}" id="service-${z}-tab" data-href="contact-form" data-bs-toggle="pill" data-bs-target="#service-${z}" type="button" role="tab" aria-controls="service-${z}" aria-selected="${buttonSelected}">
+			servicesHtml += `<button class="${buttonClass}" id="service-${z}-tab" data-href="/contact-form" data-bs-toggle="pill" data-bs-target="#service-${z}" type="button" role="tab" aria-controls="service-${z}" aria-selected="${buttonSelected}">
                                 Button service ${z}
                             </button>`
 		}
