@@ -2,7 +2,7 @@ ArticleEditor.add("plugin", "servicesVerticalTabs", {
 	start: function () {
 		this.app.addbar.add("servicesVerticalTabs", {
 			title: "Services vertical tabs",
-			icon: '<i class="fa fa-camera-retro"></i>',
+			icon: '<i class="fa fa-handshake"></i>',
 			command: "servicesVerticalTabs.popup",
 		})
 	},
