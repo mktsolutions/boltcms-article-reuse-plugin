@@ -87,10 +87,10 @@ ArticleEditor.add("plugin", "servicesVerticalTabs", {
                                                 </p>
                                                 <div class="items-list">
                                                     <ul class="default-ul">
-                                                        <li><p>Lorem ipsum dolor sit adipiscing</p></li>
-                                                        <li><p>Lorem ipsum dolor sit adipiscing</p></li>
-                                                        <li><p>Lorem ipsum dolor sit adipiscing</p></li>
-                                                        <li><p>Lorem ipsum dolor sit adipiscing</p></li>
+                                                        <li><a href="#">Lorem ipsum dolor sit adipiscing</a></li>
+                                                        <li><a href="#">Lorem ipsum dolor sit adipiscing</a></li>
+                                                        <li><a href="#">Lorem ipsum dolor sit adipiscing</a></li>
+                                                        <li><a href="#">Lorem ipsum dolor sit adipiscing</a></li>
                                                     </ul>
                                                 </div>
                                                 <div class="btn-container">
