@@ -214,9 +214,9 @@ ArticleEditor.add("plugin", "insights", {
 
 			htmlStructure = `<section class="container-insights">
                         <div class="title">
-                            <h4 class="fs-2">
+                            <p class="fs-2">
                               Key insights and featured news - mixed
-                            </h4>
+                            </p>
                         </div>
                           <div class="row">
                             ${htmlItems}
@@ -247,7 +247,7 @@ ArticleEditor.add("plugin", "insights", {
 
 			htmlStructure = `<div class="related-content">
 								<div class="related-content__title">
-									<h4 class="text-20 unscaled">Related content</h4>
+									<p class="text-20 unscaled fw-bold">Related content</p>
 								</div>
 								<div class="related-content__items">
 								${htmlItems}
