@@ -139,8 +139,12 @@
         "name": "CTA - Gradient, leader and form",
         "html": "<section class=\"cta-section cta-section--form cta-section--form--v2\"><div class=\"row\"><div class=\"col-12 col-lg-6 col-xl-5 gradiente-col\"><div class=\"gradiente-col__content\"><h3>Let's meet in person in Stuttgart or set up a call</h3><div class=\"person\"><figure><img src=\"{{ asset('theme/luxoft/assets/images/team/member09.jpg') }}\" alt=\"lead image\"></figure><p><a class=\"linkedin\" target=\"_blank\" href=\"#\"></a></p><div class=\"person--text\"><h5>Tobias Blahak</h5><p>Account manager OEM</p></div></div></div></div><div class=\"col-12 col-lg-6 col-xl-7 form-col\"><div class=\"form-col__content\">{{ boltform('meet_us_form') }}</div></div></div></section>"
     },
+    "gradient-form": {
+        "name": "Gradient and form. No phone, no comments",
+        "html": "<section class=\"cta-section cta-section--form cta-section--form--v2\"><div class=\"row\"><div class=\"col-12 col-lg-6 col-xl-5 gradiente-col smaller\"><div class=\"gradiente-col__content\"><h3>Looking to innovate your business? <br> Contact us</h3></div></div><div class=\"col-12 col-lg-6 col-xl-7 form-col\"><div class=\"form-col__content\">{{ boltform('meet_us_form_no_phone_no_comments') }}<p id=\"mkt_campaign_id\">_MKT_ID_</p></div></div></div></section>"
+    },
     "gradient-person-form-cta-no-phone": {
-        "name": "CTA - Gradient, leader and form. No phone",
+        "name": "CTA - Gradient, leader and form. Optional phone",
         "html": "<section class=\"cta-section cta-section--form cta-section--form--v2\"><div class=\"row\"><div class=\"col-12 col-lg-6 col-xl-5 gradiente-col\"><div class=\"gradiente-col__content\"><h3>Let's meet in person in Stuttgart or set up a call</h3><div class=\"person\"><figure><img src=\"{{ asset('theme/luxoft/assets/images/team/member09.jpg') }}\" alt=\"lead image\"></figure><p><a class=\"linkedin\" target=\"_blank\" href=\"#\"></a></p><div class=\"person--text\"><h5>Tobias Blahak</h5><p>Account manager OEM</p></div></div></div></div><div class=\"col-12 col-lg-6 col-xl-7 form-col\"><div class=\"form-col__content\">{{ boltform('meet_us_form_no_phone') }}</div></div></div></section>"
     },
     "meet-us-form-opt-phone-opt-comment": {
