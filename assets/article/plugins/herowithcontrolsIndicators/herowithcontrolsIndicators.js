@@ -85,8 +85,19 @@ ArticleEditor.add("plugin", "herowithcontrolsIndicators", {
 												<p>
 													Risk management suit for Everstream analytics
 												</p>
-												<div>
-													<a class="btn btn-outline" href="#">READ CASE STUDY</a>
+												<div class="btn-container">
+													<a class="btn btn-text btn-icon" href="#">
+														<div class="text-container">
+															<div class="text">
+																read our client story
+															</div>
+															<div class="arr-offering">
+																<i class="arr-small one"></i>
+																<i class="arr-small two"></i>
+																<i class="arr-small three"></i>
+															</div>
+														</div>
+													</a>
 												</div>
 											</div>
                                         </div>
