@@ -1,0 +1,46 @@
+.our-locations {
+    border: 1px solid #adadad;
+    padding: 15px;
+}
+
+.our-locations__container__content {
+    display: flex;
+}
+.our-locations__container__content__left {
+    display: flex;
+    flex-wrap: wrap;
+}
+.location-card {
+    width: 50%;
+}
+.our-locations__container__content__right {
+    display: flex;
+    flex-direction: column;
+}
+.our-locations__container__content__right__location {
+    margin-left: auto;
+    display: flex;
+}
+.our-locations__container__content__right__location--text {
+    display: flex;
+    margin: 0;
+}
+#splider-our-locations {
+    padding: 1rem;
+    background-color: #5300961a;
+    border: 1px solid #d100fc66;
+}
+#splider-our-locations::before {
+    content: "Mobile version:";
+    font-size: 24px;
+    color: red;
+}
+
+#splider-our-locations .splide__track .splide__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+#splider-our-locations .splide__track .splide__list .splide__slide {
+    width: 25%;
+}

@@ -1,0 +1,20 @@
+.latest-opportunities {
+    border: 1px solid #adadad;
+    padding: 15px;
+}
+
+#splider-latest-opportunities {
+    display: none;
+}
+
+.latest-opportunities__right-col {
+    display: flex;
+    flex-wrap: wrap;
+}
+.latest-opportunities__right-col__card {
+    width: 50%;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background-color: #5300961a;
+    border: 1px solid #d100fc66;
+}

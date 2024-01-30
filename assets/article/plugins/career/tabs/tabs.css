@@ -1,0 +1,17 @@
+.tabs-container {
+    border: 1px solid #adadad;
+    padding: 15px;
+}
+
+.tabs-container__collapse-section__panels__panel {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background-color: #5300961a;
+    border: 1px solid #d100fc66;
+    display: flex;
+}
+
+.tabs-container__collapse-section__panels__panel div,
+.tabs-container__collapse-section__panels__panel figure {
+    width: 50%;
+}

@@ -1,0 +1,38 @@
+.location-cards {
+    border: 1px solid #adadad;
+    padding: 15px;
+}
+
+.location-cards__countries,
+.location-cards__mobile-regions__region__country
+    .accordion-body
+    .splide
+    .splide__track
+    .splide__list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.location-cards__countries__country,
+.location-cards__mobile-regions__region__country
+    .accordion-body
+    .splide
+    .splide__track
+    .splide__list
+    .splide__slide {
+    width: 25%;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background-color: #5300961a;
+    border: 1px solid #d100fc66;
+}
+
+.location-cards__countries__country a {
+    position: relative;
+}
+
+.locations.location-cards__mobile-regions::before {
+    content: "Mobile version:";
+    color: red;
+    font-size: 24px;
+}

@@ -1,0 +1,15 @@
+.cards-with-icons {
+    border: 1px solid #adadad;
+    padding: 15px;
+}
+
+.cards-with-icons__cards {
+    display: flex;
+}
+
+.cards-with-icons__cards__card--v2 {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background-color: #5300961a;
+    border: 1px solid #d100fc66;
+}
