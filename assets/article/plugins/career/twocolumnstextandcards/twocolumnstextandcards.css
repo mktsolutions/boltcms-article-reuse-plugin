@@ -1,0 +1,92 @@
+#twoColumnsTextAndCards {
+    border: 1px solid #adadad;
+    padding: 15px;
+}
+#pinned-element,
+#tablet-pinned-element {
+    height: auto !important;
+    overflow: auto !important;
+}
+
+#tablet-pinned-element::before {
+    content: "Tablet version:";
+    color: red;
+    font-size: 24px;
+}
+
+.about-us-first__two-col-scroll-container-mobile::before {
+    content: "Mobile version:";
+    color: red;
+    font-size: 24px;
+}
+
+.about-us-first__two-col-scroll-container {
+    display: flex;
+}
+
+.about-us-first__two-col-scroll-container-tablet,
+.about-us-first__two-col-scroll-container-mobile {
+    display: flex;
+    flex-direction: column;
+}
+
+.about-us-first__two-col-scroll-container__right-col {
+    width: 100%;
+}
+
+.about-us-first__two-col-scroll-container__right-col__cards-section {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+}
+
+.about-us-first__two-col-scroll-container__right-col__cards-section__card {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background-color: #5300961a;
+    border: 1px solid #d100fc66;
+    width: 50%;
+}
+.about-us-first__two-col-scroll-container-tablet__tab {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background-color: #5300961a;
+    border: 1px solid #d100fc66;
+}
+
+.about-us-first__two-col-scroll-container-tablet__tab__right__cards-section {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.about-us-first__two-col-scroll-container-tablet__tab__right__cards-section__card {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background-color: #44027b1a;
+    border: 1px solid #d521f966;
+    width: 33%;
+}
+
+.about-us-first__two-col-scroll-container-mobile
+    .about-us-first__two-col-scroll-container-mobile__panels
+    .about-us-first__two-col-scroll-container-mobile__panels__panel
+    .about-us-first__two-col-scroll-container-mobile__panels__panel__carousel
+    .splide__track
+    .splide__list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.about-us-first__two-col-scroll-container-mobile
+    .about-us-first__two-col-scroll-container-mobile__panels
+    .about-us-first__two-col-scroll-container-mobile__panels__panel
+    .about-us-first__two-col-scroll-container-mobile__panels__panel__carousel
+    .splide__track
+    .splide__list
+    .splide__slide {
+    width: 33%;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background-color: #5300961a;
+    border: 1px solid #d100fc66;
+}
