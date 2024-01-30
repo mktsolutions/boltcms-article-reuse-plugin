@@ -1,0 +1,19 @@
+.life-stories {
+    border: 1px solid #adadad;
+    padding: 15px;
+}
+
+.life-stories__content__stories {
+    display: flex;
+}
+
+.life-stories__content__stories .twig-code:nth-of-type(3n) {
+    display: none;
+}
+
+.life-stories__content__stories__story {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background-color: #5300961a;
+    border: 1px solid #d100fc66;
+}

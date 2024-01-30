@@ -1,0 +1,25 @@
+.carousel-cards {
+    border: 1px solid #adadad;
+    padding: 15px;
+}
+
+.how-we-hire__slide-container {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background-color: #5300961a;
+    border: 1px solid #d100fc66;
+    display: flex;
+}
+.how-we-hire__slide-container div {
+    width: 50%;
+}
+.how-we-hire__slide-container__image__number,
+.how-we-hire__slide-container__number {
+    font-size: 18px;
+}
+
+#how-we-hire-mobile-carousel::before {
+    content: "Mobile version:";
+    color: red;
+    font-size: 24px;
+}
