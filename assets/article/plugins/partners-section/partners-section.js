@@ -65,6 +65,13 @@ ArticleEditor.add('plugin', 'partners-section', {
                         'three-columns': 'Version with 3 columns',
                         'four-columns': 'Version with 4 columns'
                     }
+                },
+                'style': {
+                    label: 'Partners with images:',
+                    type: 'input'
+                },
+                'style1': {
+                    type: 'checkbox',
                 }
             },
             footer: {
@@ -90,6 +97,7 @@ ArticleEditor.add('plugin', 'partners-section', {
         var data = stack.getData()
         var partnersAmount = parseInt(data.amount)
         var version = data.version
+        var style1 = data.style1
         var instance = instance || this.app.create('block.partners-section')
         var $block = instance.getBlock()
         var htmlContent = ``
@@ -123,6 +131,11 @@ ArticleEditor.add('plugin', 'partners-section', {
                                         <div class="content">
                                             <div class="btn-container">
                                                 <a class="btn btn-text btn-icon" href="#">
+                                                ${style1 ? <div className="partners-image-container">
+                                                                <figure>
+                                                                    <img src="{{asset('theme/luxoft/assets/images/image-148.jpg')}}" alt="Partner Image"/>
+                                                                </figure>
+                                                    </div> : ''}
                                                     <div class="text-container">
                                                         <div class="text stretched-link">
                                                             Murex
