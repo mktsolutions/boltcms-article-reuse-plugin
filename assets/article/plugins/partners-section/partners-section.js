@@ -131,7 +131,7 @@ ArticleEditor.add('plugin', 'partners-section', {
                                         <div class="content">
                                             <div class="btn-container">
                                                 <a class="btn btn-text btn-icon" href="#">
-                                                ${style1 ? `<div className="partners-image-container">
+                                                ${style1 ? `<div class="partners-image-container">
                                                                 <figure>
                                                                     <img src="{{asset('theme/luxoft/assets/images/image-148.jpg')}}" alt="Partner Image"/>
                                                                 </figure>
