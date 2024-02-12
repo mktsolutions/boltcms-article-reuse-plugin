@@ -68,7 +68,9 @@ table td {
 .single-event__agenda,
 .single-event__faq,
 .single-event__our-speakers,
-.standard-video-section-rounded {
+.standard-video-section-rounded,
+.life-at-luxoft-first,
+.life-at-luxoft-second  {
     border: 1px solid #adadad;
     padding: 15px;
 }
@@ -77,6 +79,7 @@ table td {
     text-align: center !important;
 }
 
+.life-at-luxoft-second__container__tech-insights,
 .col,
 .col-12,
 .col-xs-12,
@@ -95,6 +98,7 @@ table td {
     padding: 5px 3px;
 }
 
+.life-at-luxoft-second__container__tech-insights__container,
 .single-event__header--content__text,
 .single-event__our-speakers .row {
     background-color: #00729a1a;
