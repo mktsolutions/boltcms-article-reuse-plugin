@@ -1,0 +1,58 @@
+.btn-normal {
+    padding: 10px 15px;
+    color: #fff;
+    background-color: #5f249f;
+    border-radius: 15px;
+    text-decoration: none;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 25px;
+    border: none;
+}
+
+.btn-normal.outline {
+    border: 1.5px solid #5f249f;
+    background-color: #fff;
+    color: #5f249f;
+}
+
+.btn-arrow-ghost--purple {
+    padding: 10px 10px 10px 15px;
+    gap: 10px;
+    color: #5f249f;
+    border: 1.5px solid #5f249f;
+    border-radius: 15px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 25px;
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+}
+
+.btn-arrow-ghost--purple svg {
+    stroke: #5f249f;
+}
+
+.btn-arrow-ghost--purple.filled {
+    color: #fff;
+    background-color: #5f249f;
+}
+
+.btn-arrow-ghost--purple.filled svg {
+    stroke: #fff;
+}
+
+.btn-wrapper--center {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.btn-wrapper--left {
+    justify-content: left;
+    display: flex;
+    align-items: center;
+}
