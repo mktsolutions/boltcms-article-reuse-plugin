@@ -117,7 +117,6 @@ ArticleEditor.add("plugin", "locationscard", {
         <a href="#" class="location-card" data-code="${this.elements.items[item].code}">
                     <div class="location-card__text">
                         <p class="location-card__text--country">${this.elements.items[item].title}</p>
-                        <p class="location-card__text--jobs">loading...</p>
                     </div>
                     <svg
                         width="24"
@@ -162,11 +161,6 @@ ArticleEditor.add("plugin", "locationscard", {
                                     class="our-locations__content__right__location--text__city"
                                 >
                                 ${this.elements.items[item].title}
-                                </p>
-                                <p
-                                    class="our-locations__content__right__location--text__jobs"
-                                >
-                                    loading...
                                 </p>
                             </div>
                             <a href="#" class="btn-arrow">
@@ -220,9 +214,8 @@ ArticleEditor.add("plugin", "locationscard", {
                 <a href="#" class="location-card">
                     <div class="location-card__text">
                         <p class="location-card__text--country">
-                            All countries?
+                            All countries
                         </p>
-                        <p class="location-card__text--jobs">loading...</p>
                     </div>
                 </a>
             </div>
@@ -243,11 +236,6 @@ ArticleEditor.add("plugin", "locationscard", {
                             class="our-locations__content__right__location--text__city"
                         >
                             New York
-                        </p>
-                        <p
-                            class="our-locations__content__right__location--text__jobs"
-                        >
-                            12 jobs
                         </p>
                     </div>
                 </div>
