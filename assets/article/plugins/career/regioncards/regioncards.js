@@ -84,11 +84,6 @@ ArticleEditor.add("plugin", "regioncards", {
                 >
                     Argentina
                 </h3>
-                <p
-                    class="location-cards__countries__country__description__left__positions"
-                >
-                    46 positions
-                </p>
             </div>
             <div
                 class="location-cards__countries__country__description__right"
