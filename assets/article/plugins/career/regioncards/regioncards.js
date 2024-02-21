@@ -127,9 +127,6 @@ ArticleEditor.add("plugin", "regioncards", {
                 <p class="city body-l-semibold">
                     Argentina
                 </p>
-                <p class="jobs body-l-regular">
-                    12 jobs
-                </p>
             </div>
             <a
                 href="#"
