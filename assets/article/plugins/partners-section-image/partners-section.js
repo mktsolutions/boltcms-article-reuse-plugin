@@ -2,9 +2,9 @@
 ArticleEditor.iconSectors = '<i class="fa fa-puzzle-piece"></i>'
 
 // Block
-ArticleEditor.add('block', 'block.partners-section', {
+ArticleEditor.add('block', 'block.partners-section-image', {
     mixins: ['block'],
-    type: 'partners-section',
+    type: 'partners-section-image',
     toolbar: {
         add: { command: 'addbar.popup', title: '## buttons.add ##' },
     },
@@ -17,29 +17,29 @@ ArticleEditor.add('block', 'block.partners-section', {
 })
 
 // Plugin
-ArticleEditor.add('plugin', 'partners-section', {
+ArticleEditor.add('plugin', 'partners-section-image', {
     translations: {
         en: {
-            "partners-section": {
-                "partners-section": "Partners Section",
+            "partners-section-image": {
+                "partners-section-image": "Partners Section with images",
                 "add": "Insert",
                 "cancel": "Cancel"
             },
             "blocks": {
-                "partners-section": "Partners Section"
+                "partners-section-image": "Partners Section with images"
             }
         }
     },
     start: function() {
-        this.app.addbar.add('partners-section', {
-            title: '## blocks.partners-section ##',
+        this.app.addbar.add('partners-section-image', {
+            title: '## blocks.partners-section-image ##',
             icon: ArticleEditor.iconSectors,
-            command: 'partners-section.popup'
+            command: 'partners-section-image.popup'
         })
     },
     popup: function() {
-        var stack = this.app.popup.add('partners-section', {
-            title: '## partners-section.partners-section ##',
+        var stack = this.app.popup.add('partners-section-image', {
+            title: '## partners-section-image.partners-section-image ##',
             width: '500px',
             command: 'addbar.popup',
             form: {
@@ -65,15 +65,15 @@ ArticleEditor.add('plugin', 'partners-section', {
                         'three-columns': 'Version with 3 columns',
                         'four-columns': 'Version with 4 columns'
                     }
-                }
+                },
             },
             footer: {
-                insert: { title: '## partners-section.add ##', command: 'partners-section.insert', type: 'primary' },
-                cancel: { title: '## partners-section.cancel ##', command: 'popup.close' }
+                insert: { title: '## partners-section-image.add ##', command: 'partners-section-image.insert', type: 'primary' },
+                cancel: { title: '## partners-section-image.cancel ##', command: 'popup.close' }
             }
         })
 
-        stack.open({ focus: 'partners-section' })
+        stack.open({ focus: 'partners-section-image' })
     },
     insert: function(stack) {
         var instance = this._buildInstance(stack)
@@ -90,27 +90,27 @@ ArticleEditor.add('plugin', 'partners-section', {
         var data = stack.getData()
         var partnersAmount = parseInt(data.amount)
         var version = data.version
-        var instance = instance || this.app.create('block.partners-section')
+        var instance = instance || this.app.create('block.partners-section-image')
         var $block = instance.getBlock()
         var htmlContent = ``
 
         if (version === 'two-colums') {
-            $block.addClass('partners-section container')
+            $block.addClass('partners-section-image container')
         } else if (version === 'three-columns') {
-            $block.addClass('partners-section container version-3-cols')
+            $block.addClass('partners-section-image container version-3-cols')
         } else {
-            $block.addClass('partners-section container version-4-cols')
+            $block.addClass('partners-section-image container version-4-cols')
         }
 
-        htmlContent += `<div class="partners-section__container">
-                                    <div class="row">
+        htmlContent += `<div class="partners-section-image__container">
+                                    <div class="partners-row">
                                         <div>
                                             <h4>
                                                 Our Capital Markets partners
                                             </h4>
                                         </div>
                                         <div>
-                                            <div class="col-12">
+                                            <div class="partners-col">
                                                     <p class="text-20">
                                                         Luxoft provides a comprehensive range of platform integration services from advisory and platform selection, through implementation and upgrade projects, to end-to-end service management
                                                     </p>
@@ -118,11 +118,16 @@ ArticleEditor.add('plugin', 'partners-section', {
                                             <div class="row">`
 
         for(var z = 1; z <= partnersAmount; z++) {
-            htmlContent += `<div class="col items">
-                                    <div class="partners-section--item">
+            htmlContent += `<div class="partners-col items">
+                                    <div class="partners-section-image--item">
                                         <div class="content">
                                             <div class="btn-container">
                                                 <a class="btn btn-text btn-icon" href="#">
+                                                    <div class="partners-image-container">
+                                                                <figure>
+                                                                    <img src="{{asset('theme/luxoft/assets/images/image-148.jpg')}}" alt="Partner Image"/>
+                                                                </figure>
+                                                    </div>
                                                     <div class="text-container">
                                                         <div class="text stretched-link">
                                                             Murex
