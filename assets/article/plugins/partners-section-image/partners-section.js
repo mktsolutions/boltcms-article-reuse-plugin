@@ -115,9 +115,9 @@ ArticleEditor.add('plugin', 'partners-section-image', {
                                                         Luxoft provides a comprehensive range of platform integration services from advisory and platform selection, through implementation and upgrade projects, to end-to-end service management
                                                     </p>
                                             </div>
-                                            <div class="row">`
+                                            <div class="partners-wrapper">`
 
-        for(var z = 1; z <= partnersAmount; z++) {
+        for(let z = 1; z <= partnersAmount; z++) {
             htmlContent += `<div class="partners-col items">
                                     <div class="partners-section-image--item">
                                         <div class="content">
