@@ -1,0 +1,79 @@
+.arx-popup-stack-partners-section .arx-form-checkbox-item input[type=checkbox] {
+    position: relative;
+    border: 2px solid #000;
+    border-radius: 2px;
+    background: none;
+    cursor: pointer;
+    line-height: 0;
+    margin: 0 .6em 0 0;
+    outline: 0;
+    padding: 0 !important;
+    vertical-align: text-top;
+    height: 20px;
+    width: 20px;
+    opacity: .5;
+}
+
+.arx-popup-stack-partners-section .arx-form-checkbox-item input[type=checkbox]:hover {
+    opacity: 1;
+}
+
+.arx-popup-stack-partners-section .arx-form-checkbox-item input[type=checkbox]:checked {
+    background-color: #000;
+    opacity: 1;
+}
+
+.arx-popup-stack-partners-section .arx-form-checkbox-item input[type=checkbox]:before {
+    content: '';
+    position: absolute;
+    right: 50%;
+    top: 50%;
+    width: 4px;
+    height: 10px;
+    border: solid #FFF;
+    border-width: 0 2px 2px 0;
+    margin: -1px -1px 0 -1px;
+    transform: rotate(45deg) translate(-50%, -50%);
+    z-index: 2;
+}
+
+.arx-popup-stack-partners-section .arx-form-input {
+    display: none;
+}
+
+.partners-section {
+    border: 1px solid #adadad;
+    padding: 15px;
+}
+
+.partners-section .col {
+    background-color: #00729a1a;
+    border: 1px solid #009bfc66;
+    padding: 10px 3px;
+    margin-bottom: 10px;
+}
+
+.partners-section__container > .row > div:first-child {
+    flex: 0 0 auto;
+    width: 20%;
+}
+
+.partners-section__container > .row > div:last-child {
+    flex: 0 0 auto;
+    width: 80%;
+}
+
+.partners-section__container > .row .row > * {
+    flex: 0 0 auto;
+    width: 50%;
+}
+
+.partners-section.version-3-cols .partners-section__container > .row .row > * {
+    flex: 0 0 auto;
+    width: 33.3333333333%;
+}
+
+.partners-section.version-4-cols .partners-section__container > .row .row > * {
+    flex: 0 0 auto;
+    width: 25%;
+}
