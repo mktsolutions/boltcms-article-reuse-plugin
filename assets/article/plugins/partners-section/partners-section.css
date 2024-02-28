@@ -1,4 +1,4 @@
-.arx-popup-stack-partners-section-image .arx-form-checkbox-item input[type=checkbox] {
+.arx-popup-stack-partners-section .arx-form-checkbox-item input[type=checkbox] {
     position: relative;
     border: 2px solid #000;
     border-radius: 2px;
@@ -14,16 +14,16 @@
     opacity: .5;
 }
 
-.arx-popup-stack-partners-section-image .arx-form-checkbox-item input[type=checkbox]:hover {
+.arx-popup-stack-partners-section .arx-form-checkbox-item input[type=checkbox]:hover {
     opacity: 1;
 }
 
-.arx-popup-stack-partners-section-image .arx-form-checkbox-item input[type=checkbox]:checked {
+.arx-popup-stack-partners-section .arx-form-checkbox-item input[type=checkbox]:checked {
     background-color: #000;
     opacity: 1;
 }
 
-.arx-popup-stack-partners-section-image .arx-form-checkbox-item input[type=checkbox]:before {
+.arx-popup-stack-partners-section .arx-form-checkbox-item input[type=checkbox]:before {
     content: '';
     position: absolute;
     right: 50%;
@@ -37,43 +37,43 @@
     z-index: 2;
 }
 
-.arx-popup-stack-partners-section-image .arx-form-input {
+.arx-popup-stack-partners-section .arx-form-input {
     display: none;
 }
 
-.partners-section-image {
+.partners-section {
     border: 1px solid #adadad;
     padding: 15px;
 }
 
-.partners-section-image .col {
+.partners-section .col {
     background-color: #00729a1a;
     border: 1px solid #009bfc66;
     padding: 10px 3px;
     margin-bottom: 10px;
 }
 
-.partners-section-image__container > .row > div:first-child {
+.partners-section__container > .row > div:first-child {
     flex: 0 0 auto;
     width: 20%;
 }
 
-.partners-section-image__container > .row > div:last-child {
+.partners-section__container > .row > div:last-child {
     flex: 0 0 auto;
     width: 80%;
 }
 
-.partners-section-image__container > .row .row > * {
+.partners-section__container > .row .row > * {
     flex: 0 0 auto;
     width: 50%;
 }
 
-.partners-section-image.version-3-cols .partners-section-image__container > .row .row > * {
+.partners-section.version-3-cols .partners-section__container > .row .row > * {
     flex: 0 0 auto;
     width: 33.3333333333%;
 }
 
-.partners-section-image.version-4-cols .partners-section-image__container > .row .row > * {
+.partners-section.version-4-cols .partners-section__container > .row .row > * {
     flex: 0 0 auto;
     width: 25%;
 }
