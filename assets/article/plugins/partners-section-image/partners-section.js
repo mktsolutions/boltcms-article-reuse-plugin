@@ -119,30 +119,24 @@ ArticleEditor.add('plugin', 'partners-section-image', {
 
         for(let z = 1; z <= partnersAmount; z++) {
             htmlContent += `<div class="partners-col items">
-                                    <div class="partners-section-image--item">
-                                        <div class="content">
-                                            <div class="btn-container">
-                                                <a class="btn btn-text btn-icon" href="#">
-                                                    <div class="partners-image-container">
-                                                                <figure>
-                                                                    <img src="{{asset('theme/luxoft/assets/images/image-148.jpg')}}" alt="Partner Image"/>
-                                                                </figure>
-                                                    </div>
-                                                    <div class="text-container">
-                                                        <div class="text stretched-link">
-                                                            Murex
-                                                        </div>
-                                                        <div class="arr-offering">
-                                                            <i class="arr-small one"></i>
-                                                            <i class="arr-small two"></i>
-                                                            <i class="arr-small three"></i>
-                                                        </div>
-                                                    </div>
-                                                </a>
-                                            </div>
+                                <a class="btn btn-text btn-icon" href="#">
+                                    <div class="partners-image-container">
+                                        <figure>
+                                            <img src="{{asset('theme/luxoft/assets/images/image-148.jpg')}}"
+                                                alt="Partner Image">
+                                        </figure>
+                                    </div>
+                                    <div class="text-container">
+                                        <div class="text stretched-link">
+                                            Murex
+                                        </div>
+                                        <div class="arr-offering">
+                                            <i class="arr-small one"></i><i class="arr-small two"></i><i
+                                                class="arr-small three"></i>
                                         </div>
                                     </div>
-                                </div>`
+                                </a>
+                            </div>`
         }
 
         htmlContent += `</div>
