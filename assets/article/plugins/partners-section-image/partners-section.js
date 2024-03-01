@@ -118,25 +118,21 @@ ArticleEditor.add('plugin', 'partners-section-image', {
                                             <div class="partners-wrapper">`
 
         for(let z = 1; z <= partnersAmount; z++) {
-            htmlContent += `<div class="partners-col items">
-                                <a class="btn btn-text btn-icon" href="#">
-                                    <div class="partners-image-container">
-                                        <figure>
-                                            <img src="{{asset('theme/luxoft/assets/images/image-148.jpg')}}"
-                                                alt="Partner Image">
-                                        </figure>
+            htmlContent += `<a class="partners-col items btn btn-text btn-icon" href="#">
+                                <div class="partners-image-container">
+                                    <figure>
+                                        <img src="/theme/luxoft/assets/images/image-148.jpg" alt="Partner Image">
+                                    </figure>
+                                </div>
+                                <div class="text-container">
+                                    <div class="text stretched-link">
+                                        Murex
                                     </div>
-                                    <div class="text-container">
-                                        <div class="text stretched-link">
-                                            Murex
-                                        </div>
-                                        <div class="arr-offering">
-                                            <i class="arr-small one"></i><i class="arr-small two"></i><i
-                                                class="arr-small three"></i>
-                                        </div>
+                                    <div class="arr-offering">
+                                        <i class="arr-small one"></i><i class="arr-small two"></i><i class="arr-small three"></i>
                                     </div>
-                                </a>
-                            </div>`
+                                </div>
+                            </a>`
         }
 
         htmlContent += `</div>
