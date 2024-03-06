@@ -18,6 +18,7 @@ ArticleEditor.add("plugin", "jobscards", {
   },
   init: function () {
     this.elements = {};
+    this.locations = {};
   },
   start: async function () {
     const $this = this;
@@ -26,6 +27,7 @@ ArticleEditor.add("plugin", "jobscards", {
     function checkStorage() {
       if (localStorage.getItem("contentTypeJobsData") !== null) {
         getJobsData();
+        getLocationsData();
       }
     }
 
@@ -33,7 +35,7 @@ ArticleEditor.add("plugin", "jobscards", {
       const storageData = JSON.parse(
         localStorage.getItem("contentTypeJobsData")
       );
-
+      
       $this.elements = {
         items: storageData.items,
         selectOptions: storageData.selectOptions,
@@ -47,6 +49,20 @@ ArticleEditor.add("plugin", "jobscards", {
 
       clearInterval(storageInterval);
     }
+
+    function getLocationsData() {
+      const storageData = JSON.parse(
+        localStorage.getItem("contentTypeJobsData")
+      );
+      
+      const uniqueCountries = [...new Set(storageData.items.map(item => item.country))].filter(n => n).sort();
+      $this.locations = {
+        selectOptions: uniqueCountries
+      };
+
+      clearInterval(storageInterval);
+    }
+
   },
   popup: function () {
     var stack = this.app.popup.create("jobscards", {
@@ -61,6 +77,11 @@ ArticleEditor.add("plugin", "jobscards", {
             automatic: "Automatic",
             manual: "Manual",
           },
+        },
+        location: {
+          type: "select",
+          label: "Choose location",
+          options: this.locations.selectOptions,
         },
         item1: {
           type: "input",
@@ -90,6 +111,12 @@ ArticleEditor.add("plugin", "jobscards", {
     });
 
     stack.open({ focus: "jobscards" });
+    const countries = stack.$form.nodes[0].querySelectorAll('select[name="location"]')[0];
+    const defaultValueSelected = document.createElement('option');
+    defaultValueSelected.value = 'none';
+    defaultValueSelected.innerHTML = '';
+    defaultValueSelected.setAttribute('selected',true);
+    countries.appendChild(defaultValueSelected);
   },
   insert: function (stack) {
     this._buildInstance(stack);
@@ -99,7 +126,10 @@ ArticleEditor.add("plugin", "jobscards", {
 
     var data = stack.getData();
     var editableType = data.mode;
-
+    var country = data.location;
+    if (country !== 'none') {
+      country = this.locations.selectOptions[data.location].split('-')[0].replace(' ','');
+    }
     var id1 = data.item1;
     var id2 = data.item2;
     var id3 = data.item3;
@@ -121,6 +151,14 @@ ArticleEditor.add("plugin", "jobscards", {
     function getLastFourHotObjects(mainObject) {
       const hotObjects = Object.values(mainObject)
         .filter((innerObject) => innerObject.hot === "YES")
+        .reverse() // Reverse the array to get the last four objects
+        .slice(0, 4); // Take the first four objects after reversing
+      return hotObjects;
+    }
+
+    function getHotJobsByCountry(mainObject, country) {
+      const hotObjects = Object.values(mainObject)
+        .filter((innerObject) => innerObject.hot === "YES" && innerObject.country.includes(country))
         .reverse() // Reverse the array to get the last four objects
         .slice(0, 4); // Take the first four objects after reversing
       return hotObjects;
@@ -195,8 +233,8 @@ ArticleEditor.add("plugin", "jobscards", {
         `;
       });
     } else {
-      const latestHotJobs = getLastFourHotObjects(this.elements.items);
-
+      const latestHotJobs = country === 'none' ? getLastFourHotObjects(this.elements.items) : getHotJobsByCountry(this.elements.items, country);
+      
       latestHotJobs.forEach((job) => {
         htmlItems += `
         <a href="/jobs/${
