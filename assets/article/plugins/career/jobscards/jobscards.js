@@ -126,10 +126,8 @@ ArticleEditor.add("plugin", "jobscards", {
 
     var data = stack.getData();
     var editableType = data.mode;
-    var country = data.location;
-    if (country !== 'none') {
-      country = this.locations.selectOptions[data.location];
-    }
+    var country = this.locations.selectOptions[data.location];
+    
     var id1 = data.item1;
     var id2 = data.item2;
     var id3 = data.item3;
@@ -233,7 +231,7 @@ ArticleEditor.add("plugin", "jobscards", {
         `;
       });
     } else {
-      const latestHotJobs = country === 'none' ? getLastFourHotObjects(this.elements.items) : getHotJobsByCountry(this.elements.items, country);
+      const latestHotJobs = country === undefined ? getLastFourHotObjects(this.elements.items) : getHotJobsByCountry(this.elements.items, country);
       
       latestHotJobs.forEach((job) => {
         htmlItems += `
