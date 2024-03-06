@@ -128,7 +128,7 @@ ArticleEditor.add("plugin", "jobscards", {
     var editableType = data.mode;
     var country = data.location;
     if (country !== 'none') {
-      country = this.locations.selectOptions[data.location].split('-')[0].replace(' ','');
+      country = this.locations.selectOptions[data.location];
     }
     var id1 = data.item1;
     var id2 = data.item2;
