@@ -154,9 +154,9 @@ ArticleEditor.add("plugin", "jobscards", {
       return hotObjects;
     }
 
-    function getHotJobsByCountry(mainObject, country) {
+    function getJobsByCountry(mainObject, country) {
       const hotObjects = Object.values(mainObject)
-        .filter((innerObject) => innerObject.hot === "YES" && innerObject.country.includes(country))
+        .filter((innerObject) => innerObject.country.includes(country))
         .reverse() // Reverse the array to get the last four objects
         .slice(0, 4); // Take the first four objects after reversing
       return hotObjects;
@@ -231,7 +231,7 @@ ArticleEditor.add("plugin", "jobscards", {
         `;
       });
     } else {
-      const latestHotJobs = country === undefined ? getLastFourHotObjects(this.elements.items) : getHotJobsByCountry(this.elements.items, country);
+      const latestHotJobs = country === undefined ? getLastFourHotObjects(this.elements.items) : getJobsByCountry(this.elements.items, country);
       
       latestHotJobs.forEach((job) => {
         htmlItems += `
