@@ -154,7 +154,7 @@ ArticleEditor.add("plugin", "cardswithtags", {
                       <div
                           class="life-stories__content__stories__story__right-col__ct"
                       >
-                          Events
+                          ${this.elements.items[item].contentType === 'events' ? 'Events' : 'Blogs' }
                       </div>
                       <h3
                           class="life-stories__content__stories__story__right-col__title"
