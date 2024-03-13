@@ -96,11 +96,6 @@ ArticleEditor.add("plugin", "cardswithtags", {
           label: "Choose an item to insert",
           options: this.elements.selectOptions,
         },
-        item5: {
-          type: "select",
-          label: "Choose an item to insert",
-          options: this.elements.selectOptions,
-        },
       },
       footer: {
         insert: {
@@ -128,8 +123,7 @@ ArticleEditor.add("plugin", "cardswithtags", {
     var item2 = data.item2;
     var item3 = data.item3;
     var item4 = data.item4;
-    var item5 = data.item5;
-    var items = [item1, item2, item3, item4, item5];
+    var items = [item1, item2, item3, item4];
     var htmlStructure = ``;
     var htmlItems = ``;
     let htmlItemsMobile = "";
