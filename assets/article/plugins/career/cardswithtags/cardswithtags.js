@@ -153,7 +153,7 @@ ArticleEditor.add("plugin", "cardswithtags", {
                       <h3
                           class="life-stories__content__stories__story__right-col__title"
                       >
-                      ${this.elements.items[item].title}
+                      ${this.elements.items[item].title.en}
                       </h3>
                   </div>
                   <p
