@@ -146,7 +146,7 @@ ArticleEditor.add("plugin", "cardswithtags", {
               >
                   <div class="flex flex-col">
                       <div
-                          class="life-stories__content__stories__story__right-col__ct ${this.elements.items[item].contentType === 'events' ? 'ct-event' : 'ct-blogs' }"
+                          class="life-stories__content__stories__story__right-col__ct ${this.elements.items[item].contentType === 'events' ? 'ct-events' : 'ct-blogs' }"
                       >
                           ${this.elements.items[item].contentType === 'events' ? 'Events' : 'Blogs' }
                       </div>
