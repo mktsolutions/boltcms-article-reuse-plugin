@@ -267,7 +267,7 @@ document.addEventListener("DOMContentLoaded", (e) => {
 
       newSelectOptions[
         itemPosition
-      ] = `${dataJson[single].fieldValues.title} - ${singleName}`;
+      ] = `${dataJson[single].fieldValues.title.en} - ${singleName}`;
       itemPosition++;
     }
 
