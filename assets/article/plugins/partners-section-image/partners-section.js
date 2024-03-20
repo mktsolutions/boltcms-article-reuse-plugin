@@ -62,8 +62,7 @@ ArticleEditor.add('plugin', 'partners-section-image', {
                     type: 'select',
                     options: {
                         'two-colums': 'Version with 2 columns',
-                        'three-columns': 'Version with 3 columns',
-                        'four-columns': 'Version with 4 columns'
+                        'three-columns': 'Version with 3 columns'
                     }
                 },
             },
@@ -98,8 +97,6 @@ ArticleEditor.add('plugin', 'partners-section-image', {
             $block.addClass('partners-section-image container')
         } else if (version === 'three-columns') {
             $block.addClass('partners-section-image container version-3-cols')
-        } else {
-            $block.addClass('partners-section-image container version-4-cols')
         }
 
         htmlContent += `<div class="partners-section-image__container">
