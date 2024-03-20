@@ -130,5 +130,9 @@
   "hero-locations": {
     "name": "Hero locations",
     "html": "<section class=\"hero-locations mt-10\"><div class=\"container\"><div class=\"hero-locations__text-content\"><h2 class=\"hero-locations__text-content__heading\">Discover your potential by working at Luxoft.</h2><p class=\"hero-locations__text-content__description\">Take on the challenge of working on projects that provide security and comfort to drivers with innovative autonomous driving tools. Become part of a pioneering group of engineers in ADAS</p></div><button class=\"btn-normal\">Apply now</button><figure class=\"hero-locations__figure\"><img src=\"{{ asset('/theme/luxoft/assets/images/image-148.jpg') }}\" alt=\"new hero banner\" class=\"new-hero-banner__figure__banner\"></figure></div></section>"
+  },
+  "embedded-jobs-listing": {
+    "name": "Embedded Jobs Listing",
+    "html": "<div id=\"app\">\n  {% set countries = ['Mexico', 'Serbia', 'Egypt', 'Ukraine', 'Romania'] %}\n  {% set bu = [] %}\n    <embedded-jobs-listing :countries=\"{\u200B{ countries|json_encode() }\u200B}\" :bu=\"{\u200B{ bu|json_encode() }\u200B}\"></embedded-jobs-listing>\n</div>"
   }
 }
