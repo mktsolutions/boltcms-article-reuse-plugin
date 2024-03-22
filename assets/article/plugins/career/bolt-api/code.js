@@ -104,6 +104,53 @@ document.addEventListener("DOMContentLoaded", (e) => {
     }
 
     if (
+      localStorage.getItem('contentTypeFormsData') === null &&
+      localStorage.getItem('alreadyGettingForms') === null
+    ) {
+      console.log('GettingForms...............')
+      localStorage.setItem('alreadyGettingForms', true);
+      let formsItems = {}
+      let formsSelectOptions = {}
+      let formItemPosition = 0
+
+      for (let i = 1; i <= pagesAmount; i++) {
+        let apiResponse = await fetch(
+          `${window.location.origin}/api/contents?page=${i}&contentType%5B%5D=form&status=published&pageSize=${pageSize}`
+        );
+        let json = await apiResponse.json();
+
+        if (!json.length) {
+          // if no data - no need to send more requests
+          break;
+        }
+
+        const result = await getFormItemData(json, formItemPosition);
+
+        formsItems = {
+          ...formsItems,
+          ...result[0],
+        };
+        formsSelectOptions = {
+          ...formsSelectOptions,
+          ...result[1],
+        };
+        formItemPosition = result[2];
+
+        if (json.length < pageSize) {
+          // if no data - no need to send more requests
+          break;
+        }
+      }
+
+      const formsElements = {
+        items: formsItems,
+        selectOptions: formsSelectOptions
+      }
+
+      localStorage.setItem('contentTypeFormsData', JSON.stringify(formsElements))
+    }
+
+    if (
       localStorage.getItem('contentTypeBlogsData') === null &&
       localStorage.getItem('alreadyGettingBlogs') === null
     ) {
@@ -165,6 +212,25 @@ document.addEventListener("DOMContentLoaded", (e) => {
   }
 
   getContetypesData()
+
+  async function getFormItemData(dataJson, itemPosition) {
+    const newItems = {};
+    const newSelectOptions = {};
+    const isLocal = window.location.hostname === "127.0.0.1"
+
+    for (const single in dataJson) {
+      const item = {
+        id: dataJson[single].id,
+        title: dataJson[single].fieldValues.title
+      }
+
+      newItems[itemPosition] = item;
+      newSelectOptions[itemPosition] = `${dataJson[single].fieldValues.title}`
+      itemPosition++
+    }
+
+    return [newItems, newSelectOptions, itemPosition]
+  }
 
   async function getBlogItemData(dataJson, itemPosition) {
     const newItems = {};
@@ -280,9 +346,11 @@ window.addEventListener("beforeunload", () => {
   localStorage.removeItem("alreadyGettingLocations")
   localStorage.removeItem("alreadyGettingEvents")
   localStorage.removeItem("alreadyGettingJobs")
+  localStorage.removeItem("alreadyGettingForms")
   localStorage.removeItem("contentTypeLocationsData")
   localStorage.removeItem("contentTypeEventsData")
   localStorage.removeItem("contentTypeJobsData")
   localStorage.removeItem("alreadyGettingBlogs")
   localStorage.removeItem("contentTypeBlogsData")
+  localStorage.removeItem("contentTypeFormsData")
 });
