@@ -42,7 +42,7 @@ ArticleEditor.add("plugin", "bannerText", {
         var data = stack.getData()
         var version = data.elements
         var bannerTextContent = `
-        <section class="banner-text ${version === 2 ? 'grey-background' : 'white-background'}">
+        <section class="banner-text ${version === '2' ? 'grey-background' : 'white-background'}">
             <div class="container">
                 <h3>5 reasons to join Luxoft</h3>
                 <div class="banner-text__wrapper">
