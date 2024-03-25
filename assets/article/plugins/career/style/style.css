@@ -101,7 +101,8 @@ table td {
 .life-at-luxoft-second__container__tech-insights__container,
 .single-event__header--content__text,
 .single-event__our-speakers .row,
-.page-form-container {
+.page-form-container,
+.hiring-process-carousel {
     background-color: #00729a1a;
     border: 1px solid #009bfc66;
     padding: 10px 3px;
