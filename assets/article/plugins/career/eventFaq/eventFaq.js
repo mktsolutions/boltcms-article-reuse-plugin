@@ -56,13 +56,14 @@ ArticleEditor.add("plugin", "eventFaq", {
 											<div class="accordion" id="faqAccordion${id}">`
 
 		for (var z = 1; z <= editableType; z++) {
+			let itemId = Math.floor(Math.random() * 9999)
 			eventFaqContent += `<div class="accordion-item">
 									<h2 class="accordion-header">
-										<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse${z}" aria-expanded="false" aria-controls="collapse${z}">
+										<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse${itemId}" aria-expanded="false" aria-controls="collapse${itemId}">
 											Accordion Item #${z}
 										</button>
 									</h2>
-									<div id="collapse${z}" class="accordion-collapse collapse" data-bs-parent="#faqAccordion${id}">
+									<div id="collapse${itemId}" class="accordion-collapse collapse" data-bs-parent="#faqAccordion${id}">
 										<div class="accordion-body">
 											<p>It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the</p>
 										</div>
