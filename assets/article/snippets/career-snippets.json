@@ -13,11 +13,11 @@
   },
   "text-module-white-alignment-center": {
     "name": "Text module white alignment center",
-    "html": "<section class=\"container text-module-white\"><div class=\"text-module-white__description\"><h2>Luxoft-Careers with Impact</h2><p>Work with a company where your expertise makes a difference. We’re changing what software-defined means for organizations in all industries. See yourself at the forefront of digital transformation and make an impact at all levels.</p><a href=\"#\" class=\"btn-normal\">Go beyond. Apply today</a></div><div class=\"text-module-white__image\"></div></section>"
+    "html": "<section class=\"container text-module-white\"><div class=\"text-module-white__description\"><h2>Luxoft-Careers with Impact</h2><p>Work with a company where your expertise makes a difference. We’re changing what software-defined means for organizations in all industries. See yourself at the forefront of digital transformation and make an impact at all levels.</p></div><div class=\"text-module-white__image\"></div></section>"
   },
   "text-module-white-alignment-left": {
     "name": "Text module white alignment left",
-    "html": "<div><div class=\"container text-module-white--alignment-left\"><h2 class=\"text-module-white--alignment-left--title align-left\">Luxoft-Careers with Impact</h2><p class=\"body-xl-regular text-module-white--alignment-left--desc align-left\">Work with a company where your expertise makes a difference. We’re changing what software-defined means for organizations in all industries. See yourself at the forefront of digital transformation and make an impact at all levels.</p><div class=\"btn-wrapper\"><a href=\"#\" class=\"btn-normal\">Go beyond. Apply today</a></div></div></div>"
+    "html": "<div><div class=\"container text-module-white--alignment-left\"><h2 class=\"text-module-white--alignment-left--title align-left\">Luxoft-Careers with Impact</h2><p class=\"body-xl-regular text-module-white--alignment-left--desc align-left\">Work with a company where your expertise makes a difference. We’re changing what software-defined means for organizations in all industries. See yourself at the forefront of digital transformation and make an impact at all levels.</p></div></div>"
   },
   "text-module-black-alignment-center": {
     "name": "Text module black alignment center",
