@@ -91,7 +91,7 @@ ArticleEditor.add("plugin", "bannerText", {
                         <img src="{{ asset('/theme/luxoft/assets/images/image-148.jpg') }}" alt="banner text plugin image">
                     </figure>
                 </div>
-                </div><div class="banner-text__dots"><p>Pagination</p></div><button class="btn-normal banner-text__button">Apply now</button></div>
+                </div><div class="banner-text__dots"><p>Pagination</p></div><a href="#" class="btn-normal banner-text__button">Apply now</a></div>
             </section>`
 
         this.app.editor.insertContent({
