@@ -133,7 +133,7 @@ ArticleEditor.add("plugin", "cardswithtags", {
     for (var item of items) {
       if (item !== "none") {
         htmlItems += `
-            <div class="life-stories__content__stories__story">
+            <a href="${this.elements.items[item].path}" class="life-stories__content__stories__story">
               <figure>
                 <img
                     class="life-stories__content__stories__story__image"
@@ -162,7 +162,7 @@ ArticleEditor.add("plugin", "cardswithtags", {
                   ${this.elements.items[item].description}
                   </p>
               </div>
-          </div>
+          </a>
         `;
       }
     }

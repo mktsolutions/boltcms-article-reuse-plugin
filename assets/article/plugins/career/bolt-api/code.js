@@ -243,6 +243,7 @@ document.addEventListener("DOMContentLoaded", (e) => {
         title: dataJson[single].fieldValues.title,
         description: dataJson[single].fieldValues.preview_description_text,
         slug: dataJson[single].fieldValues.slug,
+        path: dataJson[single].extras.link,
         photo: isLocal
           ? "https://www.luxoft.com/upload/medialibrary/563/behavioral_archetypes.png"
           : dataJson[single].fieldValues.photo.url,
@@ -325,6 +326,7 @@ document.addEventListener("DOMContentLoaded", (e) => {
         title: dataJson[single].fieldValues.title,
         description: dataJson[single].fieldValues.description,
         slug: dataJson[single].fieldValues.slug,
+        path: `/events/${dataJson[single].fieldValues.slug}`,
         contentType: dataJson[single].contentType,
         photo: dataJson[single].fieldValues.image.url,
       };
