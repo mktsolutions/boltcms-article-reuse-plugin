@@ -1,0 +1,15 @@
+.single-location__offices {
+    border: 1px solid #adadad;
+    padding: 15px
+}
+
+.single-location__offices.mobile {
+    display: none;
+}
+
+.single-location__offices--wrapper {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background-color: #5300961a;
+    border: 1px solid #d100fc66;
+}
