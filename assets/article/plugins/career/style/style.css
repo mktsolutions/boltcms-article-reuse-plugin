@@ -70,7 +70,8 @@ table td {
 .single-event__our-speakers,
 .standard-video-section-rounded,
 .life-at-luxoft-first,
-.life-at-luxoft-second  {
+.life-at-luxoft-second,
+.single-location__video-slider{
     border: 1px solid #adadad;
     padding: 15px;
 }
@@ -154,4 +155,24 @@ table td {
 
 .arx-popup-item-container {
     width: 115px;
+}
+
+.single-location__video-slider .splide__list {
+    display: flex;
+    gap: 10px;
+}
+
+.single-location__video-slider .splide__list .video-slider-item {
+    padding: 40px;
+    border: 1px solid #ccc;
+}
+
+.single-location__video-slider .splide__list .splide__slide {
+    padding: 40px;
+    background-color: #8a2be233;
+    border: 1px solid #000;
+}
+
+.single-location__video-slider .splide__list .video-slider-item img {
+    width: 40%;
 }
