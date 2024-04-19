@@ -14,6 +14,10 @@ ArticleEditor.add("plugin", "style", {
 					title: "Insert the DEFAULT UNSORTED LIST class",
 					classname: "default-ul",
 				},
+				"default-ol": {
+					title: "Insert the DEFAULT SORTED LIST class",
+					classname: "default-ol",
+				},
 				"unscaled": {
 					title: "Unscaled list",
 					classname: "unscaled",
