@@ -177,3 +177,7 @@ table td {
 .single-location__video-slider .splide__list .video-slider-item img {
     width: 40%;
 }
+
+.primary-project-roles .primary-project-roles__roles--item img {
+    width: 250px;
+}
