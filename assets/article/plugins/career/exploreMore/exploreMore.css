@@ -1,0 +1,11 @@
+.single-location__explore-more {
+    border: 1px solid #adadad;
+    padding: 15px
+}
+
+.single-location__explore-more--items {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background-color: #5300961a;
+    border: 1px solid #d100fc66;
+}
