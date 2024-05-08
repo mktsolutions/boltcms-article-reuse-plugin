@@ -71,7 +71,8 @@ table td {
 .standard-video-section-rounded,
 .life-at-luxoft-first,
 .life-at-luxoft-second,
-.single-location__video-slider{
+.single-location__video-slider,
+.primary-project-roles {
     border: 1px solid #adadad;
     padding: 15px;
 }
@@ -175,4 +176,8 @@ table td {
 
 .single-location__video-slider .splide__list .video-slider-item img {
     width: 40%;
+}
+
+.primary-project-roles .primary-project-roles__roles--item img {
+    width: 250px;
 }
