@@ -149,7 +149,7 @@
   },
   "purple-icons-cta": {
     "name": "Purple CTA with icons",
-    "html": "<section class=\"purple-icons-cta container\"><div class=\"purple-icons-cta__wrapper\"><div class=\"purple-icons-cta__wrapper__heading\"><h5>Ready to join our local community?</h5></div><div class=\"purple-icons-cta__wrapper__icons\"><figure><a href=\"#\"><img src=\"{{ asset('theme/luxoft/assets/images/icons/youtube-white.svg') }}\" alt=\"yt icon\"></a></figure><figure><a href=\"#\"><img src=\"{{ asset('theme/luxoft/assets/images/icons/instagram-white.svg') }}\" alt=\"instagram icon\"></a></figure><figure><a href=\"#\"><img src=\"{{ asset('theme/luxoft/assets/images/icons/x-white.svg') }}\" alt=\"x icon\"></a></figure><figure><a href=\"#\"><img src=\"{{ asset('theme/luxoft/assets/images/icons/facebook-white.svg') }}\" alt=\"fb icon\"></a></figure></div></div></section>"
+    "html": "<section class=\"purple-icons-cta container\"><div class=\"purple-icons-cta__wrapper\"><div class=\"purple-icons-cta__wrapper__heading\"><h5>Ready to join our local community?</h5></div><div class=\"purple-icons-cta__wrapper__icons\"><figure><a href=\"#\"><img src=\"{{ asset('theme/luxoft/assets/images/icons/youtube-white.svg') }}\" alt=\"yt icon\"></a></figure><figure><a href=\"#\"><img src=\"{{ asset('theme/luxoft/assets/images/icons/linkedin-white-new.svg') }}\" alt=\"linkedin icon\"></a></figure><figure><a href=\"#\"><img src=\"{{ asset('theme/luxoft/assets/images/icons/x-white.svg') }}\" alt=\"x icon\"></a></figure><figure><a href=\"#\"><img src=\"{{ asset('theme/luxoft/assets/images/icons/facebook-white.svg') }}\" alt=\"fb icon\"></a></figure></div></div></section>"
   },
   "location-header": {
     "name": "Location Header",
