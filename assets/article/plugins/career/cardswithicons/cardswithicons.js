@@ -186,7 +186,7 @@ ArticleEditor.add("plugin", "cardswithicons", {
         </div>
         <div class="cards-with-icons__cards__card--v2">
             <h3>More information about the benefits of working with us</h3>
-            <a href="#" class="btn-arrow--bright-purple"
+            <a href="#" class="btn-arrow-ghost--purple filled light-border"
                 >Learn more<svg
                     width="24"
                     height="24"
