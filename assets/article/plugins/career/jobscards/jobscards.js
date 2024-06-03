@@ -134,7 +134,7 @@ ArticleEditor.add("plugin", "jobscards", {
         <a href="/jobs/${job.link ?? "null"}" class="latest-opportunities__right-col__card">
           <div class="latest-opportunities__right-col__card__description">
             <h3>${job.title}</h3>
-            <p>${job.specializatio ?? "null"}</p>
+            <p>${job.specialization ?? "null"}</p>
           </div>
           <div class="latest-opportunities__right-col__card__location"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21" fill="none"><g clip-path="url(#clip0_1153_53722)"><path fill-rule="evenodd" clip-rule="evenodd" d="M4.27246 8.7275V8.87083C4.27246 11.755 7.92413 16.0967 9.39579 17.73C9.71996 18.09 10.28 18.09 10.6041 17.73C12.0758 16.0967 15.7275 11.755 15.7275 8.87083V8.7275C15.7275 5.56417 13.1633 3 9.99996 3C6.83663 3 4.27246 5.56417 4.27246 8.7275ZM9.99992 10.4626C9.07909 10.4626 8.33325 9.71672 8.33325 8.79589V8.76506C8.33325 7.84422 9.07909 7.09839 9.99992 7.09839C10.9208 7.09839 11.6666 7.84422 11.6666 8.76506V8.79589C11.6666 9.71672 10.9208 10.4626 9.99992 10.4626Z" fill="#BFBFBF"/></g><defs><clipPath id="clip0_1153_53722"><rect width="20" height="20" fill="white" transform="translate(0 0.5)"/></clipPath></defs></svg>
         <span>
