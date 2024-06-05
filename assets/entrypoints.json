@@ -1,0 +1,47 @@
+{
+  "entrypoints": {
+    "bolt": {
+      "css": [
+        "/assets/718.css",
+        "/assets/bolt.css"
+      ],
+      "js": [
+        "/assets/718.js",
+        "/assets/bolt.js",
+        "/assets/navigation.js"
+      ]
+    },
+    "zxcvbn": {
+      "js": [
+        "/assets/322.js",
+        "/assets/zxcvbn.js"
+      ]
+    },
+    "vibrant": {
+      "js": [
+        "/assets/82.js",
+        "/assets/vibrant.js"
+      ]
+    },
+    "theme-default": {
+      "css": [
+        "/assets/theme-default.css"
+      ]
+    },
+    "theme-light": {
+      "css": [
+        "/assets/theme-light.css"
+      ]
+    },
+    "theme-dark": {
+      "css": [
+        "/assets/theme-dark.css"
+      ]
+    },
+    "theme-woordpers": {
+      "css": [
+        "/assets/theme-woordpers.css"
+      ]
+    }
+  }
+}
