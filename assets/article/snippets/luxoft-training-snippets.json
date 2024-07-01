@@ -1,0 +1,6 @@
+{
+  "upcoming-courses": {
+    "name": "Upcoming courses",
+    "html": "{% setcontent upcomingCourses = 'courses' latest limit 6 %}\n{% if upcomingCourses is not empty %}\n<section class=\"section-container upcoming-courses\">\n<div class=\"container\">\n<div class=\"row\">\n<div class=\"col text-center\">\n<h2>\nUpcoming courses\n</h2>\n</div>\n</div>\n<div class=\"row mt-4 mb-4 upcoming-courses__items-wrapper\">\n{% for course in upcomingCourses %}\n{{ include('@theme/partials/_single-course.twig') }}\n{% endfor %}\n</div>\n<div class=\"row\">\n<div class=\"col\">\n<div class=\"btn-center\">\n<a href=\"#\" class=\"btn-arrow-ghost--rich-black\">\nVIEW ALL EVENTS\n<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"25\" viewbox=\"0 0 24 25\" fill=\"none\"><path d=\"M16.2581 8.2417L6.96777 17.532\" stroke-width=\"1.5\" stroke-linecap=\"square\" stroke-linejoin=\"round\"></path><path d=\"M10 7.5L16.95 7.549L17 14.5\" stroke-width=\"1.5\" stroke-linecap=\"square\" stroke-linejoin=\"round\"></path></svg></a>\n</div>\n</div>\n</div>\n</div>\n</section>\n{% endif %}"
+  }
+}
