@@ -107,9 +107,19 @@ ArticleEditor.add("plugin", "blogRelatedContent", {
                             </h2>
                         </div>
                         <div class="row">
-							          ${htmlItems}
-							</div>
-						</div>`;
+                              ${htmlItems}
+                        </div>
+                        <div class="row mt-4">
+                            <div class="col">
+                                <div class="btn-center">
+                                    <a href="/blog" class="btn-arrow-ghost--rich-black">
+                                        VIEW ALL ARTICLES
+                                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewbox="0 0 24 25" fill="none"><path d="M16.2581 8.2417L6.96777 17.532" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"></path><path d="M10 7.5L16.95 7.549L17 14.5" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"></path></svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                      </div>`;
 
     this.app.editor.insertContent({
       html: htmlStructure,
