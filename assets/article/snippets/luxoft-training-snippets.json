@@ -5,11 +5,11 @@
   },
   "blog-cta-light-gray": {
     "name": "Blog CTA - light gray",
-    "html": "<div class=\"container cta-section cta-section--light-gray\"><div class=\"cta-section__cta-banner\"><h3>Ready to join our global community?</h3><a href=\"#\" class=\"btn-arrow-ghost--rich-black\">Explore our job opportunities<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"25\" viewBox=\"0 0 24 25\" fill=\"none\"><path d=\"M16.2581 8.2417L6.96777 17.532\" stroke-width=\"1.5\" stroke-linecap=\"square\" stroke-linejoin=\"round\"></path><path d=\"M10 7.5L16.95 7.549L17 14.5\" stroke-width=\"1.5\" stroke-linecap=\"square\" stroke-linejoin=\"round\"></path></svg></a></div></div>"
+    "html": "<div class=\"cta-section cta-section--light-gray\"><div class=\"cta-section__cta-banner\"><h3>Ready to join our global community?</h3><a href=\"#\" class=\"btn-arrow-ghost--rich-black\">Explore our job opportunities<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"25\" viewBox=\"0 0 24 25\" fill=\"none\"><path d=\"M16.2581 8.2417L6.96777 17.532\" stroke-width=\"1.5\" stroke-linecap=\"square\" stroke-linejoin=\"round\"></path><path d=\"M10 7.5L16.95 7.549L17 14.5\" stroke-width=\"1.5\" stroke-linecap=\"square\" stroke-linejoin=\"round\"></path></svg></a></div></div>"
   },
   "blog-cta-purple": {
     "name": "Blog CTA - purple",
-    "html": "<div class=\"container cta-section cta-section--purple\"><div class=\"cta-section__cta-banner\"><h3>Ready to join our global community?</h3><a href=\"#\" class=\"btn-arrow-ghost--white outline\">Explore our job opportunities<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"25\" viewBox=\"0 0 24 25\" fill=\"none\"><path d=\"M16.2581 8.2417L6.96777 17.532\" stroke-width=\"1.5\" stroke-linecap=\"square\" stroke-linejoin=\"round\"></path><path d=\"M10 7.5L16.95 7.549L17 14.5\" stroke-width=\"1.5\" stroke-linecap=\"square\" stroke-linejoin=\"round\"></path></svg></a></div></div>"
+    "html": "<div class=\"cta-section cta-section--purple\"><div class=\"cta-section__cta-banner\"><h3>Ready to join our global community?</h3><a href=\"#\" class=\"btn-arrow-ghost--white outline\">Explore our job opportunities<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"25\" viewBox=\"0 0 24 25\" fill=\"none\"><path d=\"M16.2581 8.2417L6.96777 17.532\" stroke-width=\"1.5\" stroke-linecap=\"square\" stroke-linejoin=\"round\"></path><path d=\"M10 7.5L16.95 7.549L17 14.5\" stroke-width=\"1.5\" stroke-linecap=\"square\" stroke-linejoin=\"round\"></path></svg></a></div></div>"
   },
   "cta-banner": {
     "name": "CTA banner with photo",
