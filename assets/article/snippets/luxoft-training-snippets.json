@@ -2,5 +2,25 @@
   "upcoming-courses": {
     "name": "Upcoming courses",
     "html": "{% setcontent upcomingCourses = 'courses' latest limit 6 %}\n{% if upcomingCourses is not empty %}\n<section class=\"section-container upcoming-courses\">\n<div class=\"container\">\n<div class=\"row\">\n<div class=\"col text-center\">\n<h2>\nUpcoming courses\n</h2>\n</div>\n</div>\n<div class=\"row mt-4 mb-4 upcoming-courses__items-wrapper\">\n{% for course in upcomingCourses %}\n{{ include('@theme/partials/_single-course.twig') }}\n{% endfor %}\n</div>\n<div class=\"row\">\n<div class=\"col\">\n<div class=\"btn-center\">\n<a href=\"#\" class=\"btn-arrow-ghost--rich-black\">\nVIEW ALL EVENTS\n<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"25\" viewbox=\"0 0 24 25\" fill=\"none\"><path d=\"M16.2581 8.2417L6.96777 17.532\" stroke-width=\"1.5\" stroke-linecap=\"square\" stroke-linejoin=\"round\"></path><path d=\"M10 7.5L16.95 7.549L17 14.5\" stroke-width=\"1.5\" stroke-linecap=\"square\" stroke-linejoin=\"round\"></path></svg></a>\n</div>\n</div>\n</div>\n</div>\n</section>\n{% endif %}"
+  },
+  "blog-cta-light-gray": {
+    "name": "Blog CTA - light gray",
+    "html": "<div class=\"container cta-section cta-section--light-gray\"><div class=\"cta-section__cta-banner\"><h3>Ready to join our global community?</h3><a href=\"#\" class=\"btn-arrow-ghost--rich-black\">Explore our job opportunities<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"25\" viewBox=\"0 0 24 25\" fill=\"none\"><path d=\"M16.2581 8.2417L6.96777 17.532\" stroke-width=\"1.5\" stroke-linecap=\"square\" stroke-linejoin=\"round\"></path><path d=\"M10 7.5L16.95 7.549L17 14.5\" stroke-width=\"1.5\" stroke-linecap=\"square\" stroke-linejoin=\"round\"></path></svg></a></div></div>"
+  },
+  "blog-cta-purple": {
+    "name": "Blog CTA - purple",
+    "html": "<div class=\"container cta-section cta-section--purple\"><div class=\"cta-section__cta-banner\"><h3>Ready to join our global community?</h3><a href=\"#\" class=\"btn-arrow-ghost--white outline\">Explore our job opportunities<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"25\" viewBox=\"0 0 24 25\" fill=\"none\"><path d=\"M16.2581 8.2417L6.96777 17.532\" stroke-width=\"1.5\" stroke-linecap=\"square\" stroke-linejoin=\"round\"></path><path d=\"M10 7.5L16.95 7.549L17 14.5\" stroke-width=\"1.5\" stroke-linecap=\"square\" stroke-linejoin=\"round\"></path></svg></a></div></div>"
+  },
+  "cta-banner": {
+    "name": "CTA banner with photo",
+    "html": "<section class=\"cta-banner-section\">\n<div class=\"row\">\n<div class=\"col-12 col-md-6\">\n<div class=\"cta-banner-section__content\">\n<p class=\"cta-banner-text text-22\">\nCreate the advanced user experience of software-defined vehicles\n</p>\n\t\t<div class=\"btn-container\">\n<a href=\"#\" class=\"btn-arrow-ghost--rich-black outline transparent\">read more<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"25\" viewBox=\"0 0 24 25\" fill=\"none\"><path d=\"M16.2581 8.2417L6.96777 17.532\" stroke-width=\"1.5\" stroke-linecap=\"square\" stroke-linejoin=\"round\"></path><path d=\"M10 7.5L16.95 7.549L17 14.5\" stroke-width=\"1.5\" stroke-linecap=\"square\" stroke-linejoin=\"round\"></path></svg>\n\t\t</a>\n</div>\n      </div>\n    </div>\n\t<div class=\"col-12 col-md-6 d-none d-md-block\">\n      <div class=\"cta-banner-section__image\">\n<figure>\n<img src=\"/theme/luxoft-2024/assets/images/others/blog-cta-with-banner.png\" alt=\"cta banner\"></figure>\n\t</div>\n</div></div></section>"
+  },
+  "photo-container-simple": {
+    "name": "Blog banner",
+    "html": "<div class=\"blog-photo-banner mb-3\">\n<figure class=\"blog-photo-banner__figure\">\n<img class=\"blog-photo-banner__figure--img\" src=\"/theme/luxoft-2024/assets/images/others/blog-banner.jpg\">\n</figure>\n</div>"
+  },
+  "photo-lead-paragraph": {
+    "name": "Blog lead paragraph",
+    "html": "<div class=\"blog-lead-paragraph mb-3\">\n<p>A key requirement for effectively managing legacy applications is to reduce discretionary demand and fulfil only mandatory demand. This requires a robust demand management function to continuously drive demand optimization.</p>\n</div>"
   }
 }

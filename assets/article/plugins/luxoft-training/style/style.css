@@ -1,0 +1,131 @@
+/*
+* Article editor resets
+*/
+
+p,
+a,
+i,
+del,
+span,
+ul li,
+ol li,
+button,
+address,
+input,
+label,
+textarea,
+pre,
+code,
+table,
+thead,
+time,
+strong,
+tbody,
+tr,
+td,
+th {
+    font-size: 14px !important;
+}
+
+sup {
+    font-size: 11px !important;
+}
+
+h1 {
+    font-size: 24px !important;
+}
+
+h2 {
+    font-size: 22px !important;
+}
+
+h3 {
+    font-size: 20px !important;
+}
+
+h4 {
+    font-size: 18px !important;
+}
+
+h5 {
+    font-size: 16px !important;
+}
+
+h6 {
+    font-size: 14px !important;
+}
+
+table {
+    border: 1px solid #b7b7b7 !important;
+}
+
+table td {
+    border: 1px solid #72a0a5;
+}
+
+.col,
+.col-12,
+.col-xs-12,
+.col-lg-2,
+.col-lg-3,
+.col-lg-4,
+.col-lg-6,
+.col-lg-8 {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background-color: #5300961a;
+    border: 1px solid #d100fc66;
+}
+
+.row {
+    padding: 5px 3px;
+}
+
+.col-lg-8 {
+    flex: 0 0 auto;
+    width: 66.6666666% !important;
+}
+
+.col-lg-6 {
+    flex: 0 0 auto;
+    width: 50% !important;
+}
+
+.col-lg-4 {
+    flex: 0 0 auto;
+    width: 33.33333333% !important;
+}
+
+.col-lg-3 {
+    flex: 0 0 auto;
+    width: 25% !important;
+}
+
+.col-lg-2 {
+    flex: 0 0 auto;
+    width: calc(100% / 6) !important;
+}
+
+.arx-popup-stack.arx-popup-stack-snippets {
+    width: 1270px;
+}
+
+.arx-popup-stack.arx-popup-stack-snippets .arx-popup-body .arx-snippet-container .arx-snippet-preview {
+    width: 590px !important;
+    height: 300px !important;
+}
+
+.arx-popup.arx-popup-0.arx-popup-addbar.has-items.open {
+    width: 600px !important;
+}
+
+.arx-popup-item-container {
+    width: 115px;
+}
+
+.upcoming-courses {
+    background-color: #00729a1a;
+    border: 1px solid #009bfc66;
+    padding: 10px 3px;
+    margin-bottom: 10px;
+}
