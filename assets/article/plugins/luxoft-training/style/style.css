@@ -123,9 +123,9 @@ table td {
     width: 115px;
 }
 
-.upcoming-courses {
+.section-container {
     background-color: #00729a1a;
     border: 1px solid #009bfc66;
-    padding: 10px 3px;
-    margin-bottom: 10px;
+    padding: 10px;
+    margin-bottom: 20px;
 }
