@@ -7,13 +7,13 @@ ArticleEditor.add("plugin", "blogRelatedContent", {
     const storageInterval = setInterval(checkStorage, 5000)
 
     function checkStorage() {
-      if (localStorage.getItem('contentTypeBlogsData') !== null) {
-        getBlogsData()
+      if (localStorage.getItem('contentTypeNewsData') !== null) {
+        getNewsData()
       }
     }
 
-    function getBlogsData() {
-      const storageData = JSON.parse(localStorage.getItem('contentTypeBlogsData'))
+    function getNewsData() {
+      const storageData = JSON.parse(localStorage.getItem('contentTypeNewsData'))
 
       $this.elements = {
         items: storageData.items,
@@ -85,7 +85,7 @@ ArticleEditor.add("plugin", "blogRelatedContent", {
 					</div>
 					<div class="item--title">
 						<a href="/${this.elements.items[item].contentType}/${this.elements.items[item].slug}">
-						<p>${this.elements.items[item].title.en}</p>
+						<p>${this.elements.items[item].title}</p>
 						</a>
 					</div>
 				</div>
@@ -107,9 +107,9 @@ ArticleEditor.add("plugin", "blogRelatedContent", {
                             </h2>
                         </div>
                         <div class="row">
-                              ${htmlItems}
-                        </div>
-                        <div class="row mt-4">
+							              ${htmlItems}
+							          </div>
+							          <div class="row mt-4">
                             <div class="col">
                                 <div class="btn-center">
                                     <a href="/blog" class="btn-arrow-ghost--rich-black">
@@ -119,7 +119,7 @@ ArticleEditor.add("plugin", "blogRelatedContent", {
                                 </div>
                             </div>
                         </div>
-                      </div>`;
+						        </div>`;
 
     this.app.editor.insertContent({
       html: htmlStructure,

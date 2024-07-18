@@ -1,23 +1,21 @@
 document.addEventListener("DOMContentLoaded", (e) => {
-  async function getContetypesData() {
-    const pagesAmount = 10;
-    const pageSize = 200;
+  async function getContenTypesData() {
+    const pagesAmount = 20;
+    const pageSize = 30;
 
     if (
-      localStorage.getItem('contentTypeBlogsData') === null &&
-      localStorage.getItem('alreadyGettingBlogs') === null
+        localStorage.getItem('contentTypeNewsData') === null &&
+        localStorage.getItem('alreadyGettingNews') === null
     ) {
-      console.log('GettingBlogs...............')
-      localStorage.setItem('alreadyGettingBlogs', true);
+      console.log('GettingNews...............')
+      localStorage.setItem('alreadyGettingNews', true);
       let insightsItems = {}
       let insightsSelectOptions = { none: "-- NONE --" }
       let insightPosition = 0
 
       for (let i = 1; i <= pagesAmount; i++) {
-        let apiResponse = await fetch(
-          `${window.location.origin}/api/contents?page=${i}&contentType%5B%5D=blog&status=published&pageSize=${pageSize}`
-        );
-        let json = await apiResponse.json();
+        let apiResponse = await fetch(`${window.location.origin}/api/contents?page=${i}&contentType%5B%5D=news&status=published&pageSize=${pageSize}`)
+        let json = await apiResponse.json()
 
         if (!json.length) {
           // if no data - no need to send more requests
@@ -47,11 +45,11 @@ document.addEventListener("DOMContentLoaded", (e) => {
         selectOptions: insightsSelectOptions
       }
 
-      localStorage.setItem('contentTypeBlogsData', JSON.stringify(insightsElements))
+      localStorage.setItem('contentTypeNewsData', JSON.stringify(insightsElements))
     }
   }
 
-  getContetypesData()
+  getContenTypesData()
 
   async function getBlogItemData(dataJson, itemPosition) {
     const newItems = {};
@@ -61,20 +59,19 @@ document.addEventListener("DOMContentLoaded", (e) => {
     for (const single in dataJson) {
       const item = {
         id: dataJson[single].id,
-        title: dataJson[single].fieldValues.title,
-        description: dataJson[single].fieldValues.preview_description_text,
+        title: dataJson[single].extras.title,
+        description: dataJson[single].fieldValues.preview_text,
         slug: dataJson[single].fieldValues.slug,
-        path: dataJson[single].extras.link,
         photo: isLocal
-          ? "https://www.luxoft.com/upload/medialibrary/563/behavioral_archetypes.png"
-          : dataJson[single].fieldValues.photo.url,
+            ? "/theme/luxoft-2024/assets/images/others/blog-banner.jpg"
+            : dataJson[single].fieldValues.detail_picture.url,
         contentType: dataJson[single].contentType
       };
       newItems[itemPosition] = item;
-      let singleName = dataJson[single].contentType
+      let itemContentType = dataJson[single].contentType
       newSelectOptions[
-        itemPosition
-      ] = `${dataJson[single].fieldValues.name} - ${singleName}`;
+          itemPosition
+          ] = `${dataJson[single].extras.title} - ${itemContentType}`;
       itemPosition++;
     }
 
@@ -83,6 +80,6 @@ document.addEventListener("DOMContentLoaded", (e) => {
 })
 
 window.addEventListener("beforeunload", () => {
-  localStorage.removeItem("alreadyGettingBlogs")
-  localStorage.removeItem("contentTypeBlogsData")
+  localStorage.removeItem("alreadyGettingNews")
+  localStorage.removeItem("contentTypeNewsData")
 });
