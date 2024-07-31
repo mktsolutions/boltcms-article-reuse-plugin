@@ -1,6 +1,9 @@
 /*
 * Article editor resets
 */
+html {
+    font-size: 14px;
+}
 
 p,
 a,

@@ -50,5 +50,30 @@
   "pages-hero-section": {
     "name": "Pages hero",
     "html": "<div class=\"pages-hero\">\n <figure class=\"pages-hero__bg\">\n<div class=\"hero-overlay\">\n</div>\n<img src=\"https://career.luxoft.com/files/homepage/Discover-careers-desktop-upd.jpg\" alt=\"Banner\">\n </figure>\n  <div class=\"container\">\n<div class=\"pages-hero__breadcrumbs\">\n{\u200B{breadcrumbs(record)}\u200B}\n</div>\n<div class=\"pages-hero__heading\">\n<h1 class=\"text-white\">\n Elevate your team's potential\n</h1>\n<p>\nWelcome to the Luxoft Training Center, where we understand the crucial role of corporate training in today’s fast-paced business environment.\n</p>\n </div>\n</div>\n</div>"
+  },
+
+  "Upcomming_courses": {
+    "name": "Upcomming courses",
+    "html": "{% include '@theme/partials/_upcomming_courses.twig' ignore missing %}"
+  },
+  "Benefits": {
+    "name": "Benefits",
+    "html": "{% include '@theme/partials/_benefits.twig' ignore missing %}"
+  },
+  "Solutions": {
+    "name": "Solutions",
+    "html": "{% include '@theme/partials/_solutions.twig' ignore missing %}"
+  },
+  "Our_certifications": {
+    "name": "Our certifications",
+    "html": "{% include '@theme/partials/_certifications.twig' ignore missing %}"
+  },
+  "Our_partners": {
+    "name": "Our partners",
+    "html": "{% include '@theme/partials/_partners.twig' ignore missing %}"
+  },
+  "Banner_with_button": {
+    "name": "Banner with button",
+    "html": "{% include '@theme/partials/_banner_with_button.twig' ignore missing %}"
   }
 }
