@@ -51,29 +51,28 @@
     "name": "Pages hero",
     "html": "<div class=\"pages-hero\">\n <figure class=\"pages-hero__bg\">\n<div class=\"hero-overlay\">\n</div>\n<img src=\"https://career.luxoft.com/files/homepage/Discover-careers-desktop-upd.jpg\" alt=\"Banner\">\n </figure>\n  <div class=\"container\">\n<div class=\"pages-hero__breadcrumbs\">\n{\u200B{breadcrumbs(record)}\u200B}\n</div>\n<div class=\"pages-hero__heading\">\n<h1 class=\"text-white\">\n Elevate your team's potential\n</h1>\n<p>\nWelcome to the Luxoft Training Center, where we understand the crucial role of corporate training in today’s fast-paced business environment.\n</p>\n </div>\n</div>\n</div>"
   },
-
-  "Upcomming_courses": {
-    "name": "Upcomming courses",
-    "html": "{% include '@theme/partials/_upcomming_courses.twig' ignore missing %}"
+  "upcomming_courses": {
+    "name": "Upcomming courses [RAW] (container)",
+    "html": "<div class=\"section-container container\"><section class=\"section section--no-padding-x\"><header class=\"section-header section-header--center\"><h2 class=\"section-header-title\">Upcoming courses</h2></header><div class=\"section-content\">{% include '@theme/partials/list/_upcomming_courses.twig' ignore missing %}</div><footer class=\"section-footer section-footer--center\"><a href=\"/courses\" rel=\"index\" target=\"_self\" class=\"btn btn-arrow-ghost--rich-black\" title=\"view all events\">view all events<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"25\" viewBox=\"0 0 24 25\" fill=\"none\"><path d=\"M16.2581 8.2417L6.96777 17.532\" stroke-width=\"1.5\" stroke-linecap=\"square\" stroke-linejoin=\"round\"></path><path d=\"M10 7.5L16.95 7.549L17 14.5\" stroke-width=\"1.5\" stroke-linecap=\"square\" stroke-linejoin=\"round\"></path></svg></a></footer></section></div>"
   },
-  "Benefits": {
-    "name": "Benefits",
-    "html": "{% include '@theme/partials/_benefits.twig' ignore missing %}"
+  "benefits": {
+    "name": "Benefits [RAW] (container)",
+    "html": "<div class=\"section-container container\"><section class=\"section section--no-padding-x\"><header class=\"section-header section-header--center\"><h2 class=\"section-header-title\">Why Luxoft Training Center</h2><p class=\"section-header-subtitle\">At the Luxoft Training Center, we believe that learning should be more than just a journey; it should be a validated achievement.</p></header><span class=\"section-content\">{% include '@theme/partials/list/_benefits.twig' ignore missing %}</span></section></div>"
   },
-  "Solutions": {
-    "name": "Solutions",
-    "html": "{% include '@theme/partials/_solutions.twig' ignore missing %}"
+  "our_certifications": {
+    "name": "Our certifications [RAW] (container)",
+    "html": "<div class=\"section-container container\"><section class=\"section section--gray section--round\"><header class=\"section-header section-header--center\"><h2 class=\"section-header-title\">Our certifications</h2><p class=\"section-header-subtitle\">Certifications give an advantage when taking part in tenders, outsourcing projects and counseling. They are also an official confirmation of the level of your knowledge and experience</p></header><span class=\"section-content\">{% include '@theme/partials/list/_certifications.twig' ignore missing %}</span><footer class=\"section-footer section-footer--center\"><a href=\"/schedule\" rel=\"index\" target=\"_self\" class=\"btn btn-arrow-ghost--rich-black\" title=\"Read more\">Read more<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"25\" viewBox=\"0 0 24 25\" fill=\"none\"><path d=\"M16.2581 8.2417L6.96777 17.532\" stroke-width=\"1.5\" stroke-linecap=\"square\" stroke-linejoin=\"round\"></path><path d=\"M10 7.5L16.95 7.549L17 14.5\" stroke-width=\"1.5\" stroke-linecap=\"square\" stroke-linejoin=\"round\"></path></svg></a></footer></section></div>"
   },
-  "Our_certifications": {
-    "name": "Our certifications",
-    "html": "{% include '@theme/partials/_certifications.twig' ignore missing %}"
+  "solutions": {
+    "name": "Solutions [RAW] (container)",
+    "html": "<div class=\"section-container container\"><section class=\"section section--purple section--round section--lg-collumn-2\"><header class=\"section-header\"><h2 class=\"section-header-title\">Corporate Training Solutions</h2><p class=\"section-header-subtitle\">Luxoft Training Center — an essential part of the global technology leader, Luxoft, a DXC Technology Company. We play a pivotal role in propelling B2B businesses forward by delivering customized training solutions. We understand that investing in the continuous growth and enhancement of employees' skills positively impacts the trajectory of growing companies.</p></header><div class=\"section-content section-content--border section-content--radius\"><ul class=\"solutions_list\"><li class=\"solutions_list-item\"><div class=\"solution\"><img src=\"/files/solutions/2023/10/solution-3-1.png\" alt=\"Leading SAFe\" width=\"24px\" height=\"24px\" class=\"solution-image\"><span class=\"solution-title\">Leading SAFe</span></div></li><li class=\"solutions_list-item\"><div class=\"solution\"><img src=\"/files/solutions/2023/10/solution-4-1.png\" alt=\"Key Concepts of Software Architecture\" width=\"24px\" height=\"24px\" class=\"solution-image\"><span class=\"solution-title\">Key Concepts of Software Architecture</span></div></li><li class=\"solutions_list-item\"><div class=\"solution\"><img src=\"/files/solutions/2023/10/solution-2-1.png\" alt=\"ECBA Exam Preparation - IIBA\" width=\"24px\" height=\"24px\" class=\"solution-image\"><span class=\"solution-title\">ECBA Exam Preparation - IIBA</span></div></li><li class=\"solutions_list-item\"><div class=\"solution\"><img src=\"/files/solutions/2023/10/solution-1-1.png\" alt=\"Java Performance and Tuning\" width=\"24px\" height=\"24px\" class=\"solution-image\"><span class=\"solution-title\">Java Performance and Tuning</span></div></li></ul></div><footer class=\"section-footer section-footer--center\"><a href=\"/solutions\" rel=\"index\" target=\"_self\" class=\"btn btn-arrow-ghost--white\" title=\"explore more\">explore more<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"25\" viewBox=\"0 0 24 25\" fill=\"none\"><path d=\"M16.2581 8.2417L6.96777 17.532\" stroke-width=\"1.5\" stroke-linecap=\"square\" stroke-linejoin=\"round\"></path><path d=\"M10 7.5L16.95 7.549L17 14.5\" stroke-width=\"1.5\" stroke-linecap=\"square\" stroke-linejoin=\"round\"></path></svg></a></footer></section></div>"
   },
-  "Our_partners": {
-    "name": "Our partners",
-    "html": "{% include '@theme/partials/_partners.twig' ignore missing %}"
+  "our_partners": {
+    "name": "Our partners [RAW] (container)",
+    "html": "<div class=\"section-container container\"><section class=\"section\"><header class=\"section-header section-header--small\"><h2 class=\"section-header-title\">Training partner for Fortune 1000 companies</h2></header><div class=\"section-content\">{% include '@theme/partials/list/_partners.twig' ignore missing %}</div></section></div>"
   },
-  "Banner_with_button": {
-    "name": "Banner with button",
-    "html": "{% include '@theme/partials/_banner_with_button.twig' ignore missing %}"
+  "banner_with_button": {
+    "name": "Banner with button [RAW] (container)",
+    "html": "<div class=\"section-container container\"><asign class=\"section\"><div class=\"banner\"><div class=\"banner-image-warp banner-image-warp--col-8 banner-image-warp--round\"><img src=\"/theme/luxoft-2024/assets/images/others/banner_with_button.jpg\" width=\"800px\" height=\"800px\" alt=\"Develop. Grow. Win.\"></div><div class=\"banner-side banner-side--gray banner-side--round\"><span class=\"banner-side-title\">Develop. Grow. Win.</span><p class=\"banner-side-text\">Get in touch with our team. Find out how we can advance your goals.</p><a href=\"/contacts-us\" class=\"btn-arrow-ghost--purple filled outline\" title=\"Contact us\">Contact us<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"25\" viewBox=\"0 0 24 25\" fill=\"none\"><path d=\"M16.2581 8.2417L6.96777 17.532\" stroke-width=\"1.5\" stroke-linecap=\"square\" stroke-linejoin=\"round\"></path><path d=\"M10 7.5L16.95 7.549L17 14.5\" stroke-width=\"1.5\" stroke-linecap=\"square\" stroke-linejoin=\"round\"></path></svg></a></div></div></asign></div>"
   }
 }
