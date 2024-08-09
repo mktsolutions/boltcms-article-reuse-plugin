@@ -1,20 +1,19 @@
 document.addEventListener("DOMContentLoaded", (e) => {
   async function getContenTypesData() {
     const pagesAmount = 20;
-    const pageSize = 30;
 
     if (
-        localStorage.getItem('contentTypeNewsData') === null &&
-        localStorage.getItem('alreadyGettingNews') === null
+        localStorage.getItem('contentTypeBlogData') === null &&
+        localStorage.getItem('alreadyGettingBlog') === null
     ) {
-      console.log('GettingNews...............')
-      localStorage.setItem('alreadyGettingNews', true);
+      console.log('GettingBlog...............')
+      localStorage.setItem('alreadyGettingBlog', true);
       let insightsItems = {}
       let insightsSelectOptions = { none: "-- NONE --" }
       let insightPosition = 0
 
       for (let i = 1; i <= pagesAmount; i++) {
-        let apiResponse = await fetch(`${window.location.origin}/api/contents?page=${i}&contentType%5B%5D=news&status=published&pageSize=${pageSize}`)
+        let apiResponse = await fetch(`${window.location.origin}/api/contents?page=${i}&contentType%5B%5D=blog&status=published`)
         let json = await apiResponse.json()
 
         if (!json.length) {
@@ -34,7 +33,7 @@ document.addEventListener("DOMContentLoaded", (e) => {
         };
         insightPosition = result[2];
 
-        if (json.length < pageSize) {
+        if (json.length < 30) {
           // if no data - no need to send more requests
           break;
         }
@@ -45,7 +44,7 @@ document.addEventListener("DOMContentLoaded", (e) => {
         selectOptions: insightsSelectOptions
       }
 
-      localStorage.setItem('contentTypeNewsData', JSON.stringify(insightsElements))
+      localStorage.setItem('contentTypeBlogData', JSON.stringify(insightsElements))
     }
   }
 
@@ -80,6 +79,6 @@ document.addEventListener("DOMContentLoaded", (e) => {
 })
 
 window.addEventListener("beforeunload", () => {
-  localStorage.removeItem("alreadyGettingNews")
-  localStorage.removeItem("contentTypeNewsData")
+  localStorage.removeItem("alreadyGettingBlog")
+  localStorage.removeItem("contentTypeBlogData")
 });

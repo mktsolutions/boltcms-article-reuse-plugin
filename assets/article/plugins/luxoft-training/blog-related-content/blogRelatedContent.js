@@ -7,13 +7,13 @@ ArticleEditor.add("plugin", "blogRelatedContent", {
     const storageInterval = setInterval(checkStorage, 5000)
 
     function checkStorage() {
-      if (localStorage.getItem('contentTypeNewsData') !== null) {
+      if (localStorage.getItem('contentTypeBlogData') !== null) {
         getNewsData()
       }
     }
 
     function getNewsData() {
-      const storageData = JSON.parse(localStorage.getItem('contentTypeNewsData'))
+      const storageData = JSON.parse(localStorage.getItem('contentTypeBlogData'))
 
       $this.elements = {
         items: storageData.items,
