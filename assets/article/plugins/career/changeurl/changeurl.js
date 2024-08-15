@@ -12,12 +12,17 @@ singleSpecificClassElements.forEach(element => {
         replaceWith = 'https://career.luxoft.com'
     }
 
+    if (host.includes('training')) {
+        strToReplace = 'https://new.luxoft-training.com'
+        replaceWith = 'https://new.luxoft-training.com'
+    }
+
     links.forEach(link => {
         const href = link.getAttribute('href')
         if (href) {
-            const newHref = href.startsWith('https://') 
+            const newHref = window.location.protocol === 'https:'
                 ? href.replace(strToReplace, replaceWith) 
-                : replaceWith + href
+                : href
 
             link.setAttribute('href', newHref)
         }
