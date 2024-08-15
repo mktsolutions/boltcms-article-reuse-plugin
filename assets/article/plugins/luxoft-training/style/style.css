@@ -132,3 +132,8 @@ table td {
     padding: 10px;
     margin-bottom: 20px;
 }
+
+.single-item {
+    border: 1px solid #adadad;
+    padding: 15px;
+}
