@@ -241,6 +241,6 @@
     },
     "hogan-related-content": {
         "name": "Hogan Related Content",
-        "html": "<div class=\"hogan-related-content container\">\n<div class=\"hogan-related-content__headline\">\n<h4 class=\"related-content\">related content</h4>\n</div>\n\n<a href=\"#\">\n<div class=\"hogan-related-content__content\">\n<p class=\"content-title\">\nWhy Hogan x mainframe hybrid-cloud enablement should be your next move | Luxoft\n</p>\n<p class=\"content-preview\">\nDiscover how to build and maintain an airtight compliance infrastructure and safeguard against potential penalties with Hogan, Luxoft’s upgraded comprehensive and secure hybrid cloud banking solution\n</p>\n</div>\n</a>\n</div>"
+        "html": "<div class=\"hogan-related-content container\">\n<div class=\"hogan-related-content__headline\">\n<h2 class=\"related-content\">related content</h2>\n</div>\n\n<a href=\"#\">\n<div class=\"hogan-related-content__content\">\n<p class=\"content-title\">\nWhy Hogan x mainframe hybrid-cloud enablement should be your next move | Luxoft\n</p>\n<p class=\"content-preview\">\nDiscover how to build and maintain an airtight compliance infrastructure and safeguard against potential penalties with Hogan, Luxoft’s upgraded comprehensive and secure hybrid cloud banking solution\n</p>\n</div>\n</a>\n</div>"
     }
 }
