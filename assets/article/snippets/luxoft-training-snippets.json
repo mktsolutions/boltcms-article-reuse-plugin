@@ -73,6 +73,6 @@
   },
   "black-text-white-background-section": {
     "name": "Black text - white background section",
-    "html": "<section class=\"section-container careers-with-impact\"><div class=\"container\"><div class=\"careers-with-impact__description\"><h2>Discover careers with impact at Luxoft</h2><p class=\"body-xl-regular\"><span>Work with a company where your expertise makes a difference. We’re changing what software-defined means for organizations in all industries. See yourself at the forefront of digital transformation and make an impact at all levels.</span><span>&nbsp;</span></p><a href=\"/it-courses\" class=\"btn-normal\">GO BEYOND. APPLY TODAY</a></div><div class=\"careers-with-impact__image\"><figure><img src=\"https://career.luxoft.com/files/homepage/Discover-careers-desktop-upd.jpg\"></figure></div></div></section>"
+    "html": "<section class=\"section-container careers-with-impact\"><div class=\"container\"><div class=\"careers-with-impact__description\"><h2>Discover careers with impact at Luxoft</h2><p class=\"body-xl-regular\"><span>Work with a company where your expertise makes a difference. We’re changing what software-defined means for organizations in all industries. See yourself at the forefront of digital transformation and make an impact at all levels.</span><span>&nbsp;</span></p><a href=\"/it-courses\" class=\"btn-normal\">GO BEYOND. APPLY TODAY</a></div></div></section>"
   }
 }
