@@ -70,5 +70,9 @@
   "develop-grow-win": {
     "name": "Develop. Grow. Win.",
     "html": "<section class=\"section-container develop-grow-win\">\n<div class=\"container\">\n    <div class=\"row\">\n<div class=\"col-12 col-md-7 col-xl-8\">\n<div class=\"develop-grow-win__image\">\n</div>\n</div>\n<div class=\"col-12 col-md-5 col-xl-4\">\n<div class=\"develop-grow-win__content\">\n<p class=\"develop-heading\">\nDevelop. Grow. Win.\n</p>\n<div class=\"develop-btn mt-3\">\n<p class=\"develop-text\">\nGet in touch with our team. Find out how we can advance your goals.\n</p>\n<a href=\"/contact\" class=\"btn-normal text-uppercase\">CONTACT US</a>\n</div>\n</div>\n</div>\n    </div>\n</div>\n</section>"
+  },
+  "black-text-white-background-section": {
+    "name": "Black text - white background section",
+    "html": "<section class=\"section-container careers-with-impact\"><div class=\"container\"><div class=\"careers-with-impact__description\"><h2>Discover careers with impact at Luxoft</h2><p class=\"body-xl-regular\"><span>Work with a company where your expertise makes a difference. We’re changing what software-defined means for organizations in all industries. See yourself at the forefront of digital transformation and make an impact at all levels.</span><span>&nbsp;</span></p><a href=\"/it-courses\" class=\"btn-normal\">GO BEYOND. APPLY TODAY</a></div><div class=\"careers-with-impact__image\"><figure><img src=\"https://career.luxoft.com/files/homepage/Discover-careers-desktop-upd.jpg\"></figure></div></div></section>"
   }
 }
