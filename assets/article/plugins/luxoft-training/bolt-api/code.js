@@ -63,7 +63,9 @@ document.addEventListener("DOMContentLoaded", (e) => {
         slug: dataJson[single].fieldValues.slug,
         photo: isLocal
             ? "/theme/luxoft-2024/assets/images/others/blog-banner.jpg"
-            : dataJson[single].fieldValues.detail_picture.url,
+            : dataJson[single].fieldValues?.detail_picture?.url !== null
+                ? dataJson[single].fieldValues?.detail_picture?.url
+                : "/theme/luxoft-2024/assets/images/others/blog-banner.jpg",
         contentType: dataJson[single].contentType
       };
       newItems[itemPosition] = item;
