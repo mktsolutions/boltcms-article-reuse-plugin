@@ -81,6 +81,6 @@
   },
   "training-speakers": {
     "name": "Training Speakers",
-    "html": "<section class=\"container single-event__our-speakers\"><div class=\"row\"><div class=\"col\"><h2 class=\"single-event__our-speakers--title\">Our speakers</h2></div></div><div class=\"mt-4 our-speakers-desktop\" id=\"our-speakers-desktop\"></div><div class=\"row mt-4 splide our-speakers-mobile\" id=\"our-speakers-mobile\"><div class=\"splide__track\"><div class=\"splide__list\"></div></div></div></section>"
+    "html": "<section class=\"container single-event__our-speakers\"><div class=\"row\"><div class=\"col\"><h2 class=\"single-event__our-speakers--title\">Our trainers</h2></div></div><div class=\"mt-4 our-speakers-desktop\" id=\"our-speakers-desktop\"></div><div class=\"row mt-4 splide our-speakers-mobile\" id=\"our-speakers-mobile\"><div class=\"splide__track\"><div class=\"splide__list\"></div></div></div></section>"
   }
 }
