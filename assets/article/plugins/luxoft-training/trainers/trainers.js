@@ -67,7 +67,7 @@ ArticleEditor.add("plugin", "trainers", {
 							<div class="single-event__our-speakers--item--name-title">
 								<div class="speaker-name-title">
 									<p class="text-18 fw-semibold speaker-name">${params.params.trainers[speakerPosition].name}</p>
-									<p class="text-15 speaker-title">${params.params.trainers[speakerPosition].position}</p>
+									<p class="text-15 speaker-title">${params.params.trainers[speakerPosition].title}</p>
 								</div>
 							</div>
 							<div class="single-event__our-speakers--item--bio mt-3">
@@ -82,8 +82,8 @@ ArticleEditor.add("plugin", "trainers", {
 							</div>
 						</div>
 
-						<div class="twig-code">{% setcontent speaker = 'person/${params.params.trainers[speakerPosition].id}' %}</div>
-						{% if speaker is not empty %}
+						<div class="twig-code">{% setcontent trainer = 'trainer/${params.params.trainers[speakerPosition].id}' %}</div>
+						{% if trainer is not empty %}
 							{{ include('@theme/partials/_event_speaker_card.twig') }}
 						{% endif %}
 					</div>`,
