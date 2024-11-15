@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', (e) => {
     async function getContetypesData() {
         const pagesAmount = 10;
 		const pageSize = 200;
-        
+
         if (
             localStorage.getItem('contentTypePeopleData') === null &&
             localStorage.getItem('alreadyGettingPeople') === null
@@ -58,19 +58,19 @@ document.addEventListener('DOMContentLoaded', (e) => {
 			let csItems = {};
 			let csSelectOptions = { none: "-- NONE --" };
 			let csItemPosition = 0;
-	
+
 			for (let i = 1; i <= pagesAmount; i++) {
 				let apiResponse = await fetch(
 					`${window.location.origin}/api/contents?page=${i}&contentType=case-studies&status=published&pageSize=${pageSize}`
 				);
 				let json = await apiResponse.json();
-	
+
 				if (!json.length) {
 					break;
 				}
-	
+
 				const result = await getCsItemsData(json, csItemPosition);
-	
+
 				csItems = {
 					...csItems,
 					...result[0],
@@ -80,13 +80,13 @@ document.addEventListener('DOMContentLoaded', (e) => {
 					...result[1],
 				};
 				csItemPosition = result[2];
-	
+
 				if (json.length < pageSize) {
 					// if no data - no need to send more requests
 					break;
 				}
 			}
-	
+
 			const csElements = {
 				items: csItems,
 				selectOptions: csSelectOptions
@@ -107,17 +107,17 @@ document.addEventListener('DOMContentLoaded', (e) => {
 
 			for (let i = 1; i <= pagesAmount; i++) {
 				let apiResponse = await fetch(
-					`${window.location.origin}/api/contents?page=${i}&contentType%5B%5D=videos&contentType%5B%5D=pr&contentType%5B%5D=whitepapers&contentType%5B%5D=blog&contentType%5B%5D=case-studies&status=published&pageSize=${pageSize}`
+					`${window.location.origin}/api/contents?page=${i}&contentType%5B%5D=videos&contentType%5B%5D=blog&contentType%5B%5D=whitepapers&contentType%5B%5D=pr&contentType%5B%5D=case-studies&status=published&pageSize=${pageSize}`
 				);
 				let json = await apiResponse.json();
-	
+
 				if (!json.length) {
 					// if no data - no need to send more requests
 					break;
 				}
-	
+
 				const result = await getInsightsItemsData(json, insightPosition);
-	
+
 				insightsItems = {
 					...insightsItems,
 					...result[0],
@@ -127,7 +127,7 @@ document.addEventListener('DOMContentLoaded', (e) => {
 					...result[1],
 				};
 				insightPosition = result[2];
-	
+
 				if (json.length < pageSize) {
 					// if no data - no need to send more requests
 					break;
