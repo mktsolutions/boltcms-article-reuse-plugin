@@ -71,7 +71,7 @@ ArticleEditor.add('plugin', 'accordion', {
             stringHtml += 
                 `<div class="accordion-item">
                     <h3 class="accordion-header">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse${itemId}" aria-controls="collapse${itemId}">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse${itemId}" aria-expanded="false" aria-controls="collapse${itemId}">
                         Accordion Item #${x}
                     </button>
                     </h3>
