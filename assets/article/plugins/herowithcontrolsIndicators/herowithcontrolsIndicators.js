@@ -56,7 +56,7 @@ ArticleEditor.add("plugin", "herowithcontrolsIndicators", {
 		for (var z = 1; z <= editableType; z++) {
 			var indicatorClass = z === 1 ? "active" : ""
 			var indicatorCurrent = z === 1 ? true : false
-			heroHtml += `<a data-bs-target="#carouselHeroWithIndicators" data-bs-slide-to="${z-1}" class="${indicatorClass}" aria-current="${indicatorCurrent}" aria-label="Slide ${z}"></a>`
+			heroHtml += `<a data-bs-target="#carouselHeroWithIndicators" data-bs-slide-to="${z-1}" class="${indicatorClass}" aria-current="${indicatorCurrent}"></a>`
 		}
 
 			heroHtml += `	<div class="actions-wrap">
