@@ -77,8 +77,9 @@ ArticleEditor.add("plugin", "responsiveTables", {
 		for (let z = 1; z <= rows; z++) {
 
 			responsiveTablesContent += `<tr>`
-
-            for (let x = 1; x <= columns; x++) {
+			responsiveTablesContent += `<th scope="row" role="rowheader"></th>`
+			
+            for (let x = 1; x < columns; x++) {
                 responsiveTablesContent += `<td></td>`
             }
 
