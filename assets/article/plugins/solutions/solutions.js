@@ -92,7 +92,7 @@ ArticleEditor.add('plugin', 'solutions', {
                             <div class="container">
                                 <p class="text-center">Some description here</p>
                             </div>
-                            <div id="carouselExampleCaptions-${id}" class="carousel slide" data-bs-ride="carousel">
+                            <div id="carouselExampleCaptions-${id}" class="carousel slide" data-bs-ride="carousel" role="region">
                                 <div class="carousel-inner">`
             for(var x = 1; x <= editableType; x++) {
                 var classname = (x === 1) ? 'active' : ''
