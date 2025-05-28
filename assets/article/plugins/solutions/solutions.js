@@ -97,7 +97,9 @@ ArticleEditor.add('plugin', 'solutions', {
             for(var x = 1; x <= editableType; x++) {
                 var classname = (x === 1) ? 'active' : ''
                 solutionsHtml += `<div class="carousel-item ${classname}">
-                                    <figure><img src="https://dummyimage.com/1200x600/000/696969.png&amp;text=Example+of+image"></figure>
+                                    <figure>
+                                        <img src="https://dummyimage.com/1200x600/000/696969.png&amp;text=Example+of+image" alt="Carousel image ${x}">
+                                    </figure>
 
                                     <div class="carousel-caption">
                                         <h4>Title of solution ${x}</h4>
