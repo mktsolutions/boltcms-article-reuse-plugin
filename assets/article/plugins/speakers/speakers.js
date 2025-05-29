@@ -44,6 +44,10 @@ ArticleEditor.add("plugin", "speakers", {
 				},
 			},
 			form: {
+				searchSpeaker: {
+					type: "input",
+					label: "Search",
+				},
 				speakersList: {
 					type: "select",
 					label: "Choose a speaker to insert",
@@ -54,6 +58,26 @@ ArticleEditor.add("plugin", "speakers", {
 		});
 
 		this.app.popup.open({ button: button })
+
+		setTimeout(() => {
+			const searchSpeakerInput = document.querySelectorAll('input[name="searchSpeaker"]')
+			const speakersList = document.querySelectorAll('select[name="speakersList"]')
+			speakersList[0].selectedIndex = -1
+
+			if (searchSpeakerInput.length > 0 && speakersList.length > 0) {
+				searchSpeakerInput[0].addEventListener('input', () => {
+					const searchValue = searchSpeakerInput[0].value.toLowerCase()
+					const options = speakersList[0].options
+					let itemsFound = 0
+					for (let i = 0; i < options.length; i++) {
+						options[i].style.display = options[i].text.toLowerCase().includes(searchValue) ? "" : "none"
+						itemsFound += options[i].style.display === "" ? 1 : 0
+					}
+
+					speakersList[0].disabled = itemsFound === 0
+				})
+			}
+		}, 300)
 	},
 	insert: function (params, button, name) {
 		this.app.popup.close()

@@ -43,6 +43,10 @@ ArticleEditor.add("plugin", "leaders", {
 				},
 			},
 			form: {
+				searchLeader: {
+					type: "input",
+					label: "Search",
+				},
 				leadersList: {
 					type: "select",
 					label: "Choose a leader to insert",
@@ -53,6 +57,26 @@ ArticleEditor.add("plugin", "leaders", {
 		});
 
 		this.app.popup.open({ button: button });
+
+		setTimeout(() => {
+			const searchLeaderInput = document.querySelectorAll('input[name="searchLeader"]')
+			const leadersList = document.querySelectorAll('select[name="leadersList"]')
+			leadersList[0].selectedIndex = -1
+
+			if (searchLeaderInput.length > 0 && leadersList.length > 0) {
+				searchLeaderInput[0].addEventListener('input', () => {
+					const searchValue = searchLeaderInput[0].value.toLowerCase()
+					const options = leadersList[0].options
+					let itemsFound = 0
+					for (let i = 0; i < options.length; i++) {
+						options[i].style.display = options[i].text.toLowerCase().includes(searchValue) ? "" : "none"
+						itemsFound += options[i].style.display === "" ? 1 : 0
+					}
+
+					leadersList[0].disabled = itemsFound === 0
+				})
+			}
+		}, 300)
 	},
 	insert: function (params, button, name) {
 		this.app.popup.close();
