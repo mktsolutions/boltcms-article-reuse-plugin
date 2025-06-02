@@ -85,11 +85,11 @@
     },
     "hero-single-item": {
         "name": "Hero - single banner",
-        "html": "<section class=\"container-hero-img\"><img src=\"https://dummyimage.com/1920x940/adadad/484c8a\" alt=\"Banner\"><div class=\"container\"><div class=\"content\"><h1>Accelerating the transformation to software-defined vehicles</h1><p class=\"text-28\">Your full-service technology partner that provides strategic</p><p class=\"text-20\">Your full-service technology partner that provides strategic advice as well as solution design and delivery excellence</p></div></div><div class=\"down-arr\"><a href=\"#banner-down\"><div class=\"text-20\"><p>LEARN MORE</p></div></a></div></section>"
+        "html": "<section class=\"container-hero-img\"><img src=\"https://dummyimage.com/1920x940/adadad/484c8a\" alt=\"Banner\"><div class=\"overlay\"></div><div class=\"container\"><div class=\"content\"><h1>Accelerating the transformation to software-defined vehicles</h1><p class=\"text-28\">Your full-service technology partner that provides strategic</p><p class=\"text-20\">Your full-service technology partner that provides strategic advice as well as solution design and delivery excellence</p></div></div><div class=\"down-arr\"><a href=\"#banner-down\"><div class=\"text-20\"><p>LEARN MORE</p></div></a></div></section>"
     },
     "hero-single-item-short": {
         "name": "Hero - single banner - short",
-        "html": "<section class=\"container-hero-img short\"><img src=\"https://dummyimage.com/1920x940/adadad/484c8a\" alt=\"Banner\"><div class=\"container\"><div class=\"content\"><h1>Accelerating the transformation to software-defined vehicles</h1><p class=\"text-28\">Your full-service technology partner that provides strategic</p><p>Your full-service technology partner that provides strategic advice as well as solution design and delivery excellence</p></div></div></section>"
+        "html": "<section class=\"container-hero-img short\"><img src=\"https://dummyimage.com/1920x940/adadad/484c8a\" alt=\"Banner\"><div class=\"overlay\"></div><div class=\"container\"><div class=\"content\"><h1>Accelerating the transformation to software-defined vehicles</h1><p class=\"text-28\">Your full-service technology partner that provides strategic</p><p>Your full-service technology partner that provides strategic advice as well as solution design and delivery excellence</p></div></div></section>"
     },
     "hero-with-video": {
         "name": "Hero with video",
