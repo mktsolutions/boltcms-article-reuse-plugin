@@ -84,13 +84,11 @@ ArticleEditor.add("plugin", "heroWithControls", {
 
 		heroHtml += `</div>
                         <div class="container controls-container">
-                            <button class="carousel-control-prev carousel-control-btn" type="button" data-bs-target="#carouselHeroWithControls" data-bs-slide="prev">
+                            <button class="carousel-control-prev carousel-control-btn" type="button" data-bs-target="#carouselHeroWithControls" data-bs-slide="prev" aria-label="Previous">
                                 <span class="carousel-control-prev-icon carousel-control-btn-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Previous</span>
                             </button>
-                            <button class="carousel-control-next carousel-control-btn" type="button" data-bs-target="#carouselHeroWithControls" data-bs-slide="next">
+                            <button class="carousel-control-next carousel-control-btn" type="button" data-bs-target="#carouselHeroWithControls" data-bs-slide="next" aria-label="Next">
                                 <span class="carousel-control-next-icon carousel-control-btn-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Next</span>
                             </button>
                         </div>`;
 

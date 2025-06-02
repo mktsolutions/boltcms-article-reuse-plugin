@@ -60,12 +60,11 @@ ArticleEditor.add("plugin", "herowithcontrolsIndicators", {
 		}
 
 			heroHtml += `	<div class="actions-wrap">
-								<button type="button" class="btn-pause-icon" id="play-pause-btn">
+								<button type="button" class="btn-pause-icon" id="play-pause-btn" aria-label="Play and pause button">
 									<img src="{​{ asset('theme/luxoft/assets/images/icons/pause.svg') }​}" class="pause-icon" focusable="false" aria-hidden="true" alt="pause">
 									<svg xmlns="http://www.w3.org/2000/svg" class="play-icon" viewBox="0 0 384 512">
 										<path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/>
 									</svg>
-									<span class="visually-hidden">Play and pause button</span> 
 								</button>
 							</div>
 						</div>
@@ -107,15 +106,13 @@ ArticleEditor.add("plugin", "herowithcontrolsIndicators", {
 
 		heroHtml += `</div>
                         <div class="previous-container">
-                            <button class="carousel-control-prev carousel-control-btn" type="button" data-bs-target="#carouselHeroWithIndicators" data-bs-slide="prev">
+                            <button class="carousel-control-prev carousel-control-btn" type="button" data-bs-target="#carouselHeroWithIndicators" data-bs-slide="prev" aria-label="Previous">
                                 <span class="carousel-control-prev-icon carousel-control-btn-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Previous</span>
                             </button>
                         </div>
 						<div class="next-container">
-                            <button class="carousel-control-next carousel-control-btn" type="button" data-bs-target="#carouselHeroWithIndicators" data-bs-slide="next">
+                            <button class="carousel-control-next carousel-control-btn" type="button" data-bs-target="#carouselHeroWithIndicators" data-bs-slide="next" aria-label="Next">
                                 <span class="carousel-control-next-icon carousel-control-btn-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Next</span>
                             </button>
                         </div>`
 
