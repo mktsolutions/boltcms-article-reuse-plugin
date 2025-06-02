@@ -161,13 +161,11 @@ ArticleEditor.add('plugin', 'quotes', {
 
                 htmlContent += `</div>
                                 <div class="button-group">
-                                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators-${quotesId}" data-bs-slide="prev">
+                                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators-${quotesId}" data-bs-slide="prev" aria-label="Previous">
                                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                        <span class="visually-hidden">Previous</span>
                                     </button>
-                                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators-${quotesId}"data-bs-slide="next">
+                                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators-${quotesId}"data-bs-slide="next" aria-label="Next">
                                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                        <span class="visually-hidden">Next</span>
                                     </button>
                                     <div class="carousel-indicators">`
 
@@ -230,20 +228,17 @@ ArticleEditor.add('plugin', 'quotes', {
 
             htmlContent += `</div>
                                 <div class="button-group">
-                                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators-${quotesId}" data-bs-slide="prev">
+                                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators-${quotesId}" data-bs-slide="prev" aria-label="Previous">
                                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                        <span class="visually-hidden">Previous</span>
                                     </button>
-                                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators-${quotesId}"data-bs-slide="next">
+                                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators-${quotesId}"data-bs-slide="next" aria-label="Next">
                                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                        <span class="visually-hidden">Next</span>
                                     </button>
                                     <div class="carousel-indicators">`
 
             for(var z = 1; z <= quotesAmount; z++) {
                 var classname = (z === 1) ? 'active' : ''
-                htmlContent += `<button type="button" data-bs-target="#carouselExampleIndicators-${quotesId}" data-bs-slide-to="${z - 1}" class="${classname}">
-                                    <span class="visually-hidden">${z - 1}</span>
+                htmlContent += `<button type="button" data-bs-target="#carouselExampleIndicators-${quotesId}" data-bs-slide-to="${z - 1}" class="${classname}" aria-label="Slide ${z - 1}">
                                 </button>`
             }
 
@@ -313,13 +308,11 @@ ArticleEditor.add('plugin', 'quotes', {
 
                 htmlContent += `</div>
                                 <div class="button-group">
-                                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators-${quotesId}" data-bs-slide="prev">
+                                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators-${quotesId}" data-bs-slide="prev" aria-label="Previous">
                                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                        <span class="visually-hidden">Previous</span>
                                     </button>
-                                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators-${quotesId}"data-bs-slide="next">
+                                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators-${quotesId}"data-bs-slide="next" aria-label="Next">
                                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                        <span class="visually-hidden">Next</span>
                                     </button>
                                     <div class="carousel-indicators">`
 

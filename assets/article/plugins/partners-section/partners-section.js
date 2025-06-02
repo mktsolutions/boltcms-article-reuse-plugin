@@ -122,7 +122,7 @@ ArticleEditor.add('plugin', 'partners-section', {
                                     <div class="partners-section--item">
                                         <div class="content">
                                             <div class="btn-container">
-                                                <a class="btn btn-text btn-icon" href="#">
+                                                <a class="btn btn-text btn-icon" href="#" aria-label="Link description">
                                                     <div class="text-container">
                                                         <div class="text stretched-link">
                                                             Murex
