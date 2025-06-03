@@ -73,7 +73,7 @@ ArticleEditor.add("plugin", "servicesVerticalTabs", {
 
 		for (var x = 1; x <= editableType; x++) {
 			var classname = x === 1 ? "show active" : ""
-                   servicesHtml += `<div class="tab-pane fade ${classname}" id="service-${x}" role="tabpanel" aria-labelledby="service-${x}-tab" tabindex="0">
+                   servicesHtml += `<div class="tab-pane fade ${classname}" id="service-${x}" role="tabpanel" aria-labelledby="service-${x}-tab">
                                         <div class="single-tab-content">
                                             <div class="single-tab-content--image">
                                                 <figure>
