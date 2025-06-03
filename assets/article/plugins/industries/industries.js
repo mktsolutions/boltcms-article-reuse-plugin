@@ -96,7 +96,7 @@ ArticleEditor.add('plugin', 'industries', {
             var slidePosition = 0
             for(var z = 1; z <= editableType; z++) {
                 var classname = (z === 1) ? 'active' : ''
-                industriesHtml += `<div class="tab ${classname}" data-content-item-to="${slidePosition}" tabindex="0">
+                industriesHtml += `<div class="tab ${classname}" data-content-item-to="${slidePosition}">
                                     <figure><img src="https://dummyimage.com/800x600/ffffff/e3e3e3.png"></figure>
                                 </div>`
                 slidePosition++
