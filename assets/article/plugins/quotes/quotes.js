@@ -171,7 +171,7 @@ ArticleEditor.add('plugin', 'quotes', {
 
                 for(var z = 1; z <= quotesAmount; z++) {
                     var classname = (z === 1) ? 'active' : ''
-                    htmlContent += `<button type="button" data-bs-target="#carouselExampleIndicators-${quotesId}" data-bs-slide-to="${z - 1}" class="${classname}"></button>`
+                    htmlContent += `<button type="button" data-bs-target="#carouselExampleIndicators-${quotesId}" data-bs-slide-to="${z - 1}" class="${classname}" aria-label="Slide ${z - 1}"></button>`
                 }
 
                 htmlContent += `    </div>
@@ -318,7 +318,7 @@ ArticleEditor.add('plugin', 'quotes', {
 
                 for(var z = 1; z <= quotesAmount; z++) {
                     var classname = (z === 1) ? 'active' : ''
-                    htmlContent += `<button type="button" data-bs-target="#carouselExampleIndicators-${quotesId}" data-bs-slide-to="${z - 1}" class="${classname}"></button>`
+                    htmlContent += `<button type="button" data-bs-target="#carouselExampleIndicators-${quotesId}" data-bs-slide-to="${z - 1}" class="${classname}" aria-label="Slide ${z - 1}"></button>`
                 }
 
                 htmlContent += `    </div>
