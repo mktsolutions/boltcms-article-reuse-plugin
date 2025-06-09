@@ -45,7 +45,7 @@
     },
     "key-points": {
         "name": "Key points",
-        "html": "<section class=\"container-key-points\"><h2>Key points</h2><p class=\"text-center\">Some description here</p><div class=\"row\"><div class=\"col\"><p class=\"item-numbers\">80%</p><p class=\"item-title\">Item title</p><p>Lorem ipsum is placeholder text commonly used in the graphic.</p></div></div></section>"
+        "html": "<section class=\"container-key-points\"><h2>Key points</h2><p class=\"text-center\">Some description here</p><div class=\"row\"><div class=\"col\"><p class=\"item-numbers\">80%</p><h3 class=\"item-title\">Item title</h3><p>Lorem ipsum is placeholder text commonly used in the graphic.</p></div></div></section>"
     },
     "key-highlights": {
         "name": "Key highlights",
