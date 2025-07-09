@@ -39,10 +39,13 @@ document.addEventListener('DOMContentLoaded', (e) => {
 					break;
 				}
 			}
+			сonst peopleSelectOptionsArr = Object.values(peopleSelectOptions).sort((a, b) => 
+				a.localeCompare(b, undefined, { sensivity: 'base' })
+			);
 
 			const contentTypePeopleData = {
 				items: peopleItems,
-				selectOptions: peopleSelectOptions
+				selectOptions: peopleSelectOptionsArr
 			}
 
 			localStorage.setItem('contentTypePeopleData', JSON.stringify(contentTypePeopleData))
