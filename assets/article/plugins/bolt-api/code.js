@@ -39,6 +39,9 @@ document.addEventListener('DOMContentLoaded', (e) => {
 					break;
 				}
 			}
+			const peopleItemsSorted = Object.values(peopleItems).sort((a, b) => 
+				a.name.localeCompare(b.name, undefined, { sensivity: 'base' })
+			);
 			const peopleSelectOptionsArr = Object.values(peopleSelectOptions).sort((a, b) => 
 				a.localeCompare(b, undefined, { sensivity: 'base' })
 			);
