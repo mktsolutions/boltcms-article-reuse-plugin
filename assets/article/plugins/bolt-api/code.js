@@ -47,7 +47,7 @@ document.addEventListener('DOMContentLoaded', (e) => {
 			);
 
 			const contentTypePeopleData = {
-				items: peopleItems,
+				items: peopleItemsSorted,
 				selectOptions: peopleSelectOptionsArr
 			}
 
