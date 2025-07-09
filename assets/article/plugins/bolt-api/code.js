@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded', (e) => {
 					break;
 				}
 			}
-			сonst peopleSelectOptionsArr = Object.values(peopleSelectOptions).sort((a, b) => 
+			const peopleSelectOptionsArr = Object.values(peopleSelectOptions).sort((a, b) => 
 				a.localeCompare(b, undefined, { sensivity: 'base' })
 			);
 
